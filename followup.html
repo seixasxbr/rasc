@@ -1,0 +1,215 @@
+---
+layout: page
+title: Follow Up
+subtitle: Here you can find a little about our projects.
+cover-img: /assets/img/dylan-gillis-KdeqA3aTnBY-unsplash.jpg
+thumbnail-img: /assets/img/thumb.png
+share-img: /assets/img/path.jpg
+tags: [books, test]
+---
+
+{% assign date_format = site.date_format | default: "%B %-d, %Y" %}
+{%- capture site_tags -%}
+    {%- for tag in site.tags -%}
+        {{- tag | first -}}{%- unless forloop.last -%},{%- endunless -%}
+    {%- endfor -%}
+{%- endcapture -%}
+{%- assign tags_list = site_tags | split:',' | sort -%}
+
+{% if page.cover-img or page.title %}
+
+{% if page.cover-img %}
+  <!--div id="header-big-imgs" data-num-img={% if page.cover-img.first %}{{ page.cover-img.size }}{% else %}1{% endif %}
+    {% for bigimg in page.cover-img %}
+    {% assign imgnum = forloop.index %}
+    {% for imginfo in bigimg %}
+      {% if imginfo[0] %}
+      data-img-src-{{ imgnum }}="{{ imginfo[0] | absolute_url }}"
+      data-img-desc-{{ imgnum }}="{{ imginfo[1] }}"
+    {% else %}
+      data-img-src-{{ imgnum }}="{{ imginfo | absolute_url }}"
+    {% endif %}
+    {% endfor %}
+    {% endfor %}
+  ></div-->
+{% endif %}
+
+<!--header class="header-section {% if page.cover-img %}has-img{% endif %}">
+
+<div class="big-img intro-header">
+  <div class="container-md">
+    <div class="row">
+      <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
+        <div class="{{ include.type }}-heading">
+          <h1>{% if page.title %}{{ page.title }}{% else %}<br/>{% endif %}</h1>
+          {% if page.subtitle %}
+            {% if include.type == "page" %}
+              <hr class="small">
+              <span class="{{ include.type }}-subheading">{{ page.subtitle }}</span>
+            {% else %}
+              <h2 class="{{ include.type }}-subheading">{{ page.subtitle }}</h2>
+            {% endif %}
+          {% endif %}
+
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+</header-->
+
+{% endif %}
+
+<div class=" container-md " role="main">
+  <div class="row">
+    <div class=" col-xl-auto offset-xl-0 col-lg-10 offset-lg-1 ">
+        <div class="before-content">
+          <center>
+            <h2 class="post-title">Acompanhamento dos Projetos</h2><br/>
+          </center>
+          
+          <a id="support-promo-section" href="https://mhar-vell.github.io/portfolio/index.html" target="_blank">
+            <strong>Se você chegou até aqui é porque está interessado em conhecer um pouco mais sobre nossos projetos. Abaixo você tem um link para os posts de cada projeto.</strong><br/>
+          </a>
+          <a href="/aboutme">
+            <center>
+              <span class="btn btn-cta btn-lg">
+                <small>↭ mhar-vɘll</small>
+              </span>
+            </center>
+          </a>
+        </div>
+        {%- for tag in tags_list -%}
+        <a href="#{{- tag -}}" class="btn btn-primary tag-btn"><i class="fas fa-tag" aria-hidden="true"></i>&nbsp;{{- tag -}}&nbsp;({{site.tags[tag].size}})</a>
+        {%- endfor -%}
+    </div>
+  </div>
+  <hr class="mark">
+</div>
+
+
+{% assign posts = paginator.posts | default: site.posts %}
+
+<div class="posts-list">
+  <center>
+    <h3 class="post-title"><font color="#fbb117">Recent Posts</font></h3>
+  </center>
+  {% for post in posts offset:1 limit:3 %}
+  <article class="post-preview">
+
+    {%- capture thumbnail -%}
+      {% if post.thumbnail-img %}
+        {{ post.thumbnail-img }}
+      {% elsif post.cover-img %}
+        {% if post.cover-img.first %}
+          {{ post.cover-img[0].first.first }}
+        {% else %}
+          {{ post.cover-img }}
+        {% endif %}
+      {% else %}
+      {% endif %}
+    {% endcapture %}
+    {% assign thumbnail=thumbnail | strip %}
+
+    {% if site.feed_show_excerpt == false %}
+    {% if thumbnail != "" %}
+    <div class="post-image post-image-normal">
+      <a href="{{ post.url | absolute_url }}" aria-label="Thumbnail">
+        <img src="{{ thumbnail | absolute_url }}" alt="Post thumbnail">
+      </a>
+    </div>
+    {% endif %}
+    {% endif %}
+
+    <a href="{{ post.url | absolute_url }}">
+      <h4 class="post-title">{{ post.title }}</h4>
+
+      {% if post.subtitle %}
+        <h5 class="post-subtitle">
+        {{ post.subtitle }}
+        </h5>
+      {% endif %}
+    </a>
+
+    <p class="post-meta">
+      {% assign date_format = site.date_format | default: "%B %-d, %Y" %}
+      Posted on {{ post.date | date: date_format }}
+    </p>
+
+    {% if thumbnail != "" %}
+    <div class="post-image post-image-small">
+      <a href="{{ post.url | absolute_url }}" aria-label="Thumbnail">
+        <img src="{{ thumbnail | absolute_url }}" alt="Post thumbnail">
+      </a>
+    </div>
+    {% endif %}
+
+    {% unless site.feed_show_excerpt == false %}
+    {% if thumbnail != "" %}
+    <div class="post-image post-image-short">
+      <a href="{{ post.url | absolute_url }}" aria-label="Thumbnail">
+        <img src="{{ thumbnail | absolute_url }}" alt="Post thumbnail">
+      </a>
+    </div>
+    {% endif %}
+
+    <div class="post-entry">
+      {% assign excerpt_length = site.excerpt_length | default: 50 %}
+      {{ post.excerpt | strip_html | xml_escape | truncatewords: excerpt_length }}
+      {% assign excerpt_word_count = post.excerpt | number_of_words %}
+      {% if post.content != post.excerpt or excerpt_word_count > excerpt_length %}
+        <a href="{{ post.url | absolute_url }}" class="post-read-more">[Read&nbsp;More]</a>
+      {% endif %}
+    </div>
+    {% endunless %}
+
+    {% if site.feed_show_tags != false and post.tags.size > 0 %}
+    <div class="blog-tags">
+      <span>Tags:</span>
+      {% for tag in post.tags %}
+      <a href="{{ '/tags' | absolute_url }}#{{- tag -}}">{{- tag -}}</a>
+      {% endfor %}
+    </div>
+    {% endif %}
+
+   </article>
+  {% endfor %}
+</div>
+
+{% if paginator.total_pages > 1 %}
+<ul class="pagination main-pager">
+  {% if paginator.previous_page %}
+  <li class="page-item previous">
+    <a class="page-link" href="{{ paginator.previous_page_path | absolute_url }}">&larr; Newer Posts</a>
+  </li>
+  {% endif %}
+  {% if paginator.next_page %}
+  <li class="page-item next">
+    <a class="page-link" href="{{ paginator.next_page_path | absolute_url }}">Older Posts &rarr;</a>
+  </li>
+  {% endif %}
+</ul>
+{% endif %}
+
+<hr class="mark">
+<div id="full-tags-list">
+  {%- for tag in tags_list -%}
+      <h2 id="{{- tag -}}" class="linked-section">
+          <i class="fas fa-tag" aria-hidden="true"></i>
+          &nbsp;{{- tag -}}&nbsp;({{site.tags[tag].size}})
+      </h2>
+      <div class="post-list">
+          {%- for post in site.tags[tag] -%}
+              <div class="tag-entry">
+                  <a href="{{ post.url | relative_url }}">{{- post.title -}}</a>
+                  <div class="entry-date">
+                      <time datetime="{{- post.date | date_to_xmlschema -}}">{{- post.date | date: date_format -}}</time>
+                  </div>
+              </div>
+          {%- endfor -%}
+      </div>
+  {%- endfor -%}
+</div>
