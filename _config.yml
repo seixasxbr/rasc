@@ -33,7 +33,7 @@ navbar-links:
     - Warthog: ""
     - Moco: ""
     - Droilt: ""
-    - AUM: ""
+    - AUM: "project-aum"
     - Turbot: ""
     - Ergo: ""
 
