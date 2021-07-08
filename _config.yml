@@ -34,8 +34,9 @@ navbar-links:
     - Moco: ""
     - Droilt: ""
     - AUM: "project-aum"
-    - Turbot: ""
+    - Turbot: "project-turbot"
     - Ergo: ""
+    - Hefesto: ""
 
   accomplished:
     - Elir: ""
