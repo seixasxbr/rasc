@@ -21,13 +21,6 @@ navbar-links:
   #   - Geonosis: "project-1"
   #   - Kamino: "project-1"
   #   - Manisub: "project-1"
-  in training:
-    - Pong: ""
-    - Jetbot 1: ""
-    - Jetbot 2: ""
-    - Jetbot 3: ""
-    - Walker: "project-walker"
-    - bbot: "project-bbot"
 
   in progressing:
     - Warthog: ""
@@ -37,6 +30,12 @@ navbar-links:
     - Turbot: "project-turbot"
     - Ergo: ""
     - Hefesto: ""
+    - Pong: ""
+    - Jetbot 1: ""
+    - Jetbot 2: ""
+    - Jetbot 3: ""
+    - Walker: "project-walker"
+    - bbot: "project-bbot"
 
   accomplished:
     - Elir: ""
@@ -52,6 +51,9 @@ navbar-links:
     - WBM Orb2slam: ""
     - WBM EKFslam: ""
     - r-hope: ""
+  
+  knowledge:
+    - ssh: ""
     
   About Us: "aboutus"
 
@@ -75,17 +77,12 @@ round-avatar: true
 # Uncomment the links you want to show and add your information to each one.
 social-network-links:
   email: "marcoreis@me.com"
-#  facebook: deanattali
-  github: mhar-vell
-  twitter: MarkoHeiss
-#  patreon: DeanAttali
-  youtube: MarcoReis15
+  github: "orgs/Brazilian-Institute-of-Robotics/teams/making/"
+  #twitter: MarkoHeiss
+  #youtube: MarcoReis15
+  reddit: braziliansinrobotics
+  #linkedin: marco-reis-061618
 #  medium: yourname
-#  reddit: yourname
-  linkedin: marco-reis-061618
-#  medium: yourname
-#  reddit: yourname
-#  linkedin: daattali
 #  xing: yourname
 #  stackoverflow: "3943160/daattali"
 #  snapchat: deanat78
@@ -103,7 +100,7 @@ social-network-links:
 
 # If you want to show a link to an RSS in the footer, add the site description here.
 # If you don't want to show an RSS link, remove the following line.
-rss-description: This website is a virtual proof that I'm awesome
+rss-description: This website is my precious
 
 # --- General options --- #
 
@@ -116,16 +113,16 @@ share-links-active:
 
 # How to display the link to your website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "mhar-vell/github.io/projects"
+url-pretty: "mhar-vell.github.io/portfolio"
 
 # Excerpt word length - Truncate the excerpt of each post on the feed page to the specified number of words
 excerpt_length: 50
 
 # Whether or not to show an excerpt for every blog post in the feed page
-feed_show_excerpt: true
+feed_show_excerpt: false
 
 # Whether or not to show a list of tags below each post preview in the feed page
-feed_show_tags: true
+feed_show_tags: false
 
 # Add a search button to the navbar
 post_search: true

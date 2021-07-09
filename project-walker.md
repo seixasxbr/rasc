@@ -13,7 +13,7 @@ subtitle: Um robô bípede
 {%- endcapture -%}
 {%- assign tags_list = site_tags | split:',' | sort -%}
 
-<center><img src="{{ 'assets/img/walker/walker_missao.png' | relative_url }}" alt="Walker_missao" width="380"/></center>
+<center><img src="{{ 'assets/img/walker/walker_title_yellow.png' | relative_url }}" alt="Walker_missao" width="380"/></center>
 
 <div class="before-content">
   <center>
