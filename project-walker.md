@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Walker
+title: Walker2
 subtitle: Um robô bípede
 ---
 {% assign date_format = site.date_format | default: "%B %-d, %Y" %}
