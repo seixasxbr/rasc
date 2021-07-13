@@ -68,9 +68,8 @@ Dentre eles, os principais são:
 - **Raspicam:** A câmera será utilizada para a detecção e reconhecimento de TAGs, possibilitando sua localização
 
 <br>
+
 <!--equipe-->
-
-
 <center><h3 class="post-title">Equipe de desenvolvimento</h3><br/></center>
 <div class="row">
   <div class=" col-xl-auto offset-xl-0 col-lg-4 offset-lg-0">
@@ -93,7 +92,7 @@ Dentre eles, os principais são:
           <td width="33.33%"><center>Marco Reis</center></td>
         </tr>
         <tr style="text-align:center" >
-          <td width="33.33%" style="vertical-align: top"><small>BrendaEstagiária no CC RoSA, graduanda em Eng. Elétrica. Participou de projetos de Robótica Subaquática e Manipuladores Subaquáticos</small></td>
+          <td width="33.33%" style="vertical-align: top"><small>Estagiária no CC RoSA, graduanda em Eng. Elétrica. Participou de projetos de Robótica Subaquática e Manipuladores Subaquáticos</small></td>
           <td></td>
           <td width="33.33%" style="vertical-align: top"><small>Estagiário no CC RoSA, graduando em Eng. Elétrica. Participou de projetos de Robótica Subaquática e Robótica Móvel</small></td>
           <td></td>
