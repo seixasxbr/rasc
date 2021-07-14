@@ -27,11 +27,7 @@ subtitle: Subtítulo da Página template
 
 <!-- ## Introdução -->
 
-A interação veículo-manipulador subaquático é uma das principais novas áreas de estudo para a pesquisa subaquática, pois inclui movimento acoplado e incertezas de parâmetros \cite{Mohan2015}. Segundo \citeonline{Mohan2015}, esses veículos começaram a desempenhar um papel vital nas atividades submarinas, incluindo, mas não se limitando, à exploração do fundo do mar, petróleo offshore, investigações militares e científicas. A dinâmica não-linear acoplada entre o veículo e o braço do manipulador apresenta desafios únicos no ambiente submarino \cite{Mohan2015Londhe}.
-
-O objetivo deste projeto é desenvolver um modelo para a compensação das perturbações sofridas por manipuladores utilizados em veículos submarinos remotamente controlados.
-
-Um dos pontos importantes no desenvolvimento da autonomia de um manipulador robótico é a sua consistência na movimentação de objetos em seu *end-effector*. O fato do desenvolvimento desta pesquisa estar sendo submetido a um ambiente subaquático eleva ainda mais a importância no desenvolvimento dos testes, onde vários componentes são integrados entre si e desempenham funcionalidades específicas para um ambiente controlado. Trazer estes aspectos para o laboratório é algo que deve ser preponderante para a realização do projeto, pois o mesmo deve ser testado e simulado com elementos capazes de ambientalizar o fenômeno do ponto de visto de controle num ambiente subaquático. 
+A interação veículo-manipulador subaquático é uma das principais novas áreas de estudo para a pesquisa subaquática, pois inclui movimento acoplado e incertezas de parâmetros \cite{Mohan2015}. Segundo \citeonline{Mohan2015},
 
 <br>
 
@@ -108,6 +104,7 @@ Testes preliminares também estão sendo realizados em laboratório, onde alguns
 
 
 <br>
+<!------------------------------------------------------------------------------------------->
 <hr class="mark">
 <div id="full-tags-list">
 <h3 class="post-title"><font color="#fbb117">Posts</font></h3>
