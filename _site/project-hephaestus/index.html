@@ -12,7 +12,7 @@
 
   
 
-  <title>Hefesto</title>
+  <title>Hephaestus</title>
 
   
   <meta name="author" content="Marco Reis">
@@ -77,7 +77,7 @@
 
   
   <meta property="og:site_name" content="Robotics & Autonomous Systems">
-  <meta property="og:title" content="Hefesto">
+  <meta property="og:title" content="Hephaestus">
   <meta property="og:description" content="Humanoid Robot">
 
   
@@ -86,8 +86,8 @@
 
   
   <meta property="og:type" content="website">
-  <meta property="og:url" content="http://localhost:4000/project-hefesto/">
-  <link rel="canonical" href="http://localhost:4000/project-hefesto/">
+  <meta property="og:url" content="http://localhost:4000/project-hephaestus/">
+  <link rel="canonical" href="http://localhost:4000/project-hephaestus/">
   
 
   
@@ -96,7 +96,7 @@
   <meta name="twitter:site" content="@">
   <meta name="twitter:creator" content="@">
 
-  <meta property="twitter:title" content="Hefesto">
+  <meta property="twitter:title" content="Hephaestus">
   <meta property="twitter:description" content="Humanoid Robot">
 
   
@@ -133,7 +133,7 @@
                   <a class="dropdown-item" href="/project-aum">AUM</a>
                   <a class="dropdown-item" href="/project-turbot">Turbot</a>
                   <a class="dropdown-item" href="">Ergo</a>
-                  <a class="dropdown-item" href="">Hefesto</a>
+                  <a class="dropdown-item" href="/project-hephaestus">Hephaestus</a>
                   <a class="dropdown-item" href="">Pong</a>
                   <a class="dropdown-item" href="">Jetbot 1</a>
                   <a class="dropdown-item" href="">Jetbot 2</a>
@@ -278,9 +278,16 @@
         }, \
        \
         { \
-          "title"    : "Hefesto", \
+          "title"    : "Hephaestus", \
           "category" : "page", \
-          "url"      : "/project-hefesto/", \
+          "url"      : "/project-hephaestus/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "TEMPLATE", \
+          "category" : "page", \
+          "url"      : "/project-template/", \
           "date"     : "January 1, 1970" \
         }, \
        \
@@ -335,7 +342,7 @@
     <div class="row">
       <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
         <div class="page-heading">
-          <h1>Hefesto</h1>
+          <h1>Hephaestus</h1>
           
             
               <hr class="small">
@@ -360,7 +367,9 @@
     <div class=" col-xl-8 offset-xl-2 col-lg-10 offset-lg-1 ">
       
 
-      <center><img src="/assets/img/hefesto/op3.png" text-align="center" width="200" alt="op3" /><br /></center>
+      <p align="center">
+    <img src="/assets/img/hefesto/Hephaestus_front_back.png" alt="Not found" width="700" />
+</p>
 
 <div class="before-content">
   <center></center>    
@@ -368,40 +377,51 @@
 </div>
 
 <!-- ## Introdução -->
-<p>A robótica tem sido impulsionada pelas possibilidades da utilização de robôs para auxiliar o ser humano. O projeto de um sistema robótico humanoide visa obter uma máquina adaptada ao ambiente humano e que possa realizar tarefas para auxiliar as pessoas com maior adaptabilidade e facilidade de execução. O <strong>Hefesto</strong> é um projeto de robô autônomo com arquitetura aberta que visa o avanço nas tecnologias de robôs antropomórficos.</p>
 
-<p><br /></p>
+<p>A robótica tem sido impulsionada pelas possibilidades da utilização de robôs para auxiliar o ser humano. O projeto de um sistema robótico humanoide visa obter uma máquina adaptada ao ambiente humano e que possa realizar tarefas para auxiliar as pessoas com maior adaptabilidade e facilidade de execução. O <strong>Hephaestus</strong> é um projeto de robô autônomo com arquitetura aberta que visa o avanço nas tecnologias de robôs antropomórficos.</p>
 
 <h3 id="design-e-características">DESIGN E CARACTERÍSTICAS</h3>
 
-<p><strong>Hefesto</strong> conta com um <em>design</em> articulado de 20 graus de liberdade (DOF - <em>Degrees of freedom</em>). Sua estrutura é baseada nos modelos da <em>Robotis</em> Op3 e Op2. Além disso o <strong>Hefesto</strong> é desenvolvido sob ROS (Robot Operating System) para utilizar vários pacotes no ecossistema ROS. Toda tecnologia envolvida e suporte ao ROS, permitem que os desenvolvedores se concentrem mais no avanço de pesquisas e técnicas na área da robótica e visão computacional.</p>
-
-<p><br /></p>
+<p><strong>Hephaestus</strong> conta com um <em>design</em> articulado de 22 graus de liberdade (DOF - <em>Degrees of freedom</em>). Sua estrutura é baseada nos modelos da <em>Robotis</em> Op3 <strong>[1]</strong> e Op2 <strong>[2]</strong>. Além disso o <strong>Hephaestus</strong> é desenvolvido sob ROS (Robot Operating System) para utilizar vários pacotes no ecossistema ROS. Toda tecnologia envolvida e suporte ao ROS, permitem que os desenvolvedores se concentrem mais no avanço de pesquisas e técnicas na área da robótica e visão computacional.</p>
 
 <h3 id="tecnologia-envolvida">TECNOLOGIA ENVOLVIDA</h3>
 
-<p>O <strong>Hefesto</strong> é equipado com uma gama de tecnologias!!</p>
+<p>O <strong>Hephaestus</strong> é equipado com uma gama de tecnologias!!</p>
 
-<p>O robô conta com dois controladores, o principal é um Raspberry Pi 4 e suporta o ROS Noetic, já o secundário é um OpenCR e cuida das entradas e saídas dos atuadores. 
-<img src="/assets/img/hefesto/controladores.png" text-align="center" width="800" alt="controladores" /></p>
+<p><img src="/assets/img/hefesto/controladores.png" alt="Not found" width="300" style="float: left; padding-right: 25px;" /></p>
+<p>
+O robô conta com dois controladores, o principal é um Raspberry Pi 4 e suporta o ROS Noetic, já o secundário é um OpenCR e cuida das entradas e saídas dos atuadores.
+</p>
 
-<p>Já na parte de atuação, temos 2 <em>dynamixels MX106</em> na parte da pelvis e 18 <em>dynamixels MX28</em> espalhados nas diversas articulações do robô.
-<img src="/assets/img/hefesto/atuadores.png" text-align="center" width="550" alt="atuadores" /></p>
+<p><img src="/assets/img/hefesto/atuadores.png" alt="Not found" width="350" style="float: right; padding-left: 50px;" /></p>
+<p style="clear: left; padding-top: 25px;">
+Já na parte de atuação, temos 2 <i>dynamixels MX106</i> na parte da pelvis e 18 <i>dynamixels MX28</i> espalhados nas diversas articulações do robô.
+</p>
 
-<p>O <strong>hefesto</strong> conta ainda com sensores que são responsáveis por aquisições de dados em tempo real.</p>
+<p style="clear: right; padding-top: 25px;">
+O <strong>Hephaestus</strong> conta ainda com sensores que são responsáveis por aquisições de dados em tempo real.
+</p>
 
-<p>A câmera RGB Stereo é capaz de detectar e codificar cores no espaço.
-<img src="/assets/img/hefesto/atuadores.png" text-align="center" width="400" alt="atuadores" /></p>
+<p><img src="/assets/img/hefesto/sensores_1.jpeg" alt="Not found" width="400" style="float: left; clear:right; padding-right: 50px;" /></p>
+<p style="clear: right; padding-top: 50px;">
+A câmera RGB Stereo é capaz de detectar e codificar cores no espaço. 
+</p>
 
-<p>O IMU detecta variações na inclinação do robô.
-<img src="/assets/img/hefesto/mpu6050.jpg" text-align="center" width="150" alt="mpu" /></p>
+<p><img src="/assets/img/hefesto/mpu6050.jpg" alt="Not found" width="200" style="float: right; padding-left: 50px; padding-top: 100px;" /></p>
+<p style="clear: left; padding-top: 80px;">
+O IMU detecta variações na inclinação do robô.
+</p>
 
-<p>O sistema é alimentado por uma LiPO 3s e a OpenCR distribui a energia aos componentes.
-<img src="/assets/img/hefesto/lipo3s.jpeg" text-align="center" width="400" alt="lipos" /></p>
+<p><img src="/assets/img/hefesto/lipo3s.jpeg" alt="Not found" width="300" style="float: left; clear:right; padding-right: 50px;" /></p>
+<p style="clear: right; padding-top: 70px;">
+O sistema é alimentado por uma LiPO 3s e a OpenCR distribui a energia aos componentes.
+</p>
 
+<p style="clear: both; white-space: pre">
+</p>
 <p><br /></p>
 
-<!-- equipe -->
+<!-- Equipe -->
 <center><h3 class="post-title">Equipe de desenvolvimento</h3><br /></center>
 <div class="row">
   <div class=" col-xl-auto offset-xl-0 col-lg-4 offset-lg-0">
@@ -410,16 +430,16 @@
         <tr>
           <th><center><img src="/assets/img/people/matheusfran%C3%A7a-1.png" width="100" alt="matheusfrança" class="img-fluid rounded-circle" /></center></th>
           <th></th>
-          <th><center><img src="/assets/img/people/breno-1.png" width="100" alt="breno" class="img-fluid rounded-circle" /></center></th>
+          <th><center><img src="/assets/img/people/breno-1.png" width="100" alt="lucaslins" class="img-fluid rounded-circle" /></center></th>
           <th></th>
           <th><center><img src="/assets/img/people/marcoreis8b&amp;w-1.png" width="100" alt="marco" class="img-fluid rounded-circle" /></center></th>
         </tr>
       </thead>
       <tbody>
         <tr class="font-weight-bolder" style="text-align: center margin-top: 0">
-          <td width="33.33%">Anderson Queiroz</td>
+          <td width="33.33%">Matheus França</td>
           <td></td>
-          <td width="33.33%">Brenda Alencar</td>
+          <td width="33.33%">Breno Portela</td>
           <td></td>
           <td width="33.33%">Marco Reis</td>
         </tr>
@@ -440,26 +460,31 @@
 <h3 id="resumo-do-projeto">Resumo do Projeto</h3>
 <ol>
   <li>Categoria: <font color="#fbb117">Robótica Móvel</font></li>
-  <li>Prazo: <font color="#fbb117">02 anos</font></li>
-  <li>Data de início: <font color="#fbb117">23/novembro/2020</font></li>
-  <li>Data de término: <font color="#fbb117">28/outubro/2022</font></li>
-  <li>Repositório URL:</li>
+  <li>Prazo: <font color="#fbb117">2 meses e 17 dias</font></li>
+  <li>Data de início: <font color="#fbb117">10/maio/2021</font></li>
+  <li>Data de término: <font color="#fbb117">27/julho/2021</font></li>
+  <li>Repositório URL: -</li>
   <li>Sponsor: <a href="http://www.senaicimatec.com.br/en/"><font color="#fbb117">Senai CIMATEC</font></a></li>
-  <li>Recursos materiais: <font color="#fbb117">US$</font></li>
-  <li>Apresentação URL:</li>
-  <li>Report URL:</li>
-  <li>Artigos produzidos:</li>
+  <li>Recursos materiais: <font color="#fbb117">US$ - </font></li>
+  <li>Apresentação URL: <a href="https://github.com/Brazilian-Institute-of-Robotics/bir_poppy-docs/tree/feature/follow_up"><font>Hephaestus-docs</font></a></li>
+  <li>Report URL: -</li>
+  <li>Artigos produzidos: -</li>
 </ol>
 
 <p><br /></p>
 
 <h2 id="referências">Referências</h2>
+<p>[1] <a href="https://emanual.robotis.com/docs/en/platform/op2/getting_started">Robotis OP2</a>. <strong>ROBOTIS OP2</strong>. Acesso em: 15 de Julho de 2021.</p>
+
+<p>[2] <a href="https://emanual.robotis.com/docs/en/platform/op3/getting_started">Robotis OP3</a>. <strong>ROBOTIS OP3</strong>. Acesso em: 15 de Julho de 2021.</p>
 
 <p><br /></p>
 <hr class="mark" />
 
 <div id="full-tags-list">
 <h3 class="post-title"><font color="#fbb117">Posts</font></h3></div>
+<hr class="mark" />
+
 
 
       
@@ -486,7 +511,7 @@
       <span class="sr-only">RSS</span>
     </a>
   </li>--><li class="list-inline-item">
-    <a href="mailto:marcoreis@me.com" title="Email me">
+    <a href="mailto:marcoreis@me.com" title="Email Us">
       <span class="fa-stack fa-lg" aria-hidden="true">
         <i class="fas fa-circle fa-stack-2x"></i>
         <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
@@ -510,7 +535,7 @@
       <span class="sr-only">Reddit</span>
    </a>
   </li><li class="list-inline-item">
-    <a href="https://open.spotify.com/playlist/0yf14KjkFTBC4ewLaHZO2d?si=961c92c7b7e94eff" title="Spotify">
+    <a href="https://open.spotify.com/playlist/0yf14KjkFTBC4ewLaHZO2d?si=961c92c7b7e94eff" title="Our playlist">
       <span class="fa-stack fa-lg" aria-hidden="true">
         <i class="fas fa-circle fa-stack-2x"></i>
         <i class="fab fa-spotify fa-stack-1x fa-inverse"></i>
