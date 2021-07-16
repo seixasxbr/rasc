@@ -59,13 +59,14 @@ O vídeo abaixo tem como objetivo representar a versão final do jogo, demonstra
     <table class="table-borderless highlight">
       <thead>
         <tr>
-          <th><center><img src="https://i.imgur.com/3ttQNPA.png[/img]" width="100" alt="alexandre" class="img-fluid rounded-circle" /></center></th>
+          <th><center><img src="{{ 'assets/img/people/alexandreadonai-1.png' | relative_url }}" width="100" alt="Alexandre" class="img-fluid rounded-circle" /></center></th>
           <th></th>
-          <th><center><img src="https://i.imgur.com/U2jY6Uf.png[/img]" width="100" alt="joaogabriel" class="img-fluid rounded-circle"/></center></th>
+          <th><center><img src="{{ 'assets/img/people/gabrielcalmon-1.png' | relative_url }}" width="100" alt="Gabriel" class="img-fluid rounded-circle" /></center></th>
           <th></th>
-          <th><center><img src="https://i.imgur.com/zk8ti6l.png[/img]" width="100" alt="vitor" class="img-fluid rounded-circle"/></center></th>
+          <th><center><img src="{{ 'assets/img/people/vitormendes-1.png' | relative_url }}" width="100" alt="Vitor" class="img-fluid rounded-circle" /></center></th>
           <th></th>
-           <th><center><img src="" width="100" alt="marco" class="img-fluid rounded-circle"/></center></th>
+          <th><center><img src="{{ 'assets/img/people/marcoreis8b&w-1.png' | relative_url }}" width="100" alt="Marco" class="img-fluid rounded-circle" /></center></th>
+          <th></th>
         </tr>
       </thead>
       <tbody>
@@ -91,48 +92,15 @@ O vídeo abaixo tem como objetivo representar a versão final do jogo, demonstra
     </table>
   </div>
 </div>
-<br>
-
-<div style="text-align: left"> 
-<p><strong>Alexandre Adonai</strong></p>
-<ul>
-<li>Email: alexandre.s@aln.senaicimatec.edu.br</li>
-<li>GitHub: <a href="https://github.com/Alexandreaags">https://github.com/Alexandreaags</a></li>
-</ul>
-<p><strong>Gabriel Calmon</strong></p>
-<ul>
-<li>Email: joao.calmon@aln.senaicimatec.edu.br</li>
-<li>GitHub: <a href="https://github.com/GabrielCalmon">https://github.com/GabrielCalmon</a></li>
-<li>Lattes: <a href="http://lattes.cnpq.br/3714599132684846">http://lattes.cnpq.br/3714599132684846</a></li>
-</ul>
-<p><strong>Vitor Mendes</strong></p>
-<ul>
-<li>Email: joao.mendes@aln.senaicimatec.edu.br</li>
-<li>GitHub: <a href="https://github.com/vitorsmends">https://github.com/vitorsmends</a></li>
-<li>Lattes: <a href="http://lattes.cnpq.br/1253937974490834">http://lattes.cnpq.br/1253937974490834</a></li>
-<li>LinkedIn: <a href="https://www.linkedin.com/in/jo%C3%A3o-v%C3%ADtor-s-mendes-aa2ab71b5">https://www.linkedin.com/in/jo%C3%A3o-v%C3%ADtor-s-mendes-aa2ab71b5</a></li>
-</ul>
-
-<h3 id="-orientador-"><strong>Orientador</strong></h3>
-<p><strong>Prof. Marco Reis</strong></p>
-<ul>
-<li>Email: marco.reis@fieb.org.br</li>
-<li>GitHub <a href="https://github.com/mhar-vell">https://github.com/mhar-vell</a></li>
-</ul>
-
-<br>
 
 ## Resumo do Projeto
-<ol>
-<li>Categoria: Sistemas Embarcados</li>
-<li>Prazo: 20 dias</li>
-<li>Data de início: 25/05/2021</li>
-<li>Data de término: 14/06/2021</li>
-<li>Repositório URL: https://github.com/GabrielCalmon/Desafio_Pong_2021-1</li>
-<li>Sponsor: Sem financiamento </li>
-<li>Recursos materiais: US$ 42.00</li>
-<li>Apresentação URL: https://drive.google.com/drive/folders/188Juz5FEUqrq5PzuuWtxbnuLv0CRaUem?usp=sharing</li>
-<li>Report URL:</li>
-</ol>
 
-</div>
+1. Categoria: Sistemas Embarcados
+2. Prazo: 20 dias
+3. Data de início: 25/05/2021
+4. Data de término: 14/06/2021
+5. Repositório URL: [PongZ](https://github.com/GabrielCalmon/Desafio_Pong_2021-1)
+6. Sponsor: [Senai Cimatec](http://www.senaicimatec.com.br/)
+7. Recursos materiais: US$ 42.00
+8. Apresentação URL: [PongZ-ppt](https://drive.google.com/drive/folders/188Juz5FEUqrq5PzuuWtxbnuLv0CRaUem?usp=sharing) 
+9. Report URL: [PongZ-report](https://drive.google.com/drive/folders/188Juz5FEUqrq5PzuuWtxbnuLv0CRaUem?usp=sharing) 

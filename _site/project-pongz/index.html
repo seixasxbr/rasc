@@ -12,13 +12,13 @@
 
   
 
-  <title>about me</title>
+  <title>PongZ</title>
 
   
   <meta name="author" content="Marco Reis">
   
 
-  <meta name="description" content="longe demais das capitais">
+  <meta name="description" content="Uma releitura do pong para os tempos atuais.">
 
   
 
@@ -77,30 +77,30 @@
 
   
   <meta property="og:site_name" content="Robotics & Autonomous Systems">
-  <meta property="og:title" content="about me">
-  <meta property="og:description" content="longe demais das capitais">
+  <meta property="og:title" content="PongZ">
+  <meta property="og:description" content="Uma releitura do pong para os tempos atuais.">
 
   
-  <meta property="og:image" content="http://localhost:4000/assets/img/rosalogo2.png">
+  <meta property="og:image" content="https://i.imgur.com/9AJowrB.png[/img]">
   
 
   
   <meta property="og:type" content="website">
-  <meta property="og:url" content="http://localhost:4000/aboutme/">
-  <link rel="canonical" href="http://localhost:4000/aboutme/">
+  <meta property="og:url" content="http://localhost:4000/project-pongz/">
+  <link rel="canonical" href="http://localhost:4000/project-pongz/">
   
 
   
-  <meta name="twitter:card" content="summary">
+  <meta name="twitter:card" content="summary_large_image">
   
   <meta name="twitter:site" content="@">
   <meta name="twitter:creator" content="@">
 
-  <meta property="twitter:title" content="about me">
-  <meta property="twitter:description" content="longe demais das capitais">
+  <meta property="twitter:title" content="PongZ">
+  <meta property="twitter:description" content="Uma releitura do pong para os tempos atuais.">
 
   
-  <meta name="twitter:image" content="http://localhost:4000/assets/img/rosalogo2.png">
+  <meta name="twitter:image" content="https://i.imgur.com/9AJowrB.png[/img]">
   
 
   
@@ -341,19 +341,51 @@
 
 
 
+  <div id="header-big-imgs" data-num-img=1
+    
+    
+    
+      
+      data-img-src-1="https://i.imgur.com/9AJowrB.png[/img]"
+    
+    
+    
+  ></div>
 
-<header class="header-section ">
+
+<header class="header-section has-img">
+
+<div class="big-img intro-header">
+  <div class="container-md">
+    <div class="row">
+      <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
+        <div class="page-heading">
+          <h1>PongZ</h1>
+          
+            
+              <hr class="small">
+              <span class="page-subheading">Uma releitura do pong para os tempos atuais.</span>
+            
+          
+
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  <span class='img-desc'></span>
+</div>
 
 <div class="intro-header no-img">
   <div class="container-md">
     <div class="row">
       <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
         <div class="page-heading">
-          <h1>about me</h1>
+          <h1>PongZ</h1>
           
             
               <hr class="small">
-              <span class="page-subheading">longe demais das capitais</span>
+              <span class="page-subheading">Uma releitura do pong para os tempos atuais.</span>
             
           
 
@@ -374,43 +406,106 @@
     <div class=" col-xl-8 offset-xl-2 col-lg-10 offset-lg-1 ">
       
 
-      <p><a href="https://mhar-vell.github.io/portfolio/index.html">
-    <center>
-        <img src="/assets/img/profile-marcoreis.jpg" width="100" class="img-fluid rounded-circle" /><br />
-    </center>
-</a></p>
+      <h2 id="introdução">Introdução</h2>
 
-<p>Era uma tarde de férias de 1984, na televisão era transmitido o filme O Império Contra-Ataca, na época era o segundo filme da série Star Wars. Então me encontrei com Luke e o sinistro Darth Vader num mundo fascinante e altamente fora da realidade. Um filme do futuro (um ponto importante eu ainda não havia assistido o primeiro filme), mas o que mais me fascinou foi a forma como os humanos se relacionavam com a tecnologia, com os ditos cujos robots e as naves espaciais. Aquilo chamou a minha intenção e decidi que iria criar robots e máquinas voadores do espaço.</p>
+<h3 id="um-pouco-de-história">Um pouco de história.</h3>
+<div style="text-align: justify"> 
+O Pong é considerado o primeiro jogo da história em formato de vídeo a ser lucrativo. Criado por  Nolan Bushnell e Ted Dabney, o jogo se inspira no clássico jogo de tênis de dois jogadores em que as hastes/barras simulam as raquetes, e a bola da mesma forma que em uma partida de tênis, percorre a quadra até um dos jogadores não conseguir rebater. A versão clássica do PONG consiste em um console ligado a um monitor, sendo as hastes movidas por moedas.
+</div>
 
-<p><img src="https://takodana.files.wordpress.com/2016/01/star-wars-empire-strikes-back-poster.jpg?w=1024&amp;h=1448" alt="sw-2" /></p>
+<h3 id="o-pongz">O PongZ</h3>
+<div style="text-align: justify"> 
+Nesta versão que adotamos o nome de PongZ, sendo "Pong" o nome do jogo original e "Z" o termo que remete o nascimento da geração dos desenvolvedores. Neste projeto resolvemos remodelar o design, mas sem alterar a essência do jogo, trazendo uma clássica trilha sonora dos anos 70. Além disso, no lugar das moedas que moviam as hastes temos potenciômetros, e um arduino que faz a interpretação desses dados e envia para o computador através da porta USB, contendo também informações dos botões push buttons que permitem o jogador controlar pausar e resetar o jogo.
+</div>
 
-<h3 id="uma-visão-particular">Uma visão particular</h3>
+<h3 id="justificativa">Justificativa</h3>
+<div style="text-align: justify"> 
+O PongZ é um projeto criado dentro da disciplina de Sistemas Embarcados no curso de Engenharia Elétrica do SENAI CIMATEC ministrado pelo Prof. Marco Reis, com intuito de explorar as habilidades desenvolvidas durante a disciplina, como fazer a interação entre software e hardware através de comunicação serial e manipulação de dados capturados em um sistema embarcados.
+</div>
 
-<p>Muitos associam a tecnologia a uma imagem crua e cinza do alumínio, a solidez e a resistência do aço, ao formato padronizado do plástico, a submissão a um aplicativo central… levando nos a um pensamento de frieza e de pouca maleabilidade. Além disso somos levados a crer que dominamos a tecnologia ou que a desenvolvemos para o nossos benefícios porém sabemos que pouco a pouco somos levados a depender cada vez mais dela. Nos submetemos dia-a-dia ao domínio perverso das conversas de chats, aos posts desatualizados que precisam ser atualizados.</p>
+<h2 id="detalhamento">Detalhamento</h2>
+<div style="text-align: justify"> 
+O hardware do projeto conta com dois botões, dois potenciômetros e um arduino. Quanto ao software, o arduino foi programado para monitorar os sensores e enviar estes dados através da comunicação serial, enquanto um algoritmo em Processing 3 foi responsável pela interface do jogo.
+</div>
 
-<blockquote>
-<strong>
-Passamos a ser dominados e não dominantes.<br />
-Passamos a marchar conforme o compasso dos aplicativos. A entender a ótica do computador.<br />
-E o que era para ser um meio…se torna um fim.<br />
-É hora de repensarmos a maneira como fazemos da tecnologia nossa aliada.<br />
-É hora de fazermos dos aplicativos, tintas para as telas da tecnologia que os pincéis descreverão numa paisagem futurística.<br />
-É preciso pensar a tecnologia como uma arte. E a arte é algo mutável, sem limites, sem donos.<br />
-</strong>
-</blockquote>
+<h2 id="simulação">Simulação</h2>
+<div style="text-align: justify"> 
+Para uma melhor didática de como foram feitas as conexões dos potenciômetros e push buttons ao arduino, foi demonstrado no Tinkercad conforme a imagem abaixo. As ligações dos potenciômetros foram, respectivamente, o terminal 1 ligado ao GND, o terminal 2 aos pinos analógicos A0 e A2 e o terminal 3 ligado ao 5V. Já os push buttons, foram ligados, respectivamente, o terminal 1B aos pinos digitais 9 e 8 e o terminal 2B ao GND.
+</div>
 
-<h3 id="short-bio">Short bio</h3>
+<div style="text-align: center"> 
+<img src="https://i.imgur.com/3AbOHrB.png[/img]" alt="drawing" width="500" />
+</div>
 
-<p>Marco Reis nasceu em 15 de março de 1971 na cidade de Três Lagoas – MS, na época Mato Grosso era um único estado. Marco saiu do estado “The Walking Dead” em 20 de abril de 2003. Tem experiência em gestão de projetos industriais, incluindo a implantação de duas fábricas de automóveis no Brasil (Renault em Curitiba e Ford em Camaçari) assim como passagens na indústria siderúrgica, geração de energia e automação &amp; robótica, especialmente na ABB. Marco desenvolveu projetos nas áreas de ferramentas robóticas e manipuladores, veículos autônomos, gerenciamento de ativos, RCM, TPM, confiabilidade e manutenção em equipamentos críticos, e avaliação na aplicação de FMEA.</p>
+<div style="text-align: center"> 
+Figura 1. <br />
+O circuito acima foi projetado através do TinkerCAD.<br />
+Fonte: Autoria Própria.</div>
+<p><br />
+O vídeo abaixo tem como objetivo representar a versão final do jogo, demonstrando a jogabilidade e suas funções.</p>
 
-<p>Em 2005 Deus empurra-o a ação, e entra em um retiro espiritual aprendendo profundamente Rm5:1-5. O restabelecimento total à vida normal chega em 2008 e em 2010 escuta a voz do coração, toma a decisão de se dedicar a pesquisa científica. Aquilo que era uma lembrança nos sonhos de uma criança de 13 anos, passa a ser sua obstinação, passa a ser a sua busca incessante. Fazer robótica, e “O império contra ataca” tem um papel crucial em tudo isso: despertando logo cedo o brilho pelas coisas impossíveis.</p>
+<div class="embed-responsive embed-responsive-16by9">
 
-<p>Atualmente segue o interesse do seu coração realizando pesquisa na área de robótica, coordena dois projetos no Senai Cimatec e lidera o grupo do Instituto Brasileiro de Robótica (BIR) em parceria com o Instituto Alemão de Inteligência Artificial (DFKI).</p>
+<iframe width="415" height="315" src="https://www.youtube.com/embed/Yl8Gpslcpxw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
 
-<p>Marco é formado em engenharia elétrica pela UFPR e mestrado em engenharia de produção pela UFSC, atualmente é doutorando no curso de pós-graduação em Mecatrônica da UFBA.</p>
+</div>
 
-<p>Aloooha!!!</p>
+<p><br />
+<br /></p>
 
+<center><h3 class="post-title">Equipe de desenvolvimento</h3><br /></center>
+<div class="row">
+  <div class=" col-xl-auto offset-xl-0 col-lg-4 offset-lg-0">
+    <table class="table-borderless highlight">
+      <thead>
+        <tr>
+          <th><center><img src="/assets/img/people/alexandreadonai-1.png" width="100" alt="Alexandre" class="img-fluid rounded-circle" /></center></th>
+          <th></th>
+          <th><center><img src="/assets/img/people/gabrielcalmon-1.png" width="100" alt="Gabriel" class="img-fluid rounded-circle" /></center></th>
+          <th></th>
+          <th><center><img src="/assets/img/people/vitormendes-1.png" width="100" alt="Vitor" class="img-fluid rounded-circle" /></center></th>
+          <th></th>
+          <th><center><img src="/assets/img/people/marcoreis8b&amp;w-1.png" width="100" alt="Marco" class="img-fluid rounded-circle" /></center></th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="font-weight-bolder" style="text-align: center margin-top: 0">
+         <td width="25.00%">Alexandre Adonai</td>
+          <td></td>
+          <td width="25.00%">João Gabriel Calmon</td>
+          <td></td>
+          <td width="25.00%">João Vítor Mendes</td>
+          <td></td>
+          <td width="25.00%">Marco Reis</td>
+        </tr>
+        <tr style="text-align: center">
+          <td style="vertical-align: top"><small>Graduando em Eng. Elétrica.</small></td>
+          <td></td>
+          <td style="vertical-align: top"><small>Graduando em Eng. Elétrica.</small></td>
+          <td></td>
+          <td style="vertical-align: top"><small>Graduando em Eng. Elétrica.</small></td>
+          <td></td>
+          <td style="vertical-align: top"><small>Pesquisador Sênior do projeto <br />Mestre em Engenharia de Produção e Eng. Eletricista.</small></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<h2 id="resumo-do-projeto">Resumo do Projeto</h2>
+
+<ol>
+  <li>Categoria: Sistemas Embarcados</li>
+  <li>Prazo: 20 dias</li>
+  <li>Data de início: 25/05/2021</li>
+  <li>Data de término: 14/06/2021</li>
+  <li>Repositório URL: <a href="https://github.com/GabrielCalmon/Desafio_Pong_2021-1">PongZ</a></li>
+  <li>Sponsor: <a href="http://www.senaicimatec.com.br/">Senai Cimatec</a></li>
+  <li>Recursos materiais: US$ 42.00</li>
+  <li>Apresentação URL: <a href="https://drive.google.com/drive/folders/188Juz5FEUqrq5PzuuWtxbnuLv0CRaUem?usp=sharing">PongZ-ppt</a></li>
+  <li>Report URL: <a href="https://drive.google.com/drive/folders/188Juz5FEUqrq5PzuuWtxbnuLv0CRaUem?usp=sharing">PongZ-report</a></li>
+</ol>
 
 
       
