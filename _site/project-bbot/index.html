@@ -362,6 +362,7 @@
 
       <p align="center">
     <img src="/assets/img/bbot/bbot.png" alt="Not found" width="200" />
+    <img src="/assets/img/bbot/bbot_stand.png" alt="Not found" width="200" />
     <!-- <img src="assets/img/bbot/bbot.png" width="200"> -->
 </p>
 
@@ -372,7 +373,7 @@
 
 <!-- ## Introdução -->
 
-<p><strong>Bbot</strong> ou <em>Balancing Robot</em>, é um projeto de robô autônomo auto-balanceado. Nosso objetivo é construir um robô móvel operado via <strong>ROS Noetic</strong> capaz de <strong>se equilibrar e se deslocar sobre duas rodas</strong>. Ademais, ele deve ser capaz de realizar a leitura de uma TAG (marco fiducial). A TAG enviará ao robô uma posição de destino à qual ele deve <strong>navegar de forma autônoma</strong>. Para realizar a navegação, esse robô deverá ser capaz de <strong>criar um mapa do local onde está e se localizar nele</strong>, permitindo-o atualizar sua posição ao longo da missão e <strong>desviar de obstáculos</strong> enquanto navega até seu objetivo.</p>
+<p><strong>Bbot</strong> ou <em>Balancing Robot</em>, é um projeto de robô autônomo auto-balanceado [1]. Nosso objetivo é construir um robô móvel operado via <strong>ROS Noetic</strong> capaz de <strong>se equilibrar e se deslocar sobre duas rodas</strong>. Ademais, ele deve ser capaz de realizar a leitura de uma TAG (marco fiducial, [2]). A TAG enviará ao robô uma posição de destino à qual ele deve <strong>navegar de forma autônoma</strong>. Para realizar a navegação, esse robô deverá ser capaz de <strong>criar um mapa do local onde está e se localizar nele</strong>, permitindo-o atualizar sua posição ao longo da missão e <strong>desviar de obstáculos</strong> enquanto navega até seu objetivo.</p>
 
 <p><br /></p>
 
@@ -388,30 +389,32 @@
 
 <p>O <strong>Bbot</strong> é equipado para a ação. Com seus diversos componentes ele pode realizar tarefas em ambientes indoor.</p>
 
-<p><img src="/assets/img/bbot/controladores.png" alt="Not found" width="200" style="float: left" /></p>
+<p><img src="/assets/img/bbot/controladores.png" alt="Not found" width="200" style="float: left; padding-right: 50px;" /></p>
 <p>
 O robô conta com dois controladores, o principal é um Raspberry Pi 4 e suporta o ROS Noetic, já o secundário é um OpenCM9.04 com uma placa de expansão (OpenCM 485) e cuida das entradas e saídas dos atuadores.
 </p>
 
-<p><img src="/assets/img/bbot/atuadores.png" alt="Not found" width="200" style="float: right" /> <!--  clear:left --></p>
-<p style="clear: left">
-Já na parte de atuação, temos 2 _dynamixels MX106_ na parte da perna e 1 _Nema 17_ para locomoção da roda. As rodas são envolvidas em borracha de silicone, tornando o pneu mais aderente ao solo.
+<p><img src="/assets/img/bbot/atuadores.png" alt="Not found" width="200" style="float: right; padding-left: 50px;" /> <!--  clear:left --></p>
+<p style="clear: left; padding-top: 25px;">
+Já na parte de atuação, temos 2 <i>dynamixels MX106</i> na parte da perna e 1 <i>Nema 17</i> para locomoção da roda. As rodas são envolvidas em borracha de silicone, tornando o pneu mais aderente ao solo.
 </p>
 
-<p>O <strong>bbot</strong> conta ainda com sensores que são responsáveis por aquisições de dados em tempo real e um sistema de <strong>controle de potência!!</strong></p>
+<p style="clear: right; padding-top: 25px;">
+O <strong>bbot</strong> conta ainda com sensores que são responsáveis por aquisições de dados em tempo real e um sistema de <strong>controle de potência!!</strong>
+</p>
 
-<p><img src="/assets/img/bbot/sensores_1.png" alt="Not found" width="200" style="float: left; clear:right" /></p>
+<p><img src="/assets/img/bbot/sensores_1.png" alt="Not found" width="200" style="float: left; clear:right; padding-right: 50px;" /></p>
 <p style="clear: right">
 O LiDAR (Light Detection And Ranging), é um sensor que pode revelar a geometria do ambiente ao seu redor. A câmera RGB é capaz de detectar e codificar cores no espaço.
 </p>
 
-<p><img src="/assets/img/bbot/sensores_2.png" alt="Not found" width="200" style="float: right" /> <!--  clear:left --></p>
-<p style="clear: left">
+<p><img src="/assets/img/bbot/sensores_2.png" alt="Not found" width="200" style="float: right; padding-left: 50px;" /> <!--  clear:left --></p>
+<p style="clear: left; padding-top: 25px;">
 O IMU detecta variações na inclinação do robô e o sensor de tensão é usado para o controle de falhas.
 </p>
 
-<p><img src="/assets/img/bbot/pot.png" alt="Not found" width="200" style="float: left; clear:right" /></p>
-<p style="clear: right">
+<p><img src="/assets/img/bbot/pot.png" alt="Not found" width="200" style="float: left; clear:right; padding-right: 50px;" /></p>
+<p style="clear: right; padding-top: 25px;">
 O sistema é alimentado por uma LiPO 3s e conta com uma placa para distribuir a energia aos componentes. Também comporta um regulador de tensão para energizar a Raspberry Pi 4.
 </p>
 
@@ -437,9 +440,9 @@ O sistema é alimentado por uma LiPO 3s e conta com uma placa para distribuir a 
       </thead>
       <tbody>
         <tr class="font-weight-bolder" style="text-align: center margin-top: 0">
-          <td width="33.33%">Anderson Queiroz</td>
+          <td width="33.33%">Matheus França</td>
           <td></td>
-          <td width="33.33%">Brenda Alencar</td>
+          <td width="33.33%">Lucas Souza</td>
           <td></td>
           <td width="33.33%">Marco Reis</td>
         </tr>
@@ -460,20 +463,24 @@ O sistema é alimentado por uma LiPO 3s e conta com uma placa para distribuir a 
 <h3 id="resumo-do-projeto">Resumo do Projeto</h3>
 <ol>
   <li>Categoria: <font color="#fbb117">Robótica Móvel</font></li>
-  <li>Prazo: <font color="#fbb117">02 anos</font></li>
-  <li>Data de início: <font color="#fbb117">23/novembro/2020</font></li>
-  <li>Data de término: <font color="#fbb117">28/outubro/2022</font></li>
-  <li>Repositório URL:</li>
+  <li>Prazo: <font color="#fbb117">2 meses e 18 dias</font></li>
+  <li>Data de início: <font color="#fbb117">11/maio/2021</font></li>
+  <li>Data de término: <font color="#fbb117">29/julho/2021</font></li>
+  <li>Repositório URL: <a href="https://github.com/Brazilian-Institute-of-Robotics/bir_bbot"><font>Bbot</font></a></li>
   <li>Sponsor: <a href="http://www.senaicimatec.com.br/en/"><font color="#fbb117">Senai CIMATEC</font></a></li>
-  <li>Recursos materiais: <font color="#fbb117">US$</font></li>
-  <li>Apresentação URL:</li>
-  <li>Report URL:</li>
+  <li>Recursos materiais: <font color="#fbb117">$USD 2844,32</font></li>
+  <li>Apresentação URL: <a href="https://github.com/Brazilian-Institute-of-Robotics/bir_bbot-docs"><font>Bbot-docs</font></a></li>
+  <li>Report URL: <a href="https://github.com/Brazilian-Institute-of-Robotics/bir_bbot-docs/tree/doc/report"><font>Bbot-report</font></a></li>
   <li>Artigos produzidos:</li>
 </ol>
 
 <p><br /></p>
 
 <h2 id="referências">Referências</h2>
+
+<p>[1] <strong>Adam Kollarčík and Martin Gurtner</strong>; Modeling and Control of Two-Legged Wheeled Robot; Master’s thesis, CZECH TECHNICAL UNIVERSITY IN PRAGUE. 2021.</p>
+
+<p>[2] <strong>Santos, Gabriel da Silva; Cardoso, Etevaldo; Reis, Marco Antonio dos</strong>; “Localização de Robôs Móveis em Ambiente Internos usando Marcos Fiduciais”, p. 226-233 . In: <strong>Anais do V Simpósio Internacional de Inovação e Tecnologia</strong>. São Paulo: Blucher, 2019.</p>
 
 <p><br /></p>
 <hr class="mark" />
@@ -515,7 +522,7 @@ O sistema é alimentado por uma LiPO 3s e conta com uma placa para distribuir a 
       <span class="sr-only">RSS</span>
     </a>
   </li>--><li class="list-inline-item">
-    <a href="mailto:marcoreis@me.com" title="Email me">
+    <a href="mailto:marcoreis@me.com" title="Email Us">
       <span class="fa-stack fa-lg" aria-hidden="true">
         <i class="fas fa-circle fa-stack-2x"></i>
         <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
@@ -539,7 +546,7 @@ O sistema é alimentado por uma LiPO 3s e conta com uma placa para distribuir a 
       <span class="sr-only">Reddit</span>
    </a>
   </li><li class="list-inline-item">
-    <a href="https://open.spotify.com/playlist/0yf14KjkFTBC4ewLaHZO2d?si=961c92c7b7e94eff" title="Spotify">
+    <a href="https://open.spotify.com/playlist/0yf14KjkFTBC4ewLaHZO2d?si=961c92c7b7e94eff" title="Our playlist">
       <span class="fa-stack fa-lg" aria-hidden="true">
         <i class="fas fa-circle fa-stack-2x"></i>
         <i class="fab fa-spotify fa-stack-1x fa-inverse"></i>
