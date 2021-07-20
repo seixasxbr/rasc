@@ -59,13 +59,21 @@ O vídeo abaixo tem como objetivo representar a versão final do jogo, demonstra
     <table class="table-borderless highlight">
       <thead>
         <tr>
-          <th><center><img src="{{ 'assets/img/people/alexandreadonai-1.png' | relative_url }}" width="100" alt="Alexandre" class="img-fluid rounded-circle" /></center></th>
+          <th><a href="https://www.linkedin.com/in/alexandre-adonai-gama-da-silva-365a35211/"><center><img src="{{ 'assets/img/people/alexandreadonai-1.png' | relative_url}}" 
+          width="100" alt="Alexandre"
+          class="img-fluid rounded-circle" /></center></a></th>
           <th></th>
-          <th><center><img src="{{ 'assets/img/people/gabrielcalmon-1.png' | relative_url }}" width="100" alt="Gabriel" class="img-fluid rounded-circle" /></center></th>
+          <th><a href="http://lattes.cnpq.br/3714599132684846"><center><img src="{{ 'assets/img/people/gabrielcalmon-1.png' | relative_url}}" 
+          width="100" alt="Alexandre"
+          class="img-fluid rounded-circle" /></center></a></th>
           <th></th>
-          <th><center><img src="{{ 'assets/img/people/vitormendes-1.png' | relative_url }}" width="100" alt="Vitor" class="img-fluid rounded-circle" /></center></th>
+          <th><a href="https://www.linkedin.com/in/jo%C3%A3o-v%C3%ADtor-s-mendes-aa2ab71b5/"><center><img src="{{ 'assets/img/people/vitormendes-1.png' | relative_url}}" 
+          width="100" alt="Alexandre"
+          class="img-fluid rounded-circle" /></center></a></th>
           <th></th>
-          <th><center><img src="{{ 'assets/img/people/marcoreis8b&w-1.png' | relative_url }}" width="100" alt="Marco" class="img-fluid rounded-circle" /></center></th>
+          <th><a href="https://www.mhar-vell.github.io/portifolio/"><center><img src="{{ 'assets/img/people/marcoreis8b&w-1.png' | relative_url}}" 
+          width="100" alt="Alexandre"
+          class="img-fluid rounded-circle" /></center></a></th>
           <th></th>
         </tr>
       </thead>
