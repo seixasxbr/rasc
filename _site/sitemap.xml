@@ -34,7 +34,16 @@
 <loc>http://localhost:4000/project-doogie/</loc>
 </url>
 <url>
+<loc>http://localhost:4000/project-elir/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/project-ergo/</loc>
+</url>
+<url>
 <loc>http://localhost:4000/project-hefesto/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/project-template/</loc>
 </url>
 <url>
 <loc>http://localhost:4000/project-turbot/</loc>
