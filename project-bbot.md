@@ -127,7 +127,7 @@ O sistema é alimentado por uma LiPO 3s e conta com uma placa para distribuir a 
 4. Data de término: <font color="#fbb117">29/julho/2021</font>
 5. Repositório URL: <a href="https://github.com/Brazilian-Institute-of-Robotics/bir_bbot"><font>Bbot</font></a>
 6. Sponsor: <a href="http://www.senaicimatec.com.br/en/"><font color="#fbb117">Senai CIMATEC</font></a>
-7. Recursos materiais: <font color="#fbb117">$USD 2844,32</font>
+7. Recursos materiais: <font color="#fbb117">$USD 3162,64</font>
 8. Apresentação URL: <a href="https://github.com/Brazilian-Institute-of-Robotics/bir_bbot-docs"><font>Bbot-docs</font></a>
 9. Report URL: <a href="https://github.com/Brazilian-Institute-of-Robotics/bir_bbot-docs/tree/doc/report"><font>Bbot-report</font></a>
 10. Artigos produzidos: 
