@@ -33,15 +33,15 @@ Para uma melhor didática de como foram feitas as conexões dos potenciômetros 
 </div>
 
 
-<div style="text-align: center"> 
-<img src="https://i.imgur.com/3AbOHrB.png[/img]" alt="drawing" width="500"/>
-</div>
+<th><center><img src="{{ 'assets/img/pongz/pong_circuito.png' | relative_url }}" width="500" alt="Alexandre" class="img" /></center></th>
 
 <div style="text-align: center"> 
 Figura 1. <br/>
 O circuito acima foi projetado através do TinkerCAD.<br/>
 Fonte: Autoria Própria.</div>
 <br/>
+
+## Live Game
 O vídeo abaixo tem como objetivo representar a versão final do jogo, demonstrando a jogabilidade e suas funções.
 
 <div class="embed-responsive embed-responsive-16by9">
@@ -104,3 +104,7 @@ O vídeo abaixo tem como objetivo representar a versão final do jogo, demonstra
 7. Recursos materiais: US$ 42.00
 8. Apresentação URL: [PongZ-ppt](https://drive.google.com/drive/folders/188Juz5FEUqrq5PzuuWtxbnuLv0CRaUem?usp=sharing) 
 9. Report URL: [PongZ-report](https://drive.google.com/drive/folders/188Juz5FEUqrq5PzuuWtxbnuLv0CRaUem?usp=sharing) 
+
+## Referências
+1. [TinkerCAD DashBoard](https://www.tinkercad.com/things/alnQmejrYC8-pong-av3/editel)
+2. [MasterWalker](https://blogmasterwalkershop.com.br/arduino/arduino-utilizando-o-potenciometro-linear), Como usar com Arduino.
