@@ -44,7 +44,7 @@ navbar-links:
     - Birhex: ""
     - Open Manipulator: ""
     - Dynamic End-Effector: ""
-    - Timon Manipulator: ""
+    - JeRoTIMON Manipulator: "project-jerotimon"
     - Raja Manipulator: ""
     - Borg Arm: ""
     - WBM Rtab-map: ""
