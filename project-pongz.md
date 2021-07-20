@@ -106,5 +106,9 @@ O vídeo abaixo tem como objetivo representar a versão final do jogo, demonstra
 9. Report URL: [PongZ-report](https://drive.google.com/drive/folders/188Juz5FEUqrq5PzuuWtxbnuLv0CRaUem?usp=sharing) 
 
 ## Referências
-1. [TinkerCAD DashBoard](https://www.tinkercad.com/things/alnQmejrYC8-pong-av3/editel)
-2. [MasterWalker](https://blogmasterwalkershop.com.br/arduino/arduino-utilizando-o-potenciometro-linear), Como usar com Arduino.
+1. [TinkerCAD DashBoard](https://www.tinkercad.com/things/alnQmejrYC8-pong-av3/editel). Tinkercad Dashboard. Acesso em: 19 de Julho de 2021.
+2. [MasterWalker](https://blogmasterwalkershop.com.br/arduino/arduino-utilizando-o-potenciometro-linear). Como usar com Arduino-chave táctil/pushbutton. Acesso em: 19 de Julho de 2021.
+3. [MasterWalker](https://blogmasterwalkershop.com.br/arduino/arduino-utilizando-o-potenciometro-linear). Como usar com Arduino – potenciômetro linear 10k com eixo estriado. Acesso em: 19 de Julho de 2021.
+4. [Arduino](ttps://www.arduino.cc/reference/pt/). Documentação de Referência da Linguagem Arduino. Acesso em: 19 de Julho de 2021.
+5. [Processing](https://processing.org/reference/). Reference: processing was designed to be aflexible software sketchbook. Acesso em: 19 de Julho de 2021.
+6. [Techtudo](https://www.techtudo.com.br/noticias/noticia/2016/03/conheca-pong-o-primeiro-videogame-lucrativo-da-historia.html). Conheça Pong, o primeiro videogame lucrativo da história. Acesso em: 19 de Julho de 2021.
