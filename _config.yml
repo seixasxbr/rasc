@@ -23,9 +23,9 @@ navbar-links:
   #   - Manisub: "project-1"
 
   in progressing:
-    - Warthog: ""
-    - Moco: ""
-    - Droilt: ""
+  #  - Warthog: ""
+  #  - Moco: ""
+  #  - Droilt: ""
     - AUM: "project-aum"
     - Turbot: "project-turbot"
     - Ergo: ""
@@ -38,18 +38,18 @@ navbar-links:
     - bbot: "project-bbot"
 
   accomplished:
-    - Elir: ""
-    - Learnbotics: ""
+  #  - Elir: ""
+  #  - Learnbotics: ""
     - Doogie: "project-doogie"
-    - Birhex: ""
-    - Open Manipulator: ""
+  #  - Birhex: ""
+  #  - Open Manipulator: ""
     - Dynamic End-Effector: ""
-    - Timon Manipulator: ""
-    - Raja Manipulator: ""
-    - Borg Arm: ""
-    - WBM Rtab-map: ""
-    - WBM Orb2slam: ""
-    - WBM EKFslam: ""
+  #  - Timon Manipulator: ""
+  #  - Raja Manipulator: ""
+  #  - Borg Arm: ""
+  #  - WBM Rtab-map: ""
+  #  - WBM Orb2slam: ""
+  #  - WBM EKFslam: ""
     - r-hope: ""
   
   knowledge:
