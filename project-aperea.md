@@ -22,7 +22,7 @@ Conforme ilustrado na Figura abaixo, o robô deverá ser capaz de buscar e recon
 
 O projeto teve início em 07/05/2021, possui uma duração estimada de 58 dias e tem sua conclusão prevista para 30/07/2021. A execução deste projeto irá propor, aos seus respectivos desenvolvedores, conhecimentos direcionados a robótica móvel, além de experiências voltadas ao gerenciamento de projetos. Ambos ganhos são importantes na formação de pesquisadores e desenvolvedores com alvo em sistemas robóticos.
 
-<br>
+
 
 ## Detalhamento
 O Aperea, para cumprir a sua missão, precisa realizar deslocamentos para navegar no ambiente.Conforme ilustrado abaixo, o movimento do robô será proporcionado pelas atuações dos motores TT. A implementação também será focada para atribuir uma dinâmica de um robô móvel diferencial.
@@ -40,14 +40,65 @@ O processamento dos dados que serão coletados pelos sensores e câmeras será r
 
 <center> Principais Componentes</center>
 
-|Componente| Modelo|Fabricante| Aplicação|
-|:-:|:-:|:-:|:-:|
-| <center><img src="{{ 'assets/img/aperea/jetson_nano.png' | relative_url }}" width="100" alt="camerav2" >|Jetson Nano|NVIDIA| Unidade de processamento
-| <center><img src="{{ 'assets/img/aperea/cameraV2.png' | relative_url }}" width="100" alt="camerav2" >|Câmera Module V2 |RaspberryPi| Detectar a TAG e a esfera
-| <center><img src="{{ 'assets/img/aperea/mynteye.png' | relative_url }}" width="100" alt="mynteye">|Câmera Stereo S1030 |Mynt eye| Detectar obstáculos, localização e mapeamento
-| <center><img src="{{ 'assets/img/aperea/sensorultr.png' | relative_url }}" width="100" alt="sensorultr"> |Sensor Ultrassônico HC-SR04|HC-SR04|Detectar obstáculos|
-| <center><img src="{{ 'assets/img/aperea/lidar.png' | relative_url }}" width="100" alt="lidar"> |Lidar LDS-01|Robotis| Mapeamento e localização
-| <center><img src="{{ 'assets/img/aperea/motordc.png' | relative_url }}" width="100" alt="lidar"> |Motor DC 3-6v|Rob| Deslocamento
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-3je9{background-color:#464646;border-color:#ffffff;color:#FFF;text-align:center;vertical-align:middle}
+.tg .tg-7ogr{background-color:#464646;border-color:#ffffff;color:#ffffff;text-align:center;vertical-align:top}
+.tg .tg-dbpp{background-color:#464646;border-color:#ffffff;color:#ffffff;text-align:left;vertical-align:top}
+</style>
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-7ogr"><span style="font-weight:bold">Componentes</span><br></th>
+    <th class="tg-7ogr"><span style="font-weight:bold">Modelo</span></th>
+    <th class="tg-7ogr"><span style="font-weight:700;font-style:normal">Fabricante</span></th>
+    <th class="tg-7ogr"><span style="font-weight:700;font-style:normal">Aplicação</span></th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-dbpp"><img src="{{ 'assets/img/aperea/jetson_nano.png' | relative_url }}" width="100" alt="jetson" ></td>
+    <td class="tg-3je9">Jetson Nano</td>
+    <td class="tg-3je9">NVIDIA</td>
+    <td class="tg-3je9">Unidade de processamento</td>
+  </tr>
+  <tr>
+    <td class="tg-dbpp"><img src="{{ 'assets/img/aperea/cameraV2.png' | relative_url }}" width="100" alt="camerav2" ></td>
+    <td class="tg-3je9">Câmera Module V2</td>
+    <td class="tg-3je9">RaspberryPi</td>
+    <td class="tg-3je9">Detectar a TAG e a esfera</td>
+  </tr>
+  <tr>
+    <td class="tg-dbpp"><img src="{{ 'assets/img/aperea/mynteye.png' | relative_url }}" width="100" alt="mynteye"></td>
+    <td class="tg-3je9">Câmera Stereo S1030</td>
+    <td class="tg-3je9">Mynt eye</td>
+    <td class="tg-3je9">Detectar obstáculos, localização e mapeamento</td>
+  </tr>
+  <tr>
+    <td class="tg-dbpp"><img src="{{ 'assets/img/aperea/sensorultr.png' | relative_url }}" width="100" alt="sensorultr"></td>
+    <td class="tg-3je9">Sensor Ultrassônico HC-SR04</td>
+    <td class="tg-3je9">HC-SR04</td>
+    <td class="tg-3je9">Detectar obstáculos</td>
+  </tr>
+  <tr>
+    <td class="tg-dbpp"><img src="{{ 'assets/img/aperea/lidar.png' | relative_url }}" width="100" alt="lidar"></td>
+    <td class="tg-3je9"><span style="font-weight:400;font-style:normal">Lidar LDS-01</span></td>
+    <td class="tg-3je9">Robotis</td>
+    <td class="tg-3je9">Mapeamento e localização</td>
+  </tr>
+  <tr>
+    <td class="tg-dbpp"><img src="{{ 'assets/img/aperea/motordc.png' | relative_url }}" width="100" alt="motor"></td>
+    <td class="tg-3je9">Motor DC 3-6v</td>
+    <td class="tg-3je9">Rob</td>
+    <td class="tg-3je9">Deslocamento</td>
+  </tr>
+</tbody>
+</table>
+
 
 
 <br/>
