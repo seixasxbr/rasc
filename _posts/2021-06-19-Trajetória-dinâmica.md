@@ -7,7 +7,7 @@ thumbnail-img: /assets/img/aum/network(2).png
 share-img: /assets/img/rosa-logo-redondo.png
 tags: [aum]
 ---
-# A conversa começa na pesquisa
+# A conversa começa na pesquisaa
 <p style="text-align: justify;">
 Diante de vários estudos realizados com o foco em robótica subaquática e manipulação; percebemos uma situação interessante na qual a grande maioria dos artigos faziam referências ao sistema completo, ou seja era compreendido pelo veículo e o manipulador. Nossa intenção é realizar uma pesquisa com os sistemas isolados, ou seja tratar especificamente somente o subsistema manipulador. 
 
