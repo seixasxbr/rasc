@@ -15,7 +15,7 @@ subtitle: Robotic manipulator
 
 <p align="center">
     <img src="{{ 'assets/img/ergo/ergo.png' | relative_url }}" alt="Not found" width="300"/>
-    <img src="{{ 'assets/img/ergo/ergo_flip.png' | relative_url }}" alt="Not found" width="300"/>
+    <img src="{{ 'assets/img/ergo/ergo_gripper.png' | relative_url }}" alt="Not found" width="300"/>
 </p>
 
 <div class="before-content">
@@ -94,7 +94,7 @@ Os vídeos dos testes podem ser vistos a seguir.
         <tr>
           <th><center><img src="{{ 'assets/img/people/matheusfrança-1.png' | relative_url }}" width="100" alt="matheusfrança" class="img-fluid rounded-circle" /></center></th>
           <th></th>
-          <th><center><img src="{{ 'assets/img/people/breno-1.png' | relative_url }}" width="100" alt="lucaslins" class="img-fluid rounded-circle"/></center></th>
+          <th><center><img src="{{ 'assets/img/people/breno-1.png' | relative_url }}" width="100" alt="breno" class="img-fluid rounded-circle"/></center></th>
           <th></th>
           <th><center><img src="{{ 'assets/img/people/marcoreis8b&w-1.png' | relative_url }}" width="100" alt="marco" class="img-fluid rounded-circle"/></center></th>
         </tr>
