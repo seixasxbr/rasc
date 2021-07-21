@@ -7,7 +7,7 @@ thumbnail-img: /assets/img/aum/network(2).png
 share-img: /assets/img/rosa-logo-redondo.png
 tags: [aum]
 ---
-# A conversa começa na pesquisaa
+# A conversa começa na pesquisa
 <p style="text-align: justify;">
 Diante de vários estudos realizados com o foco em robótica subaquática e manipulação; percebemos uma situação interessante na qual a grande maioria dos artigos faziam referências ao sistema completo, ou seja era compreendido pelo veículo e o manipulador. Nossa intenção é realizar uma pesquisa com os sistemas isolados, ou seja tratar especificamente somente o subsistema manipulador. 
 
@@ -20,12 +20,12 @@ Buscando a compreensão dos conhecimentos sobre os sistemas de manipuladores sub
 
 Os métodos listados consistem no planejamento dinâmico de trajetória para manipuladores descrito pelos autores <a href="#WEI">WEI</a> e <a href="#VANNOY">VANNOY</a>. Esses métodos têm como fundamento o planejamento dinâmico de trajetória para desvio de obstáculos que podem serem utilizados nos manipuladores subaquáticos por conseguirem alterar o movimento rápidamente com a finalidade de atingir seu objetivo final. 
 
-Outro método fundamental para o conceito de manipuladores subaquáticos com pertubação na base é o da odometria visual, utilizando algumas técnicas de **Odometria Visual**. Esses métodos permitem que o manipulador perceba a alteração da posição de sua base e, consequentemente, o objetivo final muda com relação a base, com isso ele deve realizar um novo planejamento para conseguir alcançar seu objetivo.
+Outro método fundamental para o conceito de manipuladores subaquáticos com pertubação na base é o da odometria visual, utilizando algumas técnicas de <b>Odometria Visual</b>. Esses métodos permitem que o manipulador perceba a alteração da posição de sua base e, consequentemente, o objetivo final muda com relação a base, com isso ele deve realizar um novo planejamento para conseguir alcançar seu objetivo.
 </p>
 
 ## Seguindo os artigos
 <p style="text-align: justify;">
-Nossa pesquisa foi realizada na base de artigos do <a href="https://www.elsevier.com/en-in/solutions/scopus"><font color="#fbb117">SCOPUS</font></a>, tomando como janela de tempo os últimos 6 anos. Diante dos dados, pode-se perceber um crescimento anual de 18% na produção científica baseada na *string* de busca.
+Nossa pesquisa foi realizada na base de artigos do <a href="https://www.elsevier.com/en-in/solutions/scopus"><font color="#fbb117">SCOPUS</font></a>, tomando como janela de tempo os últimos 6 anos. Diante dos dados, pode-se perceber um crescimento anual de 18% na produção científica baseada na <a style="font-style: italic;">string</a> de busca.
 
 Nesta revisão realizada, observa-se que a rede de colaboração tem uma sinergia entre alguns pesquisadores, e que os indexadores bibliográficos são considerados relevantes para a pesquisa.
 </p>
@@ -34,10 +34,12 @@ Nesta revisão realizada, observa-se que a rede de colaboração tem uma sinergi
 
 <p style="text-align: justify;">
 Quando tomamos a rede de co-citação, percebe-se uma sinergia em volta de três autores:
+</p>
   * [Santhakumar Mohan] propõe uma nova proposta de controle de posição do UVMS e um controle PID robusto para rastreamento de posição de um manipulador subaquático.
   * [Pandurang S. Londhe] fala sobre o controle do espaço de operação de um UVMS por esquema de controle Fuzzy e um controle de rastreamento de posição utilizando um método de modo deslizante.
   * [Mingxue Cai] fala sobre o controle de profundidade baseado em ROS para UVMS e Yu Wang, que discorre dos conceitos de propulsão bioinspirada subaquática da inspeção à manipulação.
 
+<p style="text-align: justify;">
 Essa relevância é importante, para compreender o caminhar da pesquisa diante do assunto pesquisado.
 </p>
 
