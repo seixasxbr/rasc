@@ -30,7 +30,7 @@ Nossa pesquisa foi realizada na base de artigos do <a href="https://www.elsevier
 Nesta revisão realizada, observa-se que a rede de colaboração tem uma sinergia entre alguns pesquisadores, e que os indexadores bibliográficos são considerados relevantes para a pesquisa.
 </p>
 
-![Rede de Colaboração](/assets/img/aum/network-3.png)
+![Rede de Colaboração](/assets/img/network-3.png)
 
 <p style="text-align: justify;">
 Quando tomamos a rede de co-citação, percebe-se uma sinergia em volta de três autores:
