@@ -33,7 +33,7 @@ navbar-links:
     - Pong: ""
     - Jetbot 1: ""
     - Jetbot 2: ""
-    - Jetbot 3: ""
+    - Hunter: "project-hunter"
     - Walker: "project-walker"
     - bbot: "project-bbot"
 
