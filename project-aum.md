@@ -83,7 +83,7 @@ Testes preliminares também estão sendo realizados em laboratório, onde alguns
           <td></td>
           <td style="vertical-align: top"><small>Estagiária no CC RoSA, graduanda em Eng. Elétrica.</small></td>
           <td></td>
-          <td style="vertical-align: top"><small>Pesquisador Sênior do projeto <br>Mestre em Engenharia de Produção e Eng. Eletricista.</small></td>
+          <td style="vertical-align: top"><small>Pesquisador Sênior do projeto<br>Mestre em Engenharia de Produção e Eng. Eletricista.</small></td>
         </tr>
       </tbody>
     </table>

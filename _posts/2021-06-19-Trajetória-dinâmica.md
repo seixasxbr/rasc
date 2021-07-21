@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Trajetória dinâmica
-subtitle: Um estudo aprofundado em manipuladores by Marco Reis
+subtitle: Um estudo sobre manipuladores by Marco Reis
 cover-img: /assets/img/aum/matt-hardy-6ArTTluciuA-unsplash.jpg
 thumbnail-img: /assets/img/aum/network(2).png
 share-img: /assets/img/rosa-logo-redondo.png
@@ -28,17 +28,17 @@ A soulful notion of success rests on the actualization of our innate image. Succ
     <table class="table-borderless highlight">
       <thead>
         <tr>
-          <th><center><img src="{{ 'assets/img/people/andersonvale-1.png' | relative_url }}" width="100" alt="andersonqueiroz" class="img-fluid rounded-circle" /></center></th>
+          <th><center><img src="{{ 'assets/img/people/marcoreis8b&w-1.png' | relative_url }}" width="100" alt="amarco" class="img-fluid rounded-circle" /></center></th>
           <th></th>
         </tr>
       </thead>
       <tbody>
         <tr class="font-weight-bolder" style="text-align: center margin-top: 0">
-          <td width="33.33%">Anderson Queiroz</td>
+          <td width="100%">Marco Reis</td>
           <td></td>
         </tr>
         <tr style="text-align: center" >
-          <td style="vertical-align: top"><small>Pesquisador Jr. do projeto <br>Engenheiro da Computação, Especialista em Robótica e Sistemas Autonônomos.</small></td>
+          <td style="vertical-align: top"><small>Pesquisador Sênior do projeto<br>Mestre em Engenharia de Produção e Eng. Eletricista.</small></td>
           <td></td>
         </tr>
       </tbody>
