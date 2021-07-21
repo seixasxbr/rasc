@@ -11,6 +11,12 @@ Hoje continuamos a acreditar que tudo é possível se o comprometimento e a paix
 
 ![bir-team](/assets/img/bir-team.png)
 
+
+E muitos vieram depois. 
+Trazendo sua experiência ou aprimorando seus conceitos nos projetos desenvolvidos, estamos caminhando para mais de uma dezena de projetos na área de robótica. Caminhando para mais de cinquenta profissionais capacitados em robótica autônoma.
+
+![BIR-team-bolsistas-e-estagiários-2019](/assets/img/BIR-team-bolsistas-e-estagiários-2019.png)
+
 <center>
 longe vá, termor servil
 </center>
