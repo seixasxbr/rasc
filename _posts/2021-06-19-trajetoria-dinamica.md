@@ -46,7 +46,7 @@ Quando tomamos a rede de co-citação, percebe-se uma sinergia em volta de três
 Essa relevância é importante, para compreender o caminhar da pesquisa diante do assunto pesquisado.
 </p>
 
-![Rede de Co-citação](https://mhar-vell.github.io/rasc/assets/img/aum/network-2.png)
+![network-2](/assets/img/aum/network-2.png)
 
 ## So far
 <p style="text-align: justify;">
