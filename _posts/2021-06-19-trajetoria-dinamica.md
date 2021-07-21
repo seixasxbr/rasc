@@ -35,9 +35,12 @@ Nesta revisão realizada, observa-se que a rede de colaboração tem uma sinergi
 <p style="text-align: justify;">
 Quando tomamos a rede de co-citação, percebe-se uma sinergia em volta de três autores:
 </p>
-  * [Santhakumar Mohan] propõe uma nova proposta de controle de posição do UVMS e um controle PID robusto para rastreamento de posição de um manipulador subaquático.
-  * [Pandurang S. Londhe] fala sobre o controle do espaço de operação de um UVMS por esquema de controle Fuzzy e um controle de rastreamento de posição utilizando um método de modo deslizante.
-  * [Mingxue Cai] fala sobre o controle de profundidade baseado em ROS para UVMS e Yu Wang, que discorre dos conceitos de propulsão bioinspirada subaquática da inspeção à manipulação.
+  * <b><font color="#fbb117">Santhakumar Mohan<font>
+    * propõe uma nova proposta de controle de posição do UVMS e um controle PID robusto para rastreamento de posição de um manipulador subaquático.
+  * <b><font color="#fbb117">Pandurang S. Londhe<font>
+    * fala sobre o controle do espaço de operação de um UVMS por esquema de controle Fuzzy e um controle de rastreamento de posição utilizando um método de modo deslizante.
+  * <b><font color="#fbb117">Mingxue Cai<font>
+    * fala sobre o controle de profundidade baseado em ROS para UVMS e Yu Wang, que discorre dos conceitos de propulsão bioinspirada subaquática da inspeção à manipulação.
 
 <p style="text-align: justify;">
 Essa relevância é importante, para compreender o caminhar da pesquisa diante do assunto pesquisado.
