@@ -7,20 +7,53 @@ thumbnail-img: /assets/img/aum/network(2).png
 share-img: /assets/img/rosa-logo-redondo.png
 tags: [aum]
 ---
-# Título
+# A conversa começa na pesquisa
 <p style="text-align: justify;">
-Under what circumstances should we step off a path? When is it essential that we finish what we start? If I bought a bag of peanuts and had an allergic reaction, no one would fault me if I threw it out. If I ended a relationship with a woman who hit me, no one would say that I had a commitment problem. But if I walk away from a seemingly secure route because my soul has other ideas, I am a flake?
+Diante de vários estudos realizados com o foco em robótica subaquática e manipulação; percebemos uma situação interessante na qual a grande maioria dos artigos faziam referências ao sistema completo, ou seja era compreendido pelo veículo e o manipulador. Nossa intenção é realizar uma pesquisa com os sistemas isolados, ou seja tratar especificamente somente o subsistema manipulador. 
+
+Dessa forma, é preciso estabelecer a conexão dos assuntos e técnicas dos artigos selecionados que estão relacionados à manipuladores autônomos de base não fixa e que podem sofrer pertubações externas. 
 </p>
 
-## Subtítulo
+## A trajetória dinâmica
 <p style="text-align: justify;">
-The truth is that no one else can definitively know the path we are here to walk. It’s tempting to listen—many of us long for the omnipotent other—but unless they are genuine psychic intuitives, they can’t know. All others can know is their own truth, and if they’ve actually done the work to excavate it, they will have the good sense to know that they cannot genuinely know anyone else’s. Only soul knows the path it is here to walk. Since you are the only one living in your temple, only you can know its scriptures and interpretive structure.
+Buscando a compreensão dos conhecimentos sobre os sistemas de manipuladores subaquáticos com pertubação na base foi levantada uma lista de artigos e técnicas utilizados por alguns autores. 
 
+Os métodos listados consistem no planejamento dinâmico de trajetória para manipuladores descrito pelos autores <a href="#WEI">WEI</a> e <a href="#VANNOY">VANNOY</a>. Esses métodos têm como fundamento o planejamento dinâmico de trajetória para desvio de obstáculos que podem serem utilizados nos manipuladores subaquáticos por conseguirem alterar o movimento rápidamente com a finalidade de atingir seu objetivo final. 
 
-At the heart of the struggle are two very different ideas of success—survival-driven and soul-driven. For survivalists, success is security, pragmatism, power over others. Success is the absence of material suffering, the nourishing of the soul be damned. It is an odd and ironic thing that most of the material power in our world often resides in the hands of younger souls. Still working in the egoic and material realms, they love the sensations of power and focus most of their energy on accumulation. Older souls tend not to be as materially driven. They have already played the worldly game in previous lives and they search for more subtle shades of meaning in this one—authentication rather than accumulation. They are often ignored by the culture at large, although they really are the truest warriors.
-
-A soulful notion of success rests on the actualization of our innate image. Success is simply the completion of a soul step, however unsightly it may be. We have finished what we started when the lesson is learned. What a fear-based culture calls a wonderful opportunity may be fruitless and misguided for the soul. Staying in a passionless relationship may satisfy our need for comfort, but it may stifle the soul. Becoming a famous lawyer is only worthwhile if the soul demands it. It is an essential failure if you are called to be a monastic this time around. If you need to explore and abandon ten careers in order to stretch your soul toward its innate image, then so be it. Flake it till you make it.
+Outro método fundamental para o conceito de manipuladores subaquáticos com pertubação na base é o da odometria visual, utilizando algumas técnicas de **Odometria Visual**. Esses métodos permitem que o manipulador perceba a alteração da posição de sua base e, consequentemente, o objetivo final muda com relação a base, com isso ele deve realizar um novo planejamento para conseguir alcançar seu objetivo.
 </p>
+
+## Seguindo os artigos
+<p style="text-align: justify;">
+Nossa pesquisa foi realizada na base de artigos do <a href="https://www.elsevier.com/en-in/solutions/scopus"><font color="#fbb117">SCOPUS</font></a>, tomando como janela de tempo os últimos 6 anos. Diante dos dados, pode-se perceber um crescimento anual de 18% na produção científica baseada na *string* de busca.
+
+Nesta revisão realizada, observa-se que a rede de colaboração tem uma sinergia entre alguns pesquisadores, e que os indexadores bibliográficos são considerados relevantes para a pesquisa.
+</p>
+
+![Rede de Colaboração](/assets/img/aum/network%20(3).png)
+
+<p style="text-align: justify;">
+Quando tomamos a rede de co-citação, percebe-se uma sinergia em volta de três autores:
+  * [Santhakumar Mohan] propõe uma nova proposta de controle de posição do UVMS e um controle PID robusto para rastreamento de posição de um manipulador subaquático.
+  * [Pandurang S. Londhe] fala sobre o controle do espaço de operação de um UVMS por esquema de controle Fuzzy e um controle de rastreamento de posição utilizando um método de modo deslizante.
+  * [Mingxue Cai] fala sobre o controle de profundidade baseado em ROS para UVMS e Yu Wang, que discorre dos conceitos de propulsão bioinspirada subaquática da inspeção à manipulação.
+
+Essa relevância é importante, para compreender o caminhar da pesquisa diante do assunto pesquisado.
+</p>
+
+![Rede de Co-citação](/assets/img/aum/network%20(2).png)
+
+## So far
+<p style="text-align: justify;">
+Toda pesquisa precisa de uma direção inicial. Esta pequena introdução está nos direcionando para buscar a relavância dos métodos encontrados e desenvolver um planejamento de experimentos que seja conclusivo diante das questões que foram levantadas.
+</p>
+
+<br>
+
+##### Referências
+1. <a id="WEI">**Wei, Kun, and Bingyin Ren.**</a> "A method on dynamic path planning for robotic manipulator autonomous obstacle avoidance based on an improved RRT algorithm." Sensors 18.2 (2018): 571.  
+2. <a id="VANNOY">**Vannoy, John, and Jing Xiao.**</a> "Real-time adaptive motion planning (RAMP) of mobile manipulators in dynamic environments with unforeseen changes." IEEE Transactions on Robotics 24.5 (2008): 1199-1212. 
+
 
 <br>
 
