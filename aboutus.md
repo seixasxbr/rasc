@@ -20,3 +20,7 @@ Trazendo sua experiência ou aprimorando seus conceitos nos projetos desenvolvid
 <center>
 longe vá, termor servil
 </center>
+
+<center>
+<img src="{{ 'assets/img/flag-brazil-2.png' | relative_url }}" text-align=center width="30" alt="flag-brazil" /><br>
+</center>
