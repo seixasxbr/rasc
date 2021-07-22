@@ -127,17 +127,14 @@
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">in progressing</a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="">Warthog</a>
-                  <a class="dropdown-item" href="">Moco</a>
-                  <a class="dropdown-item" href="">Droilt</a>
                   <a class="dropdown-item" href="/project-aum">AUM</a>
                   <a class="dropdown-item" href="/project-turbot">Turbot</a>
                   <a class="dropdown-item" href="">Ergo</a>
-                  <a class="dropdown-item" href="">Hefesto</a>
+                  <a class="dropdown-item" href="/project-hefesto">Hefesto</a>
                   <a class="dropdown-item" href="">Pong</a>
                   <a class="dropdown-item" href="">Jetbot 1</a>
-                  <a class="dropdown-item" href="">Jetbot 2</a>
-                  <a class="dropdown-item" href="">Jetbot 3</a>
+                  <a class="dropdown-item" href="/project-aperea">Aperea</a>
+                  <a class="dropdown-item" href="/project-hunter">Hunter</a>
                   <a class="dropdown-item" href="/project-walker">Walker</a>
                   <a class="dropdown-item" href="/project-bbot">bbot</a>
             </div>
@@ -146,18 +143,8 @@
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">accomplished</a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="">Elir</a>
-                  <a class="dropdown-item" href="">Learnbotics</a>
                   <a class="dropdown-item" href="/project-doogie">Doogie</a>
-                  <a class="dropdown-item" href="">Birhex</a>
-                  <a class="dropdown-item" href="">Open Manipulator</a>
                   <a class="dropdown-item" href="">Dynamic End-Effector</a>
-                  <a class="dropdown-item" href="">Timon Manipulator</a>
-                  <a class="dropdown-item" href="">Raja Manipulator</a>
-                  <a class="dropdown-item" href="">Borg Arm</a>
-                  <a class="dropdown-item" href="">WBM Rtab-map</a>
-                  <a class="dropdown-item" href="">WBM Orb2slam</a>
-                  <a class="dropdown-item" href="">WBM EKFslam</a>
                   <a class="dropdown-item" href="">r-hope</a>
             </div>
           </li>
@@ -207,33 +194,40 @@
     var searchjson = '[ \
        \
         { \
+          "title"    : "Projeto APEREA", \
+          "category" : "aperea", \
+          "url"      : "/2021-07-21-simula%C3%A7%C3%A3o/", \
+          "date"     : "July 21, 2021" \
+        }, \
+       \
+        { \
+          "title"    : "Trajetória dinâmica", \
+          "category" : "aum", \
+          "url"      : "/2021-06-19-Trajet%C3%B3ria-din%C3%A2mica/", \
+          "date"     : "June 19, 2021" \
+        }, \
+       \
+        { \
+          "title"    : "Flake it till you make it", \
+          "category" : "bookstest", \
+          "url"      : "/2021-02-28-flake-it-till-you-make-it-copy/", \
+          "date"     : "February 28, 2021" \
+        }, \
+       \
+        { \
           "title"    : "Test markdown", \
           "category" : "test", \
-          "url"      : "/2020-02-28-test-markdown/", \
-          "date"     : "February 28, 2020" \
+          "url"      : "/2020-06-30-test-markdown/", \
+          "date"     : "June 30, 2020" \
         }, \
        \
         { \
           "title"    : "Flake it till you make it", \
-          "category" : "bookstest", \
-          "url"      : "/2020-02-28-flake-it-till-you-make-it-copy/", \
-          "date"     : "February 28, 2020" \
-        }, \
-       \
-        { \
-          "title"    : "Flake it till you make it", \
-          "category" : "bookstest", \
+          "category" : "ergo", \
           "url"      : "/2020-02-26-flake-it-till-you-make-it/", \
           "date"     : "February 26, 2020" \
         }, \
        \
-       \
-        { \
-          "title"    : "Walker - Funcionalidades", \
-          "category" : "walker", \
-          "url"      : "/2021-07-14-walker-funcionalidades/", \
-          "date"     : "January 1, 1970" \
-        }, \
        \
         { \
           "title"    : "about me", \
@@ -264,6 +258,13 @@
         }, \
        \
         { \
+          "title"    : "APEREA - JetBot 2", \
+          "category" : "page", \
+          "url"      : "/project-aperea/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
           "title"    : "AUM", \
           "category" : "page", \
           "url"      : "/project-aum/", \
@@ -285,9 +286,23 @@
         }, \
        \
         { \
+          "title"    : "TEMPLATE", \
+          "category" : "page", \
+          "url"      : "/project-elir/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
           "title"    : "Hefesto", \
           "category" : "page", \
           "url"      : "/project-hefesto/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "TEMPLATE", \
+          "category" : "page", \
+          "url"      : "/project-template/", \
           "date"     : "January 1, 1970" \
         }, \
        \
@@ -362,38 +377,55 @@
     <div class=" col-xl-8 offset-xl-2 col-lg-10 offset-lg-1 ">
       
 
-      <a href="#books" class="btn btn-primary tag-btn"><i class="fas fa-tag" aria-hidden="true"></i>&nbsp;books&nbsp;(2)</a><a href="#test" class="btn btn-primary tag-btn"><i class="fas fa-tag" aria-hidden="true"></i>&nbsp;test&nbsp;(3)</a><div id="full-tags-list"><h2 id="books" class="linked-section">
+      <a href="#aperea" class="btn btn-primary tag-btn"><i class="fas fa-tag" aria-hidden="true"></i>&nbsp;aperea&nbsp;(1)</a><a href="#aum" class="btn btn-primary tag-btn"><i class="fas fa-tag" aria-hidden="true"></i>&nbsp;aum&nbsp;(1)</a><a href="#books" class="btn btn-primary tag-btn"><i class="fas fa-tag" aria-hidden="true"></i>&nbsp;books&nbsp;(1)</a><a href="#ergo" class="btn btn-primary tag-btn"><i class="fas fa-tag" aria-hidden="true"></i>&nbsp;ergo&nbsp;(1)</a><a href="#test" class="btn btn-primary tag-btn"><i class="fas fa-tag" aria-hidden="true"></i>&nbsp;test&nbsp;(2)</a><div id="full-tags-list"><h2 id="aperea" class="linked-section">
         <i class="fas fa-tag" aria-hidden="true"></i>
-        &nbsp;books&nbsp;(2)
+        &nbsp;aperea&nbsp;(1)
     </h2>
     <div class="post-list"><div class="tag-entry">
-                <a href="/2020-02-28-flake-it-till-you-make-it-copy/">Flake it till you make it</a>
+                <a href="/2021-07-21-simula%C3%A7%C3%A3o/">Projeto APEREA</a>
                 <div class="entry-date">
-                    <time datetime="2020-02-28T00:00:00-03:00">February 28, 2020</time>
+                    <time datetime="2021-07-21T00:00:00-03:00">July 21, 2021</time>
                 </div>
-            </div><div class="tag-entry">
+            </div></div><h2 id="aum" class="linked-section">
+        <i class="fas fa-tag" aria-hidden="true"></i>
+        &nbsp;aum&nbsp;(1)
+    </h2>
+    <div class="post-list"><div class="tag-entry">
+                <a href="/2021-06-19-Trajet%C3%B3ria-din%C3%A2mica/">Trajetória dinâmica</a>
+                <div class="entry-date">
+                    <time datetime="2021-06-19T00:00:00-03:00">June 19, 2021</time>
+                </div>
+            </div></div><h2 id="books" class="linked-section">
+        <i class="fas fa-tag" aria-hidden="true"></i>
+        &nbsp;books&nbsp;(1)
+    </h2>
+    <div class="post-list"><div class="tag-entry">
+                <a href="/2021-02-28-flake-it-till-you-make-it-copy/">Flake it till you make it</a>
+                <div class="entry-date">
+                    <time datetime="2021-02-28T00:00:00-03:00">February 28, 2021</time>
+                </div>
+            </div></div><h2 id="ergo" class="linked-section">
+        <i class="fas fa-tag" aria-hidden="true"></i>
+        &nbsp;ergo&nbsp;(1)
+    </h2>
+    <div class="post-list"><div class="tag-entry">
                 <a href="/2020-02-26-flake-it-till-you-make-it/">Flake it till you make it</a>
                 <div class="entry-date">
                     <time datetime="2020-02-26T00:00:00-03:00">February 26, 2020</time>
                 </div>
             </div></div><h2 id="test" class="linked-section">
         <i class="fas fa-tag" aria-hidden="true"></i>
-        &nbsp;test&nbsp;(3)
+        &nbsp;test&nbsp;(2)
     </h2>
     <div class="post-list"><div class="tag-entry">
-                <a href="/2020-02-28-test-markdown/">Test markdown</a>
+                <a href="/2021-02-28-flake-it-till-you-make-it-copy/">Flake it till you make it</a>
                 <div class="entry-date">
-                    <time datetime="2020-02-28T00:00:00-03:00">February 28, 2020</time>
+                    <time datetime="2021-02-28T00:00:00-03:00">February 28, 2021</time>
                 </div>
             </div><div class="tag-entry">
-                <a href="/2020-02-28-flake-it-till-you-make-it-copy/">Flake it till you make it</a>
+                <a href="/2020-06-30-test-markdown/">Test markdown</a>
                 <div class="entry-date">
-                    <time datetime="2020-02-28T00:00:00-03:00">February 28, 2020</time>
-                </div>
-            </div><div class="tag-entry">
-                <a href="/2020-02-26-flake-it-till-you-make-it/">Flake it till you make it</a>
-                <div class="entry-date">
-                    <time datetime="2020-02-26T00:00:00-03:00">February 26, 2020</time>
+                    <time datetime="2020-06-30T00:00:00-03:00">June 30, 2020</time>
                 </div>
             </div></div></div>
 

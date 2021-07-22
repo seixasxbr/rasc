@@ -97,7 +97,8 @@ tags: [books, test]
   <center>
     <h3 class="post-title"><font color="#fbb117">Recent Posts</font></h3>
   </center>
-  {% for post in posts offset:1 limit:3 %}
+  {% for post in posts offset:0 limit:3 %}
+
   <article class="post-preview">
 
     {%- capture thumbnail -%}

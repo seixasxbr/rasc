@@ -127,17 +127,14 @@
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">in progressing</a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="">Warthog</a>
-                  <a class="dropdown-item" href="">Moco</a>
-                  <a class="dropdown-item" href="">Droilt</a>
                   <a class="dropdown-item" href="/project-aum">AUM</a>
                   <a class="dropdown-item" href="/project-turbot">Turbot</a>
                   <a class="dropdown-item" href="">Ergo</a>
-                  <a class="dropdown-item" href="">Hefesto</a>
+                  <a class="dropdown-item" href="/project-hefesto">Hefesto</a>
                   <a class="dropdown-item" href="">Pong</a>
                   <a class="dropdown-item" href="">Jetbot 1</a>
-                  <a class="dropdown-item" href="">Jetbot 2</a>
-                  <a class="dropdown-item" href="">Jetbot 3</a>
+                  <a class="dropdown-item" href="/project-aperea">Aperea</a>
+                  <a class="dropdown-item" href="/project-hunter">Hunter</a>
                   <a class="dropdown-item" href="/project-walker">Walker</a>
                   <a class="dropdown-item" href="/project-bbot">bbot</a>
             </div>
@@ -146,18 +143,8 @@
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">accomplished</a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="">Elir</a>
-                  <a class="dropdown-item" href="">Learnbotics</a>
                   <a class="dropdown-item" href="/project-doogie">Doogie</a>
-                  <a class="dropdown-item" href="">Birhex</a>
-                  <a class="dropdown-item" href="">Open Manipulator</a>
                   <a class="dropdown-item" href="">Dynamic End-Effector</a>
-                  <a class="dropdown-item" href="">Timon Manipulator</a>
-                  <a class="dropdown-item" href="">Raja Manipulator</a>
-                  <a class="dropdown-item" href="">Borg Arm</a>
-                  <a class="dropdown-item" href="">WBM Rtab-map</a>
-                  <a class="dropdown-item" href="">WBM Orb2slam</a>
-                  <a class="dropdown-item" href="">WBM EKFslam</a>
                   <a class="dropdown-item" href="">r-hope</a>
             </div>
           </li>
@@ -207,33 +194,40 @@
     var searchjson = '[ \
        \
         { \
+          "title"    : "Projeto APEREA", \
+          "category" : "aperea", \
+          "url"      : "/2021-07-21-simula%C3%A7%C3%A3o/", \
+          "date"     : "July 21, 2021" \
+        }, \
+       \
+        { \
+          "title"    : "Trajetória dinâmica", \
+          "category" : "aum", \
+          "url"      : "/2021-06-19-Trajet%C3%B3ria-din%C3%A2mica/", \
+          "date"     : "June 19, 2021" \
+        }, \
+       \
+        { \
+          "title"    : "Flake it till you make it", \
+          "category" : "bookstest", \
+          "url"      : "/2021-02-28-flake-it-till-you-make-it-copy/", \
+          "date"     : "February 28, 2021" \
+        }, \
+       \
+        { \
           "title"    : "Test markdown", \
           "category" : "test", \
-          "url"      : "/2020-02-28-test-markdown/", \
-          "date"     : "February 28, 2020" \
+          "url"      : "/2020-06-30-test-markdown/", \
+          "date"     : "June 30, 2020" \
         }, \
        \
         { \
           "title"    : "Flake it till you make it", \
-          "category" : "bookstest", \
-          "url"      : "/2020-02-28-flake-it-till-you-make-it-copy/", \
-          "date"     : "February 28, 2020" \
-        }, \
-       \
-        { \
-          "title"    : "Flake it till you make it", \
-          "category" : "bookstest", \
+          "category" : "ergo", \
           "url"      : "/2020-02-26-flake-it-till-you-make-it/", \
           "date"     : "February 26, 2020" \
         }, \
        \
-       \
-        { \
-          "title"    : "Walker - Funcionalidades", \
-          "category" : "walker", \
-          "url"      : "/2021-07-14-walker-funcionalidades/", \
-          "date"     : "January 1, 1970" \
-        }, \
        \
         { \
           "title"    : "about me", \
@@ -264,6 +258,13 @@
         }, \
        \
         { \
+          "title"    : "APEREA - JetBot 2", \
+          "category" : "page", \
+          "url"      : "/project-aperea/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
           "title"    : "AUM", \
           "category" : "page", \
           "url"      : "/project-aum/", \
@@ -285,9 +286,23 @@
         }, \
        \
         { \
+          "title"    : "TEMPLATE", \
+          "category" : "page", \
+          "url"      : "/project-elir/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
           "title"    : "Hefesto", \
           "category" : "page", \
           "url"      : "/project-hefesto/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "TEMPLATE", \
+          "category" : "page", \
+          "url"      : "/project-template/", \
           "date"     : "January 1, 1970" \
         }, \
        \
@@ -418,9 +433,9 @@ Dentre eles, os principais são:</p>
   <li><strong>Raspicam:</strong> A câmera será utilizada para a detecção e reconhecimento de TAGs, possibilitando sua localização</li>
 </ul>
 
-<p><br />
-<!--equipe--></p>
+<p><br /></p>
 
+<!--equipe-->
 <center><h3 class="post-title">Equipe de desenvolvimento</h3><br /></center>
 <div class="row">
   <div class=" col-xl-auto offset-xl-0 col-lg-4 offset-lg-0">
@@ -443,7 +458,7 @@ Dentre eles, os principais são:</p>
           <td width="33.33%"><center>Marco Reis</center></td>
         </tr>
         <tr style="text-align:center">
-          <td width="33.33%" style="vertical-align: top"><small>BrendaEstagiária no CC RoSA, graduanda em Eng. Elétrica. Participou de projetos de Robótica Subaquática e Manipuladores Subaquáticos</small></td>
+          <td width="33.33%" style="vertical-align: top"><small>Estagiária no CC RoSA, graduanda em Eng. Elétrica. Participou de projetos de Robótica Subaquática e Manipuladores Subaquáticos</small></td>
           <td></td>
           <td width="33.33%" style="vertical-align: top"><small>Estagiário no CC RoSA, graduando em Eng. Elétrica. Participou de projetos de Robótica Subaquática e Robótica Móvel</small></td>
           <td></td>
@@ -484,43 +499,6 @@ Dentre eles, os principais são:</p>
 
 <div id="full-tags-list">
 <h3 class="post-title"><font color="#fbb117">Posts</font></h3></div>
-
-<p>Durante a etapa de detalhamento e <em>Design</em> do robô Walker, foram especificadas as Funcionalidades a serem desenvolvidas no projeto, assim como as relações entre elas. 
-Isso é importante para entender o funcionamento do robô, o que ele é capaz de fazer, e como cada subsistema depende dos outros.</p>
-
-<p>A imagem a seguir traz o <strong>Diagrama de Funcionalidades</strong> construído para o robô. Primeiramente, o robô possui o Subsistema de Energia, responsável pela alimentação de todo o sistema. O subsistema de Gestão de Dados está ali para administrar o recebimento e envio de informações entre todos os subsistemas/funcionalidades. E, claro, a Segurança é importante para garantir o seu bom funcionamento.</p>
-
-<center><img src="/assets/img/walker/walker_funcionalidades.png" alt="Walker_funcionalidades" width="800" /></center>
-<p />
-
-<p>As funcionalidades são as seguintes:</p>
-
-<ul>
-  <li>
-    <p><strong>Percepção:</strong> É a funcionalidade responsável por receber os dados vindos dos sensores Ultrassônicos, IMU e Câmeras, tornando o robô capaz de perceber o ambiente a sua volta e enviando informações importantes para o funcionamento de outras funcionalidades;</p>
-  </li>
-  <li>
-    <p><strong>Localização:</strong> Através dos dados recebidos pela Percepção, o robô será capaz de se localizar no ambiente, através de sua posição e orientação;</p>
-  </li>
-  <li>
-    <p><strong>Mapeamento:</strong> Utilizando as informações da Localização, é possível criar um Mapa global do ambiente, atualizando assim a Localização do robô;</p>
-  </li>
-  <li>
-    <p><strong>Planejamento:</strong> Dada uma missão para o robô, escolhida através da Interface, o Planejamento é responsável por definir a estratégia e a trajetória que o Walker deverá seguir para cumprir seus objetivos;</p>
-  </li>
-  <li>
-    <p><strong>Interface:</strong> Essa funcionalidade torna possível ao usuário definir a missão do robô, bem como se ele deverá operar de forma autônoma ou teleoperada;</p>
-  </li>
-  <li>
-    <p><strong>Comportamento:</strong> Avalia alguns parâmetros do robô, como a carga na bateria, corrente nos motores e presença de obstáculos, enviando essas informações para a Navegação;</p>
-  </li>
-  <li>
-    <p><strong>Navegação:</strong> Na Navegação, são recebidas informações de diversas Funcionalidades, que juntas irão permitir que o Walker gere seus movimentos, enviando-os à Atuação para permitir o deslocamento seu deslocamento;</p>
-  </li>
-  <li>
-    <p><strong>Atuação:</strong> A Atuação é a funcionalidade responsável por receber os comandos para acionamento dos motores, possibilitando o deslocamento do robô. É nela também que ocorre a odometria dos motores e a leitura de corrente em cada um deles, sendo essas informaões úteis para o Comportamento e a Localização.</p>
-  </li>
-</ul>
 
 
       
