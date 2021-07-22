@@ -99,9 +99,9 @@ Figura 3 - Modelo Vertbot no Gazebo
       </thead>
       <tbody>
         <tr class="font-weight-bolder" style="text-align: center margin-top: 0">
-          <td width="33.33%">Breno Portela</td>
+          <td width="50%">Breno Portela</td>
           <td></td>
-          <td width="33.33%">Mateus Seixas</td>
+          <td width="50%">Mateus Seixas</td>
         </tr>
         <tr style="text-align: center" >
           <td style="vertical-align: top"><small>Engenheiro Mecânico - Senai Cimatec. Líder da équipe Vertbot.</small></td>
