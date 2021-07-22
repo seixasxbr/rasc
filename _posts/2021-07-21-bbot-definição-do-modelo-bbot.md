@@ -13,10 +13,8 @@ tags: [bbot]
 
 Motivados pelo desejo de contribuir para a inovação no campo dos robôs auto-balanceados e suas tecnologias, e com o avanço da investigação da robótica internacional, decidimos avançar com a criação de uma nova plataforma com características especiais face a soluções previamente definidas.
 
-Para iniciarmos a <strong>etapa 1</strong> da construção do robô, definimos como prioridade utilizar componentes já disponíveis no laboratório da instituição (<a target="_blank" href="http://www.senaicimatec.com.br/en/"><font color="#fbb117">Senai CIMATEC</font></a>). Além disso, o <a href="https://mhar-vell.github.io/rasc/project-bbot/"><font color="#fbb117">projeto Bbot</font></a> deverá atender requisitos baseados nas necessidades e expectativas de pesquisa. A adição de servos para manipular membros sobre rodas traz um desafio com uma série de benefícios. Ou seja, ser capaz de ajustar a altura de cada perna para permanecer estável mesmo ao tombar de um lado para o outro e com maior capacidade off-road, bem como até mesmo pular. 
+Para iniciarmos a **etapa 1** da construção do robô, definimos como prioridade utilizar componentes já disponíveis no laboratório da instituição (<a target="_blank" href="http://www.senaicimatec.com.br/en/"><font color="#fbb117">Senai CIMATEC</font></a>). Além disso, o <a href="https://mhar-vell.github.io/rasc/project-bbot/"><font color="#fbb117">projeto Bbot</font></a> deverá atender requisitos baseados nas necessidades e expectativas de pesquisa. A adição de servos para manipular membros sobre rodas traz um desafio com uma série de benefícios. Ou seja, ser capaz de ajustar a altura de cada perna para permanecer estável mesmo ao tombar de um lado para o outro e com maior capacidade off-road, bem como até mesmo pular. 
 
-
-<hr>
 
 <!-- **************************************** -->
 
