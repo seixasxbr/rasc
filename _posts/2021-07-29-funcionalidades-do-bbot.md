@@ -7,13 +7,9 @@ thumbnail-img: assets/img/bbot/bbot.png
 share-img: assets/img/rosa-logo-redondo (180).png
 tags: [bbot]
 ---
-
-<!-- **************************************** -->
-### Anteriormente
-
+# Anteriormente
 É importante que você tenha visto o post anterior (<a href="https://mhar-vell.github.io/rasc/2021-07-21-bbot-definição-do-modelo-bbot/"><font color="#fbb117">[Etapa 1] Definição do modelo Bbot</font></a>), para um completo entendimento do desenvolvimento do projeto.
 
-### Introdução
 <p>
 Na <strong>etapa dois</strong> do processo de construção do <a href="https://mhar-vell.github.io/rasc/project-bbot/"><font color="#fbb117">Bbot</font></a>, e de qualquer outro projeto de robótica, é <strong>importante</strong> definir as <strong>funcionalidades</strong>. Antes de iniciarmos as próximas etapas, o desenho da arquitetura do robô (mão na massa!! 👷🔧), precisamos listar essas características e analisar como elas estão conectadas entre si, assim tendo um total controle do desenvolvimento do projeto. 
 </p>{: style="text-align: justify;"}
