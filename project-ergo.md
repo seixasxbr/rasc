@@ -185,7 +185,7 @@ Como o projeto do <a target="_blank" href="https://flowers.inria.fr/"><font colo
 
 <br>
 
-## Referências
+##### Referências
 1. <a id="ERGO" target="_blank" href="https://www.poppy-project.org/en/robots/poppy-ergo-jr/">**Poppy Ergo**</a>; **Manipulador**. Acesso em: 20 de Julho de 2021.
 
 
@@ -210,4 +210,3 @@ Como o projeto do <a target="_blank" href="https://flowers.inria.fr/"><font colo
       </div>
   {%- endfor -%}
 </div>
-<hr class="mark">
