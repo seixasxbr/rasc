@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Funcionalidades do Bbot
-subtitle: Um robô que se equilibra com pernas articuladas
+subtitle: A importância das funcionalidades by Matheus França
 cover-img: assets/img/bbot/bbot_wide.png
 thumbnail-img: assets/img/bbot/bbot.png
 share-img: assets/img/rosa-logo-redondo (180).png
@@ -53,8 +53,7 @@ Na <strong>segunda etapa</strong> do projeto, foram apresentadas as funcionalida
 
 <!-- **************************************** -->
 <!-- ### Veja a seguir
-
-<a href="https://mhar-vell.github.io/rasc/2021-07-28-bbot-modelo-3d-do-bbot-etapa-2/"><font color="#fbb117">[Etapa 2] Construindo o Bbot (Modelo 3d)</font></a> - disponivel em 28/07/2021
+-->/07/2021
  
 <a href="https://mhar-vell.github.io/rasc/2021-08-04-bbot-esquematico-ee-etapa-3/"><font color="#fbb117">[Etapa 3] Esquemático EE</font></a> - disponivel em 04/08/2021
 

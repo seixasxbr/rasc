@@ -41,9 +41,7 @@ subtitle: Balancing Robot
 <strong>Bbot</strong> conta com um <i>design</i> adequado ao seu modo de atuação. Sua baixa estatura, aproximadamente 36 cm, permite uma fácil manipulação e operação em ambientes <i>indoor</i>. Sua forte estrutura, com peças para amortecer impacto, o protegem de eventuais quedas. Além disso, boa parte da sua massa foi alocada na parte superior, o que é uma grande vantagem para robôs auto-balanceados, pois a elevação do ponto de gravidade auxilia no equilíbrio.
 </p>{: style="text-align: justify;"}
 
-Outra grande vantagem do **Bbot** são suas pernas articuladas com 2 graus de liberdade[^1] .
-
-[^1]: DOF - _Degrees of freedom_
+Outra grande vantagem do **Bbot** são suas pernas articuladas com 2 graus de liberdade.
 
 <br>
 
@@ -177,4 +175,3 @@ O sistema é alimentado por uma LiPO 3s e conta com uma placa para distribuir a 
       </div>
   {%- endfor -%}
 </div>
-<hr class="mark">

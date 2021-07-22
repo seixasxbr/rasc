@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Definição do modelo Bbot 
-subtitle: Um robô que se equilibra com pernas articuladas
+subtitle: Explicando um pouco sobre o robô by Matheus França
 cover-img: assets/img/bbot/bbot_wide.png
 thumbnail-img: assets/img/bbot/bbot.png
 share-img: assets/img/rosa-logo-redondo (180).png
@@ -47,9 +47,7 @@ Todas essas peças tem o valor aproximado de $USD 3162,64.
 
 <!-- **************************************** -->
 ### Definindo o modelo
-
-Feito a seleção dos componentes e definindo as peças que vamos utilizar, podemos definir a arquitetura geral do Bbot. 
-
+-->
 
 É possível analisar que a arquitetura está dividida em três grandes blocos, que compõem a <strong>interface do usuário</strong>, a <strong>central de gerenciamento do sistema</strong> (Ubuntu 20.04 + ROS Noetic) e a <strong>interface com o hardware</strong>. 
 
