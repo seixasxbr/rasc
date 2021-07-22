@@ -142,7 +142,7 @@ Alguns componentes foram escolhidos para compor a parte elétrica/eletrônica pa
     <img src="{{ 'assets/img/vertbot/battery.png' | relative_url }}" alt="Not found" width="200">
   </div> 
   <div style="padding-left: 210px;">
-    <p style="text-align: justify;">Para comportar as duas <b>baterias recarregáveis de íon de lítio do modelo 18650 de 4,2 V</b>, que irão alimentar o sistema, é utilizado o <b>Battery Shield 18650 V3</b>. </p>
+    <p style="text-align: justify;">Para comportar as duas <b>baterias recarregáveis de íon de lítio do modelo 18650 de 4,2 V</b>, que irão alimentar o sistema, é utilizado o <b>Battery Shield 18650 V8</b>. </p>
 </div>
 </div>
 
