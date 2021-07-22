@@ -2,7 +2,7 @@
 layout: post
 title: Walker - Funcionalidades
 subtitle: O que o robô será capaz de fazer?
-cover-img: /assets/img/path.jpg
+cover-img: /assets/img/walker/walker_funcionalidades.jpg
 thumbnail-img: assets/img/walker/walker_funcionalidades.png
 share-img: assets/img/walker/walker_funcionalidades.png
 tags: [walker, funcionalidades]
@@ -38,7 +38,7 @@ As funcionalidades são as seguintes:
 
 Nessa fase foi possível sistematizar as funcionalidades que o robô deverá conter e observar as interdependências entre elas, constituindo um só sistema. Além disso, a organização do projeto em subsistemas facilita o planejamento e execução das próximas etapas.
 
-<h3 class="post-title">Autores</h3><br/></center>
+<h3 class="post-title">Autores</h3><br/>
 <div class="row">
   <div class=" col-xl-auto offset-xl-0 col-lg-4 offset-lg-0">
     <table class="table-borderless highlight">
