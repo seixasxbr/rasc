@@ -23,7 +23,7 @@ navbar-links:
   #   - Manisub: "project-1"
 
   in progress:
-  #  - Warthog: ""
+    - Warthog: "project-warthog"
   #  - Moco: ""
   #  - Droilt: ""
     - AUM: "project-aum"
