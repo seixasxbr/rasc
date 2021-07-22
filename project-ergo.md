@@ -29,61 +29,99 @@ subtitle: Robotic manipulator
 
 <!-- ## Introdução -->
 
-**Ergo Jr** é um braço de baixo custo projetado para a educação [1], fácil de construir e modificar. Graças à programação visual, pode ser usado em escolas para realizar desde projetos pequenos a mais complexos.
+<p>
+<strong>Ergo Jr</strong> é um braço de baixo custo projetado para a educação <a href="#ERGO">[ERGO]</a>, fácil de construir e modificar. Graças à programação visual, pode ser usado em escolas para realizar desde projetos pequenos a mais complexos.
+</p>{: style="text-align: justify;"}
 
-Originalmente o braço robótico foi projetado pela equipe do [laboratório Flowers](https://flowers.inria.fr/), o Ergo Jr foi então adaptado por nós do <a href="http://www.senaicimatec.com.br/en/"><font color="#fbb117">Senai CIMATEC</font></a>, para atender às necessidades de pesquisas científicas.
+<p>
+Originalmente o braço robótico foi projetado pela equipe do  <a target="_blank" href="https://flowers.inria.fr/"><font color="#fbb117">laboratório Flowers</font></a>, o Ergo Jr foi então adaptado por nós do <a target="_blank" href="http://www.senaicimatec.com.br/en/"><font color="#fbb117">Senai CIMATEC</font></a>, para atender às necessidades de pesquisas científicas.
+</p>{: style="text-align: justify;"}
+
+<br>
 
 ### DESIGN E CARACTERÍSTICAS
 
-O **Ergo** é um braço robótico, composto por 6 motores que permitem movimentos realistas e elementos impressos em 3D. O Ergo Jr desenvolvido tem duas ferramentas para diferentes interações com seu ambiente: um abajur e um gripper.
+<p>
+O <strong>Ergo</strong> é um braço robótico, composto por 6 motores que permitem movimentos realistas e elementos impressos em 3D. O Ergo Jr desenvolvido tem duas ferramentas para diferentes interações com seu ambiente: um abajur e um gripper.
+</p>{: style="text-align: justify;"}
 
+<p>
 O robô é controlado por uma placa Raspberry Pi e uma câmera o ajuda a interagir com o mundo.
+</p>{: style="text-align: justify;"}
+
+### SEMELHANÇAS
+
+<p>
+O robô tem uma grande semelhança com o boneco da <strong><i>Pixar</i></strong>, trazendo um aspecto lúdico para interação com o público. 
+</p>{: style="text-align: justify;"}
+
+<p>
+Ter um robô com tais aspectos, proporciona difundir a tecnologia em espaços onde antes não se viam, como escolas. É possível notar também que nem sempre um projeto de engenharia e robótica, tem uma “cara” de apenas fio e metal, e pode sim ter um aspecto mais próximo do público em geral. 
+</p>{: style="text-align: justify;"}
+
+<p align="center">
+    <img src="{{ 'assets/img/ergo/ergo.png' | relative_url }}" alt="Not found" width="250"/>
+    <img src="{{ 'assets/img/ergo/pixar.png' | relative_url }}" alt="Not found" width="270"/>
+</p>
 
 ### TECNOLOGIA ENVOLVIDA
 
 O **Ergo** conta com tecnologias que o ajudam a interagir com o mundo. 
 
-<img src="{{ 'assets/img/ergo/controladores.png' | relative_url }}" alt="Not found" width="350">{: style="float: left; padding-right: 25px;"}
 <p>
 O robô conta com dois controladores, o principal é um Raspberry Pi 4 e suporta o ROS Noetic, já o secundário é um OpenCR e cuida das entradas e saídas dos atuadores.
-</p>
+</p>{: style="text-align: justify;"}
 
-
-<img src="{{ 'assets/img/ergo/atuadores.png' | relative_url }}" alt="Not found" width="250">{: style="float: right; padding-left: 50px;"}
 <p>
 Já na parte de atuação, temos 6 <i>dynamixels MX28</i> espalhados nas diversas articulações do robô.
-</p>{: style="clear: left; padding-top: 25px;"}
+</p>{: style="text-align: justify;"}
+
+<p align="center">
+    <img src="{{ 'assets/img/ergo/controladores.png' | relative_url }}" alt="Not found" width="500"/>
+    <img src="{{ 'assets/img/ergo/atuadores.png' | relative_url }}" alt="Not found" width="200"/>
+</p>
 
 <p>
 O <strong>Ergo</strong> conta ainda com sensor que é responsável por aquisições de dados em tempo real.
-</p>{: style="clear: right; padding-top: 25px;"}
+</p>{: style="text-align: justify;"}
 
-<img src="{{ 'assets/img/ergo/camera.png' | relative_url }}" alt="Not found" width="350">{: style="float: left; clear:right; padding-right: 50px;"}
 <p>
 A câmera RGB é capaz de detectar e codificar cores no espaço. 
-</p>{: style="clear: right; padding-top: 50px;"}
+</p>{: style="text-align: justify;"}
 
-<p>
-</p>{: style="clear: both; white-space: pre"}
-<br>
+<p align="center">
+    <img src="{{ 'assets/img/ergo/camera.png' | relative_url }}" alt="Not found" width="350"/>
+</p>
 
 ### RESULTADOS
 
-Foi construído o projeto Ergo com os equipamentos citados e foram feitos alguns testes de movimentação tanto na estrutura real como na simulação. 
-
-<!-- 
-
-Os vídeos dos testes podem ser vistos a seguir. 
-
-<video width="320" height="240" controls>
-  <source src="{{ 'assets/img/ergo/dynamixel_test.mp4' | relative_url }}" type="video/mp4">
-</video> 
-
--->
+<p>
+Foi construído o <strong>projeto Ergo</strong> com os equipamentos citados e foram feitos alguns testes de movimentação tanto na estrutura real como na simulação. Os vídeos dos testes podem ser vistos a seguir. 
+</p>{: style="text-align: justify;"}
 
 <p>
-</p>{: style="clear: both; white-space: pre"}
+A <strong>simulação</strong> a princípio mostrou sinais de instabilidade, depois de algumas correções no modelo disponibilizado, conseguimos orientar o robô, de forma que pode ser visto no vídeo seguinte: 
+</p>{: style="text-align: justify;"}
+
+<div align="center">
+<iframe width="620" height="315" src="https://www.youtube.com/embed/KsNMs92i8cs" frameborder="0" allowfullscreen></iframe>
+</div>
+
+<p>
+O vídeo que se segue, demonstra os testes feitos no <strong>ambiente real</strong>. E é possível ver que a estrutura foi corretamente impressa em 3d e modificada com os servos descritos (<i>dynamixel MX28</i>).
+</p>{: style="text-align: justify;"}
+
+<div align="center">
+<iframe width="620" height="315" src="https://www.youtube.com/embed/AmQxrFoqw_w" frameborder="0" allowfullscreen></iframe>
+</div>
+
+<p>
+Com o projeto do <a target="_blank" href="https://flowers.inria.fr/"><font color="#fbb117">laboratório Flowers</font></a>, não foi encontrado um pacote que integrasse corretamente o framework de robótica ROS, então a nossa equipe desenvolveu algumas correções para que o robô ficasse estável no cenário simulado e real, como pode ser visto nos vídeos.
+</p>{: style="text-align: justify;"}
+
 <br>
+<br>
+<hr>
 
 <!-- Equipe -->
 <center><h3 class="post-title">Equipe de desenvolvimento</h3><br/></center>
@@ -92,11 +130,23 @@ Os vídeos dos testes podem ser vistos a seguir.
     <table class="table-borderless highlight">
       <thead>
         <tr>
-          <th><center><img src="{{ 'assets/img/people/matheusfrança-1.png' | relative_url }}" width="100" alt="matheusfrança" class="img-fluid rounded-circle" /></center></th>
+          <th><center><a href="https://www.linkedin.com/in/matheus-fran%C3%A7a-b62044150/" target="_blank">
+                <p align="center">
+                    <img src="{{ 'assets/img/people/matheusfrança-1.png' | relative_url }}" alt="Not found" width="100" class="img-fluid rounded-circle" />
+                </p>
+            </a></center></th>
           <th></th>
-          <th><center><img src="{{ 'assets/img/people/breno-1.png' | relative_url }}" width="100" alt="breno" class="img-fluid rounded-circle"/></center></th>
+          <th><center><a href="https://www.linkedin.com/in/breno-portela-051270166/" target="_blank">
+                <p align="center">
+                    <img src="{{ 'assets/img/people/breno-1.png' | relative_url }}" alt="breno" width="100" class="img-fluid rounded-circle" />
+                </p>
+            </a></center></th>
           <th></th>
-          <th><center><img src="{{ 'assets/img/people/marcoreis8b&w-1.png' | relative_url }}" width="100" alt="marco" class="img-fluid rounded-circle"/></center></th>
+          <th><center><a href="https://mhar-vell.github.io/portfolio/" target="_blank">
+                <p align="center">
+                    <img src="{{ 'assets/img/people/marcoreis8b&w-1.png' | relative_url }}" alt="marco" width="100" class="img-fluid rounded-circle" />
+                </p>
+            </a></center></th>
         </tr>
       </thead>
       <tbody>
@@ -136,7 +186,7 @@ Os vídeos dos testes podem ser vistos a seguir.
 <br>
 
 ## Referências
-[1] [Poppy Ergo](https://www.poppy-project.org/en/robots/poppy-ergo-jr/). **Manipulador**. Acesso em: 20 de Julho de 2021.
+1. <a id="ERGO" target="_blank" href="https://www.poppy-project.org/en/robots/poppy-ergo-jr/">**Poppy Ergo**</a>; **Manipulador**. Acesso em: 20 de Julho de 2021.
 
 
 <br>
