@@ -34,9 +34,7 @@ A robótica tem sido impulsionada pelas possibilidades da utilização de robôs
 
 **Hefesto** conta com um _design_ articulado de 20 graus de liberdade (DOF - _Degrees of freedom_). Sua estrutura é baseada nos modelos da _Robotis_ Op3 e Op2. Além disso o **Hefesto** é desenvolvido sob ROS (Robot Operating System) para utilizar vários pacotes no ecossistema ROS. Toda tecnologia envolvida e suporte ao ROS, permitem que os desenvolvedores se concentrem mais no avanço de pesquisas e técnicas na área da robótica e visão computacional.
 
-<br>
-
-### TECNOLOGIA ENVOLVIDA
+<br>rosa-logo-redondo
 
 O **Hefesto** é equipado com uma gama de tecnologias!! 
 
@@ -78,9 +76,9 @@ O sistema é alimentado por uma LiPO 3s e a OpenCR distribui a energia aos compo
       </thead>
       <tbody>
         <tr class="font-weight-bolder" style="text-align: center margin-top: 0">
-          <td width="33.33%">Anderson Queiroz</td>
+          <td width="33.33%">Matheus França</td>
           <td></td>
-          <td width="33.33%">Brenda Alencar</td>
+          <td width="33.33%">Breno Portela</td>
           <td></td>
           <td width="33.33%">Marco Reis</td>
         </tr>
@@ -112,7 +110,7 @@ O sistema é alimentado por uma LiPO 3s e a OpenCR distribui a energia aos compo
 
 <br>
 
-## Referências
+##### Referências
 
 <br>
 <hr class="mark">
