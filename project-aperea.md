@@ -6,14 +6,14 @@ subtitle: Robô autônomo diferencial
 {% assign date_format = site.date_format | default: "%B %-d, %Y" %}
 {%- capture site_tags -%}
     {%- for tag in site.tags -%}
-      {% if tag contains 'aum' %}
+      {% if tag contains 'aperea' %}
         {{- tag | first -}}{%- unless forloop.last -%},{%- endunless -%}
       {% endif %} 
     {%- endfor -%}
 {%- endcapture -%}
 {%- assign tags_list = site_tags | split:',' | sort -%}
 
-<center><img style="border:5px solid black;" src="{{ 'assets/img/aperea/aperea.png' | relative_url }}" text-align=center width="500" alt="Mohan" /><br></center>
+<center><img src="{{ 'assets/img/aperea/aperea.png' | relative_url }}" text-align=center width="500" alt="aperea" /><br></center>
 
 <div class="before-content">
   <center>
@@ -25,33 +25,10 @@ subtitle: Robô autônomo diferencial
   <!--hr class="mark"-->
 </div>
 
-<center>
-<img src="{{ 'assets/img/aperea/aperea.png' | relative_url }}" width="300" text-align=center alt="nvidiaJetbot" />
-</center>
 
 ## Mobilidade
 <p style="text-align: justify;">
-A junção da mobilidade com ferramentas de visão computacional e inteligência artificial proporcionam aos robôs móveis uma grande variedade de aplicações e autonomia. As aplicações incluem navegação, localização e identificação de objetos, por exemplo.{% assign date_format = site.date_format | default: "%B %-d, %Y" %}
-{%- capture site_tags -%}
-    {%- for tag in site.tags -%}
-      {% if tag contains 'aum' %}
-        {{- tag | first -}}{%- unless forloop.last -%},{%- endunless -%}
-      {% endif %} 
-    {%- endfor -%}
-{%- endcapture -%}
-{%- assign tags_list = site_tags | split:',' | sort -%}
-
-<center><img style="border:5px solid black;" src="{{ 'assets/img/aum/mohan-model.png' | relative_url }}" text-align=center width="500" alt="Mohan" /><br></center>
-
-<div class="before-content">
-  <center>
-    {%- for tag in tags_list -%}
-      <br>
-      <a href="#{{- tag -}}" class="btn btn-primary tag-btn"><i class="fas fa-tag" aria-hidden="true"></i>&nbsp;{{- tag -}}-posts&nbsp;({{site.tags[tag].size}})</a>
-    {%- endfor -%}
-  </center>    
-  <!--hr class="mark"-->
-</div>
+A junção da mobilidade com ferramentas de visão computacional e inteligência artificial proporcionam aos robôs móveis uma grande variedade de aplicações e autonomia. As aplicações incluem navegação, localização e identificação de objetos, por exemplo.
 
 O Projeto Aperea Jetbot II almeja utilizar alguns dos benefícios gerados do elo entre robótica móvel, visão computacional e I.A. Para isso será utilizada a placa Nvidia Jetson Nano em conjunto com elementos sensoriais para coletar dados do meio externo.
 
@@ -203,3 +180,27 @@ O processamento dos dados que serão coletados pelos sensores e câmeras será r
 
 ##### Referência
 1. <a href="https://jetbot.org/master"><font color="#fbb117">JETBOT</font></a>. Acesso em: 4 de Junho de 2021.
+
+
+
+<br>
+<hr class="mark">
+<div id="full-tags-list">
+<h3 class="post-title"><font color="#fbb117">Posts</font></h3>
+  {%- for tag in tags_list -%}
+      <h4 id="{{- tag -}}" class="linked-section">
+          <i class="fas fa-tag" aria-hidden="true"></i>
+          &nbsp;{{- tag -}}&nbsp;({{site.tags[tag].size}})
+      </h4>
+      <div class="post-list">
+          {%- for post in site.tags[tag] -%}
+              <div class="tag-entry">
+                  <a href="{{ post.url | relative_url }}">{{- post.title -}}</a>
+                  <div class="entry-date">
+                      <time datetime="{{- post.date | date_to_xmlschema -}}">{{- post.date | date: date_format -}}</time>
+                  </div>
+              </div>
+          {%- endfor -%}
+      </div>
+  {%- endfor -%}
+</div>
