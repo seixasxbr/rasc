@@ -33,17 +33,17 @@ subtitle: Manipulator
 ## Nuances do desenvolvimento
 Em adição ao seu propósito inicial, posteriormente este manipulador robótico foi integrado ao robô Warthog, desenvolvido pela Clearpath Robotics, com o propósito de realizar a atividade de investigação em ambiente externo, desta vez participando de uma busca e desarme de bombas sem potencial destrutivo.
 
-O pacote de simulação do manipulador **JeRoTIMON** foi construído através do software Gazebo aliado ao MoveIt e a ferramenta de visualização Rviz, possibilitando assim que as atividades realizadas no mundo real tenham sido previamente testadas em ambiente simulado onde é possível analisar os movimentos e limitações do manipulador.
+O pacote de simulação do manipulador **JeRoTIMON** foi construído através do software Gazebo aliado ao MoveIt e a ferramenta de visualização Rviz, possibilitando assim que as atividades realizadas no mundo real tenham sido previamente testadas em ambiente simulado, onde é possível analisar os movimentos e limitações do manipulador.
 <br>
 
 ## Vídeos
 ### Simulação
-<iframe width="560" height="315" src="https://www.youtube.com/embed/C2zw8B4PVy0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/s6215O7YVjU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### Mundo real
-<iframe width="560" height="315" src="https://www.youtube.com/embed/1QWw0YnZgzc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<!-- ## Equipe -->
+<iframe width="560" height="315" src="https://www.youtube.com/embed/sRJByJuQB2Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+<!-- ## Equipe -->
 <center><h3 class="post-title">Equipe de desenvolvimento</h3><br/></center>
 
 <div class="row">
@@ -93,7 +93,7 @@ O pacote de simulação do manipulador **JeRoTIMON** foi construído através do
           <th></th>
           <th><center><img src="{{ 'assets/img/people/rodrigoformiga-1.png' | relative_url }}" width="100" alt="rodrigo" class="img-fluid rounded-circle" /></center></th>
           <th></th>
-          <th><center><img src="{{ 'assets/img/people/marcoreis8b&w-1.png' | relative_url }}" width="100" alt="marco" class="img-fluid rounded-circle"/></center></th>
+          <th><center><img src="{{ 'assets/img/people/tiagosouza.jpg' | relative_url }}" width="100" alt="marco" class="img-fluid rounded-circle"/></center></th>
           <th></th>
           <th><center><img src="{{ 'assets/img/people/marcoreis8b&w-1.png' | relative_url }}" width="100" alt="marco" class="img-fluid rounded-circle"/></center></th>
         </tr>
