@@ -55,7 +55,7 @@ Testes preliminares também estão sendo realizados em laboratório, onde alguns
 
 <br>
 -->
-
+<hr>
 <!-- equipe -->
 <center><h3 class="post-title">Equipe de desenvolvimento</h3><br/></center>
 <div class="row">

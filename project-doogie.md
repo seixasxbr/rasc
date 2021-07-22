@@ -138,26 +138,7 @@ Elementos da placa (chassi) inferior
 10. Artigos produzidos: [doogie-documentation]
 
 <br>
-<hr class="mark">
-<div id="full-tags-list">
-<h3 class="post-title"><font color="#fbb117">Posts</font></h3>
-  {%- for tag in tags_list -%}
-      <h4 id="{{- tag -}}" class="linked-section">
-          <i class="fas fa-tag" aria-hidden="true"></i>
-          &nbsp;{{- tag -}}&nbsp;({{site.tags[tag].size}})
-      </h4>
-      <div class="post-list">
-          {%- for post in site.tags[tag] -%}
-              <div class="tag-entry">
-                  <a href="{{ post.url | relative_url }}">{{- post.title -}}</a>
-                  <div class="entry-date">
-                      <time datetime="{{- post.date | date_to_xmlschema -}}">{{- post.date | date: date_format -}}</time>
-                  </div>
-              </div>
-          {%- endfor -%}
-      </div>
-  {%- endfor -%}
-</div>
+
 
 [doogie-wiki]: https://github.com/Brazilian-Institute-of-Robotics/doogie/wiki
 [doogie-documentation]: https://github.com/Brazilian-Institute-of-Robotics/doogie_documentation

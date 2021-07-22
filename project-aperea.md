@@ -3,10 +3,28 @@ layout: page
 title: APEREA
 subtitle: Robô autônomo diferencial
 ---
+{% assign date_format = site.date_format | default: "%B %-d, %Y" %}
+{%- capture site_tags -%}
+    {%- for tag in site.tags -%}
+      {% if tag contains 'aperea' %}
+        {{- tag | first -}}{%- unless forloop.last -%},{%- endunless -%}
+      {% endif %} 
+    {%- endfor -%}
+{%- endcapture -%}
+{%- assign tags_list = site_tags | split:',' | sort -%}
 
-<center>
-<img src="{{ 'assets/img/aperea/aperea.png' | relative_url }}" width="300" text-align=center alt="nvidiaJetbot" />
-</center>
+<center><img src="{{ 'assets/img/aperea/aperea.png' | relative_url }}" text-align=center width="500" alt="aperea" /><br></center>
+
+<div class="before-content">
+  <center>
+    {%- for tag in tags_list -%}
+      <br>
+      <a href="#{{- tag -}}" class="btn btn-primary tag-btn"><i class="fas fa-tag" aria-hidden="true"></i>&nbsp;{{- tag -}}-posts&nbsp;({{site.tags[tag].size}})</a>
+    {%- endfor -%}
+  </center>    
+  <!--hr class="mark"-->
+</div>
+
 
 ## Mobilidade
 <p style="text-align: justify;">
@@ -126,12 +144,12 @@ O processamento dos dados que serão coletados pelos sensores e câmeras será r
 </thead>
 <tbody>
 <tr class="font-weight-bolder" style="text-align: center margin-top: 0">
-<td width="33.33%">Juliana Santana</td>
-<td></td>
-<td width="33.33%">Matheus Anselmo</td>
-<td></td>
-<td width="33.33%">Marco Reis</td>
-</tr>
+  <td width="33.33%">Juliana Santana</td>
+  <td></td>
+  <td width="33.33%">Matheus Anselmo</td>
+  <td></td>
+  <td width="33.33%">Marco Reis</td>
+  </tr>
 <tr style="text-align: center" >
 <td style="vertical-align: top"><small>Pesquisadora Jr. do projeto <br>Engenheira Eletricista.</small></td>
 <td></td>
@@ -162,3 +180,27 @@ O processamento dos dados que serão coletados pelos sensores e câmeras será r
 
 ##### Referência
 1. <a href="https://jetbot.org/master"><font color="#fbb117">JETBOT</font></a>. Acesso em: 4 de Junho de 2021.
+
+
+
+<br>
+<hr class="mark">
+<div id="full-tags-list">
+<h3 class="post-title"><font color="#fbb117">Posts</font></h3>
+  {%- for tag in tags_list -%}
+      <h4 id="{{- tag -}}" class="linked-section">
+          <i class="fas fa-tag" aria-hidden="true"></i>
+          &nbsp;{{- tag -}}&nbsp;({{site.tags[tag].size}})
+      </h4>
+      <div class="post-list">
+          {%- for post in site.tags[tag] -%}
+              <div class="tag-entry">
+                  <a href="{{ post.url | relative_url }}">{{- post.title -}}</a>
+                  <div class="entry-date">
+                      <time datetime="{{- post.date | date_to_xmlschema -}}">{{- post.date | date: date_format -}}</time>
+                  </div>
+              </div>
+          {%- endfor -%}
+      </div>
+  {%- endfor -%}
+</div>
