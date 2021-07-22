@@ -1,44 +1,90 @@
 ---
 layout: page
-title: APEREA - JetBot 2
+title: APEREA
 subtitle: Robô autônomo diferencial
 ---
+{% assign date_format = site.date_format | default: "%B %-d, %Y" %}
+{%- capture site_tags -%}
+    {%- for tag in site.tags -%}
+      {% if tag contains 'aum' %}
+        {{- tag | first -}}{%- unless forloop.last -%},{%- endunless -%}
+      {% endif %} 
+    {%- endfor -%}
+{%- endcapture -%}
+{%- assign tags_list = site_tags | split:',' | sort -%}
+
+<center><img style="border:5px solid black;" src="{{ 'assets/img/aperea/aperea.png' | relative_url }}" text-align=center width="500" alt="Mohan" /><br></center>
+
+<div class="before-content">
+  <center>
+    {%- for tag in tags_list -%}
+      <br>
+      <a href="#{{- tag -}}" class="btn btn-primary tag-btn"><i class="fas fa-tag" aria-hidden="true"></i>&nbsp;{{- tag -}}-posts&nbsp;({{site.tags[tag].size}})</a>
+    {%- endfor -%}
+  </center>    
+  <!--hr class="mark"-->
+</div>
 
 <center>
 <img src="{{ 'assets/img/aperea/aperea.png' | relative_url }}" width="300" text-align=center alt="nvidiaJetbot" />
 </center>
 
-## INTRODUÇÃO
+## Mobilidade
+<p style="text-align: justify;">
+A junção da mobilidade com ferramentas de visão computacional e inteligência artificial proporcionam aos robôs móveis uma grande variedade de aplicações e autonomia. As aplicações incluem navegação, localização e identificação de objetos, por exemplo.{% assign date_format = site.date_format | default: "%B %-d, %Y" %}
+{%- capture site_tags -%}
+    {%- for tag in site.tags -%}
+      {% if tag contains 'aum' %}
+        {{- tag | first -}}{%- unless forloop.last -%},{%- endunless -%}
+      {% endif %} 
+    {%- endfor -%}
+{%- endcapture -%}
+{%- assign tags_list = site_tags | split:',' | sort -%}
 
-A junção da mobilidade com ferramentas de visão computacional e inteligência artificial proporcionam aos robôs móveis uma grande variedade de aplicações e autonomia. As aplicações incluem navegação, localização e identificação de objetos, por exemplo.
+<center><img style="border:5px solid black;" src="{{ 'assets/img/aum/mohan-model.png' | relative_url }}" text-align=center width="500" alt="Mohan" /><br></center>
+
+<div class="before-content">
+  <center>
+    {%- for tag in tags_list -%}
+      <br>
+      <a href="#{{- tag -}}" class="btn btn-primary tag-btn"><i class="fas fa-tag" aria-hidden="true"></i>&nbsp;{{- tag -}}-posts&nbsp;({{site.tags[tag].size}})</a>
+    {%- endfor -%}
+  </center>    
+  <!--hr class="mark"-->
+</div>
 
 O Projeto Aperea Jetbot II almeja utilizar alguns dos benefícios gerados do elo entre robótica móvel, visão computacional e I.A. Para isso será utilizada a placa Nvidia Jetson Nano em conjunto com elementos sensoriais para coletar dados do meio externo.
 
 Conforme ilustrado na Figura abaixo, o robô deverá ser capaz de buscar e reconhecer uma tag no ambiente. A tag indicará a localização de uma bola na cor laranja. E, a partir desta informação, o robô deverá encontrar esta bola.
+</p>
 
 <center>
 <img src="{{ 'assets/img/aperea/jetbot_mission.png' | relative_url }}" text-align=center alt="missao" />
 </center>
 
+<p style="text-align: justify;">
 O projeto teve início em 07/05/2021, possui uma duração estimada de 58 dias e tem sua conclusão prevista para 30/07/2021. A execução deste projeto irá propor, aos seus respectivos desenvolvedores, conhecimentos direcionados a robótica móvel, além de experiências voltadas ao gerenciamento de projetos. Ambos ganhos são importantes na formação de pesquisadores e desenvolvedores com alvo em sistemas robóticos.
-
-
+</p>
 
 ## Detalhamento
+<p style="text-align: justify;">
 O Aperea, para cumprir a sua missão, precisa realizar deslocamentos para navegar no ambiente.Conforme ilustrado abaixo, o movimento do robô será proporcionado pelas atuações dos motores TT. A implementação também será focada para atribuir uma dinâmica de um robô móvel diferencial.
 Durante a navegação, o robô deve encontrar obstáculos que podem dificultar a execução da missão. Para tratar os eventuais obstáculos serão implementados sensores que ajudarão na tarefa de evita-lós.
+</p>
 
 <center>
 <img src="{{ 'assets/img/aperea/esquema.png' | relative_url }}" text-align=center alt="ga" />
 </center>
 
+<p style="text-align: justify;">
 O sensor ultrassônico, implementado na parte frontal do robô, proverá informação da existência de obstáculos que podem estar a frente do robô.
 Um Lidar 2d, juntamente com uma câmera de profundidade Mynteye serão utilizados para tornar este sistema robótico capaz de realizar a técnica SLAM, que irá permitir a construção do mapa e localização de forma simultânea.
 Afim de identificar a TAG e a esfera colorida, a câmera V2 Raspberry Pi será utilizada para captar os dados visuais do ambiente. Os dados visuais serão processados com uso da biblioteca de visão computacional OpenCV.
 
 O processamento dos dados que serão coletados pelos sensores e câmeras será realizado pela placa Nvidia Jetson Nano. A placa conterá o sistema operacional Ubuntu 20.04, que permitirá a instalação da plataforma ROS, Robot Operation System. Também será desenvolvido um sistema de gerenciamento de energia para monitorar a carga do sistema. A tabela abaixo apresenta mais informações com relação aos principais componentes que compõem o sistema do Aperea.
+</p>
 
-<center> Principais Componentes</center>
+### Principais Componentes
 
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;}
@@ -121,12 +167,12 @@ O processamento dos dados que serão coletados pelos sensores e câmeras será r
 </thead>
 <tbody>
 <tr class="font-weight-bolder" style="text-align: center margin-top: 0">
-<td width="33.33%">Juliana Santana</td>
-<td></td>
-<td width="33.33%">Matheus Anselmo</td>
-<td></td>
-<td width="33.33%">Marco Reis</td>
-</tr>
+  <td width="33.33%">Juliana Santana</td>
+  <td></td>
+  <td width="33.33%">Matheus Anselmo</td>
+  <td></td>
+  <td width="33.33%">Marco Reis</td>
+  </tr>
 <tr style="text-align: center" >
 <td style="vertical-align: top"><small>Pesquisadora Jr. do projeto <br>Engenheira Eletricista.</small></td>
 <td></td>
@@ -155,5 +201,5 @@ O processamento dos dados que serão coletados pelos sensores e câmeras será r
 
 <br>
 
-# Referência
-1. Jetbot. **JETBOT**. Acesso em: 4 de Junho de 2021 [https://jetbot.org/master].
+##### Referência
+1. <a href="https://jetbot.org/master"><font color="#fbb117">JETBOT</font></a>. Acesso em: 4 de Junho de 2021.
