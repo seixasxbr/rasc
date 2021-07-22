@@ -2,44 +2,38 @@
 layout: page
 title: PongZ
 subtitle: Uma releitura do pong para os tempos atuais.
-cover-img: https://i.imgur.com/9AJowrB.png[/img]
+#cover-img: https://i.imgur.com/9AJowrB.png[/img]
 ---
+<center><img src="{{ 'https://i.imgur.com/9AJowrB.png[/img]' | relative_url }}" alt="pongz" width="380"/></center>
 
-## Introdução
+<br>
 
-### Um pouco de história.
+# Um pouco de história
 <div style="text-align: justify"> 
 O Pong é considerado o primeiro jogo da história em formato de vídeo a ser lucrativo. Criado por  Nolan Bushnell e Ted Dabney, o jogo se inspira no clássico jogo de tênis de dois jogadores em que as hastes/barras simulam as raquetes, e a bola da mesma forma que em uma partida de tênis, percorre a quadra até um dos jogadores não conseguir rebater. A versão clássica do PONG consiste em um console ligado a um monitor, sendo as hastes movidas por moedas.
 </div>
 
-### O PongZ
+# O PongZ
 <div style="text-align: justify"> 
 Nesta versão que adotamos o nome de PongZ, sendo "Pong" o nome do jogo original e "Z" o termo que remete o nascimento da geração dos desenvolvedores. Neste projeto resolvemos remodelar o design, mas sem alterar a essência do jogo, trazendo uma clássica trilha sonora dos anos 70. Além disso, no lugar das moedas que moviam as hastes temos potenciômetros, e um arduino que faz a interpretação desses dados e envia para o computador através da porta USB, contendo também informações dos botões push buttons que permitem o jogador controlar pausar e resetar o jogo.
 </div>
 
-### Justificativa
+### O desafio
 <div style="text-align: justify"> 
 O PongZ é um projeto criado dentro da disciplina de Sistemas Embarcados no curso de Engenharia Elétrica do SENAI CIMATEC ministrado pelo Prof. Marco Reis, com intuito de explorar as habilidades desenvolvidas durante a disciplina, como fazer a interação entre software e hardware através de comunicação serial e manipulação de dados capturados em um sistema embarcados.
 </div>
 
-## Detalhamento
+### Um pouco sobre o desenvolvimento
 <div style="text-align: justify"> 
 O hardware do projeto conta com dois botões, dois potenciômetros e um arduino. Quanto ao software, o arduino foi programado para monitorar os sensores e enviar estes dados através da comunicação serial, enquanto um algoritmo em Processing 3 foi responsável pela interface do jogo.
-</div>
 
-## Simulação
-<div style="text-align: justify"> 
 Para uma melhor didática de como foram feitas as conexões dos potenciômetros e push buttons ao arduino, foi demonstrado no Tinkercad conforme a imagem abaixo. As ligações dos potenciômetros foram, respectivamente, o terminal 1 ligado ao GND, o terminal 2 aos pinos analógicos A0 e A2 e o terminal 3 ligado ao 5V. Já os push buttons, foram ligados, respectivamente, o terminal 1B aos pinos digitais 9 e 8 e o terminal 2B ao GND.
 </div>
 
 
 <th><center><img src="{{ 'assets/img/pongz/pong_circuito.png' | relative_url }}" width="500" alt="Alexandre" class="img" /></center></th>
 
-<div style="text-align: center"> 
-Figura 1. <br/>
-O circuito acima foi projetado através do TinkerCAD.<br/>
-Fonte: Autoria Própria.</div>
-<br/>
+<br>
 
 ## Live Game
 O vídeo abaixo tem como objetivo representar a versão final do jogo, demonstrando a jogabilidade e suas funções.
@@ -108,12 +102,14 @@ O vídeo abaixo tem como objetivo representar a versão final do jogo, demonstra
 3. Data de início: 25/05/2021
 4. Data de término: 14/06/2021
 5. Repositório URL: [PongZ](https://github.com/GabrielCalmon/Desafio_Pong_2021-1)
-6. Sponsor: [Senai Cimatec](http://www.senaicimatec.com.br/)
+6. Sponsor: <a href="http://www.senaicimatec.com.br/en/"><font color="#fbb117">Senai CIMATEC</font></a>
 7. Recursos materiais: US$ 42.00
 8. Apresentação URL: [PongZ-ppt](https://drive.google.com/drive/folders/188Juz5FEUqrq5PzuuWtxbnuLv0CRaUem?usp=sharing) 
 9. Report URL: [PongZ-report](https://drive.google.com/drive/folders/188Juz5FEUqrq5PzuuWtxbnuLv0CRaUem?usp=sharing) 
 
-## Referências
+<br>
+
+##### Referências
 1. [TinkerCAD DashBoard](https://www.tinkercad.com/things/alnQmejrYC8-pong-av3/editel). Tinkercad Dashboard. Acesso em: 19 de Julho de 2021.
 2. [MasterWalker](https://blogmasterwalkershop.com.br/arduino/arduino-utilizando-o-potenciometro-linear). Como usar com Arduino-chave táctil/pushbutton. Acesso em: 19 de Julho de 2021.
 3. [MasterWalker](https://blogmasterwalkershop.com.br/arduino/arduino-utilizando-o-potenciometro-linear). Como usar com Arduino – potenciômetro linear 10k com eixo estriado. Acesso em: 19 de Julho de 2021.
