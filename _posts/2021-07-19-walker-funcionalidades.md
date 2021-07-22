@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Walker - Funcionalidades
-subtitle: O que o robô será capaz de fazer?
-cover-img: /assets/img/walker/walker_funcionalidades.jpg
+subtitle: O que o robô será capaz de fazer? by Felipe Mohr
+cover-img: /assets/img/walker/carlos-arthur-m-r-dSINOJrEdfw-unsplash.jpg
 thumbnail-img: assets/img/walker/walker_funcionalidades.png
-share-img: assets/img/walker/walker_funcionalidades.png
-tags: [walker, funcionalidades]
+share-img: /assets/img/rosa-logo-redondo.png
+tags: [walker]
 ---
 
 No processo de ideação de um projeto, surge a necessidade de analisar e reunir as funcionalidades que o produto deve conter para realizar a tarefa proposta a ele. Ou seja, neste momento é pensado um grupo de pequenas ações que o protótipo deve realizar em prol de uma ação final. Por exemplo para uma microondas esquentar um dado alimento, de forma simplificada, este equipamento deve possuir as seguintes funcionalidades: interface, para interagir com o usuário, geracionamento, que analisa a escolha do usuário e envia as informações de operação, e atuação, para acionar o giro do prato e o sistema de aquecimento.
@@ -38,33 +38,33 @@ As funcionalidades são as seguintes:
 
 Nessa fase foi possível sistematizar as funcionalidades que o robô deverá conter e observar as interdependências entre elas, constituindo um só sistema. Além disso, a organização do projeto em subsistemas facilita o planejamento e execução das próximas etapas.
 
-<h3 class="post-title">Autores</h3><br/>
+
+<br>
+
+---------------------
+<br>
+
+<!-- autor -->
+<center><h3 class="post-title">Autor</h3><br/></center>
 <div class="row">
-  <div class=" col-xl-auto offset-xl-0 col-lg-4 offset-lg-0">
+  <div class="col-xl-auto offset-xl-0 col-lg-4 offset-lg-0 center">
     <table class="table-borderless highlight">
       <thead>
         <tr>
-          <th><center><img src="{{ 'assets/img/people/brendaalencar-1.png' | relative_url }}" width="100" alt="brenda" class="img-fluid rounded-circle" /></center></th>
-          <th></th>
-          <th><center><img src="{{ 'assets/img/people/felipemohr-1.jpg' | relative_url }}" width="100" alt="felipemohr" class="img-fluid rounded-circle"/></center></th>
-          <th></th>
+          <th><img src="{{ 'assets/img/people/felipemohr-1.jpg' | relative_url }}" width="100" alt="felipemohr" class="img-fluid rounded-circle" /></th>
         </tr>
       </thead>
       <tbody>
         <tr class="font-weight-bolder" style="text-align: center margin-top: 0">
-          <td width="44.33%"><center>Brenda Alencar</center></td>
-          <td></td>
-          <td width="44.33%"><center>Felipe Mohr</center></td>
-          <td></td>
+          <td>Felipe Mohr</td>
         </tr>
-        <tr style="text-align:center" >
-          <td width="44.33%" style="vertical-align: top"><small>Estagiária no CC RoSA, graduanda em Eng. Elétrica. Participou de projetos de Robótica Subaquática e Manipuladores Subaquáticos</small></td>
+        <tr style="text-align: center" >
+          <td style="vertical-align: top"><small>Estagiário no CC RoSA, graduando em Eng. Elétrica. Participou de projetos de Robótica Subaquática e Robótica Móvel</small></td>
           <td></td>
-          <td width="44.33%" style="vertical-align: top"><small>Estagiário no CC RoSA, graduando em Eng. Elétrica. Participou de projetos de Robótica Subaquática e Robótica Móvel</small></td>
-        <td></td>
         </tr>
       </tbody>
     </table>
   </div>
 </div>
 
+<br>

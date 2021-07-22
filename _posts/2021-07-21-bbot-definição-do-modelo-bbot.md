@@ -38,16 +38,15 @@ São necessários, então, condições e critérios para a satisfação dos obje
 - Pernas articuladas com 2 DOF em sentido pitch (Y);
 - Deve ser capaz de controlar a velocidade das rodas.
 
-<!-- **************************************** -->
+<!-- **************************************** 
 ### Selecionando os componentes 
 
 Aqui está uma lista completa de peças até o momento (sujeito a alterações):
 
 Todas essas peças tem o valor aproximado de $USD 3162,64. 
-
+-->
 <!-- **************************************** -->
 ### Definindo o modelo
--->
 
 É possível analisar que a arquitetura está dividida em três grandes blocos, que compõem a <strong>interface do usuário</strong>, a <strong>central de gerenciamento do sistema</strong> (Ubuntu 20.04 + ROS Noetic) e a <strong>interface com o hardware</strong>. 
 
