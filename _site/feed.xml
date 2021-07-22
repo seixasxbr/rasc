@@ -12,14 +12,25 @@
     
     
       <item>
-        <title>Aspectos conceituais do Bbot [Etapa 1]</title>
+        <title>Funcionalidades do Bbot</title>
         <description>
           Um robô que se equilibra com pernas articuladas - 
-          Motivados pelo desejo de contribuir para a inovação no campo dos robôs auto-balanceados e suas tecnologias, e com o avanço da investigação da robótica internacional, decidimos avançar com a criação de uma nova plataforma com características especiais face a soluções previamente definidas. Para iniciarmos a construção do robô, definimos como...
+          Anteriormente É importante que você tenha visto o post anterior ([Etapa 1] Definição do modelo Bbot), para um completo entendimento do desenvolvimento do projeto. Introdução Na etapa dois do processo de construção do Bbot, e de qualquer outro projeto de robótica, é importante definir as funcionalidades. Antes de iniciarmos as...
         </description>
-        <pubDate>Tue, 20 Jul 2021 00:00:00 -0300</pubDate>
-        <link>http://localhost:4000/2021-07-20-bbot-aspectos-conceituais-do-bbot-etapa-1/</link>
-        <guid isPermaLink="true">http://localhost:4000/2021-07-20-bbot-aspectos-conceituais-do-bbot-etapa-1/</guid>
+        <pubDate>Thu, 22 Jul 2021 00:00:00 -0300</pubDate>
+        <link>http://localhost:4000/2021-07-22-bbot-funcionalidades-do-bbot/</link>
+        <guid isPermaLink="true">http://localhost:4000/2021-07-22-bbot-funcionalidades-do-bbot/</guid>
+      </item>
+    
+      <item>
+        <title>Definição do modelo Bbot</title>
+        <description>
+          Um robô que se equilibra com pernas articuladas - 
+          Motivados pelo desejo de contribuir para a inovação no campo dos robôs auto-balanceados e suas tecnologias, e com o avanço da investigação da robótica internacional, decidimos avançar com a criação de uma nova plataforma com características especiais face a soluções previamente definidas. Para iniciarmos a etapa 1 da construção do...
+        </description>
+        <pubDate>Wed, 21 Jul 2021 00:00:00 -0300</pubDate>
+        <link>http://localhost:4000/2021-07-21-bbot-defini%C3%A7%C3%A3o-do-modelo-bbot/</link>
+        <guid isPermaLink="true">http://localhost:4000/2021-07-21-bbot-defini%C3%A7%C3%A3o-do-modelo-bbot/</guid>
       </item>
     
       <item>

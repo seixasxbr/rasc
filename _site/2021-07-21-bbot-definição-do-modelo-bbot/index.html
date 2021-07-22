@@ -12,7 +12,7 @@
 
   
 
-  <title>Aspectos conceituais do Bbot [Etapa 1]</title>
+  <title>Definição do modelo Bbot</title>
 
   
   <meta name="author" content="Marco Reis">
@@ -77,7 +77,7 @@
 
   
   <meta property="og:site_name" content="Robotics & Autonomous Systems">
-  <meta property="og:title" content="Aspectos conceituais do Bbot [Etapa 1]">
+  <meta property="og:title" content="Definição do modelo Bbot">
   <meta property="og:description" content="Um robô que se equilibra com pernas articuladas">
 
   
@@ -87,9 +87,9 @@
   
   <meta property="og:type" content="article">
   <meta property="og:article:author" content="Marco Reis">
-  <meta property="og:article:published_time" content="2021-07-20T00:00:00-03:00">
-  <meta property="og:url" content="http://localhost:4000/2021-07-20-bbot-aspectos-conceituais-do-bbot-etapa-1/">
-  <link rel="canonical" href="http://localhost:4000/2021-07-20-bbot-aspectos-conceituais-do-bbot-etapa-1/">
+  <meta property="og:article:published_time" content="2021-07-21T00:00:00-03:00">
+  <meta property="og:url" content="http://localhost:4000/2021-07-21-bbot-defini%C3%A7%C3%A3o-do-modelo-bbot/">
+  <link rel="canonical" href="http://localhost:4000/2021-07-21-bbot-defini%C3%A7%C3%A3o-do-modelo-bbot/">
   
 
   
@@ -98,7 +98,7 @@
   <meta name="twitter:site" content="@">
   <meta name="twitter:creator" content="@">
 
-  <meta property="twitter:title" content="Aspectos conceituais do Bbot [Etapa 1]">
+  <meta property="twitter:title" content="Definição do modelo Bbot">
   <meta property="twitter:description" content="Um robô que se equilibra com pernas articuladas">
 
   
@@ -209,10 +209,17 @@
     var searchjson = '[ \
        \
         { \
-          "title"    : "Aspectos conceituais do Bbot [Etapa 1]", \
+          "title"    : "Funcionalidades do Bbot", \
           "category" : "bbot", \
-          "url"      : "/2021-07-20-bbot-aspectos-conceituais-do-bbot-etapa-1/", \
-          "date"     : "July 20, 2021" \
+          "url"      : "/2021-07-22-bbot-funcionalidades-do-bbot/", \
+          "date"     : "July 22, 2021" \
+        }, \
+       \
+        { \
+          "title"    : "Definição do modelo Bbot", \
+          "category" : "bbot", \
+          "url"      : "/2021-07-21-bbot-defini%C3%A7%C3%A3o-do-modelo-bbot/", \
+          "date"     : "July 21, 2021" \
         }, \
        \
         { \
@@ -355,7 +362,7 @@
     <div class="row">
       <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
         <div class="post-heading">
-          <h1>Aspectos conceituais do Bbot [Etapa 1]</h1>
+          <h1>Definição do modelo Bbot</h1>
           
             
               <h2 class="post-subheading">Um robô que se equilibra com pernas articuladas</h2>
@@ -363,7 +370,7 @@
           
 
           
-            <span class="post-meta">Posted on July 20, 2021</span>
+            <span class="post-meta">Posted on July 21, 2021</span>
             
             
           
@@ -379,7 +386,7 @@
     <div class="row">
       <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
         <div class="post-heading">
-          <h1>Aspectos conceituais do Bbot [Etapa 1]</h1>
+          <h1>Definição do modelo Bbot</h1>
           
             
               <h2 class="post-subheading">Um robô que se equilibra com pernas articuladas</h2>
@@ -387,7 +394,7 @@
           
 
           
-            <span class="post-meta">Posted on July 20, 2021</span>
+            <span class="post-meta">Posted on July 21, 2021</span>
             
             
           
@@ -413,10 +420,13 @@
       <article role="main" class="blog-post">
         <!-- **************************************** -->
 <!-- ### Introdução -->
+<p style="text-align: justify;">
+Motivados pelo desejo de contribuir para a inovação no campo dos robôs auto-balanceados e suas tecnologias, e com o avanço da investigação da robótica internacional, decidimos avançar com a criação de uma nova plataforma com características especiais face a soluções previamente definidas.
+</p>
 
-<p>Motivados pelo desejo de contribuir para a inovação no campo dos robôs auto-balanceados e suas tecnologias, e com o avanço da investigação da robótica internacional, decidimos avançar com a criação de uma nova plataforma com características especiais face a soluções previamente definidas.</p>
-
-<p>Para iniciarmos a construção do robô, definimos como prioridade utilizar componentes já disponíveis no laboratório da instituição (<a href="http://www.senaicimatec.com.br/en/"><font color="#fbb117">Senai CIMATEC</font></a>). Além disso, o projeto Bbot deverá atender requisitos baseados nas necessidades e expectativas de pesquisa. A adição de servos para manipular membros sobre rodas traz um desafio com uma série de benefícios. Ou seja, ser capaz de ajustar a altura de cada perna para permanecer estável mesmo ao tombar de um lado para o outro e com maior capacidade off-road, bem como até mesmo pular.</p>
+<p style="text-align: justify;">
+Para iniciarmos a <strong>etapa 1</strong> da construção do robô, definimos como prioridade utilizar componentes já disponíveis no laboratório da instituição (<a target="_blank" href="http://www.senaicimatec.com.br/en/"><font color="#fbb117">Senai CIMATEC</font></a>). Além disso, o <a href="https://mhar-vell.github.io/rasc/project-bbot/"><font color="#fbb117">projeto Bbot</font></a> deverá atender requisitos baseados nas necessidades e expectativas de pesquisa. A adição de servos para manipular membros sobre rodas traz um desafio com uma série de benefícios. Ou seja, ser capaz de ajustar a altura de cada perna para permanecer estável mesmo ao tombar de um lado para o outro e com maior capacidade off-road, bem como até mesmo pular. 
+</p>
 
 <hr />
 
@@ -432,7 +442,9 @@
   <li>O robô deve ser capaz de desviar de obstáculos enquanto navega de forma autônoma até o objetivo.</li>
 </ul>
 
-<p>São necessários, então, condições e critérios para a satisfação dos objetivos estabelecidos. São estas:</p>
+<p style="text-align: justify;">
+São necessários, então, condições e critérios para a satisfação dos objetivos estabelecidos. São estas:
+</p>
 
 <ul>
   <li>Utilizar um Framework de robótica;</li>
@@ -446,7 +458,9 @@
 <!-- **************************************** -->
 <h3 id="selecionando-os-componentes">Selecionando os componentes</h3>
 
-<p>Aqui está uma lista completa de peças até o momento (sujeito a alterações):</p>
+<p style="text-align: justify;">
+Aqui está uma lista completa de peças até o momento (sujeito a alterações):
+</p>
 
 <style type="text/css">.tg-sort-header::-moz-selection{background:0 0}.tg-sort-header::selection{background:0 0}.tg-sort-header{cursor:pointer}.tg-sort-header:after{content:'';float:right;margin-top:7px;border-width:0 5px 5px;border-style:solid;border-color:#404040 transparent;visibility:hidden}.tg-sort-header:hover:after{visibility:visible}.tg-sort-asc:after,.tg-sort-asc:hover:after,.tg-sort-desc:after{visibility:visible;opacity:.4}.tg-sort-desc:after{border-bottom:none;border-width:5px 5px 0}@media screen and (max-width: 767px) {.tg {width: auto !important;}.tg col {width: auto !important;}.tg-wrap {overflow-x: auto;-webkit-overflow-scrolling: touch;margin: auto 0px;}}</style>
 <div class="tg-wrap"><table id="tg-NPaUZ" style="border-collapse:collapse;border-color:#9ABAD9;border-spacing:0;margin:0px auto" class="tg"><thead><tr><th style="background-color:#409cff;border-bottom-width:1px;border-color:inherit;border-style:solid;border-top-width:1px;border-width:0px;color:#fff;font-family:Arial, sans-serif;font-size:14px;font-weight:normal;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">COMPONENTES</th><th style="background-color:#409cff;border-bottom-width:1px;border-color:inherit;border-style:solid;border-top-width:1px;border-width:0px;color:#fff;font-family:Arial, sans-serif;font-size:14px;font-weight:normal;overflow:hidden;padding:10px 5px;text-align:center;vertical-align:top;word-break:normal">QTD</th><th style="background-color:#409cff;border-bottom-width:1px;border-color:inherit;border-style:solid;border-top-width:1px;border-width:0px;color:#fff;font-family:Arial, sans-serif;font-size:14px;font-weight:normal;overflow:hidden;padding:10px 5px;text-align:center;vertical-align:top;word-break:normal">LINK</th><th style="background-color:#409cff;border-bottom-width:1px;border-color:inherit;border-style:solid;border-top-width:1px;border-width:0px;color:#fff;font-family:Arial, sans-serif;font-size:14px;font-weight:normal;overflow:hidden;padding:10px 5px;text-align:center;vertical-align:top;word-break:normal">VALOR TOTAL ($USD)</th></tr></thead><tbody><tr><td style="background-color:#D2E4FC;border-bottom-width:1px;border-color:inherit;border-style:solid;border-top-width:1px;border-width:0px;color:#444;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">DYNAMIXEL MX-106</td><td style="background-color:#D2E4FC;border-bottom-width:1px;border-color:inherit;border-style:solid;border-top-width:1px;border-width:0px;color:#444;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:center;vertical-align:top;word-break:normal">4</td><td style="background-color:#D2E4FC;border-bottom-width:1px;border-color:inherit;border-style:solid;border-top-width:1px;border-width:0px;color:#444;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:center;vertical-align:top;word-break:normal"><a href="https://www.robotis.us/dynamixel-mx-106t/" target="_blank" rel="noopener noreferrer">Dynamixel Robotis</a></td><td style="background-color:#D2E4FC;border-bottom-width:1px;border-color:inherit;border-style:solid;border-top-width:1px;border-width:0px;color:#444;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:center;vertical-align:top;word-break:normal">2159,6</td></tr><tr><td style="background-color:#EBF5FF;border-bottom-width:1px;border-color:inherit;border-style:solid;border-top-width:1px;border-width:0px;color:#444;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">DYNAMIXEL XM430-W210</td><td style="background-color:#EBF5FF;border-bottom-width:1px;border-color:inherit;border-style:solid;border-top-width:1px;border-width:0px;color:#444;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:center;vertical-align:top;word-break:normal">2</td><td style="background-color:#EBF5FF;border-bottom-width:1px;border-color:inherit;border-style:solid;border-top-width:1px;border-width:0px;color:#444;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:center;vertical-align:top;word-break:normal"><a href="https://www.robotis.us/dynamixel-xm430-w210-r/" target="_blank" rel="noopener noreferrer">Dynamixel Robotis</a></td><td style="background-color:#EBF5FF;border-bottom-width:1px;border-color:inherit;border-style:solid;border-top-width:1px;border-width:0px;color:#444;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:center;vertical-align:top;word-break:normal"><span style="font-weight:400;font-style:normal">519,8</span></td></tr><tr><td style="background-color:#D2E4FC;border-bottom-width:1px;border-color:inherit;border-style:solid;border-top-width:1px;border-width:0px;color:#444;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">LiDAR</td><td style="background-color:#D2E4FC;border-bottom-width:1px;border-color:inherit;border-style:solid;border-top-width:1px;border-width:0px;color:#444;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:center;vertical-align:top;word-break:normal">1</td><td style="background-color:#D2E4FC;border-bottom-width:1px;border-color:inherit;border-style:solid;border-top-width:1px;border-width:0px;color:#444;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:center;vertical-align:top;word-break:normal"><a href="https://www.robotis.us/360-laser-distance-sensor-lds-01-lidar/" target="_blank" rel="noopener noreferrer">LiDAR Robotis</a></td><td style="background-color:#D2E4FC;border-bottom-width:1px;border-color:inherit;border-style:solid;border-top-width:1px;border-width:0px;color:#444;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:center;vertical-align:top;word-break:normal">196,1</td></tr><tr><td style="background-color:#EBF5FF;border-bottom-width:1px;border-color:inherit;border-style:solid;border-top-width:1px;border-width:0px;color:#444;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">OpenCM 9.04</td><td style="background-color:#EBF5FF;border-bottom-width:1px;border-color:inherit;border-style:solid;border-top-width:1px;border-width:0px;color:#444;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:center;vertical-align:top;word-break:normal">1</td><td style="background-color:#EBF5FF;border-bottom-width:1px;border-color:inherit;border-style:solid;border-top-width:1px;border-width:0px;color:#444;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:center;vertical-align:top;word-break:normal"><a href="https://emanual.robotis.com/docs/en/parts/controller/opencm904/" target="_blank" rel="noopener noreferrer">Open CM9.04 Robotis</a></td><td style="background-color:#EBF5FF;border-bottom-width:1px;border-color:inherit;border-style:solid;border-top-width:1px;border-width:0px;color:#444;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:center;vertical-align:top;word-break:normal">21,7</td></tr><tr><td style="background-color:#D2E4FC;border-bottom-width:1px;border-color:inherit;border-style:solid;border-top-width:1px;border-width:0px;color:#444;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">OpenCM 485 Exp.</td><td style="background-color:#D2E4FC;border-bottom-width:1px;border-color:inherit;border-style:solid;border-top-width:1px;border-width:0px;color:#444;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:center;vertical-align:top;word-break:normal">1</td><td style="background-color:#D2E4FC;border-bottom-width:1px;border-color:inherit;border-style:solid;border-top-width:1px;border-width:0px;color:#444;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:center;vertical-align:top;word-break:normal"><a href="https://emanual.robotis.com/docs/en/parts/controller/opencm485exp/" target="_blank" rel="noopener noreferrer">OpenCM 485 exp. Robotis</a></td><td style="background-color:#D2E4FC;border-bottom-width:1px;border-color:inherit;border-style:solid;border-top-width:1px;border-width:0px;color:#444;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:center;vertical-align:top;word-break:normal">32,6</td></tr><tr><td style="background-color:#EBF5FF;border-bottom-width:1px;border-color:inherit;border-style:solid;border-top-width:1px;border-width:0px;color:#444;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">MPU6050</td><td style="background-color:#EBF5FF;border-bottom-width:1px;border-color:inherit;border-style:solid;border-top-width:1px;border-width:0px;color:#444;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:center;vertical-align:top;word-break:normal">1</td><td style="background-color:#EBF5FF;border-bottom-width:1px;border-color:inherit;border-style:solid;border-top-width:1px;border-width:0px;color:#444;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:center;vertical-align:top;word-break:normal"><a href="https://produto.mercadolivre.com.br/MLB-1820250930-acelermetro-e-giroscopio-3-eixos-gy521-mpu6050-gy521-c-nfe-_JM?matt_tool=87716990&amp;amp;matt_word=&amp;amp;matt_source=google&amp;amp;matt_campaign_id=12413740998&amp;amp;matt_ad_group_id=119070072438&amp;amp;matt_match_type=&amp;amp;matt_network=g&amp;amp;matt_device=c&amp;amp;matt_creative=500702333978&amp;amp;matt_keyword=&amp;amp;matt_ad_position=&amp;amp;matt_ad_type=pla&amp;amp;matt_merchant_id=164968240&amp;amp;matt_product_id=MLB1820250930&amp;amp;matt_product_partition_id=337120033364&amp;amp;matt_target_id=pla-337120033364&amp;amp;gclid=CjwKCAjwiLGGBhAqEiwAgq3q_ly8hxZFz8qCPXFHc8ORE4E79RhaUB8MnjT3uuzdJ6T3VrzeIPiazBoCMR0QAvD_BwE" target="_blank" rel="noopener noreferrer">IMU MercadoLivre</a></td><td style="background-color:#EBF5FF;border-bottom-width:1px;border-color:inherit;border-style:solid;border-top-width:1px;border-width:0px;color:#444;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:center;vertical-align:top;word-break:normal">3,48</td></tr><tr><td style="background-color:#D2E4FC;border-bottom-width:1px;border-color:inherit;border-style:solid;border-top-width:1px;border-width:0px;color:#444;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">Camera RaspberryPI V2</td><td style="background-color:#D2E4FC;border-bottom-width:1px;border-color:inherit;border-style:solid;border-top-width:1px;border-width:0px;color:#444;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:center;vertical-align:top;word-break:normal">1</td><td style="background-color:#D2E4FC;border-bottom-width:1px;border-color:inherit;border-style:solid;border-top-width:1px;border-width:0px;color:#444;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:center;vertical-align:top;word-break:normal"><a href="https://www.filipeflop.com/produto/camera-raspberry-pi-v2-8mp/" target="_blank" rel="noopener noreferrer">Camera Filipeflop</a></td><td style="background-color:#D2E4FC;border-bottom-width:1px;border-color:inherit;border-style:solid;border-top-width:1px;border-width:0px;color:#444;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:center;vertical-align:top;word-break:normal">50,11</td></tr><tr><td style="background-color:#EBF5FF;border-bottom-width:1px;border-color:inherit;border-style:solid;border-top-width:1px;border-width:0px;color:#444;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">RaspberryPI 4</td><td style="background-color:#EBF5FF;border-bottom-width:1px;border-color:inherit;border-style:solid;border-top-width:1px;border-width:0px;color:#444;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:center;vertical-align:top;word-break:normal">1</td><td style="background-color:#EBF5FF;border-bottom-width:1px;border-color:inherit;border-style:solid;border-top-width:1px;border-width:0px;color:#444;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:center;vertical-align:top;word-break:normal"><a href="https://www.raspberrypi.org/" target="_blank" rel="noopener noreferrer">RPI 4 raspberrypi</a></td><td style="background-color:#EBF5FF;border-bottom-width:1px;border-color:inherit;border-style:solid;border-top-width:1px;border-width:0px;color:#444;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:center;vertical-align:top;word-break:normal">93,25</td></tr><tr><td style="background-color:#D2E4FC;border-bottom-width:1px;border-color:inherit;border-style:solid;border-top-width:1px;border-width:0px;color:#444;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">Borracha de silicone vermelha</td><td style="background-color:#D2E4FC;border-bottom-width:1px;border-color:inherit;border-style:solid;border-top-width:1px;border-width:0px;color:#444;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:center;vertical-align:top;word-break:normal">1</td><td style="background-color:#D2E4FC;border-bottom-width:1px;border-color:inherit;border-style:solid;border-top-width:1px;border-width:0px;color:#444;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:center;vertical-align:top;word-break:normal"><a href="https://www.redelease.com.br/catalog/product/view/id/1631/s/borracha-de-silicone-vermelha-rigida-para-fundicao-com-catalisador-1-050-kg/" target="_blank" rel="noopener noreferrer">Silicone Redelease</a></td><td style="background-color:#D2E4FC;border-bottom-width:1px;border-color:inherit;border-style:solid;border-top-width:1px;border-width:0px;color:#444;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:center;vertical-align:top;word-break:normal">11,59</td></tr><tr><td style="background-color:#EBF5FF;border-bottom-width:1px;border-color:inherit;border-style:solid;border-top-width:1px;border-width:0px;color:#444;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">Lipo 4s</td><td style="background-color:#EBF5FF;border-bottom-width:1px;border-color:inherit;border-style:solid;border-top-width:1px;border-width:0px;color:#444;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:center;vertical-align:top;word-break:normal">1</td><td style="background-color:#EBF5FF;border-bottom-width:1px;border-color:inherit;border-style:solid;border-top-width:1px;border-width:0px;color:#444;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:center;vertical-align:top;word-break:normal"><a href="https://produto.mercadolivre.com.br/MLB-1873655714-bateria-lipo-4s-3300mah-100c-_JM#position=4&amp;search_layout=stack&amp;type=item&amp;tracking_id=43bd6937-975f-4cbd-a206-b2ad73fb843a" target="_blank" rel="noopener noreferrer">Bateria MercadoLivre</a></td><td style="background-color:#EBF5FF;border-bottom-width:1px;border-color:inherit;border-style:solid;border-top-width:1px;border-width:0px;color:#444;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:center;vertical-align:top;word-break:normal">54,72</td></tr><tr><td style="background-color:#D2E4FC;border-bottom-width:1px;border-color:inherit;border-style:solid;border-top-width:1px;border-width:0px;color:#444;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">Regulador tensão</td><td style="background-color:#D2E4FC;border-bottom-width:1px;border-color:inherit;border-style:solid;border-top-width:1px;border-width:0px;color:#444;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:center;vertical-align:top;word-break:normal">1</td><td style="background-color:#D2E4FC;border-bottom-width:1px;border-color:inherit;border-style:solid;border-top-width:1px;border-width:0px;color:#444;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:center;vertical-align:top;word-break:normal"><a href="https://produto.mercadolivre.com.br/MLB-1242529223-lm2596-conversor-regulador-tenso-step-down-_JM?matt_tool=87716990&amp;matt_word=&amp;matt_source=google&amp;matt_campaign_id=12413740998&amp;matt_ad_group_id=119070072438&amp;matt_match_type=&amp;matt_network=g&amp;matt_device=c&amp;matt_creative=500702333978&amp;matt_keyword=&amp;matt_ad_position=&amp;matt_ad_type=pla&amp;matt_merchant_id=147035375&amp;matt_product_id=MLB1242529223&amp;matt_product_partition_id=337120033364&amp;matt_target_id=pla-337120033364" target="_blank" rel="noopener noreferrer">Regulador MercadoLivre</a></td><td style="background-color:#D2E4FC;border-bottom-width:1px;border-color:inherit;border-style:solid;border-top-width:1px;border-width:0px;color:#444;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:center;vertical-align:top;word-break:normal">2,69</td></tr><tr><td style="background-color:#EBF5FF;border-bottom-width:1px;border-color:inherit;border-style:solid;border-top-width:1px;border-width:0px;color:#444;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">Precision Voltage Sensor</td><td style="background-color:#EBF5FF;border-bottom-width:1px;border-color:inherit;border-style:solid;border-top-width:1px;border-width:0px;color:#444;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:center;vertical-align:top;word-break:normal">1</td><td style="background-color:#EBF5FF;border-bottom-width:1px;border-color:inherit;border-style:solid;border-top-width:1px;border-width:0px;color:#444;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:center;vertical-align:top;word-break:normal"><a href="https://www.phidgets.com/?tier=3&amp;catid=16&amp;pcid=14&amp;prodid=1067" target="_blank" rel="noopener noreferrer">Phidgets</a></td><td style="background-color:#EBF5FF;border-bottom-width:1px;border-color:inherit;border-style:solid;border-top-width:1px;border-width:0px;color:#444;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:center;vertical-align:top;word-break:normal">17</td></tr></tbody></table></div>
@@ -457,7 +471,22 @@
 <!-- **************************************** -->
 <h3 id="definindo-o-modelo">Definindo o modelo</h3>
 
-<p>Feito a seleção dos componentes e definindo as peças que vamos utilizar, podemos definir a arquitetura geral do Bbot.</p>
+<p style="text-align: justify;">
+Feito a seleção dos componentes e definindo as peças que vamos utilizar, podemos definir a arquitetura geral do Bbot. 
+</p>
+
+<p style="text-align: justify;">
+É possível analisar que a arquitetura está dividida em três grandes blocos, que compõem a <strong>interface do usuário</strong>, a <strong>central de gerenciamento do sistema</strong> (Ubuntu 20.04 + ROS Noetic) e a <strong>interface com o hardware</strong>. 
+</p>
+
+<p style="text-align: justify;">
+Podemos notar que existem pontos de conexão entre os blocos, são eles: 
+</p>
+
+<ul>
+  <li><strong>OpenCM 9.04:</strong> responsável pela aquisição de dados dos sensores e da comunicação com os atuadores</li>
+  <li><strong>Wi-fi:</strong> Disponibiliza o acesso remoto com a Raspberry Pi</li>
+</ul>
 
 <p align="center">
     <img src="/assets/img/bbot/arquitetura_geral.png" alt="Arquitetura geral" width="750" />
@@ -466,164 +495,45 @@
 <!-- **************************************** -->
 <h3 id="diagrama-de-componentes">Diagrama de componentes</h3>
 
-<p>Já com o diagrama de componentes, podemos definir as conexões entre os componentes e obter uma visão geral do projeto.</p>
+<p style="text-align: justify;">
+Já com o diagrama de componentes, podemos definir as conexões entre os componentes e obter uma visão geral do projeto.
+</p>
+
+<p style="text-align: justify;">
+O diagrama se divide em <strong>base</strong> e <strong>pernas</strong>. Na base do robô, nós temos os controladores, a bateria e os sensores. As pernas ficam com os atuadores. 
+</p>
+
+<p style="text-align: justify;">
+É possível notar que as conexões entre os  componentes se dividem em <strong>potência</strong> (vermelho) e <strong>data</strong> (preto). Os atuadores são apresentados apenas com uma “linha” de potência, pois são conectados em cadeia, então optamos por essa descrição no diagrama.
+</p>
 
 <p align="center">
     <img src="/assets/img/bbot/components_diagram.png" alt="Diagrama de componentes" width="750" />
 </p>
 
 <!-- **************************************** -->
-<h3 id="diagrama-das-funcionalidades">Diagrama das funcionalidades</h3>
+<h3 id="conclusão">Conclusão</h3>
 
-<p>Antes de seguir para as próximas etapas (mão na massa!! 👷🔧), temos mais um documento importante, que nos permite definir as funcionalidades e como elas estão relacionadas, assim tendo um total controle do desenvolvimento do projeto.</p>
-
-<p align="center">
-    <img id="myImg" src="/assets/img/bbot/diagrama_funcionalidades_v2.png" alt="Diagrama de funcionalidades" width="750" />
+<p style="text-align: justify;">
+Nessa primeira etapa do projeto Bbot, foi apresentado a metodologia do projeto e a definição do modelo. Com base nos parâmetros propostos aqui, podemos partir para descrição das funcionalidades do Bbot!! <img src="/assets/img/bbot/bbot.png" alt="Bbot" width="17" /> <img src="/assets/img/bbot/bbot_stand.png" alt="Bbot" width="15" />
 </p>
-
-<!--  **************************************** MODAL IMG ****************************************-->
-<html>
-  <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <style>
-  body {font-family: Arial, Helvetica, sans-serif;}
-
-  #myImg {
-      border-radius: 5px;
-      cursor: pointer;
-      transition: 0.3s;
-      display: block;
-      margin-left: auto;
-      margin-right: auto
-  }
-  #myImg:hover {opacity: 0.7;}
-
-  /* The Modal (background) */
-  .modal {
-      display: none; /* Hidden by default */
-      position: fixed; /* Stay in place */
-      z-index: 99; /* Sit on top */
-      padding-top: 50px; /* Location of the box */
-      left: -70px;
-      top: 0;
-      width: 115%; /* Full width */
-      height: 115%; /* Full height */
-      overflow: auto; /* Enable scroll if needed */
-      background-color: rgb(0,0,0); /* Fallback color */
-      background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
-  }
-
-  /* Modal Content (image) */
-  .modal-content {
-      margin: auto;
-      display: block;
-      width: 75%;
-      //max-width: 75%;
-  }
-
-  /* Caption of Modal Image */
-  #caption {
-      margin: auto;
-      display: block;
-      width: 80%;
-      max-width: 700px;
-      text-align: center;
-      color: #ccc;
-      padding: 10px 0;
-      height: 150px;
-  }
-
-  @-webkit-keyframes zoom {
-      from {-webkit-transform:scale(1)}
-      to {-webkit-transform:scale(2)}
-  }
-  
-  @keyframes zoom {
-      from {transform:scale(0.4)}
-      to {transform:scale(1)}
-  }
-
-  @-webkit-keyframes zoom-out {
-      from {transform:scale(1)}
-      to {transform:scale(0)}
-  }
-  @keyframes zoom-out {
-      from {transform:scale(1)}
-      to {transform:scale(0)}
-  }
-
-  /* Add Animation */
-  .modal-content, #caption {
-      -webkit-animation-name: zoom;
-      -webkit-animation-duration: 0.6s;
-      animation-name: zoom;
-      animation-duration: 0.6s;
-  }
-
-  .out {
-    animation-name: zoom-out;
-    animation-duration: 0.6s;
-  }
-
-  /* 100% Image Width on Smaller Screens */
-  @media only screen and (max-width: 700px){
-      .modal-content {
-          width: 100%;
-      }
-  }
-
-  </style>
-  </head>
-  <body>
-
-  <!-- The Modal -->
-  <div id="myModal" class="modal">
-    <img class="modal-content" id="img01" />
-  <div id="caption"></div>
-  </div>
-
-  <script>
-  // Get the modal
-  var modal = document.getElementById('myModal');
-  
-  // Get the image and insert it inside the modal - use its "alt" text as a caption
-  var img = document.getElementById('myImg');
-  var modalImg = document.getElementById("img01");
-  var captionText = document.getElementById("caption");
-  img.onclick = function(){
-      modal.style.display = "block";
-      modalImg.src = this.src;
-      modalImg.alt = this.alt;
-      captionText.innerHTML = this.alt;
-  }
-  
-  
-  // When the user clicks on <span> (x), close the modal
-  modal.onclick = function() {
-      img01.className += " out";
-      setTimeout(function() {
-        modal.style.display = "none";
-        img01.className = "modal-content";
-      }, 400);
-      
-  } 
-
-  </script>
-
-  </body>
-  </html>
-<!--  **************************************** MODAL IMG ****************************************-->
 
 <!-- **************************************** -->
 <h3 id="veja-a-seguir">Veja a seguir</h3>
 
-<p><a href="https://mhar-vell.github.io/rasc/2021-07-28-bbot-modelo-3d-do-bbot-etapa-2/"><font color="#fbb117">[Etapa 2] Construindo o Bbot (Modelo 3d)</font></a> - disponivel em 28/07/2021</p>
+<p style="text-align: justify;">
+Aqui você encontra os posts relacionados às etapas de projeto do Bbot. <strong>Fique atento!!</strong>
+</p>
 
-<p><a href="https://mhar-vell.github.io/rasc/2021-08-04-bbot-esquematico-ee-etapa-3/"><font color="#fbb117">[Etapa 3] Esquemático EE</font></a> - disponivel em 04/08/2021</p>
+<p><a href="https://mhar-vell.github.io/rasc/2021-07-22-bbot-funcionalidades-do-bbot/"><font color="#fbb117">[Etapa 2] Funcionalidades do Bbot</font></a></p>
 
-<p><a href="https://mhar-vell.github.io/rasc/2021-08-11-bbot-simulacao-etapa-4/"><font color="#fbb117">[Etapa 4] Simulação</font></a> - disponivel em 11/08/2021</p>
+<!-- <a href="https://mhar-vell.github.io/rasc/2021-07-28-bbot-modelo-3d-do-bbot-etapa-2/"><font color="#fbb117">[Etapa 2] Construindo o Bbot (Modelo 3d)</font></a> -->
 
-<p><a href="https://mhar-vell.github.io/rasc/2021-08-18-bbot-montagem-e-teste-etapa-5/"><font color="#fbb117">[Etapa 5] Montagem final e teste</font></a> - disponivel em 18/08/2021</p>
+<!-- <a href="https://mhar-vell.github.io/rasc/2021-08-04-bbot-esquematico-ee-etapa-3/"><font color="#fbb117">[Etapa 3] Esquemático EE</font></a> - disponivel em 04/08/2021 -->
+
+<!-- <a href="https://mhar-vell.github.io/rasc/2021-08-11-bbot-simulacao-etapa-4/"><font color="#fbb117">[Etapa 4] Simulação</font></a> - disponivel em 11/08/2021 -->
+
+<!-- <a href="https://mhar-vell.github.io/rasc/2021-08-18-bbot-montagem-e-teste-etapa-5/"><font color="#fbb117">[Etapa 5] Montagem final e teste</font></a> - disponivel em 18/08/2021 -->
 
 <p><br /></p>
 <hr />
@@ -636,11 +546,11 @@
     <table class="table-borderless highlight">
       <thead>
         <tr>
-            <a href="https://www.linkedin.com/in/matheus-fran%C3%A7a-b62044150/" target="_blank">
+            <th><center><a href="https://www.linkedin.com/in/matheus-fran%C3%A7a-b62044150/" target="_blank">
                 <p align="center">
                     <img src="/assets/img/people/matheusfran%C3%A7a-1.png" alt="Not found" width="100" class="img-fluid rounded-circle" />
                 </p>
-            </a>
+            </a></center></th>
         </tr>
       </thead>
       <tbody>
@@ -648,7 +558,7 @@
           <td width="33.33%">Matheus França</td>
         </tr>
         <tr style="text-align: center">
-          <td style="vertical-align: top"><small>Estagiário no laboratório de Robótica e Sistemas Autônomos (RoSA), Senai Cimatec, graduando em Engenharia de Controle e Automação na Área 1.</small></td>
+          <td style="vertical-align: top;text-align: justify;"><small>Estagiário no laboratório de Robótica e Sistemas Autônomos (RoSA), Senai Cimatec, graduando em Engenharia de Controle e Automação na Área 1.</small></td>
         </tr>
       </tbody>
     </table>
@@ -658,11 +568,65 @@
 <p><br /></p>
 <hr />
 
-<!-- **************************************** -->
-<h3 id="página-inicial-do-projeto">Página inicial do projeto</h3>
+<!-- **************************************** BT TOP **************************************** -->
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
 
-<p>Para voltar ao projeto <strong>BBOT</strong>, <a href="https://mhar-vell.github.io/rasc/project-bbot/">clique aqui!</a></p>
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
 
+#myBtn:hover {
+  background-color: #555;
+}
+</style>
+</head>
+<body>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+</body>
+</html>
 
       </article>
 
@@ -687,7 +651,7 @@
   <span class="sr-only">Share: </span>
 
   
-    <a href="https://twitter.com/intent/tweet?text=Aspectos+conceituais+do+Bbot+%5BEtapa+1%5D&url=http%3A%2F%2Flocalhost%3A4000%2F2021-07-20-bbot-aspectos-conceituais-do-bbot-etapa-1%2F"
+    <a href="https://twitter.com/intent/tweet?text=Defini%C3%A7%C3%A3o+do+modelo+Bbot&url=http%3A%2F%2Flocalhost%3A4000%2F2021-07-21-bbot-defini%25C3%25A7%25C3%25A3o-do-modelo-bbot%2F"
       class="btn btn-social-icon btn-twitter" title="Share on Twitter">
       <span class="fab fa-fw fa-twitter" aria-hidden="true"></span>
       <span class="sr-only">Twitter</span>
@@ -697,7 +661,7 @@
   
 
   
-    <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2F2021-07-20-bbot-aspectos-conceituais-do-bbot-etapa-1%2F"
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2F2021-07-21-bbot-defini%25C3%25A7%25C3%25A3o-do-modelo-bbot%2F"
       class="btn btn-social-icon btn-linkedin" title="Share on LinkedIn">
       <span class="fab fa-fw fa-linkedin" aria-hidden="true"></span>
       <span class="sr-only">LinkedIn</span>
@@ -720,6 +684,10 @@
           <a class="page-link" href="/2020-02-28-test-markdown/" data-toggle="tooltip" data-placement="top" title="Test markdown">&larr; Previous Post</a>
         </li>
         
+        
+        <li class="page-item next">
+          <a class="page-link" href="/2021-07-22-bbot-funcionalidades-do-bbot/" data-toggle="tooltip" data-placement="top" title="Funcionalidades do Bbot">Next Post &rarr;</a>
+        </li>
         
       </ul>
       

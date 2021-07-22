@@ -207,10 +207,17 @@
     var searchjson = '[ \
        \
         { \
-          "title"    : "Aspectos conceituais do Bbot [Etapa 1]", \
+          "title"    : "Funcionalidades do Bbot", \
           "category" : "bbot", \
-          "url"      : "/2021-07-20-bbot-aspectos-conceituais-do-bbot-etapa-1/", \
-          "date"     : "July 20, 2021" \
+          "url"      : "/2021-07-22-bbot-funcionalidades-do-bbot/", \
+          "date"     : "July 22, 2021" \
+        }, \
+       \
+        { \
+          "title"    : "Definição do modelo Bbot", \
+          "category" : "bbot", \
+          "url"      : "/2021-07-21-bbot-defini%C3%A7%C3%A3o-do-modelo-bbot/", \
+          "date"     : "July 21, 2021" \
         }, \
        \
         { \
@@ -374,19 +381,22 @@
 </p>
 
 <div class="before-content">
-  <center><a href="#bbot" class="btn btn-primary tag-btn"><i class="fas fa-tag" aria-hidden="true"></i>&nbsp;bbot-posts&nbsp;(1)</a></center>    
+  <center><a href="#bbot" class="btn btn-primary tag-btn"><i class="fas fa-tag" aria-hidden="true"></i>&nbsp;bbot-posts&nbsp;(2)</a></center>    
   <!--hr class="mark"-->
 </div>
 
 <!-- ## Introdução -->
-
-<p><strong>Bbot</strong> ou <em>Balancing Robot</em>, é um projeto de robô autônomo auto-balanceado [1]. Nosso objetivo é construir um robô móvel operado via <strong>ROS Noetic</strong> capaz de <strong>se equilibrar e se deslocar sobre duas rodas</strong>. Ademais, ele deve ser capaz de realizar a leitura de uma TAG (marco fiducial, [2]). A TAG enviará ao robô uma posição de destino à qual ele deve <strong>navegar de forma autônoma</strong>. Para realizar a navegação, esse robô deverá ser capaz de <strong>criar um mapa do local onde está e se localizar nele</strong>, permitindo-o atualizar sua posição ao longo da missão e <strong>desviar de obstáculos</strong> enquanto navega até seu objetivo.</p>
+<p style="text-align: justify;">
+<strong>Bbot</strong> ou <i>Balancing Robot</i>, é um projeto de robô autônomo auto-balanceado <a href="#GURTNER">[GURTNER]</a>. Nosso objetivo é construir um robô móvel operado via <strong>ROS Noetic</strong> capaz de <strong>se equilibrar e se deslocar sobre duas rodas</strong>. Ademais, ele deve ser capaz de realizar a leitura de uma TAG (marco fiducial, <a href="#SANTOS">[SANTOS]</a>). A TAG enviará ao robô uma posição de destino à qual ele deve <strong>navegar de forma autônoma</strong>. Para realizar a navegação, esse robô deverá ser capaz de <strong>criar um mapa do local onde está e se localizar nele</strong>, permitindo-o atualizar sua posição ao longo da missão e <strong>desviar de obstáculos</strong> enquanto navega até seu objetivo. 
+</p>
 
 <p><br /></p>
 
 <h3 id="design-e-características">DESIGN E CARACTERÍSTICAS</h3>
 
-<p><strong>Bbot</strong> conta com um <em>design</em> adequado ao seu modo de atuação. Sua baixa estatura, aproximadamente 36 cm, permite uma fácil manipulação e operação em ambientes <em>indoor</em>. Sua forte estrutura, com peças para amortecer impacto, o protegem de eventuais quedas. Além disso, boa parte da sua massa foi alocada na parte superior, o que é uma grande vantagem para robôs auto-balanceados, pois a elevação do ponto de gravidade auxilia no equilíbrio.</p>
+<p style="text-align: justify;">
+<strong>Bbot</strong> conta com um <i>design</i> adequado ao seu modo de atuação. Sua baixa estatura, aproximadamente 36 cm, permite uma fácil manipulação e operação em ambientes <i>indoor</i>. Sua forte estrutura, com peças para amortecer impacto, o protegem de eventuais quedas. Além disso, boa parte da sua massa foi alocada na parte superior, o que é uma grande vantagem para robôs auto-balanceados, pois a elevação do ponto de gravidade auxilia no equilíbrio.
+</p>
 
 <p>Outra grande vantagem do <strong>Bbot</strong> são suas pernas articuladas com 2 graus de liberdade<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup> .</p>
 
@@ -394,42 +404,45 @@
 
 <h3 id="tecnologia-envolvida">TECNOLOGIA ENVOLVIDA</h3>
 
-<p>O <strong>Bbot</strong> é equipado para a ação. Com seus diversos componentes ele pode realizar tarefas em ambientes indoor.</p>
+<p style="text-align: justify;">
+O <strong>Bbot</strong> é equipado para a ação. Com seus diversos componentes ele pode realizar tarefas em ambientes indoor.
+</p>
 
-<p><img src="/assets/img/bbot/controladores.png" alt="Not found" width="200" style="float: left; padding-right: 50px;" /></p>
-<p>
+<p style="text-align: justify;">
 O robô conta com dois controladores, o principal é um Raspberry Pi 4 e suporta o ROS Noetic, já o secundário é um OpenCM9.04 com uma placa de expansão (OpenCM 485) e cuida das entradas e saídas dos atuadores.
 </p>
 
-<p><img src="/assets/img/bbot/atuadores.png" alt="Not found" width="200" style="float: right; padding-left: 50px;" /> <!--  clear:left --></p>
-<p style="clear: left; padding-top: 25px;">
-Já na parte de atuação, temos 2 <i>dynamixels MX106</i> na parte da perna e 1 <i>Nema 17</i> para locomoção da roda. As rodas são envolvidas em borracha de silicone, tornando o pneu mais aderente ao solo.
+<p style="text-align: justify;">
+Já na parte de atuação, temos para cada perna, 2 <i>dynamixels MX106</i> e 1 <i>dynamyxel XM430-W210</i> para locomoção da roda. As rodas são envolvidas em borracha de silicone, tornando o pneu mais aderente ao solo.
 </p>
 
-<p style="clear: right; padding-top: 25px;">
+<p align="center">
+    <img src="/assets/img/bbot/controladores_atuadores.png" alt="Not found" width="750" />
+</p>
+
+<p style="clear: right; padding-top: 25px; text-align: justify;">
 O <strong>bbot</strong> conta ainda com sensores que são responsáveis por aquisições de dados em tempo real e um sistema de <strong>controle de potência!!</strong>
 </p>
 
-<p><img src="/assets/img/bbot/sensores_1.png" alt="Not found" width="200" style="float: left; clear:right; padding-right: 50px;" /></p>
-<p style="clear: right">
+<p style="text-align: justify;">
 O LiDAR (Light Detection And Ranging), é um sensor que pode revelar a geometria do ambiente ao seu redor. A câmera RGB é capaz de detectar e codificar cores no espaço.
 </p>
 
-<p><img src="/assets/img/bbot/sensores_2.png" alt="Not found" width="200" style="float: right; padding-left: 50px;" /> <!--  clear:left --></p>
-<p style="clear: left; padding-top: 25px;">
+<p style="text-align: justify;">
 O IMU detecta variações na inclinação do robô e o sensor de tensão é usado para o controle de falhas.
 </p>
 
-<p><img src="/assets/img/bbot/pot.png" alt="Not found" width="200" style="float: left; clear:right; padding-right: 50px;" /></p>
-<p style="clear: right; padding-top: 25px;">
+<p style="text-align: justify;">
 O sistema é alimentado por uma LiPO 3s e conta com uma placa para distribuir a energia aos componentes. Também comporta um regulador de tensão para energizar a Raspberry Pi 4.
 </p>
 
-<p style="clear: both; white-space: pre">
-
+<p align="center">
+    <img src="/assets/img/bbot/sensores_pot.png" alt="Not found" width="750" />
 </p>
 
 <p><br /></p>
+
+<hr />
 
 <!-- equipe -->
 <center><h3 class="post-title">Equipe de desenvolvimento</h3><br /></center>
@@ -438,11 +451,23 @@ O sistema é alimentado por uma LiPO 3s e conta com uma placa para distribuir a 
     <table class="table-borderless highlight">
       <thead>
         <tr>
-          <th><center><img src="/assets/img/people/matheusfran%C3%A7a-1.png" width="100" alt="matheusfrança" class="img-fluid rounded-circle" /></center></th>
+          <th><center><a href="https://www.linkedin.com/in/matheus-fran%C3%A7a-b62044150/" target="_blank">
+                <p align="center">
+                    <img src="/assets/img/people/matheusfran%C3%A7a-1.png" alt="Not found" width="100" class="img-fluid rounded-circle" />
+                </p>
+            </a></center></th>
+            <th></th>
+             <th><center><a href="https://www.linkedin.com/in/lucas-lins-souza-51b1909a/" target="_blank">
+                <p align="center">
+                    <img src="/assets/img/people/lucaslins-1.png" alt="Not found" width="100" class="img-fluid rounded-circle" />
+                </p>
+            </a></center></th>
           <th></th>
-          <th><center><img src="/assets/img/people/lucaslins-1.png" width="100" alt="lucaslins" class="img-fluid rounded-circle" /></center></th>
-          <th></th>
-          <th><center><img src="/assets/img/people/marcoreis8b&amp;w-1.png" width="100" alt="marco" class="img-fluid rounded-circle" /></center></th>
+          <th><center><a href="https://mhar-vell.github.io/portfolio/" target="_blank">
+                <p align="center">
+                    <img src="/assets/img/people/marcoreis8b&amp;w-1.png" alt="marco" width="100" class="img-fluid rounded-circle" />
+                </p>
+            </a></center></th>
         </tr>
       </thead>
       <tbody>
@@ -454,11 +479,11 @@ O sistema é alimentado por uma LiPO 3s e conta com uma placa para distribuir a 
           <td width="33.33%">Marco Reis</td>
         </tr>
         <tr style="text-align: center">
-          <td style="vertical-align: top"><small>Estagiário no laboratório de Robótica e Sistemas Autônomos (RoSA), Senai Cimatec, graduando em Engenharia de Controle e Automação na Área 1.</small></td>
+          <td style="vertical-align: top;text-align: justify;"><small>Estagiário no laboratório de Robótica e Sistemas Autônomos (RoSA), Senai Cimatec, graduando em Engenharia de Controle e Automação na Área 1.</small></td>
           <td></td>
-          <td style="vertical-align: top"><small>Estagiário no laboratório de Robótica e Sistemas Autônomos (RoSA), Senai Cimatec, graduando em Engenharia Elétrica no Senai Cimatec.</small></td>
+          <td style="vertical-align: top;text-align: justify;"><small>Estagiário no laboratório de Robótica e Sistemas Autônomos (RoSA), Senai Cimatec, graduando em Engenharia Elétrica no Senai Cimatec.</small></td>
           <td></td>
-          <td style="vertical-align: top"><small>Pesquisador Sênior do projeto <br />Mestre em Engenharia de Produção e Eng. Eletricista.</small></td>
+          <td style="vertical-align: top;text-align: justify;"><small>Pesquisador Sênior do projeto <br />Mestre em Engenharia de Produção e Eng. Eletricista.</small></td>
         </tr>
       </tbody>
     </table>
@@ -485,9 +510,10 @@ O sistema é alimentado por uma LiPO 3s e conta com uma placa para distribuir a 
 
 <h2 id="referências">Referências</h2>
 
-<p>[1] <strong>Adam Kollarčík and Martin Gurtner</strong>; Modeling and Control of Two-Legged Wheeled Robot; Master’s thesis, CZECH TECHNICAL UNIVERSITY IN PRAGUE. 2021.</p>
-
-<p>[2] <strong>Santos, Gabriel da Silva; Cardoso, Etevaldo; Reis, Marco Antonio dos</strong>; “Localização de Robôs Móveis em Ambiente Internos usando Marcos Fiduciais”, p. 226-233 . In: <strong>Anais do V Simpósio Internacional de Inovação e Tecnologia</strong>. São Paulo: Blucher, 2019.</p>
+<ol>
+  <li><a id="GURTNER"><strong>Adam Kollarčík and Martin Gurtner</strong></a>; Modeling and Control of Two-Legged Wheeled Robot; Master’s thesis, CZECH TECHNICAL UNIVERSITY IN PRAGUE. 2021.</li>
+  <li><a id="SANTOS"><strong>Santos, Gabriel da Silva; Cardoso, Etevaldo; Reis, Marco Antonio dos</strong></a>; “Localização de Robôs Móveis em Ambiente Internos usando Marcos Fiduciais”, p. 226-233 . In: <strong>Anais do V Simpósio Internacional de Inovação e Tecnologia</strong>. São Paulo: Blucher, 2019.</li>
+</ol>
 
 <p><br /></p>
 <hr class="mark" />
@@ -495,12 +521,17 @@ O sistema é alimentado por uma LiPO 3s e conta com uma placa para distribuir a 
 <div id="full-tags-list">
 <h3 class="post-title"><font color="#fbb117">Posts</font></h3><h4 id="bbot" class="linked-section">
           <i class="fas fa-tag" aria-hidden="true"></i>
-          &nbsp;bbot&nbsp;(1)
+          &nbsp;bbot&nbsp;(2)
       </h4>
       <div class="post-list"><div class="tag-entry">
-                  <a href="/2021-07-20-bbot-aspectos-conceituais-do-bbot-etapa-1/">Aspectos conceituais do Bbot [Etapa 1]</a>
+                  <a href="/2021-07-22-bbot-funcionalidades-do-bbot/">Funcionalidades do Bbot</a>
                   <div class="entry-date">
-                      <time datetime="2021-07-20T00:00:00-03:00">July 20, 2021</time>
+                      <time datetime="2021-07-22T00:00:00-03:00">July 22, 2021</time>
+                  </div>
+              </div><div class="tag-entry">
+                  <a href="/2021-07-21-bbot-defini%C3%A7%C3%A3o-do-modelo-bbot/">Definição do modelo Bbot</a>
+                  <div class="entry-date">
+                      <time datetime="2021-07-21T00:00:00-03:00">July 21, 2021</time>
                   </div>
               </div></div></div>
 <hr class="mark" />

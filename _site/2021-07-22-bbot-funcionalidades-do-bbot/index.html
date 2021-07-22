@@ -12,13 +12,13 @@
 
   
 
-  <title>Walker</title>
+  <title>Funcionalidades do Bbot</title>
 
   
   <meta name="author" content="Marco Reis">
   
 
-  <meta name="description" content="Um robô bípede">
+  <meta name="description" content="Um robô que se equilibra com pernas articuladas">
 
   
 
@@ -77,30 +77,32 @@
 
   
   <meta property="og:site_name" content="Robotics & Autonomous Systems">
-  <meta property="og:title" content="Walker">
-  <meta property="og:description" content="Um robô bípede">
+  <meta property="og:title" content="Funcionalidades do Bbot">
+  <meta property="og:description" content="Um robô que se equilibra com pernas articuladas">
 
   
-  <meta property="og:image" content="http://localhost:4000/assets/img/rosalogo2.png">
-  
-
-  
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="http://localhost:4000/project-walker/">
-  <link rel="canonical" href="http://localhost:4000/project-walker/">
+  <meta property="og:image" content="http://localhost:4000/assets/img/rosa-logo-redondo%20(180).png">
   
 
   
-  <meta name="twitter:card" content="summary">
+  <meta property="og:type" content="article">
+  <meta property="og:article:author" content="Marco Reis">
+  <meta property="og:article:published_time" content="2021-07-22T00:00:00-03:00">
+  <meta property="og:url" content="http://localhost:4000/2021-07-22-bbot-funcionalidades-do-bbot/">
+  <link rel="canonical" href="http://localhost:4000/2021-07-22-bbot-funcionalidades-do-bbot/">
+  
+
+  
+  <meta name="twitter:card" content="summary_large_image">
   
   <meta name="twitter:site" content="@">
   <meta name="twitter:creator" content="@">
 
-  <meta property="twitter:title" content="Walker">
-  <meta property="twitter:description" content="Um robô bípede">
+  <meta property="twitter:title" content="Funcionalidades do Bbot">
+  <meta property="twitter:description" content="Um robô que se equilibra com pernas articuladas">
 
   
-  <meta name="twitter:image" content="http://localhost:4000/assets/img/rosalogo2.png">
+  <meta name="twitter:image" content="http://localhost:4000/assets/img/rosa-logo-redondo%20(180).png">
   
 
   
@@ -341,22 +343,60 @@
 
 
 
+  <div id="header-big-imgs" data-num-img=1
+    
+    
+    
+      
+      data-img-src-1="http://localhost:4000/assets/img/bbot/bbot_wide.png"
+    
+    
+    
+  ></div>
 
-<header class="header-section ">
+
+<header class="header-section has-img">
+
+<div class="big-img intro-header">
+  <div class="container-md">
+    <div class="row">
+      <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
+        <div class="post-heading">
+          <h1>Funcionalidades do Bbot</h1>
+          
+            
+              <h2 class="post-subheading">Um robô que se equilibra com pernas articuladas</h2>
+            
+          
+
+          
+            <span class="post-meta">Posted on July 22, 2021</span>
+            
+            
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  <span class='img-desc'></span>
+</div>
 
 <div class="intro-header no-img">
   <div class="container-md">
     <div class="row">
       <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
-        <div class="page-heading">
-          <h1>Walker</h1>
+        <div class="post-heading">
+          <h1>Funcionalidades do Bbot</h1>
           
             
-              <hr class="small">
-              <span class="page-subheading">Um robô bípede</span>
+              <h2 class="post-subheading">Um robô que se equilibra com pernas articuladas</h2>
             
           
 
+          
+            <span class="post-meta">Posted on July 22, 2021</span>
+            
+            
           
         </div>
       </div>
@@ -369,92 +409,248 @@
 
 
 
-<div class=" container-md " role="main">
+<div class=" container-md ">
   <div class="row">
     <div class=" col-xl-8 offset-xl-2 col-lg-10 offset-lg-1 ">
+
       
 
-      <center><img src="/assets/img/walker/walker_title_yellow.png" alt="Walker_missao" width="380" /></center>
+      
 
-<div class="before-content">
-  <center></center>    
-  <!--hr class="mark"-->
-</div>
+      <article role="main" class="blog-post">
+        <!-- **************************************** -->
+<h3 id="anteriormente">Anteriormente</h3>
 
-<!-- ## Introdução -->
+<p>É importante que você tenha visto o post anterior (<a href="https://mhar-vell.github.io/rasc/2021-07-21-bbot-definição-do-modelo-bbot/"><font color="#fbb117">[Etapa 1] Definição do modelo Bbot</font></a>), para um completo entendimento do desenvolvimento do projeto.</p>
 
-<p>Um robô terrestre que se locomove sobre dois pés é classificado como bípede. Para isto, os movimentos realizados por este robô são similares a um andar antropomórfico. Movimentos antropomórficos são amplamente estudados e utilizados tanto na área medicinal como na industrial.</p>
+<h3 id="introdução">Introdução</h3>
+<p style="text-align: justify;">
+Na <strong>etapa dois</strong> do processo de construção do <a href="https://mhar-vell.github.io/rasc/project-bbot/"><font color="#fbb117">Bbot</font></a>, e de qualquer outro projeto de robótica, é <strong>importante</strong> definir as <strong>funcionalidades</strong>. Antes de iniciarmos as próximas etapas, o desenho da arquitetura do robô (mão na massa!! 👷🔧), precisamos listar essas características e analisar como elas estão conectadas entre si, assim tendo um total controle do desenvolvimento do projeto. 
+</p>
 
-<!--objetivo, data-->
-<p>O Walker faz parte da primeira fase do programa de estágio do laboratório de Robótica e Sistemas Autonômos. A iniciativa visa a construção de um robô autônomo bípede para exploração em um ambiente indoor controlado. Este projeto foi iniciado em 12 de maio de 2021 e será finalizado em 30 de julho de 2021.</p>
+<hr />
 
-<!--justificativa-->
-<p>Um robô deste porte e com movimentação autônoma é comumente utilizado para realizar tarefas <em>indoor</em> simples e para interagir com os humanos. A elaboração e construção deste robô proporciona o aprendizado de conceitos básicos da robótica móvel e de visão computacional, como também, proporciona o embasamento para a formulação de um projeto.</p>
+<!-- **************************************** -->
+<h3 id="diagrama-das-funcionalidades">Diagrama das funcionalidades</h3>
 
-<p>Para concepção do robô Walker, buscamos por projetos similares existentes, com o intuito de nortear nosso desenvolvimento.
-A imagem a seguir ilustra as principais referências utilizadas para o projeto.</p>
+<p style="text-align: justify;">
+No diagrama construído para o Bbot, podemos ver as seguintes funcionalidades: 
+</p>
 
-<center>
-
-<img src="/assets/img/walker/walker_semelhantes.png" alt="Semelhantes" /><br />
-
-Da esquerda para direita: ROFI [1], Darwin-OP [2] e NAO [3].
-</center>
-
-<p><br /></p>
-
-<h3 id="missão">Missão</h3>
-
-<p>Como missão do robô Walker, ele deverá explorar uma área delimitada em busca de uma TAG.
-Ao encontrá-la, ela indicará a posição de uma esfera no ambiente.
-O Walker deverá, então, deslocar-se até essa posição e encontrar a esfera.
-A TAG e a esfera podem ser vistas na primeira imagem.</p>
-
-<p><br /></p>
-
-<h3 id="como-ele-fará-isso">Como ele fará isso?</h3>
-<p><img src="/assets/img/walker/walker_componentes.png" alt="Walker_componentes" />
-<!--<img src="/assets/img/walker/walker_componentes.png" width="250">--></p>
-
-<p>Para desempenhar suas funções, o Walker contará com alguns componentes. 
-Dentre eles, os principais são:</p>
 <ul>
-  <li><strong>Raspberry Pi 4:</strong> Será a central de processamento do robô, controlando todo seu funcionamento</li>
-  <li><strong>Dynamixels XM430:</strong> Atuadores que irão possibilitar o deslocamento do robô sobre dois pés</li>
-  <li><strong>Sensores Ultrassônicos HC-SR04:</strong> Permitirão a detecção de obstáculos, possibilitando sua navegação autônoma</li>
-  <li><strong>Raspicam:</strong> A câmera será utilizada para a detecção e reconhecimento de TAGs, possibilitando sua localização</li>
+  <li>
+    <p style="text-align: justify;"><strong>Subsistema de aquisição:</strong> Responsável pelos dados em baixo nível (dados dos sensores) </p>
+  </li>
+  <li>
+    <p style="text-align: justify;"><strong>Percepção:</strong> Compõem os drivers para percepção dos dados sensoriais</p>
+  </li>
+  <li>
+    <p style="text-align: justify;"><strong>Mapeamento:</strong> Utilizando as informações da Localização, é possível criar um mapa do ambiente</p>
+  </li>
+  <li>
+    <p style="text-align: justify;"><strong>Detecção:</strong> Responsável pela detecção da TAG (importante para missão do robô)</p>
+  </li>
+  <li>
+    <p style="text-align: justify;"><strong>Localização:</strong> Recebe dados do bloco de percepção, fazendo com que o robô se localize no ambiente</p>
+  </li>
+  <li>
+    <p style="text-align: justify;"><strong>Controle:</strong> Define a estratégia adotada para que o robô consiga se equilibrar. No nosso caso foi escolhido o controlador PID.</p>
+  </li>
+  <li>
+    <p style="text-align: justify;"><strong>Comportamento:</strong> Avalia as situações do ambiente e de estado do robô</p>
+  </li>
+  <li>
+    <p style="text-align: justify;"><strong>Inatividade:</strong> Posição de proteção do robô por motivos de falha</p>
+  </li>
+  <li>
+    <p style="text-align: justify;"><strong>Planejamento de trajetória:</strong> Segue uma trajetória definida na interface</p>
+  </li>
+  <li>
+    <p style="text-align: justify;"><strong>Navegação:</strong> Executa a trajetória e na falha de navegação, envia um comando de replanejamento de trajetória </p>
+  </li>
+  <li>
+    <p style="text-align: justify;"><strong>Atuação:</strong> Controles nas pernas e de locomoção</p>
+  </li>
 </ul>
 
-<p><br /></p>
+<p align="center">
+    <img id="myImg" src="/assets/img/bbot/diagrama_funcionalidades_v2.png" alt="Diagrama de funcionalidades" width="750" />
+</p>
 
-<!--equipe-->
-<center><h3 class="post-title">Equipe de desenvolvimento</h3><br /></center>
+<!--  **************************************** MODAL IMG ****************************************-->
+<html>
+  <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+  body {font-family: Arial, Helvetica, sans-serif;}
+
+  #myImg {
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 0.3s;
+      display: block;
+      margin-left: auto;
+      margin-right: auto
+  }
+  #myImg:hover {opacity: 0.7;}
+
+  /* The Modal (background) */
+  .modal {
+      display: none; /* Hidden by default */
+      position: fixed; /* Stay in place */
+      z-index: 99; /* Sit on top */
+      padding-top: 50px; /* Location of the box */
+      left: -70px;
+      top: 0;
+      width: 115%; /* Full width */
+      height: 115%; /* Full height */
+      overflow: auto; /* Enable scroll if needed */
+      background-color: rgb(0,0,0); /* Fallback color */
+      background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  }
+
+  /* Modal Content (image) */
+  .modal-content {
+      margin: auto;
+      display: block;
+      width: 75%;
+      //max-width: 75%;
+  }
+
+  /* Caption of Modal Image */
+  #caption {
+      margin: auto;
+      display: block;
+      width: 80%;
+      max-width: 700px;
+      text-align: center;
+      color: #ccc;
+      padding: 10px 0;
+      height: 150px;
+  }
+
+  @-webkit-keyframes zoom {
+      from {-webkit-transform:scale(1)}
+      to {-webkit-transform:scale(2)}
+  }
+  
+  @keyframes zoom {
+      from {transform:scale(0.4)}
+      to {transform:scale(1)}
+  }
+
+  @-webkit-keyframes zoom-out {
+      from {transform:scale(1)}
+      to {transform:scale(0)}
+  }
+  @keyframes zoom-out {
+      from {transform:scale(1)}
+      to {transform:scale(0)}
+  }
+
+  /* Add Animation */
+  .modal-content, #caption {
+      -webkit-animation-name: zoom;
+      -webkit-animation-duration: 0.6s;
+      animation-name: zoom;
+      animation-duration: 0.6s;
+  }
+
+  .out {
+    animation-name: zoom-out;
+    animation-duration: 0.6s;
+  }
+
+  /* 100% Image Width on Smaller Screens */
+  @media only screen and (max-width: 700px){
+      .modal-content {
+          width: 100%;
+      }
+  }
+
+  </style>
+  </head>
+  <body>
+
+  <!-- The Modal -->
+  <div id="myModal" class="modal">
+    <img class="modal-content" id="img01" />
+  <div id="caption"></div>
+  </div>
+
+  <script>
+  // Get the modal
+  var modal = document.getElementById('myModal');
+  
+  // Get the image and insert it inside the modal - use its "alt" text as a caption
+  var img = document.getElementById('myImg');
+  var modalImg = document.getElementById("img01");
+  var captionText = document.getElementById("caption");
+  img.onclick = function(){
+      modal.style.display = "block";
+      modalImg.src = this.src;
+      modalImg.alt = this.alt;
+      captionText.innerHTML = this.alt;
+  }
+  
+  
+  // When the user clicks on <span> (x), close the modal
+  modal.onclick = function() {
+      img01.className += " out";
+      setTimeout(function() {
+        modal.style.display = "none";
+        img01.className = "modal-content";
+      }, 400);
+      
+  } 
+
+  </script>
+
+  </body>
+  </html>
+<!--  **************************************** MODAL IMG ****************************************-->
+
+<h3 id="conclusão">Conclusão</h3>
+
+<p style="text-align: justify;">
+Na <strong>segunda etapa</strong> do projeto, foram apresentadas as funcionalidades e como elas estão relacionadas. Com base nos parâmetros propostos aqui, podemos partir para a construção do Bbot!! <img src="/assets/img/bbot/bbot.png" alt="Bbot" width="17" /> &#128295; <img src="/assets/img/bbot/bbot_stand.png" alt="Bbot" width="15" />
+</p>
+
+<!-- **************************************** -->
+<!-- ### Veja a seguir
+
+<a href="https://mhar-vell.github.io/rasc/2021-07-28-bbot-modelo-3d-do-bbot-etapa-2/"><font color="#fbb117">[Etapa 2] Construindo o Bbot (Modelo 3d)</font></a> - disponivel em 28/07/2021
+ 
+<a href="https://mhar-vell.github.io/rasc/2021-08-04-bbot-esquematico-ee-etapa-3/"><font color="#fbb117">[Etapa 3] Esquemático EE</font></a> - disponivel em 04/08/2021
+
+<a href="https://mhar-vell.github.io/rasc/2021-08-11-bbot-simulacao-etapa-4/"><font color="#fbb117">[Etapa 4] Simulação</font></a> - disponivel em 11/08/2021
+
+<a href="https://mhar-vell.github.io/rasc/2021-08-18-bbot-montagem-e-teste-etapa-5/"><font color="#fbb117">[Etapa 5] Montagem final e teste</font></a> - disponivel em 18/08/2021 -->
+
+<p><br /></p>
+<hr />
+
+<!-- **************************************** Autor **************************************** -->
+<center><h3 class="post-title">Autor</h3><br /></center>
+
 <div class="row">
   <div class=" col-xl-auto offset-xl-0 col-lg-4 offset-lg-0">
     <table class="table-borderless highlight">
       <thead>
         <tr>
-          <th><center><img src="/assets/img/people/brendaalencar-1.png" width="100" alt="brenda" class="img-fluid rounded-circle" /></center></th>
-          <th></th>
-          <th><center><img src="/assets/img/people/felipemohr-1.jpg" width="100" alt="felipemohr" class="img-fluid rounded-circle" /></center></th>
-          <th></th>
-          <th><center><img src="/assets/img/people/marcoreis8b&amp;w-1.png" width="100" alt="marco" class="img-fluid rounded-circle" /></center></th>
+            <th><center><a href="https://www.linkedin.com/in/matheus-fran%C3%A7a-b62044150/" target="_blank">
+                <p align="center">
+                    <img src="/assets/img/people/matheusfran%C3%A7a-1.png" alt="Not found" width="100" class="img-fluid rounded-circle" />
+                </p>
+            </a></center></th>
         </tr>
       </thead>
       <tbody>
-        <tr class="font-weight-bolder" style="text-align: center margin-top: 0">
-          <td width="33.33%"><center>Brenda Alencar</center></td>
-          <td></td>
-          <td width="33.33%"><center>Felipe Mohr</center></td>
-          <td></td>
-          <td width="33.33%"><center>Marco Reis</center></td>
+        <tr class="font-weight-bolder" style="text-align: center; margin-top: 0">
+          <td width="33.33%">Matheus França</td>
         </tr>
-        <tr style="text-align:center">
-          <td width="33.33%" style="vertical-align: top"><small>Estagiária no CC RoSA, graduanda em Eng. Elétrica. Participou de projetos de Robótica Subaquática e Manipuladores Subaquáticos</small></td>
-          <td></td>
-          <td width="33.33%" style="vertical-align: top"><small>Estagiário no CC RoSA, graduando em Eng. Elétrica. Participou de projetos de Robótica Subaquática e Robótica Móvel</small></td>
-          <td></td>
-          <td width="33.33%" style="vertical-align: top"><small>Pesquisador Sênior do projeto <br />Mestre em Engenharia de Produção e Eng. Eletricista.</small></td>
+        <tr style="text-align: center">
+          <td style="vertical-align: top;text-align: justify;"><small>Estagiário no laboratório de Robótica e Sistemas Autônomos (RoSA), Senai Cimatec, graduando em Engenharia de Controle e Automação na Área 1.</small></td>
         </tr>
       </tbody>
     </table>
@@ -462,40 +658,135 @@ Dentre eles, os principais são:</p>
 </div>
 
 <p><br /></p>
+<hr />
 
-<h3 id="resumo-do-projeto">Resumo do Projeto</h3>
-<ol>
-  <li>Categoria: <font color="#fbb117">Robótica móvel</font></li>
-  <li>Prazo: <font color="#fbb117">2 meses e 18 dias</font></li>
-  <li>Data de início: <font color="#fbb117">12/05/2021</font></li>
-  <li>Data de término: <font color="#fbb117">30/07/2021</font></li>
-  <li>Repositório URL: <a href="https://github.com/Brazilian-Institute-of-Robotics/bir_walker">Walker</a></li>
-  <li>Sponsor: <a href="http://www.senaicimatec.com.br/en/"><font color="#fbb117">Senai CIMATEC</font></a></li>
-  <li>Recursos materiais: –</li>
-  <li>Apresentação URL: <a href="https://github.com/Brazilian-Institute-of-Robotics/bir_walker-docs/tree/main">Walker-docs</a></li>
-  <li>Report URL: <a href="https://github.com/Brazilian-Institute-of-Robotics/bir_walker-docs/tree/report-design">Walker-report</a></li>
-  <li>Artigos produzidos:</li>
-</ol>
+<!-- **************************************** BT TOP **************************************** -->
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
 
-<p><br /></p>
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
 
-<h2 id="referências">Referências</h2>
-<ol>
-  <li><a href="http://www.projectbiped.com/prototypes/rofi">ROFI</a>. <strong>RObot FIve</strong>. Acesso em: 7 de Junho de 2021 .</li>
-  <li><a href="https://emanual.robotis.com/docs/en/platform/op/getting_started">Darwin-OP</a>. <strong>ROBOTIS OP</strong>. Acesso em: 7 de Junho de 2021.</li>
-  <li><a href="https://www.softbankrobotics.com/emea/en/nao">Nao</a>. <strong>NAO ROBOTIS SoftBank Robotics</strong>. Acesso em: 7 de Junho de 2021.</li>
-</ol>
+#myBtn:hover {
+  background-color: #555;
+}
+</style>
+</head>
+<body>
 
-<p><br /></p>
-<hr class="mark" />
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
-<div id="full-tags-list">
-<h3 class="post-title"><font color="#fbb117">Posts</font></h3></div>
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+</body>
+</html>
+
+      </article>
+
+      
+        <div class="blog-tags">
+          <span>Tags:</span>
+          
+            <a href="/tags#bbot">bbot</a>
+          
+        </div>
+      
+
+      
+
+      
+        <!-- Check if any share-links are active -->
+
+
+
+
+<section id = "social-share-section">
+  <span class="sr-only">Share: </span>
+
+  
+    <a href="https://twitter.com/intent/tweet?text=Funcionalidades+do+Bbot&url=http%3A%2F%2Flocalhost%3A4000%2F2021-07-22-bbot-funcionalidades-do-bbot%2F"
+      class="btn btn-social-icon btn-twitter" title="Share on Twitter">
+      <span class="fab fa-fw fa-twitter" aria-hidden="true"></span>
+      <span class="sr-only">Twitter</span>
+    </a>
+  
+
+  
+
+  
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2F2021-07-22-bbot-funcionalidades-do-bbot%2F"
+      class="btn btn-social-icon btn-linkedin" title="Share on LinkedIn">
+      <span class="fab fa-fw fa-linkedin" aria-hidden="true"></span>
+      <span class="sr-only">LinkedIn</span>
+    </a>
+  
+
+  
+
+  
+
+</section>
+
 
 
       
 
+      <ul class="pagination blog-pager">
+        
+        <li class="page-item previous">
+          <a class="page-link" href="/2021-07-21-bbot-defini%C3%A7%C3%A3o-do-modelo-bbot/" data-toggle="tooltip" data-placement="top" title="Definição do modelo Bbot">&larr; Previous Post</a>
+        </li>
+        
+        
+      </ul>
       
+  
+  
+  
+
+  
+
+
+
 
     </div>
   </div>
