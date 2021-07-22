@@ -1,8 +1,9 @@
 ---
 layout: post
 title: A imagem baseada em Raspibian
-subtitle: Testando a interface do Ergo
-thumbnail-img: /assets/ergo/ergo_real.jpg
+subtitle: Testando a interface do Ergo by Breno Portela
+cover-img: /assets/img/ergo/ergo.jpeg
+thumbnail-img: /assets/img/ergo/ergo_real.jpg
 share-img: /assets/img/rosa-logo-redondo (180).png
 tags: [ergo]
 ---
@@ -46,6 +47,8 @@ Mesmo com todos os erros, ao menos foi testado se a interface de interação dos
 <p align="center">
     <img src="{{ 'assets/img/ergo/ergo_no_move.png' | relative_url }}" alt="Not found"/>
 </p>
+
+<br>
 
 ----
 
