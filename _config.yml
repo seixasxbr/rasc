@@ -28,7 +28,7 @@ navbar-links:
   #  - Droilt: ""
     - AUM: "project-aum"
     - Turbot: "project-turbot"
-    - Ergo: ""
+    - Ergo: "project-ergo"
     - Hefesto: "project-hefesto"
     - Jetbot 1: ""
     - Aperea: "project-aperea"
