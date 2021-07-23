@@ -8,7 +8,7 @@ share-img: /assets/img/rosa-logo-redondo.jpg
 tags: [books, test]
 ---
 
-{% assign date_format = site.date_format | default: "%B %-d, %Y" %}
+{% assign date_format = site.date_format | default: "%b %-d, %Y" %}
 {%- capture site_tags -%}
     {%- for tag in site.tags -%}
         {{- tag | first -}}{%- unless forloop.last -%},{%- endunless -%}
