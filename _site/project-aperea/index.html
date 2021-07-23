@@ -403,28 +403,28 @@
 </div>
 
 <p style="text-align: justify;">
-A junção da mobilidade com ferramentas de visão computacional e inteligência artificial proporcionam aos robôs móveis uma grande variedade de aplicações e autonomia. Dentre estas aplicações temos, por exemplo, a navegação, a localização e a identificação de objetos.
+  A junção da mobilidade com ferramentas de visão computacional e inteligência artificial proporcionam aos robôs móveis uma grande variedade de aplicações e autonomia. Dentre estas aplicações temos, por exemplo, a navegação, a localização e a identificação de objetos.
 </p>
 <p style="text-align: justify;">
-O Projeto Aperea almeja utilizar alguns dos benefícios gerados do elo entre robótica móvel, visão computacional e I.A. Para isso será utilizada a placa Nvidia Jetson Nano em conjunto com elementos sensoriais para coletar dados do meio externo e assim, construir um robô autônomo diferencial.
+  O Projeto Aperea almeja utilizar alguns dos benefícios gerados do elo entre robótica móvel, visão computacional e I.A. Para isso será utilizada a placa Nvidia Jetson Nano em conjunto com elementos sensoriais para coletar dados do meio externo e assim, construir um robô autônomo diferencial.
 </p>
 
 <h2 id="escopo-do-projeto">Escopo do projeto</h2>
 <p style="text-align: justify;">
-O projeto teve início em 10/05/2021 e tem sua conclusão prevista para 20/08/2021. A execução deste projeto irá propor, aos seus respectivos desenvolvedores, conhecimentos direcionados a robótica móvel, além de experiências voltadas ao gerenciamento de projetos. Ambos ganhos são importantes na formação de pesquisadores e desenvolvedores com alvo em sistemas robóticos.
+  O projeto teve início em 10/05/2021 e tem sua conclusão prevista para 20/08/2021. A execução deste projeto irá propor, aos seus respectivos desenvolvedores, conhecimentos direcionados a robótica móvel, além de experiências voltadas ao gerenciamento de projetos. Ambos ganhos são importantes na formação de pesquisadores e desenvolvedores com alvo em sistemas robóticos.
 </p>
 
 <center>
-<img src="/assets/img/aperea/jetbot_mission.png" text-align="center" alt="missao" />
+  <img src="/assets/img/aperea/jetbot_mission.png" text-align="center" alt="missao" />
 </center>
 
 <p style="text-align: justify;">
-A missão do robô será a localização de uma bola. Para isso, o robô deverá ser capaz de buscar e reconhecer uma tag no ambiente. A tag indicará a localização de uma bola na cor laranja. E, a partir desta informação, o robô deverá encontrar esta bola.
+  A missão do robô será a localização de uma bola. Para isso, o robô deverá ser capaz de buscar e reconhecer uma tag no ambiente. A tag indicará a localização de uma bola na cor laranja. E, a partir desta informação, o robô deverá encontrar esta bola.
 </p>
 
 <h2 id="principais-componentes-do-sistema">Principais componentes do sistema</h2>
 <p style="text-align: justify;">
-A estrutura do Aperea será de um robô diferencial com um conjunto de sensores na parte frontal, um par de motores e rodas para locomoção e uma bola boba para dar estabilidade. Para fazer o gerenciamento, armazenamento e integração dos dados obtidos pelos sensores será necessário uma unidade de processamento, a qual será a placa NVIDIA Jetson Nano.
+  A estrutura do Aperea será de um robô diferencial com um conjunto de sensores na parte frontal, um par de motores e rodas para locomoção e uma bola boba para dar estabilidade. Para fazer o gerenciamento, armazenamento e integração dos dados obtidos pelos sensores será necessário uma unidade de processamento, a qual será a placa NVIDIA Jetson Nano.
 </p>
 
 <center>
@@ -432,11 +432,11 @@ A estrutura do Aperea será de um robô diferencial com um conjunto de sensores 
 </center>
 
 <p style="text-align: justify;">
-Durante a navegação, o robô deve encontrar obstáculos que podem dificultar a execução da missão. Para tratar os eventuais obstáculos serão implementados sensores que ajudarão na tarefa de evita-lós.
+  Durante a navegação, o robô deve encontrar obstáculos que podem dificultar a execução da missão. Para tratar os eventuais obstáculos serão implementados sensores que ajudarão na tarefa de evita-lós.
 </p>
 <p style="text-align: justify;">
-O sensor ultrassônico, implementado na parte frontal do robô, proverá informações da existência de obstáculos que podem estar a frente do robô.
-Enquanto um Lidar, juntamente com uma câmera de profundidade Mynteye serão utilizados para tornar este sistema robótico capaz de realizar a técnica SLAM, que irá permitir a construção do mapa e localização de forma simultânea.
+  O sensor ultrassônico, implementado na parte frontal do robô, proverá informações da existência de obstáculos que podem estar a frente do robô.
+  Enquanto um Lidar, juntamente com uma câmera de profundidade Mynteye serão utilizados para tornar este sistema robótico capaz de realizar a técnica SLAM, que irá permitir a construção do mapa e localização de forma simultânea.
 </p>
 
 <style type="text/css">
@@ -500,18 +500,18 @@ Enquanto um Lidar, juntamente com uma câmera de profundidade Mynteye serão uti
 </table>
 
 <p style="text-align: justify;">
-A fim de identificar a TAG e a esfera colorida, a câmera V2 Raspberry Pi será utilizada para captar os dados visuais do ambiente. Os dados visuais serão processados com uso da biblioteca de visão computacional OpenCV.
+  A fim de identificar a TAG e a esfera colorida, a câmera V2 Raspberry Pi será utilizada para captar os dados visuais do ambiente. Os dados visuais serão processados com uso da biblioteca de visão computacional OpenCV.
 </p>
 <p style="text-align: justify;">
-Como mencionado anteriormente, o processamento dos dados que serão coletados pelos sensores será realizado pela placa Nvidia Jetson Nano. A placa conterá o sistema operacional Ubuntu 20.04, que permitirá a instalação da plataforma ROS, Robot Operation System, versão Noetic. 
+  Como mencionado anteriormente, o processamento dos dados que serão coletados pelos sensores será realizado pela placa Nvidia Jetson Nano. A placa conterá o sistema operacional Ubuntu 20.04, que permitirá a instalação da plataforma ROS, Robot Operation System, versão Noetic. 
 </p>
 <p style="text-align: justify;">
-Também será desenvolvido um sistema de gerenciamento de energia para monitorar a carga do sistema. A tabela acima apresenta mais informações com relação aos principais componentes que compõem o sistema do Aperea.
+  Também será desenvolvido um sistema de gerenciamento de energia para monitorar a carga do sistema. A tabela acima apresenta mais informações com relação aos principais componentes que compõem o sistema do Aperea.
 </p>
 <p><br /></p>
 
 <center>
-<h3 class="post-title">Equipe de desenvolvimento</h3><br />
+  <h3 class="post-title">Equipe de desenvolvimento</h3><br />
 </center>
 <div class="row">
 
