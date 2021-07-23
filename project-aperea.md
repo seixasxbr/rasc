@@ -43,12 +43,12 @@ O projeto teve início em 10/05/2021 e tem sua conclusão prevista para 20/08/20
 </center>
 
 <p style="text-align: justify;">
-Conforme ilustrado na Figura acima,a missão do robô será a localização de uma bola. Para isso, o robô deverá ser capaz de buscar e reconhecer uma tag no ambiente. A tag indicará a localização de uma bola na cor laranja. E, a partir desta informação, o robô deverá encontrar esta bola.
+A missão do robô será a localização de uma bola. Para isso, o robô deverá ser capaz de buscar e reconhecer uma tag no ambiente. A tag indicará a localização de uma bola na cor laranja. E, a partir desta informação, o robô deverá encontrar esta bola.
 </p>
 
 ## Principais componentes do sistema
 <p style="text-align: justify;">
-Como ilustrado abaixo, a estrutura do Aperea será de um robô diferencial com um conjunto de sensores na parte frontal, um par de motores e rodas para locomoção e uma bola boba para dar estabilidade. Para fazer o gerenciamento, armazenamento e integração dos dados obtidos pelos sensores será necessário uma unidade de processamento, a qual será a placa NVIDIA Jetson Nano.
+A estrutura do Aperea será de um robô diferencial com um conjunto de sensores na parte frontal, um par de motores e rodas para locomoção e uma bola boba para dar estabilidade. Para fazer o gerenciamento, armazenamento e integração dos dados obtidos pelos sensores será necessário uma unidade de processamento, a qual será a placa NVIDIA Jetson Nano.
 </p>
 
 <center>

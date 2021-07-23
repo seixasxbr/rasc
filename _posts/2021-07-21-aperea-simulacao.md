@@ -10,7 +10,7 @@ tags: [aperea]
 ## Modelando o robô
 Neste post, iremos abordar sobre o [Unified Robot Description Format (URDF)](http://wiki.ros.org/urdf) ou descritivo do robô, o qual é um conjunto de arquivos em XML que descreve os elementos do robô.
 
-Conforme ilustrado abaixo, a descrição do modelo do Aperea é formada por um repositório com os arquivos **meshes** correspondentes as bases, as quais foram implementadas no Onshape, e os arquivos STL dos sensores. No repositório dos **sensores** estão armazenados os arquivos XML que descrevem os sensores, os plugins e configurações do Gazebo para a simulação. Já o **modelo** refere-se ao arquivo XML que descreve todos os elementos do Aperea, como por exemplo, as sua bases, rodas e as posições dos sensores.
+A descrição do modelo do Aperea é formada por um repositório com os arquivos **meshes** correspondentes as bases, as quais foram implementadas no Onshape, e os arquivos STL dos sensores. No repositório dos **sensores** estão armazenados os arquivos XML que descrevem os sensores, os plugins e configurações do Gazebo para a simulação. Já o **modelo** refere-se ao arquivo XML que descreve todos os elementos do Aperea, como por exemplo, as sua bases, rodas e as posições dos sensores.
 
 <center>
 <img src="{{ 'assets/img/aperea/urdf1.png' | relative_url }}" text-align=center alt="urdf1" />

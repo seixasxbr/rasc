@@ -37,7 +37,7 @@
         <title>Simulação do APEREA</title>
         <description>
           Um desafio de navegação by Juliana Santana - 
-          Modelando o robô Neste post, iremos abordar sobre o Unified Robot Description Format (URDF) ou descritivo do robô, o qual é um conjunto de arquivos em XML que descreve os elementos do robô. Conforme ilustrado abaixo, a descrição do modelo do Aperea é formada por um repositório com os arquivos...
+          Modelando o robô Neste post, iremos abordar sobre o Unified Robot Description Format (URDF) ou descritivo do robô, o qual é um conjunto de arquivos em XML que descreve os elementos do robô. A descrição do modelo do Aperea é formada por um repositório com os arquivos meshes correspondentes as...
         </description>
         <pubDate>Wed, 21 Jul 2021 00:00:00 -0300</pubDate>
         <link>http://localhost:4000/2021-07-21-aperea-simulacao/</link>
