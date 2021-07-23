@@ -28,49 +28,63 @@ subtitle: Humanoid Robot
 
 <!-- ## Introdução -->
 
-A robótica tem sido impulsionada pelas possibilidades da utilização de robôs para auxiliar o ser humano. O projeto de um sistema robótico humanoide visa obter uma máquina adaptada ao ambiente humano e que possa realizar tarefas para auxiliar as pessoas com maior adaptabilidade e facilidade de execução. O **Hephaestus** é um projeto de robô autônomo com arquitetura aberta que visa o avanço nas tecnologias de robôs antropomórficos.
+<p>
+A robótica tem sido impulsionada pelas possibilidades da utilização de robôs para auxiliar o ser humano. O projeto de um sistema robótico humanoide visa obter uma máquina adaptada ao ambiente humano e que possa realizar tarefas para auxiliar as pessoas com maior adaptabilidade e facilidade de execução. O <strong>Hephaestus</strong> é um projeto de robô autônomo com arquitetura aberta que visa o avanço nas tecnologias de robôs antropomórficos.
+</p>{: style="text-align: justify;"}
 
 ### DESIGN E CARACTERÍSTICAS
 
-**Hephaestus** conta com um _design_ articulado de 22 graus de liberdade (DOF - _Degrees of freedom_). Sua estrutura é baseada nos modelos da _Robotis_ Op3 **[1]** e Op2 **[2]**. Além disso o **Hephaestus** é desenvolvido sob ROS (Robot Operating System) para utilizar vários pacotes no ecossistema ROS. Toda tecnologia envolvida e suporte ao ROS, permitem que os desenvolvedores se concentrem mais no avanço de pesquisas e técnicas na área da robótica e visão computacional.
+<p>
+<strong>Hephaestus</strong> conta com um <i>design</i> articulado de 22 graus de liberdade (DOF - <i>Degrees of freedom</i>). Sua estrutura é baseada nos modelos da <i>Robotis</i> <a href="#OP3">[OP3]</a> e <a href="#OP2">[OP2]</a>. Além disso o <strong>Hephaestus</strong> é desenvolvido sob ROS (Robot Operating System) para utilizar vários pacotes no ecossistema ROS. Toda tecnologia envolvida e suporte ao ROS, permitem que os desenvolvedores se concentrem mais no avanço de pesquisas e técnicas na área da robótica e visão computacional.
+</p>{: style="text-align: justify;"}
 
 ### TECNOLOGIA ENVOLVIDA
 
 O **Hephaestus** é equipado com uma gama de tecnologias!! 
 
-<img src="{{ 'assets/img/hefesto/controladores.png' | relative_url }}" alt="Not found" width="300">{: style="float: left; padding-right: 25px;"}
 <p>
 O robô conta com dois controladores, o principal é um Raspberry Pi 4 e suporta o ROS Noetic, já o secundário é um OpenCR e cuida das entradas e saídas dos atuadores.
-</p>
+</p>{: style="text-align: justify;"}
 
-
-<img src="{{ 'assets/img/hefesto/atuadores.png' | relative_url }}" alt="Not found" width="350">{: style="float: right; padding-left: 50px;"}
 <p>
 Já na parte de atuação, temos 2 <i>dynamixels MX106</i> na parte da pelvis e 18 <i>dynamixels MX28</i> espalhados nas diversas articulações do robô.
-</p>{: style="clear: left; padding-top: 25px;"}
+</p>{: style="text-align: justify;"}
+
+<p align="center">
+    <img src="{{ 'assets/img/hefesto/controladores.png' | relative_url }}" alt="Not found" width="500"/>
+    <img src="{{ 'assets/img/hefesto/atuadores.png' | relative_url }}" alt="Not found" width="200"/>
+</p>
 
 <p>
 O <strong>Hephaestus</strong> conta ainda com sensores que são responsáveis por aquisições de dados em tempo real.
-</p>{: style="clear: right; padding-top: 25px;"}
-
-<img src="{{ 'assets/img/hefesto/sensores_1.jpeg' | relative_url }}" alt="Not found" width="400">{: style="float: left; clear:right; padding-right: 50px;"}
-<p>
-A câmera RGB Stereo é capaz de detectar e codificar cores no espaço. 
-</p>{: style="clear: right; padding-top: 50px;"}
-
-<img src="{{ 'assets/img/hefesto/mpu6050.jpg' | relative_url }}" alt="Not found" width="200">{: style="float: right; padding-left: 50px; padding-top: 100px;"}
-<p>
-O IMU detecta variações na inclinação do robô.
-</p>{: style="clear: left; padding-top: 80px;"}
-
-
-<img src="{{ 'assets/img/hefesto/lipo3s.jpeg' | relative_url }}" alt="Not found" width="300">{: style="float: left; clear:right; padding-right: 50px;"}
-<p>
-O sistema é alimentado por uma LiPO 3s e a OpenCR distribui a energia aos componentes.
-</p>{: style="clear: right; padding-top: 70px;"}
+</p>{: style="text-align: justify;"}
 
 <p>
-</p>{: style="clear: both; white-space: pre"}
+A câmera <strong>Mynt eye S1030</strong> Stereo tem sensoriamento preciso de profundidade com alcance flexível entre 0,5 e 18 metros. Desempenho otimizado em condições normais de luz ou condições de pouca luz. Precisão com amplo campo de visão a 146 graus.
+</p>{: style="text-align: justify;"}
+
+<p>
+Conta com IMU de seis eixos combinada com sincronização de quadro fornece precisão em menos de um milissegundo. Pacote completo com SDK simples de integrar. Desenvolvimento fácil e integração rápida com os dados de profundidade criados por meio do sensor EYE S.
+</p>{: style="text-align: justify;"}
+
+<p align="center">
+    <img src="{{ 'assets/img/hefesto/mynteye.png' | relative_url }}" alt="Not found" width="500"/>
+</p>
+
+<p>
+O IMU (<strong>mpu6050</strong>) detecta variações na inclinação do robô, fundamental para o equilíbrio do humanoide.
+</p>{: style="text-align: justify;"}
+
+<p>
+Já o sistema, é alimentado por uma LiPO 3s (11.1v) e a OpenCR distribui a energia aos componentes.
+</p>{: style="text-align: justify;"}
+
+<p align="center">
+    <img src="{{ 'assets/img/hefesto/imu.png' | relative_url }}" alt="Not found" width="400"/>
+    <img src="{{ 'assets/img/hefesto/lipo3s.png' | relative_url }}" alt="Not found" width="300"/>
+</p>
+
+
 <br>
 
 <!-- Equipe -->
@@ -80,11 +94,23 @@ O sistema é alimentado por uma LiPO 3s e a OpenCR distribui a energia aos compo
     <table class="table-borderless highlight">
       <thead>
         <tr>
-          <th><center><img src="{{ 'assets/img/people/matheusfrança-1.png' | relative_url }}" width="100" alt="matheusfrança" class="img-fluid rounded-circle" /></center></th>
+          <th><center><a href="https://www.linkedin.com/in/matheus-fran%C3%A7a-b62044150/" target="_blank">
+                <p align="center">
+                    <img src="{{ 'assets/img/people/matheusfrança-1.png' | relative_url }}" alt="Not found" width="100" class="img-fluid rounded-circle" />
+                </p>
+            </a></center></th>
           <th></th>
-          <th><center><img src="{{ 'assets/img/people/breno-1.png' | relative_url }}" width="100" alt="lucaslins" class="img-fluid rounded-circle"/></center></th>
+          <th><center><a href="https://www.linkedin.com/in/breno-portela-051270166/" target="_blank">
+                <p align="center">
+                    <img src="{{ 'assets/img/people/breno-1.png' | relative_url }}" alt="breno" width="100" class="img-fluid rounded-circle" />
+                </p>
+            </a></center></th>
           <th></th>
-          <th><center><img src="{{ 'assets/img/people/marcoreis8b&w-1.png' | relative_url }}" width="100" alt="marco" class="img-fluid rounded-circle"/></center></th>
+          <th><center><a href="https://mhar-vell.github.io/portfolio/" target="_blank">
+                <p align="center">
+                    <img src="{{ 'assets/img/people/marcoreis8b&w-1.png' | relative_url }}" alt="marco" width="100" class="img-fluid rounded-circle" />
+                </p>
+            </a></center></th>
         </tr>
       </thead>
       <tbody>
@@ -106,7 +132,6 @@ O sistema é alimentado por uma LiPO 3s e a OpenCR distribui a energia aos compo
     </table>
   </div>
 </div>
-
 <br>
 
 ### Resumo do Projeto
@@ -124,9 +149,10 @@ O sistema é alimentado por uma LiPO 3s e a OpenCR distribui a energia aos compo
 <br>
 
 ## Referências
-[1] [Robotis OP2](https://emanual.robotis.com/docs/en/platform/op2/getting_started). **ROBOTIS OP2**. Acesso em: 15 de Julho de 2021.
+1. <a id="OP2" target="_blank" href="https://emanual.robotis.com/docs/en/platform/op2/getting_started">**ROBOTIS OP2**</a>; Acesso em: 15 de Julho de 2021.
 
-[2] [Robotis OP3](https://emanual.robotis.com/docs/en/platform/op3/getting_started). **ROBOTIS OP3**. Acesso em: 15 de Julho de 2021.
+1. <a id="OP3" target="_blank" href="https://emanual.robotis.com/docs/en/platform/op3/getting_started">**ROBOTIS OP3**</a>; Acesso em: 15 de Julho de 2021.
+
 
 <br>
 <hr class="mark">
