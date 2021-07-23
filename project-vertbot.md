@@ -3,10 +3,28 @@ layout: page
 title: Vertbot
 subtitle: Projeto open-source para o desenvolvimento de um robô diferencial
 ---
+{% assign date_format = site.date_format | default: "%B %-d, %Y" %}
+{%- capture site_tags -%}
+    {%- for tag in site.tags -%}
+      {% if tag contains 'vertbot' %}
+        {{- tag | first -}}{%- unless forloop.last -%},{%- endunless -%}
+      {% endif %} 
+    {%- endfor -%}
+{%- endcapture -%}
+{%- assign tags_list = site_tags | split:',' | sort -%}
 
-<p align = "center">
-    <img src = "{{ 'assets/img/vertbot/vertbot_model.png' | relative_url }}">
-</p>
+<center><img src="{{ 'assets/img/vertbot/vertbot_model.png' | relative_url }}" alt="vertbot" width="380"/></center>
+
+<div class="before-content">
+  <center>
+    {%- for tag in tags_list -%}
+      <br>
+      <a href="#{{- tag -}}" class="btn btn-primary tag-btn"><i class="fas fa-tag" aria-hidden="true"></i>&nbsp;{{- tag -}}-posts&nbsp;({{site.tags[tag].size}})</a>
+    {%- endfor -%}
+  </center>    
+  <!--hr class="mark"-->
+</div>
+
 
 <!-- ## Introdução -->
 <!-- Neste tópico devemos ter no mínimo três parágrafos:
@@ -210,8 +228,12 @@ Os trabalhos já iniciados na parte de simulação já conta com um workspace e 
 
 <!-- ## Live Action
 Neste tópico o principal é mostrar a realização do projeto. -->
+<br>
+
+<hr>
 
 <br>
+
 <!-- ## Equipe -->
 <center><h3 class="post-title">Equipe de desenvolvimento</h3><br/></center>
 <div class="row">
@@ -259,3 +281,25 @@ Neste tópico o principal é mostrar a realização do projeto. -->
 8. Apresentação URL:
 9. Report URL:
 10. Artigos relacionados: 
+
+<br>
+<hr class="mark">
+<div id="full-tags-list">
+<h3 class="post-title"><font color="#fbb117">Posts</font></h3>
+  {%- for tag in tags_list -%}
+      <h4 id="{{- tag -}}" class="linked-section">
+          <i class="fas fa-tag" aria-hidden="true"></i>
+          &nbsp;{{- tag -}}&nbsp;({{site.tags[tag].size}})
+      </h4>
+      <div class="post-list">
+          {%- for post in site.tags[tag] -%}
+              <div class="tag-entry">
+                  <a href="{{ post.url | relative_url }}">{{- post.title -}}</a>
+                  <div class="entry-date">
+                      <time datetime="{{- post.date | date_to_xmlschema -}}">{{- post.date | date: date_format -}}</time>
+                  </div>
+              </div>
+          {%- endfor -%}
+      </div>
+  {%- endfor -%}
+</div>

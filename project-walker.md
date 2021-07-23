@@ -69,6 +69,8 @@ Dentre eles, os principais são:
 
 <br>
 
+<hr>
+
 <!--equipe-->
 <center><h3 class="post-title">Equipe de desenvolvimento</h3><br/></center>
 <div class="row">

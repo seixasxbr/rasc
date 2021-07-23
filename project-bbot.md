@@ -87,6 +87,8 @@ O sistema é alimentado por uma LiPO 3s e conta com uma placa para distribuir a 
 
 <hr>
 
+<br>
+
 <!-- equipe -->
 <center><h3 class="post-title">Equipe de desenvolvimento</h3><br/></center>
 <div class="row">
