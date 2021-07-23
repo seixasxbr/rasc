@@ -26,13 +26,16 @@ subtitle: Robô autônomo diferencial
 </div>
 
 
-## Mobilidade
 <p style="text-align: justify;">
-A junção da mobilidade com ferramentas de visão computacional e inteligência artificial proporcionam aos robôs móveis uma grande variedade de aplicações e autonomia. As aplicações incluem navegação, localização e identificação de objetos, por exemplo.
+A junção da mobilidade com ferramentas de visão computacional e inteligência artificial proporcionam aos robôs móveis uma grande variedade de aplicações e autonomia. Dentre estas aplicações temos, por exemplo, a navegação, a localização e a identificação de objetos.
+</p>
+<p style="text-align: justify;">
+O Projeto Aperea almeja utilizar alguns dos benefícios gerados do elo entre robótica móvel, visão computacional e I.A. Para isso será utilizada a placa Nvidia Jetson Nano em conjunto com elementos sensoriais para coletar dados do meio externo e assim, construir um robô autônomo diferencial.
+</p>
 
-O Projeto Aperea Jetbot II almeja utilizar alguns dos benefícios gerados do elo entre robótica móvel, visão computacional e I.A. Para isso será utilizada a placa Nvidia Jetson Nano em conjunto com elementos sensoriais para coletar dados do meio externo.
-
-Conforme ilustrado na Figura abaixo, o robô deverá ser capaz de buscar e reconhecer uma tag no ambiente. A tag indicará a localização de uma bola na cor laranja. E, a partir desta informação, o robô deverá encontrar esta bola.
+## Escopo do projeto
+<p style="text-align: justify;">
+O projeto teve início em 10/05/2021 e tem sua conclusão prevista para 20/08/2021. A execução deste projeto irá propor, aos seus respectivos desenvolvedores, conhecimentos direcionados a robótica móvel, além de experiências voltadas ao gerenciamento de projetos. Ambos ganhos são importantes na formação de pesquisadores e desenvolvedores com alvo em sistemas robóticos.
 </p>
 
 <center>
@@ -40,28 +43,25 @@ Conforme ilustrado na Figura abaixo, o robô deverá ser capaz de buscar e recon
 </center>
 
 <p style="text-align: justify;">
-O projeto teve início em 07/05/2021, possui uma duração estimada de 58 dias e tem sua conclusão prevista para 30/07/2021. A execução deste projeto irá propor, aos seus respectivos desenvolvedores, conhecimentos direcionados a robótica móvel, além de experiências voltadas ao gerenciamento de projetos. Ambos ganhos são importantes na formação de pesquisadores e desenvolvedores com alvo em sistemas robóticos.
+Conforme ilustrado na Figura acima,a missão do robô será a localização de uma bola. Para isso, o robô deverá ser capaz de buscar e reconhecer uma tag no ambiente. A tag indicará a localização de uma bola na cor laranja. E, a partir desta informação, o robô deverá encontrar esta bola.
 </p>
 
-## Detalhamento
+## Principais componentes do sistema
 <p style="text-align: justify;">
-O Aperea, para cumprir a sua missão, precisa realizar deslocamentos para navegar no ambiente.Conforme ilustrado abaixo, o movimento do robô será proporcionado pelas atuações dos motores TT. A implementação também será focada para atribuir uma dinâmica de um robô móvel diferencial.
-Durante a navegação, o robô deve encontrar obstáculos que podem dificultar a execução da missão. Para tratar os eventuais obstáculos serão implementados sensores que ajudarão na tarefa de evita-lós.
+Como ilustrado abaixo, a estrutura do Aperea será de um robô diferencial com um conjunto de sensores na parte frontal, um par de motores e rodas para locomoção e uma bola boba para dar estabilidade. Para fazer o gerenciamento, armazenamento e integração dos dados obtidos pelos sensores será necessário uma unidade de processamento, a qual será a placa NVIDIA Jetson Nano.
 </p>
 
 <center>
-<img src="{{ 'assets/img/aperea/esquema.png' | relative_url }}" text-align=center alt="ga" />
+<img src="{{ 'assets/img/aperea/esquema.png' | relative_url }}" width="400" text-align=center alt="ga" />
 </center>
 
 <p style="text-align: justify;">
-O sensor ultrassônico, implementado na parte frontal do robô, proverá informação da existência de obstáculos que podem estar a frente do robô.
-Um Lidar 2d, juntamente com uma câmera de profundidade Mynteye serão utilizados para tornar este sistema robótico capaz de realizar a técnica SLAM, que irá permitir a construção do mapa e localização de forma simultânea.
-Afim de identificar a TAG e a esfera colorida, a câmera V2 Raspberry Pi será utilizada para captar os dados visuais do ambiente. Os dados visuais serão processados com uso da biblioteca de visão computacional OpenCV.
-
-O processamento dos dados que serão coletados pelos sensores e câmeras será realizado pela placa Nvidia Jetson Nano. A placa conterá o sistema operacional Ubuntu 20.04, que permitirá a instalação da plataforma ROS, Robot Operation System. Também será desenvolvido um sistema de gerenciamento de energia para monitorar a carga do sistema. A tabela abaixo apresenta mais informações com relação aos principais componentes que compõem o sistema do Aperea.
+Durante a navegação, o robô deve encontrar obstáculos que podem dificultar a execução da missão. Para tratar os eventuais obstáculos serão implementados sensores que ajudarão na tarefa de evita-lós.
 </p>
-
-### Principais Componentes
+<p style="text-align: justify;">
+O sensor ultrassônico, implementado na parte frontal do robô, proverá informações da existência de obstáculos que podem estar a frente do robô.
+Enquanto um Lidar, juntamente com uma câmera de profundidade Mynteye serão utilizados para tornar este sistema robótico capaz de realizar a técnica SLAM, que irá permitir a construção do mapa e localização de forma simultânea.
+</p>
 
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;}
@@ -122,8 +122,15 @@ O processamento dos dados que serão coletados pelos sensores e câmeras será r
 </tbody>
 </table>
 
-
-
+<p style="text-align: justify;">
+A fim de identificar a TAG e a esfera colorida, a câmera V2 Raspberry Pi será utilizada para captar os dados visuais do ambiente. Os dados visuais serão processados com uso da biblioteca de visão computacional OpenCV.
+</p>
+<p style="text-align: justify;">
+Como mencionado anteriormente, o processamento dos dados que serão coletados pelos sensores será realizado pela placa Nvidia Jetson Nano. A placa conterá o sistema operacional Ubuntu 20.04, que permitirá a instalação da plataforma ROS, Robot Operation System, versão Noetic. 
+</p>
+<p style="text-align: justify;">
+Também será desenvolvido um sistema de gerenciamento de energia para monitorar a carga do sistema. A tabela acima apresenta mais informações com relação aos principais componentes que compõem o sistema do Aperea.
+</p>
 <br/>
 
 <center>
@@ -166,9 +173,9 @@ O processamento dos dados que serão coletados pelos sensores e câmeras será r
 
 ### Resumo do Projeto
 1. Categoria: 
-2. Prazo: 03 meses
-3. Data de início: <font color="#fbb117">07/maio/2021</font>
-4. Data de término: <font color="#fbb117">30/julho/2021</font>
+2. Prazo: 04 meses
+3. Data de início: <font color="#fbb117">10/maio/2021</font>
+4. Data de término: <font color="#fbb117">20/agosto/2021</font>
 5. Repositório URL: 
 6. Sponsor: <a href="http://www.senaicimatec.com.br/en/"><font color="#fbb117">Senai CIMATEC</font></a>
 7. Recursos materiais: US$

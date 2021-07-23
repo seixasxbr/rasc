@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Beautiful Jekyll 5.0.0 | Copyright Dean Attali 2020 -->
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <!-- Favicons -->
+   <link rel="icon" type="image/png" sizes="32x32" href="https://mhar-vell.github.io/rasc/assets/img/favicon.png">
+
+  
+
+  
+
+  <title>Walker</title>
+
+  
+  <meta name="author" content="Marco Reis">
+  
+
+  <meta name="description" content="Um robô bípede">
+
+  
+
+  
+
+  <link rel="alternate" type="application/rss+xml" title="Robotics & Autonomous Systems" href="http://localhost:4000/feed.xml">
+
+  
+
+  
+
+  
+
+  
+
+
+  
+    
+      
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+
+    
+      
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+
+
+    
+      
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic">
+
+
+    
+      
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800">
+
+
+    
+  
+
+  
+    
+      <link rel="stylesheet" href="/assets/css/bootstrap-social.css">
+    
+      <link rel="stylesheet" href="/assets/css/beautifuljekyll.css">
+    
+  
+
+  
+
+  
+  
+  
+
+  
+
+  
+  <meta property="og:site_name" content="Robotics & Autonomous Systems">
+  <meta property="og:title" content="Walker">
+  <meta property="og:description" content="Um robô bípede">
+
+  
+  <meta property="og:image" content="http://localhost:4000/assets/img/rosalogo2.png">
+  
+
+  
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="http://localhost:4000/project-walker/">
+  <link rel="canonical" href="http://localhost:4000/project-walker/">
+  
+
+  
+  <meta name="twitter:card" content="summary">
+  
+  <meta name="twitter:site" content="@">
+  <meta name="twitter:creator" content="@">
+
+  <meta property="twitter:title" content="Walker">
+  <meta property="twitter:description" content="Um robô bípede">
+
+  
+  <meta name="twitter:image" content="http://localhost:4000/assets/img/rosalogo2.png">
+  
+
+  
+
+
+  
+
+  
+
+</head>
+
+
+<body>
+
+  
+
+
+  <nav class="navbar navbar-expand-xl navbar-light fixed-top navbar-custom top-nav-regular"><a class="navbar-brand" href="http://localhost:4000/">Robotics & Autonomous Systems</a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="main-navbar">
+    <ul class="navbar-nav ml-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">in progress</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="/project-aum">AUM</a>
+                  <a class="dropdown-item" href="/project-turbot">Turbot</a>
+                  <a class="dropdown-item" href="/project-ergo">Ergo</a>
+                  <a class="dropdown-item" href="/project-hefesto">Hefesto</a>
+                  <a class="dropdown-item" href="">Pong</a>
+                  <a class="dropdown-item" href="/project-vertbot">Vertbot</a>
+                  <a class="dropdown-item" href="/project-aperea">Aperea</a>
+                  <a class="dropdown-item" href="/project-hunter">Hunter</a>
+                  <a class="dropdown-item" href="/project-walker">Walker</a>
+                  <a class="dropdown-item" href="/project-bbot">bbot</a>
+            </div>
+          </li>
+        
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">accomplished</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="/project-doogie">Doogie</a>
+            </div>
+          </li>
+        
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">knowledge</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="">ssh</a>
+            </div>
+          </li>
+        
+          <li class="nav-item">
+            <a class="nav-link" href="/aboutus">About Us</a>
+          </li>
+        <li class="nav-item">
+          <a class="nav-link" id="nav-search-link" href="#" title="Search">
+            <span id="nav-search-icon" class="fa fa-search"></span>
+            <span id="nav-search-text">Search</span>
+          </a>
+        </li></ul>
+  </div>
+
+  
+
+  
+    <div class="avatar-container">
+      <div class="avatar-img-border">
+        <a href="http://localhost:4000/followup">
+          <img alt="Navigation bar avatar" class="avatar-img" src="/assets/img/rosalogo2.png" />
+        </a>
+      </div>
+    </div>
+  
+
+</nav>
+
+
+
+<div id="beautifuljekyll-search-overlay">
+
+  <div id="nav-search-exit" title="Exit search">✕</div>
+  <input type="text" id="nav-search-input" placeholder="Search">
+  <ul id="search-results-container"></ul>
+  
+  <script src="https://unpkg.com/simple-jekyll-search@latest/dest/simple-jekyll-search.min.js"></script>
+  <script>
+    var searchjson = '[ \
+       \
+        { \
+          "title"    : "A imagem baseada em Raspibian", \
+          "category" : "ergo", \
+          "url"      : "/2021-07-21-ergo-a-imagem-baseada-em-raspibian/", \
+          "date"     : "July 21, 2021" \
+        }, \
+       \
+        { \
+          "title"    : "Definição do modelo Bbot", \
+          "category" : "bbot", \
+          "url"      : "/2021-07-21-bbot-defini%C3%A7%C3%A3o-do-modelo-bbot/", \
+          "date"     : "July 21, 2021" \
+        }, \
+       \
+        { \
+          "title"    : "Simulação do APEREA", \
+          "category" : "aperea", \
+          "url"      : "/2021-07-21-aperea-simulacao/", \
+          "date"     : "July 21, 2021" \
+        }, \
+       \
+        { \
+          "title"    : "Walker - Funcionalidades", \
+          "category" : "walker", \
+          "url"      : "/2021-07-19-walker-funcionalidades/", \
+          "date"     : "July 19, 2021" \
+        }, \
+       \
+        { \
+          "title"    : "Trajetória dinâmica", \
+          "category" : "aum", \
+          "url"      : "/2021-06-19-trajetoria-dinamica/", \
+          "date"     : "June 19, 2021" \
+        }, \
+       \
+       \
+        { \
+          "title"    : "about me", \
+          "category" : "page", \
+          "url"      : "/aboutme/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "About Us", \
+          "category" : "page", \
+          "url"      : "/aboutus/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "Follow Up", \
+          "category" : "bookstest", \
+          "url"      : "/followup/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "RASC", \
+          "category" : "bookstest", \
+          "url"      : "/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "APEREA", \
+          "category" : "page", \
+          "url"      : "/project-aperea/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "AUM", \
+          "category" : "page", \
+          "url"      : "/project-aum/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "Bbot", \
+          "category" : "page", \
+          "url"      : "/project-bbot/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "Doogie Mouse", \
+          "category" : "page", \
+          "url"      : "/project-doogie/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "TEMPLATE", \
+          "category" : "page", \
+          "url"      : "/project-elir/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "Ergo", \
+          "category" : "page", \
+          "url"      : "/project-ergo/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "Hefesto", \
+          "category" : "page", \
+          "url"      : "/project-hefesto/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "TEMPLATE", \
+          "category" : "page", \
+          "url"      : "/project-template/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "turBOT", \
+          "category" : "page", \
+          "url"      : "/project-turbot/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "Vertbot", \
+          "category" : "page", \
+          "url"      : "/project-vertbot/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "Walker", \
+          "category" : "page", \
+          "url"      : "/project-walker/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "Tag Index", \
+          "category" : "page", \
+          "url"      : "/tags/", \
+          "date"     : "January 1, 1970" \
+        } \
+       \
+    ]';
+    searchjson = JSON.parse(searchjson);
+
+    var sjs = SimpleJekyllSearch({
+      searchInput: document.getElementById('nav-search-input'),
+      resultsContainer: document.getElementById('search-results-container'),
+      json: searchjson
+    });
+  </script>
+</div>
+
+
+
+
+
+  <!-- TODO this file has become a mess, refactor it -->
+
+
+
+
+
+
+
+<header class="header-section ">
+
+<div class="intro-header no-img">
+  <div class="container-md">
+    <div class="row">
+      <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
+        <div class="page-heading">
+          <h1>Walker</h1>
+          
+            
+              <hr class="small">
+              <span class="page-subheading">Um robô bípede</span>
+            
+          
+
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</header>
+
+
+
+
+
+<div class=" container-md " role="main">
+  <div class="row">
+    <div class=" col-xl-8 offset-xl-2 col-lg-10 offset-lg-1 " style="text-align: justify">
+      
+
+      <center><img src="/assets/img/walker/walker_title_yellow.png" alt="Walker_missao" width="380" /></center>
+
+<div class="before-content">
+  <center><br />
+      <a href="#walker" class="btn btn-primary tag-btn"><i class="fas fa-tag" aria-hidden="true"></i>&nbsp;walker-posts&nbsp;(1)</a></center>    
+  <!--hr class="mark"-->
+</div>
+
+<!-- ## Introdução -->
+
+<p>Um robô terrestre que se locomove sobre dois pés é classificado como bípede. Para isto, os movimentos realizados por este robô são similares a um andar antropomórfico. Movimentos antropomórficos são amplamente estudados e utilizados tanto na área medicinal como na industrial.</p>
+
+<!--objetivo, data-->
+<p>O Walker faz parte da primeira fase do programa de estágio do laboratório de Robótica e Sistemas Autonômos. A iniciativa visa a construção de um robô autônomo bípede para exploração em um ambiente indoor controlado. Este projeto foi iniciado em 12 de maio de 2021 e será finalizado em 30 de julho de 2021.</p>
+
+<!--justificativa-->
+<p>Um robô deste porte e com movimentação autônoma é comumente utilizado para realizar tarefas <em>indoor</em> simples e para interagir com os humanos. A elaboração e construção deste robô proporciona o aprendizado de conceitos básicos da robótica móvel e de visão computacional, como também, proporciona o embasamento para a formulação de um projeto.</p>
+
+<p>Para concepção do robô Walker, buscamos por projetos similares existentes, com o intuito de nortear nosso desenvolvimento.
+A imagem a seguir ilustra as principais referências utilizadas para o projeto.</p>
+
+<center>
+
+<img src="/assets/img/walker/walker_semelhantes.png" alt="Semelhantes" /><br />
+
+Da esquerda para direita: ROFI [1], Darwin-OP [2] e NAO [3].
+</center>
+
+<p><br /></p>
+
+<h3 id="missão">Missão</h3>
+
+<p>Como missão do robô Walker, ele deverá explorar uma área delimitada em busca de uma TAG.
+Ao encontrá-la, ela indicará a posição de uma esfera no ambiente.
+O Walker deverá, então, deslocar-se até essa posição e encontrar a esfera.
+A TAG e a esfera podem ser vistas na primeira imagem.</p>
+
+<p><br /></p>
+
+<h3 id="como-ele-fará-isso">Como ele fará isso?</h3>
+<p><img src="/assets/img/walker/walker_componentes.png" alt="Walker_componentes" />
+<!--<img src="/assets/img/walker/walker_componentes.png" width="250">--></p>
+
+<p>Para desempenhar suas funções, o Walker contará com alguns componentes. 
+Dentre eles, os principais são:</p>
+<ul>
+  <li><strong>Raspberry Pi 4:</strong> Será a central de processamento do robô, controlando todo seu funcionamento</li>
+  <li><strong>Dynamixels XM430:</strong> Atuadores que irão possibilitar o deslocamento do robô sobre dois pés</li>
+  <li><strong>Sensores Ultrassônicos HC-SR04:</strong> Permitirão a detecção de obstáculos, possibilitando sua navegação autônoma</li>
+  <li><strong>Raspicam:</strong> A câmera será utilizada para a detecção e reconhecimento de TAGs, possibilitando sua localização</li>
+</ul>
+
+<p><br /></p>
+
+<hr />
+
+<!--equipe-->
+<center><h3 class="post-title">Equipe de desenvolvimento</h3><br /></center>
+<div class="row">
+  <div class=" col-xl-auto offset-xl-0 col-lg-4 offset-lg-0">
+    <table class="table-borderless highlight">
+      <thead>
+        <tr>
+          <th><center><img src="/assets/img/people/brendaalencar-1.png" width="100" alt="brenda" class="img-fluid rounded-circle" /></center></th>
+          <th></th>
+          <th><center><img src="/assets/img/people/felipemohr-1.jpg" width="100" alt="felipemohr" class="img-fluid rounded-circle" /></center></th>
+          <th></th>
+          <th><center><img src="/assets/img/people/marcoreis8b&amp;w-1.png" width="100" alt="marco" class="img-fluid rounded-circle" /></center></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="font-weight-bolder" style="text-align: center margin-top: 0">
+          <td width="33.33%"><center>Brenda Alencar</center></td>
+          <td></td>
+          <td width="33.33%"><center>Felipe Mohr</center></td>
+          <td></td>
+          <td width="33.33%"><center>Marco Reis</center></td>
+        </tr>
+        <tr style="text-align:center">
+          <td width="33.33%" style="vertical-align: top"><small>Estagiária no CC RoSA, graduanda em Eng. Elétrica. Participou de projetos de Robótica Subaquática e Manipuladores Subaquáticos</small></td>
+          <td></td>
+          <td width="33.33%" style="vertical-align: top"><small>Estagiário no CC RoSA, graduando em Eng. Elétrica. Participou de projetos de Robótica Subaquática e Robótica Móvel</small></td>
+          <td></td>
+          <td width="33.33%" style="vertical-align: top"><small>Pesquisador Sênior do projeto <br />Mestre em Engenharia de Produção e Eng. Eletricista.</small></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<p><br /></p>
+
+<h3 id="resumo-do-projeto">Resumo do Projeto</h3>
+<ol>
+  <li>Categoria: <font color="#fbb117">Robótica móvel</font></li>
+  <li>Prazo: <font color="#fbb117">2 meses e 18 dias</font></li>
+  <li>Data de início: <font color="#fbb117">12/05/2021</font></li>
+  <li>Data de término: <font color="#fbb117">30/07/2021</font></li>
+  <li>Repositório URL: <a href="https://github.com/Brazilian-Institute-of-Robotics/bir_walker">Walker</a></li>
+  <li>Sponsor: <a href="http://www.senaicimatec.com.br/en/"><font color="#fbb117">Senai CIMATEC</font></a></li>
+  <li>Recursos materiais: –</li>
+  <li>Apresentação URL: <a href="https://github.com/Brazilian-Institute-of-Robotics/bir_walker-docs/tree/main">Walker-docs</a></li>
+  <li>Report URL: <a href="https://github.com/Brazilian-Institute-of-Robotics/bir_walker-docs/tree/report-design">Walker-report</a></li>
+  <li>Artigos produzidos:</li>
+</ol>
+
+<p><br /></p>
+
+<h2 id="referências">Referências</h2>
+<ol>
+  <li><a href="http://www.projectbiped.com/prototypes/rofi">ROFI</a>. <strong>RObot FIve</strong>. Acesso em: 7 de Junho de 2021 .</li>
+  <li><a href="https://emanual.robotis.com/docs/en/platform/op/getting_started">Darwin-OP</a>. <strong>ROBOTIS OP</strong>. Acesso em: 7 de Junho de 2021.</li>
+  <li><a href="https://www.softbankrobotics.com/emea/en/nao">Nao</a>. <strong>NAO ROBOTIS SoftBank Robotics</strong>. Acesso em: 7 de Junho de 2021.</li>
+</ol>
+
+<p><br /></p>
+<hr class="mark" />
+
+<div id="full-tags-list">
+<h3 class="post-title"><font color="#fbb117">Posts</font></h3><h4 id="walker" class="linked-section">
+          <i class="fas fa-tag" aria-hidden="true"></i>
+          &nbsp;walker&nbsp;(1)
+      </h4>
+      <div class="post-list"><div class="tag-entry">
+                  <a href="/2021-07-19-walker-funcionalidades/">Walker - Funcionalidades</a>
+                  <div class="entry-date">
+                      <time datetime="2021-07-19T00:00:00-03:00">July 19, 2021</time>
+                  </div>
+              </div></div></div>
+
+
+
+      
+
+      
+
+    </div>
+  </div>
+</div>
+
+
+  <footer>
+  <div class="container-md beautiful-jekyll-footer">
+    <div class="row">
+      <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
+      <ul class="list-inline text-center footer-links">
+
+<!--<li class="list-inline-item">
+    <a href="/feed.xml" title="RSS">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
+      </span>
+      <span class="sr-only">RSS</span>
+    </a>
+  </li>--><li class="list-inline-item">
+    <a href="mailto:marcoreis@me.com" title="Email Us">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
+      </span>
+      <span class="sr-only">Email Us</span>
+   </a>
+  </li><li class="list-inline-item">
+    <a href="https://github.com/orgs/Brazilian-Institute-of-Robotics/teams/making/" title="GitHub">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+      </span>
+      <span class="sr-only">GitHub</span>
+   </a>
+  </li><li class="list-inline-item">
+    <a href="https://reddit.com/r/braziliansinrobotics" title="Reddit">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-reddit fa-stack-1x fa-inverse"></i>
+      </span>
+      <span class="sr-only">Reddit</span>
+   </a>
+  </li><li class="list-inline-item">
+    <a href="https://open.spotify.com/playlist/0yf14KjkFTBC4ewLaHZO2d?si=961c92c7b7e94eff" title="Our playlist">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-spotify fa-stack-1x fa-inverse"></i>
+      </span>
+      <span class="sr-only">Our Playlist</span>
+   </a>
+  </li></ul>
+
+      
+      <p class="copyright text-muted">
+      
+        Marco Reis
+        &nbsp;&bull;&nbsp;
+      
+      2021
+
+      
+        &nbsp;&bull;&nbsp;
+        <span class="author-site">
+          <a href="https://mhar-vell.github.io/portfolio">mhar-vell.github.io/portfolio</a>
+        </span>
+      
+
+      
+      </p>
+      <p class="theme-by text-muted">
+        Powered by
+        <a href="https://beautifuljekyll.com">Beautiful Jekyll</a>
+      </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+  
+  
+    
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+
+
+  
+    
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+
+  
+    
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+  
+
+
+
+  
+    <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
+    
+      <script src="/assets/js/beautifuljekyll.js"></script>
+    
+  
+
+
+
+
+
+
+
+
+
+</body>
+</html>
