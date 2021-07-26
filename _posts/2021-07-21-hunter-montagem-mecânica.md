@@ -2,12 +2,12 @@
 layout: post
 title: Montagem Mecânica 
 subtitle: Uma montagem nada familiar by Marco Reis
-cover-img: https://p1.pxfuel.com/preview/622/928/1003/wall-e-robot-toy-cute.jpg 
+cover-img: /assets/img/hunter/lee-attwood-1eQBP3Iit48-unsplash.jpg 
 thumbnail-img: https://p1.pxfuel.com/preview/622/928/1003/wall-e-robot-toy-cute.jpg 
 share-img: /assets/img/bir-team.png
 tags: [hunter]
 ---
-# Montagem Mecânica
+
 A montagem do robô foi baseada no projeto elaborado pela equipe em etapas anteriores. Neste projeto foi utilizada a ferramenta CAD Onshape, que é uma plataforma software as service que disponibiliza um ambiente de projeto gratuito. Este ambiente virtual reduz o tempo de prototipagem e permite exportação de peças para o formato de impressão 3D.
 
 ![projeto-hunter](/assets/img/hunter/hunter.png)<br>
@@ -15,8 +15,9 @@ Imagem do projeto em 3D do Hunter realizado no Onshape.
 
 O processo escolhido para confecção do chassis do robô, impressão 3D, permitiu que este fosse personalizado para as demais peças, como: motores, shields, placa e sensores, o que  deixou o projeto mais eficiente e facilitou a montagem final. O material escolhido foi o PLA, devido a utilização de uma impressora aberta. Parte do processo de impressão da chapa superior do chassis é mostrado no video abaixo.
 
-
+<center>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ZitLNpdgK0I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</center>
 
 Além desta chapa, foram impressas:
 
