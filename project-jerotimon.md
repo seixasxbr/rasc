@@ -1,7 +1,7 @@
 ---
 layout: page
 title: JeRoTIMON
-subtitle: Manipulator
+subtitle: Um manipulator
 ---
 {% assign date_format = site.date_format | default: "%B %-d, %Y" %}
 {%- capture site_tags -%}
@@ -36,12 +36,15 @@ Em adição ao seu propósito inicial, posteriormente este manipulador robótico
 O pacote de simulação do manipulador **JeRoTIMON** foi construído através do software Gazebo aliado ao MoveIt e a ferramenta de visualização Rviz, possibilitando assim que as atividades realizadas no mundo real tenham sido previamente testadas em ambiente simulado, onde é possível analisar os movimentos e limitações do manipulador.
 <br>
 
-## Vídeos
 ### Simulação
+<center>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/s6215O7YVjU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</center>
 
 ### Mundo real
+<center>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/sRJByJuQB2Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</center>
 
 <!-- ## Equipe -->
 <center><h3 class="post-title">Equipe de desenvolvimento</h3><br/></center>
@@ -83,6 +86,8 @@ O pacote de simulação do manipulador **JeRoTIMON** foi construído através do
     </table>
   </div>
 </div>
+
+<br>
 
 <div class="row">
   <div class=" col-xl-auto offset-xl-0 col-lg-4 offset-lg-0">
