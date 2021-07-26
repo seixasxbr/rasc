@@ -13,8 +13,17 @@ subtitle: Jetson Nano Differencial Wheeled Robot
 {%- endcapture -%}
 {%- assign tags_list = site_tags | split:',' | sort -%}
 
-
 ![hunter](/assets/img/hunter/hunter.png)
+
+<div class="before-content">
+  <center>
+    {%- for tag in tags_list -%}
+      <br>
+      <a href="#{{- tag -}}" class="btn btn-primary tag-btn"><i class="fas fa-tag" aria-hidden="true"></i>&nbsp;{{- tag -}}-posts&nbsp;({{site.tags[tag].size}})</a>
+    {%- endfor -%}
+  </center>    
+  <!--hr class="mark"-->
+</div>
 
 Robôs autônomos são sistemas que podem operar em ambientes imprevisíveis e parcialmente desconhecidos, tendo a capacidade de realizar uma navegação ininterrupta e desviar de obstáculos. Neste contexto, se destaca o robô de tração diferencial, que possui uma simples construção, boa manobrabilidade [[1]](https://ieeexplore.ieee.org/document/9007654).
 
