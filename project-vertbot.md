@@ -283,6 +283,11 @@ Neste tópico o principal é mostrar a realização do projeto. -->
 10. Artigos relacionados: 
 
 <br>
+
+##### Referência
+1. <a href="https://jetbot.org/master"><font color="#fbb117">NVIDIA, Jetbot</font></a>. Acesso em: 17 de Maio de 2021.
+
+<br>
 <hr class="mark">
 <div id="full-tags-list">
 <h3 class="post-title"><font color="#fbb117">Posts</font></h3>
