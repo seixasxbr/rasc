@@ -6,7 +6,7 @@ subtitle: Um manipulator
 {% assign date_format = site.date_format | default: "%B %-d, %Y" %}
 {%- capture site_tags -%}
     {%- for tag in site.tags -%}
-      {% if tag contains 'walker' %}
+      {% if tag contains 'jerotimon' %}
         {{- tag | first -}}{%- unless forloop.last -%},{%- endunless -%}
       {% endif %} 
     {%- endfor -%}
