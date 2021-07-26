@@ -106,7 +106,7 @@ Testes preliminares também estão sendo realizados em laboratório, onde alguns
 
 <br>
 
-## Referências
+##### Referências
 1. <a id="SANTHAKUMAR">**SANTHAKUMAR, M.;  KIM, J.**</a>Robust adaptive tracking control of autonomous underwater vehicle-manipulator systems.Journal  of  Dynamic  Systems,  Measurement,and Control, American Society of Mechanical Engineers Digital Collection, v. 136, n. 5,2014.  
 1. <a id="DANNIGAN"></a>**DANNIGAN, M.; RUSSELL, G. T.** Evaluation and reduction of the dynamic coupling between a manipulator and an underwater vehicle.IEEE Journal of Oceanic Engineering,IEEE, v. 23, n. 3, p. 260–273, 1998.   
 
