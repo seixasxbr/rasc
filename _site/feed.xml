@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    
+    <title>Robotics &amp; Autonomous Systems</title>
+    
+    
+    <description>This website is my precious</description>
+    
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
+    
+    
+      <item>
+        <title>A imagem baseada em Raspibian</title>
+        <description>
+          Testando a interface do Ergo by Breno Portela - 
+          Ergo OS image Diante de várias tentativas de simular a movimentação do Ergo, a equipe deu seguimento nas atividades para efetuar os testes no modelo real seguindo as instruções de instalação do software, que sugeria inserir uma imagem de sistema operacional disponibilizada no repositório do projeto. Os recursos deste sistema...
+        </description>
+        <pubDate>Wed, 21 Jul 2021 00:00:00 -0300</pubDate>
+        <link>http://localhost:4000/2021-07-21-ergo-a-imagem-baseada-em-raspibian/</link>
+        <guid isPermaLink="true">http://localhost:4000/2021-07-21-ergo-a-imagem-baseada-em-raspibian/</guid>
+      </item>
+    
+      <item>
+        <title>Definição do modelo Bbot</title>
+        <description>
+          Explicando um pouco sobre o robô by Matheus França - 
+          Motivados pelo desejo de contribuir para a inovação no campo dos robôs auto-balanceados e suas tecnologias, e com o avanço da investigação da robótica internacional, decidimos avançar com a criação de uma nova plataforma com características especiais face a soluções previamente definidas. Para iniciarmos a etapa 1 da construção do...
+        </description>
+        <pubDate>Wed, 21 Jul 2021 00:00:00 -0300</pubDate>
+        <link>http://localhost:4000/2021-07-21-bbot-defini%C3%A7%C3%A3o-do-modelo-bbot/</link>
+        <guid isPermaLink="true">http://localhost:4000/2021-07-21-bbot-defini%C3%A7%C3%A3o-do-modelo-bbot/</guid>
+      </item>
+    
+      <item>
+        <title>Simulação do APEREA</title>
+        <description>
+          Um desafio de navegação by Juliana Santana - 
+          Modelando o robô Neste post, iremos abordar sobre o Unified Robot Description Format (URDF) ou descritivo do robô, o qual é um conjunto de arquivos em XML que descreve os elementos do robô. A descrição do modelo do Aperea é formada por um repositório com os arquivos meshes correspondentes as...
+        </description>
+        <pubDate>Wed, 21 Jul 2021 00:00:00 -0300</pubDate>
+        <link>http://localhost:4000/2021-07-21-aperea-simulacao/</link>
+        <guid isPermaLink="true">http://localhost:4000/2021-07-21-aperea-simulacao/</guid>
+      </item>
+    
+      <item>
+        <title>Walker - Funcionalidades</title>
+        <description>
+          O que o robô será capaz de fazer? by Felipe Mohr - 
+          No processo de ideação de um projeto, surge a necessidade de analisar e reunir as funcionalidades que o produto deve conter para realizar a tarefa proposta a ele. Ou seja, neste momento é pensado um grupo de pequenas ações que o protótipo deve realizar em prol de uma ação final....
+        </description>
+        <pubDate>Mon, 19 Jul 2021 00:00:00 -0300</pubDate>
+        <link>http://localhost:4000/2021-07-19-walker-funcionalidades/</link>
+        <guid isPermaLink="true">http://localhost:4000/2021-07-19-walker-funcionalidades/</guid>
+      </item>
+    
+      <item>
+        <title>Trajetória dinâmica</title>
+        <description>
+          Um estudo sobre manipuladores by Marco Reis - 
+          A conversa começa na pesquisa Diante de vários estudos realizados com o foco em robótica subaquática e manipulação; percebemos uma situação interessante na qual a grande maioria dos artigos faziam referências ao sistema completo, ou seja era compreendido pelo veículo e o manipulador. Nossa intenção é realizar uma pesquisa com...
+        </description>
+        <pubDate>Sat, 19 Jun 2021 00:00:00 -0300</pubDate>
+        <link>http://localhost:4000/2021-06-19-trajetoria-dinamica/</link>
+        <guid isPermaLink="true">http://localhost:4000/2021-06-19-trajetoria-dinamica/</guid>
+      </item>
+    
+  </channel>
+</rss>

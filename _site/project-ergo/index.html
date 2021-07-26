@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Beautiful Jekyll 5.0.0 | Copyright Dean Attali 2020 -->
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <!-- Favicons -->
+   <link rel="icon" type="image/png" sizes="32x32" href="https://mhar-vell.github.io/rasc/assets/img/favicon.png">
+
+  
+
+  
+
+  <title>Ergo</title>
+
+  
+  <meta name="author" content="Marco Reis">
+  
+
+  <meta name="description" content="Robotic manipulator">
+
+  
+
+  
+
+  <link rel="alternate" type="application/rss+xml" title="Robotics & Autonomous Systems" href="http://localhost:4000/feed.xml">
+
+  
+
+  
+
+  
+
+  
+
+
+  
+    
+      
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+
+    
+      
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+
+
+    
+      
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic">
+
+
+    
+      
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800">
+
+
+    
+  
+
+  
+    
+      <link rel="stylesheet" href="/assets/css/bootstrap-social.css">
+    
+      <link rel="stylesheet" href="/assets/css/beautifuljekyll.css">
+    
+  
+
+  
+
+  
+  
+  
+
+  
+
+  
+  <meta property="og:site_name" content="Robotics & Autonomous Systems">
+  <meta property="og:title" content="Ergo">
+  <meta property="og:description" content="Robotic manipulator">
+
+  
+  <meta property="og:image" content="http://localhost:4000/assets/img/rosalogo2.png">
+  
+
+  
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="http://localhost:4000/project-ergo/">
+  <link rel="canonical" href="http://localhost:4000/project-ergo/">
+  
+
+  
+  <meta name="twitter:card" content="summary">
+  
+  <meta name="twitter:site" content="@">
+  <meta name="twitter:creator" content="@">
+
+  <meta property="twitter:title" content="Ergo">
+  <meta property="twitter:description" content="Robotic manipulator">
+
+  
+  <meta name="twitter:image" content="http://localhost:4000/assets/img/rosalogo2.png">
+  
+
+  
+
+
+  
+
+  
+
+</head>
+
+
+<body>
+
+  
+
+
+  <nav class="navbar navbar-expand-xl navbar-light fixed-top navbar-custom top-nav-regular"><a class="navbar-brand" href="http://localhost:4000/">Robotics & Autonomous Systems</a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="main-navbar">
+    <ul class="navbar-nav ml-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">in progress</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="/project-aum">AUM</a>
+                  <a class="dropdown-item" href="/project-turbot">Turbot</a>
+                  <a class="dropdown-item" href="/project-ergo">Ergo</a>
+                  <a class="dropdown-item" href="/project-hefesto">Hefesto</a>
+                  <a class="dropdown-item" href="">Pong</a>
+                  <a class="dropdown-item" href="/project-vertbot">Vertbot</a>
+                  <a class="dropdown-item" href="/project-aperea">Aperea</a>
+                  <a class="dropdown-item" href="/project-hunter">Hunter</a>
+                  <a class="dropdown-item" href="/project-walker">Walker</a>
+                  <a class="dropdown-item" href="/project-bbot">bbot</a>
+            </div>
+          </li>
+        
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">accomplished</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="/project-doogie">Doogie</a>
+            </div>
+          </li>
+        
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">knowledge</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="">ssh</a>
+            </div>
+          </li>
+        
+          <li class="nav-item">
+            <a class="nav-link" href="/aboutus">About Us</a>
+          </li>
+        <li class="nav-item">
+          <a class="nav-link" id="nav-search-link" href="#" title="Search">
+            <span id="nav-search-icon" class="fa fa-search"></span>
+            <span id="nav-search-text">Search</span>
+          </a>
+        </li></ul>
+  </div>
+
+  
+
+  
+    <div class="avatar-container">
+      <div class="avatar-img-border">
+        <a href="http://localhost:4000/followup">
+          <img alt="Navigation bar avatar" class="avatar-img" src="/assets/img/rosalogo2.png" />
+        </a>
+      </div>
+    </div>
+  
+
+</nav>
+
+
+
+<div id="beautifuljekyll-search-overlay">
+
+  <div id="nav-search-exit" title="Exit search">✕</div>
+  <input type="text" id="nav-search-input" placeholder="Search">
+  <ul id="search-results-container"></ul>
+  
+  <script src="https://unpkg.com/simple-jekyll-search@latest/dest/simple-jekyll-search.min.js"></script>
+  <script>
+    var searchjson = '[ \
+       \
+        { \
+          "title"    : "A imagem baseada em Raspibian", \
+          "category" : "ergo", \
+          "url"      : "/2021-07-21-ergo-a-imagem-baseada-em-raspibian/", \
+          "date"     : "July 21, 2021" \
+        }, \
+       \
+        { \
+          "title"    : "Definição do modelo Bbot", \
+          "category" : "bbot", \
+          "url"      : "/2021-07-21-bbot-defini%C3%A7%C3%A3o-do-modelo-bbot/", \
+          "date"     : "July 21, 2021" \
+        }, \
+       \
+        { \
+          "title"    : "Simulação do APEREA", \
+          "category" : "aperea", \
+          "url"      : "/2021-07-21-aperea-simulacao/", \
+          "date"     : "July 21, 2021" \
+        }, \
+       \
+        { \
+          "title"    : "Walker - Funcionalidades", \
+          "category" : "walker", \
+          "url"      : "/2021-07-19-walker-funcionalidades/", \
+          "date"     : "July 19, 2021" \
+        }, \
+       \
+        { \
+          "title"    : "Trajetória dinâmica", \
+          "category" : "aum", \
+          "url"      : "/2021-06-19-trajetoria-dinamica/", \
+          "date"     : "June 19, 2021" \
+        }, \
+       \
+       \
+        { \
+          "title"    : "about me", \
+          "category" : "page", \
+          "url"      : "/aboutme/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "About Us", \
+          "category" : "page", \
+          "url"      : "/aboutus/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "Follow Up", \
+          "category" : "bookstest", \
+          "url"      : "/followup/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "RASC", \
+          "category" : "bookstest", \
+          "url"      : "/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "APEREA", \
+          "category" : "page", \
+          "url"      : "/project-aperea/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "AUM", \
+          "category" : "page", \
+          "url"      : "/project-aum/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "Bbot", \
+          "category" : "page", \
+          "url"      : "/project-bbot/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "Doogie Mouse", \
+          "category" : "page", \
+          "url"      : "/project-doogie/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "TEMPLATE", \
+          "category" : "page", \
+          "url"      : "/project-elir/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "Ergo", \
+          "category" : "page", \
+          "url"      : "/project-ergo/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "Hefesto", \
+          "category" : "page", \
+          "url"      : "/project-hefesto/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "TEMPLATE", \
+          "category" : "page", \
+          "url"      : "/project-template/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "turBOT", \
+          "category" : "page", \
+          "url"      : "/project-turbot/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "Vertbot", \
+          "category" : "page", \
+          "url"      : "/project-vertbot/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "Walker", \
+          "category" : "page", \
+          "url"      : "/project-walker/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "Tag Index", \
+          "category" : "page", \
+          "url"      : "/tags/", \
+          "date"     : "January 1, 1970" \
+        } \
+       \
+    ]';
+    searchjson = JSON.parse(searchjson);
+
+    var sjs = SimpleJekyllSearch({
+      searchInput: document.getElementById('nav-search-input'),
+      resultsContainer: document.getElementById('search-results-container'),
+      json: searchjson
+    });
+  </script>
+</div>
+
+
+
+
+
+  <!-- TODO this file has become a mess, refactor it -->
+
+
+
+
+
+
+
+<header class="header-section ">
+
+<div class="intro-header no-img">
+  <div class="container-md">
+    <div class="row">
+      <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
+        <div class="page-heading">
+          <h1>Ergo</h1>
+          
+            
+              <hr class="small">
+              <span class="page-subheading">Robotic manipulator</span>
+            
+          
+
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</header>
+
+
+
+
+
+<div class=" container-md " role="main">
+  <div class="row">
+    <div class=" col-xl-8 offset-xl-2 col-lg-10 offset-lg-1 " style="text-align: justify">
+      
+
+      <p align="center">
+    <img src="/assets/img/ergo/ergo.png" alt="Not found" width="300" />
+    <img src="/assets/img/ergo/ergo_gripper.png" alt="Not found" width="300" />
+</p>
+
+<div class="before-content">
+  <center><a href="#ergo" class="btn btn-primary tag-btn"><i class="fas fa-tag" aria-hidden="true"></i>&nbsp;ergo-posts&nbsp;(1)</a></center>    
+  <!--hr class="mark"-->
+</div>
+
+<!-- ## Introdução -->
+
+<p style="text-align: justify;">
+<strong>Ergo Jr</strong> é um braço de baixo custo projetado para a fins didáticos <a href="#ERGO">[ERGO]</a>, fácil de construir e modificar. Graças à programação visual, pode ser usado em escolas para realizar desde projetos pequenos a mais complexos.
+</p>
+
+<p style="text-align: justify;">
+Originalmente o braço robótico foi projetado pela equipe do  <a target="_blank" href="https://flowers.inria.fr/"><font color="#fbb117">laboratório Flowers</font></a>, o Ergo Jr foi então adaptado pela equipe do <a target="_blank" href="http://www.senaicimatec.com.br/en/"><font color="#fbb117">Senai CIMATEC</font></a>, para atender às necessidades de pesquisas científicas.
+</p>
+
+<p><br /></p>
+
+<h3 id="design-e-características">DESIGN E CARACTERÍSTICAS</h3>
+
+<p style="text-align: justify;">
+O <strong>Ergo</strong> é um braço robótico, composto por 6 motores e uma estrutura confeccionada por impressão 3D, que possibilita uma movimentação livre em 6 graus de liberdade. O Ergo Jr desenvolvido tem duas ferramentas para diferentes interações com seu ambiente: um abajur e um gripper (garra mecânica).
+</p>
+
+<p style="text-align: justify;">
+O robô é controlado por uma placa Raspberry Pi 4 e possui uma câmera que ajuda a interagir com o mundo.
+</p>
+
+<h3 id="semelhanças">SEMELHANÇAS</h3>
+
+<p style="text-align: justify;">
+O robô tem uma grande semelhança com o mascote da <strong><i>Pixar</i></strong>, trazendo um aspecto lúdico para interação com o público. 
+</p>
+
+<p style="text-align: justify;">
+Ter um robô com tais aspectos proporciona difundir a tecnologia em lugares como escolas, a fim de incentivar o estudo e interesse à área de robótica desde o ensino primário. É possível notar também que nem sempre um projeto de engenharia e robótica, tem uma aparência de apenas fio e metal, e pode sim ter um aspecto mais próximo do público em geral.
+</p>
+
+<p align="center">
+    <img src="/assets/img/ergo/ergo.png" alt="Not found" width="250" />
+    <img src="/assets/img/ergo/pixar.png" alt="Not found" width="270" />
+</p>
+
+<h3 id="tecnologia-envolvida">TECNOLOGIA ENVOLVIDA</h3>
+
+<p>O <strong>Ergo</strong> conta com tecnologias que o ajudam a interagir com o mundo.</p>
+
+<p style="text-align: justify;">
+O robô conta com dois controladores, o principal é um Raspberry Pi 4 e suporta o ROS Noetic, já o secundário é um OpenCR que cuida das entradas e saídas dos atuadores.
+</p>
+
+<p style="text-align: justify;">
+Já na parte de atuação, temos 6 <i>Dynamixels</i> MX-106 espalhados nas diversas articulações do robô.
+</p>
+
+<p align="center">
+    <img src="/assets/img/ergo/controladores.png" alt="Not found" width="500" />
+    <img src="/assets/img/ergo/atuadores.png" alt="Not found" width="200" />
+</p>
+
+<p style="text-align: justify;">
+O <strong>Ergo</strong> conta ainda com um sensor que é responsável por aquisições de dados em tempo real.
+</p>
+
+<p style="text-align: justify;">
+A câmera RGB é capaz de detectar e codificar cores no espaço. 
+</p>
+
+<p align="center">
+    <img src="/assets/img/ergo/camera.png" alt="Not found" width="350" />
+</p>
+
+<h3 id="resultados">RESULTADOS</h3>
+
+<p style="text-align: justify;">
+Foi construído o <strong>projeto Ergo</strong> com os equipamentos citados e foram feitos alguns testes de movimentação tanto na estrutura real como na simulação. Os vídeos dos testes podem ser vistos a seguir. 
+</p>
+
+<p style="text-align: justify;">
+A <strong>simulação</strong> a princípio mostrou sinais de instabilidade, mas depois de algumas correções no modelo disponibilizado conseguimos orientar o robô. O resultado pode ser observado no vídeo abaixo. 
+</p>
+
+<div align="center">
+<iframe width="620" height="315" src="https://www.youtube.com/embed/KsNMs92i8cs" frameborder="0" allowfullscreen=""></iframe>
+</div>
+
+<p style="text-align: justify;">
+O vídeo que se segue, demonstra os testes feitos no <strong>modelo real</strong>. E é possível ver que a estrutura foi corretamente impressa em 3d e modificada com os servos descritos (<i>Dynamixel</i> MX-106).
+</p>
+
+<div align="center">
+<iframe width="620" height="315" src="https://www.youtube.com/embed/AmQxrFoqw_w" frameborder="0" allowfullscreen=""></iframe>
+</div>
+
+<p style="text-align: justify;">
+Como o projeto do <a target="_blank" href="https://flowers.inria.fr/"><font color="#fbb117">laboratório Flowers</font></a>, não dispõe de um pacote que integrasse corretamente o framework de robótica ROS, então a nossa equipe desenvolveu algumas correções para que o robô ficasse estável no cenário simulado e real, como pode ser visto nos vídeos.
+</p>
+
+<p><br />
+<br /></p>
+<hr />
+
+<!-- Equipe -->
+<center><h3 class="post-title">Equipe de desenvolvimento</h3><br /></center>
+<div class="row">
+  <div class=" col-xl-auto offset-xl-0 col-lg-4 offset-lg-0">
+    <table class="table-borderless highlight">
+      <thead>
+        <tr>
+          <th><center><a href="https://www.linkedin.com/in/matheus-fran%C3%A7a-b62044150/" target="_blank">
+                <p align="center">
+                    <img src="/assets/img/people/matheusfran%C3%A7a-1.png" alt="Not found" width="100" class="img-fluid rounded-circle" />
+                </p>
+            </a></center></th>
+          <th></th>
+          <th><center><a href="https://www.linkedin.com/in/breno-portela-051270166/" target="_blank">
+                <p align="center">
+                    <img src="/assets/img/people/breno-1.png" alt="breno" width="100" class="img-fluid rounded-circle" />
+                </p>
+            </a></center></th>
+          <th></th>
+          <th><center><a href="https://mhar-vell.github.io/portfolio/" target="_blank">
+                <p align="center">
+                    <img src="/assets/img/people/marcoreis8b&amp;w-1.png" alt="marco" width="100" class="img-fluid rounded-circle" />
+                </p>
+            </a></center></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="font-weight-bolder" style="text-align: center margin-top: 0">
+          <td width="33.33%">Matheus França</td>
+          <td></td>
+          <td width="33.33%">Breno Portela</td>
+          <td></td>
+          <td width="33.33%">Marco Reis</td>
+        </tr>
+        <tr style="text-align: center">
+          <td style="vertical-align: top"><small>Estagiário no laboratório de Robótica e Sistemas Autônomos (RoSA), Senai Cimatec, graduando em Engenharia de Controle e Automação na Área 1.</small></td>
+          <td></td>
+          <td style="vertical-align: top"><small>Bolsista no laboratório de Robótica e Sistemas Autônomos (RoSA), Senai Cimatec, graduado em Engenharia Mecânica no Senai Cimatec.</small></td>
+          <td></td>
+          <td style="vertical-align: top"><small>Pesquisador Sênior do projeto <br />Mestre em Engenharia de Produção e Eng. Eletricista.</small></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<p><br /></p>
+
+<h3 id="resumo-do-projeto">Resumo do Projeto</h3>
+<ol>
+  <li>Categoria: <font color="#fbb117">Robótica</font></li>
+  <li>Prazo: <font color="#fbb117">2 meses e 17 dias</font></li>
+  <li>Data de início: <font color="#fbb117">10/maio/2021</font></li>
+  <li>Data de término: <font color="#fbb117">27/julho/2021</font></li>
+  <li>Repositório URL: <a href="https://github.com/Brazilian-Institute-of-Robotics/bir_ergo"><font color="#fbb117">BIR Ergo</font></a></li>
+  <li>Sponsor: <a href="http://www.senaicimatec.com.br/en/"><font color="#fbb117">Senai CIMATEC</font></a></li>
+  <li>Recursos materiais: <font color="#fbb117">US$ 1614,65 </font></li>
+  <li>Apresentação URL: -</li>
+  <li>Report URL: -</li>
+  <li>Artigos produzidos: -</li>
+</ol>
+
+<p><br /></p>
+
+<h5 id="referências">Referências</h5>
+<ol>
+  <li><a id="ERGO" target="_blank" href="https://www.poppy-project.org/en/robots/poppy-ergo-jr/"><strong>Poppy Ergo</strong></a>; <strong>Manipulador</strong>. Acesso em: 20 de Julho de 2021.</li>
+</ol>
+
+<p><br /></p>
+<hr class="mark" />
+
+<div id="full-tags-list">
+<h3 class="post-title"><font color="#fbb117">Posts</font></h3><h4 id="ergo" class="linked-section">
+          <i class="fas fa-tag" aria-hidden="true"></i>
+          &nbsp;ergo&nbsp;(1)
+      </h4>
+      <div class="post-list"><div class="tag-entry">
+                  <a href="/2021-07-21-ergo-a-imagem-baseada-em-raspibian/">A imagem baseada em Raspibian</a>
+                  <div class="entry-date">
+                      <time datetime="2021-07-21T00:00:00-03:00">July 21, 2021</time>
+                  </div>
+              </div></div></div>
+
+
+      
+
+      
+
+    </div>
+  </div>
+</div>
+
+
+  <footer>
+  <div class="container-md beautiful-jekyll-footer">
+    <div class="row">
+      <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
+      <ul class="list-inline text-center footer-links">
+
+<!--<li class="list-inline-item">
+    <a href="/feed.xml" title="RSS">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
+      </span>
+      <span class="sr-only">RSS</span>
+    </a>
+  </li>--><li class="list-inline-item">
+    <a href="mailto:marcoreis@me.com" title="Email Us">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
+      </span>
+      <span class="sr-only">Email Us</span>
+   </a>
+  </li><li class="list-inline-item">
+    <a href="https://github.com/orgs/Brazilian-Institute-of-Robotics/teams/making/" title="GitHub">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+      </span>
+      <span class="sr-only">GitHub</span>
+   </a>
+  </li><li class="list-inline-item">
+    <a href="https://reddit.com/r/braziliansinrobotics" title="Reddit">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-reddit fa-stack-1x fa-inverse"></i>
+      </span>
+      <span class="sr-only">Reddit</span>
+   </a>
+  </li><li class="list-inline-item">
+    <a href="https://open.spotify.com/playlist/0yf14KjkFTBC4ewLaHZO2d?si=961c92c7b7e94eff" title="Our playlist">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-spotify fa-stack-1x fa-inverse"></i>
+      </span>
+      <span class="sr-only">Our Playlist</span>
+   </a>
+  </li></ul>
+
+      
+      <p class="copyright text-muted">
+      
+        Marco Reis
+        &nbsp;&bull;&nbsp;
+      
+      2021
+
+      
+        &nbsp;&bull;&nbsp;
+        <span class="author-site">
+          <a href="https://mhar-vell.github.io/portfolio">mhar-vell.github.io/portfolio</a>
+        </span>
+      
+
+      
+      </p>
+      <p class="theme-by text-muted">
+        Powered by
+        <a href="https://beautifuljekyll.com">Beautiful Jekyll</a>
+      </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+  
+  
+    
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+
+
+  
+    
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+
+  
+    
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+  
+
+
+
+  
+    <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
+    
+      <script src="/assets/js/beautifuljekyll.js"></script>
+    
+  
+
+
+
+
+
+
+
+
+
+</body>
+</html>

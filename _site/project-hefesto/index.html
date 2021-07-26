@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Beautiful Jekyll 5.0.0 | Copyright Dean Attali 2020 -->
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <!-- Favicons -->
+   <link rel="icon" type="image/png" sizes="32x32" href="https://mhar-vell.github.io/rasc/assets/img/favicon.png">
+
+  
+
+  
+
+  <title>Hefesto</title>
+
+  
+  <meta name="author" content="Marco Reis">
+  
+
+  <meta name="description" content="Humanoid Robot">
+
+  
+
+  
+
+  <link rel="alternate" type="application/rss+xml" title="Robotics & Autonomous Systems" href="http://localhost:4000/feed.xml">
+
+  
+
+  
+
+  
+
+  
+
+
+  
+    
+      
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+
+    
+      
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+
+
+    
+      
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic">
+
+
+    
+      
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800">
+
+
+    
+  
+
+  
+    
+      <link rel="stylesheet" href="/assets/css/bootstrap-social.css">
+    
+      <link rel="stylesheet" href="/assets/css/beautifuljekyll.css">
+    
+  
+
+  
+
+  
+  
+  
+
+  
+
+  
+  <meta property="og:site_name" content="Robotics & Autonomous Systems">
+  <meta property="og:title" content="Hefesto">
+  <meta property="og:description" content="Humanoid Robot">
+
+  
+  <meta property="og:image" content="http://localhost:4000/assets/img/rosalogo2.png">
+  
+
+  
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="http://localhost:4000/project-hefesto/">
+  <link rel="canonical" href="http://localhost:4000/project-hefesto/">
+  
+
+  
+  <meta name="twitter:card" content="summary">
+  
+  <meta name="twitter:site" content="@">
+  <meta name="twitter:creator" content="@">
+
+  <meta property="twitter:title" content="Hefesto">
+  <meta property="twitter:description" content="Humanoid Robot">
+
+  
+  <meta name="twitter:image" content="http://localhost:4000/assets/img/rosalogo2.png">
+  
+
+  
+
+
+  
+
+  
+
+</head>
+
+
+<body>
+
+  
+
+
+  <nav class="navbar navbar-expand-xl navbar-light fixed-top navbar-custom top-nav-regular"><a class="navbar-brand" href="http://localhost:4000/">Robotics & Autonomous Systems</a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="main-navbar">
+    <ul class="navbar-nav ml-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">in progress</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="/project-aum">AUM</a>
+                  <a class="dropdown-item" href="/project-turbot">Turbot</a>
+                  <a class="dropdown-item" href="/project-ergo">Ergo</a>
+                  <a class="dropdown-item" href="/project-hefesto">Hefesto</a>
+                  <a class="dropdown-item" href="">Pong</a>
+                  <a class="dropdown-item" href="/project-vertbot">Vertbot</a>
+                  <a class="dropdown-item" href="/project-aperea">Aperea</a>
+                  <a class="dropdown-item" href="/project-hunter">Hunter</a>
+                  <a class="dropdown-item" href="/project-walker">Walker</a>
+                  <a class="dropdown-item" href="/project-bbot">bbot</a>
+            </div>
+          </li>
+        
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">accomplished</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="/project-doogie">Doogie</a>
+            </div>
+          </li>
+        
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">knowledge</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="">ssh</a>
+            </div>
+          </li>
+        
+          <li class="nav-item">
+            <a class="nav-link" href="/aboutus">About Us</a>
+          </li>
+        <li class="nav-item">
+          <a class="nav-link" id="nav-search-link" href="#" title="Search">
+            <span id="nav-search-icon" class="fa fa-search"></span>
+            <span id="nav-search-text">Search</span>
+          </a>
+        </li></ul>
+  </div>
+
+  
+
+  
+    <div class="avatar-container">
+      <div class="avatar-img-border">
+        <a href="http://localhost:4000/followup">
+          <img alt="Navigation bar avatar" class="avatar-img" src="/assets/img/rosalogo2.png" />
+        </a>
+      </div>
+    </div>
+  
+
+</nav>
+
+
+
+<div id="beautifuljekyll-search-overlay">
+
+  <div id="nav-search-exit" title="Exit search">✕</div>
+  <input type="text" id="nav-search-input" placeholder="Search">
+  <ul id="search-results-container"></ul>
+  
+  <script src="https://unpkg.com/simple-jekyll-search@latest/dest/simple-jekyll-search.min.js"></script>
+  <script>
+    var searchjson = '[ \
+       \
+        { \
+          "title"    : "A imagem baseada em Raspibian", \
+          "category" : "ergo", \
+          "url"      : "/2021-07-21-ergo-a-imagem-baseada-em-raspibian/", \
+          "date"     : "July 21, 2021" \
+        }, \
+       \
+        { \
+          "title"    : "Definição do modelo Bbot", \
+          "category" : "bbot", \
+          "url"      : "/2021-07-21-bbot-defini%C3%A7%C3%A3o-do-modelo-bbot/", \
+          "date"     : "July 21, 2021" \
+        }, \
+       \
+        { \
+          "title"    : "Simulação do APEREA", \
+          "category" : "aperea", \
+          "url"      : "/2021-07-21-aperea-simulacao/", \
+          "date"     : "July 21, 2021" \
+        }, \
+       \
+        { \
+          "title"    : "Walker - Funcionalidades", \
+          "category" : "walker", \
+          "url"      : "/2021-07-19-walker-funcionalidades/", \
+          "date"     : "July 19, 2021" \
+        }, \
+       \
+        { \
+          "title"    : "Trajetória dinâmica", \
+          "category" : "aum", \
+          "url"      : "/2021-06-19-trajetoria-dinamica/", \
+          "date"     : "June 19, 2021" \
+        }, \
+       \
+       \
+        { \
+          "title"    : "about me", \
+          "category" : "page", \
+          "url"      : "/aboutme/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "About Us", \
+          "category" : "page", \
+          "url"      : "/aboutus/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "Follow Up", \
+          "category" : "bookstest", \
+          "url"      : "/followup/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "RASC", \
+          "category" : "bookstest", \
+          "url"      : "/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "APEREA", \
+          "category" : "page", \
+          "url"      : "/project-aperea/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "AUM", \
+          "category" : "page", \
+          "url"      : "/project-aum/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "Bbot", \
+          "category" : "page", \
+          "url"      : "/project-bbot/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "Doogie Mouse", \
+          "category" : "page", \
+          "url"      : "/project-doogie/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "TEMPLATE", \
+          "category" : "page", \
+          "url"      : "/project-elir/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "Ergo", \
+          "category" : "page", \
+          "url"      : "/project-ergo/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "Hefesto", \
+          "category" : "page", \
+          "url"      : "/project-hefesto/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "TEMPLATE", \
+          "category" : "page", \
+          "url"      : "/project-template/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "turBOT", \
+          "category" : "page", \
+          "url"      : "/project-turbot/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "Vertbot", \
+          "category" : "page", \
+          "url"      : "/project-vertbot/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "Walker", \
+          "category" : "page", \
+          "url"      : "/project-walker/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "Tag Index", \
+          "category" : "page", \
+          "url"      : "/tags/", \
+          "date"     : "January 1, 1970" \
+        } \
+       \
+    ]';
+    searchjson = JSON.parse(searchjson);
+
+    var sjs = SimpleJekyllSearch({
+      searchInput: document.getElementById('nav-search-input'),
+      resultsContainer: document.getElementById('search-results-container'),
+      json: searchjson
+    });
+  </script>
+</div>
+
+
+
+
+
+  <!-- TODO this file has become a mess, refactor it -->
+
+
+
+
+
+
+
+<header class="header-section ">
+
+<div class="intro-header no-img">
+  <div class="container-md">
+    <div class="row">
+      <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
+        <div class="page-heading">
+          <h1>Hefesto</h1>
+          
+            
+              <hr class="small">
+              <span class="page-subheading">Humanoid Robot</span>
+            
+          
+
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</header>
+
+
+
+
+
+<div class=" container-md " role="main">
+  <div class="row">
+    <div class=" col-xl-8 offset-xl-2 col-lg-10 offset-lg-1 " style="text-align: justify">
+      
+
+      <center><img src="/assets/img/hefesto/op3.png" text-align="center" width="200" alt="op3" /><br /></center>
+
+<div class="before-content">
+  <center></center>    
+  <!--hr class="mark"-->
+</div>
+
+<!-- ## Introdução -->
+<p>A robótica tem sido impulsionada pelas possibilidades da utilização de robôs para auxiliar o ser humano. O projeto de um sistema robótico humanoide visa obter uma máquina adaptada ao ambiente humano e que possa realizar tarefas para auxiliar as pessoas com maior adaptabilidade e facilidade de execução. O <strong>Hefesto</strong> é um projeto de robô autônomo com arquitetura aberta que visa o avanço nas tecnologias de robôs antropomórficos.</p>
+
+<p><br /></p>
+
+<h3 id="design-e-características">DESIGN E CARACTERÍSTICAS</h3>
+
+<p><strong>Hefesto</strong> conta com um <em>design</em> articulado de 20 graus de liberdade (DOF - <em>Degrees of freedom</em>). Sua estrutura é baseada nos modelos da <em>Robotis</em> Op3 e Op2. Além disso o <strong>Hefesto</strong> é desenvolvido sob ROS (Robot Operating System) para utilizar vários pacotes no ecossistema ROS. Toda tecnologia envolvida e suporte ao ROS, permitem que os desenvolvedores se concentrem mais no avanço de pesquisas e técnicas na área da robótica e visão computacional.</p>
+
+<p><br />rosa-logo-redondo</p>
+
+<p>O <strong>Hefesto</strong> é equipado com uma gama de tecnologias!!</p>
+
+<p>O robô conta com dois controladores, o principal é um Raspberry Pi 4 e suporta o ROS Noetic, já o secundário é um OpenCR e cuida das entradas e saídas dos atuadores. 
+<img src="/assets/img/hefesto/controladores.png" text-align="center" width="800" alt="controladores" /></p>
+
+<p>Já na parte de atuação, temos 2 <em>dynamixels MX106</em> na parte da pelvis e 18 <em>dynamixels MX28</em> espalhados nas diversas articulações do robô.
+<img src="/assets/img/hefesto/atuadores.png" text-align="center" width="550" alt="atuadores" /></p>
+
+<p>O <strong>hefesto</strong> conta ainda com sensores que são responsáveis por aquisições de dados em tempo real.</p>
+
+<p>A câmera RGB Stereo é capaz de detectar e codificar cores no espaço.
+<img src="/assets/img/hefesto/atuadores.png" text-align="center" width="400" alt="atuadores" /></p>
+
+<p>O IMU detecta variações na inclinação do robô.
+<img src="/assets/img/hefesto/mpu6050.jpg" text-align="center" width="150" alt="mpu" /></p>
+
+<p>O sistema é alimentado por uma LiPO 3s e a OpenCR distribui a energia aos componentes.
+<img src="/assets/img/hefesto/lipo3s.jpeg" text-align="center" width="400" alt="lipos" /></p>
+
+<p><br /></p>
+
+<!-- equipe -->
+<center><h3 class="post-title">Equipe de desenvolvimento</h3><br /></center>
+<div class="row">
+  <div class=" col-xl-auto offset-xl-0 col-lg-4 offset-lg-0">
+    <table class="table-borderless highlight">
+      <thead>
+        <tr>
+          <th><center><img src="/assets/img/people/matheusfran%C3%A7a-1.png" width="100" alt="matheusfrança" class="img-fluid rounded-circle" /></center></th>
+          <th></th>
+          <th><center><img src="/assets/img/people/breno-1.png" width="100" alt="breno" class="img-fluid rounded-circle" /></center></th>
+          <th></th>
+          <th><center><img src="/assets/img/people/marcoreis8b&amp;w-1.png" width="100" alt="marco" class="img-fluid rounded-circle" /></center></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="font-weight-bolder" style="text-align: center margin-top: 0">
+          <td width="33.33%">Matheus França</td>
+          <td></td>
+          <td width="33.33%">Breno Portela</td>
+          <td></td>
+          <td width="33.33%">Marco Reis</td>
+        </tr>
+        <tr style="text-align: center">
+          <td style="vertical-align: top"><small>Estagiário no laboratório de Robótica e Sistemas Autônomos (RoSA), Senai Cimatec, graduando em Engenharia de Controle e Automação na Área 1.</small></td>
+          <td></td>
+          <td style="vertical-align: top"><small>Bolsista no laboratório de Robótica e Sistemas Autônomos (RoSA), Senai Cimatec, graduado em Engenharia Mecânica no Senai Cimatec.</small></td>
+          <td></td>
+          <td style="vertical-align: top"><small>Pesquisador Sênior do projeto <br />Mestre em Engenharia de Produção e Eng. Eletricista.</small></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<p><br /></p>
+
+<h3 id="resumo-do-projeto">Resumo do Projeto</h3>
+<ol>
+  <li>Categoria: <font color="#fbb117">Robótica Móvel</font></li>
+  <li>Prazo: <font color="#fbb117">02 anos</font></li>
+  <li>Data de início: <font color="#fbb117">23/novembro/2020</font></li>
+  <li>Data de término: <font color="#fbb117">28/outubro/2022</font></li>
+  <li>Repositório URL:</li>
+  <li>Sponsor: <a href="http://www.senaicimatec.com.br/en/"><font color="#fbb117">Senai CIMATEC</font></a></li>
+  <li>Recursos materiais: <font color="#fbb117">US$</font></li>
+  <li>Apresentação URL:</li>
+  <li>Report URL:</li>
+  <li>Artigos produzidos:</li>
+</ol>
+
+<p><br /></p>
+
+<h5 id="referências">Referências</h5>
+
+<p><br /></p>
+<hr class="mark" />
+
+<div id="full-tags-list">
+<h3 class="post-title"><font color="#fbb117">Posts</font></h3></div>
+
+
+      
+
+      
+
+    </div>
+  </div>
+</div>
+
+
+  <footer>
+  <div class="container-md beautiful-jekyll-footer">
+    <div class="row">
+      <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
+      <ul class="list-inline text-center footer-links">
+
+<!--<li class="list-inline-item">
+    <a href="/feed.xml" title="RSS">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
+      </span>
+      <span class="sr-only">RSS</span>
+    </a>
+  </li>--><li class="list-inline-item">
+    <a href="mailto:marcoreis@me.com" title="Email Us">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
+      </span>
+      <span class="sr-only">Email Us</span>
+   </a>
+  </li><li class="list-inline-item">
+    <a href="https://github.com/orgs/Brazilian-Institute-of-Robotics/teams/making/" title="GitHub">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+      </span>
+      <span class="sr-only">GitHub</span>
+   </a>
+  </li><li class="list-inline-item">
+    <a href="https://reddit.com/r/braziliansinrobotics" title="Reddit">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-reddit fa-stack-1x fa-inverse"></i>
+      </span>
+      <span class="sr-only">Reddit</span>
+   </a>
+  </li><li class="list-inline-item">
+    <a href="https://open.spotify.com/playlist/0yf14KjkFTBC4ewLaHZO2d?si=961c92c7b7e94eff" title="Our playlist">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-spotify fa-stack-1x fa-inverse"></i>
+      </span>
+      <span class="sr-only">Our Playlist</span>
+   </a>
+  </li></ul>
+
+      
+      <p class="copyright text-muted">
+      
+        Marco Reis
+        &nbsp;&bull;&nbsp;
+      
+      2021
+
+      
+        &nbsp;&bull;&nbsp;
+        <span class="author-site">
+          <a href="https://mhar-vell.github.io/portfolio">mhar-vell.github.io/portfolio</a>
+        </span>
+      
+
+      
+      </p>
+      <p class="theme-by text-muted">
+        Powered by
+        <a href="https://beautifuljekyll.com">Beautiful Jekyll</a>
+      </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+  
+  
+    
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+
+
+  
+    
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+
+  
+    
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+  
+
+
+
+  
+    <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
+    
+      <script src="/assets/js/beautifuljekyll.js"></script>
+    
+  
+
+
+
+
+
+
+
+
+
+</body>
+</html>
