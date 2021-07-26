@@ -13,7 +13,8 @@ subtitle: Jetson Nano Differencial Wheeled Robot
 {%- endcapture -%}
 {%- assign tags_list = site_tags | split:',' | sort -%}
 
-![hunter](/assets/img/hunter/hunter.png)
+<center><img src="{{ '/assets/img/hunter/hunter.png' | relative_url }}" text-align=center width="500" alt="hunter" /><br></center>
+
 
 <div class="before-content">
   <center>
