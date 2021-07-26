@@ -6,7 +6,7 @@ subtitle: Mini Autonomous Underwater Vehicle
 {% assign date_format = site.date_format | default: "%B %-d, %Y" %}
 {%- capture site_tags -%}
     {%- for tag in site.tags -%}
-      {% if tag contains 'walker' %}
+      {% if tag contains 'turbot' %}
         {{- tag | first -}}{%- unless forloop.last -%},{%- endunless -%}
       {% endif %} 
     {%- endfor -%}
