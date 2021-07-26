@@ -1,22 +1,13 @@
 ---
 layout: post
 title: Montagem Mecânica 
+subtitle: Uma montagem nada familiar by Marco Reis
 cover-img: https://p1.pxfuel.com/preview/622/928/1003/wall-e-robot-toy-cute.jpg 
 thumbnail-img: https://p1.pxfuel.com/preview/622/928/1003/wall-e-robot-toy-cute.jpg 
 share-img: /assets/img/bir-team.png
 tags: [hunter]
 ---
-
-<style>
-p img {
-  width: 60%;
-  vertical-align:top;
-}
-</style>
-
 # Montagem Mecânica
-
-
 A montagem do robô foi baseada no projeto elaborado pela equipe em etapas anteriores. Neste projeto foi utilizada a ferramenta CAD Onshape, que é uma plataforma software as service que disponibiliza um ambiente de projeto gratuito. Este ambiente virtual reduz o tempo de prototipagem e permite exportação de peças para o formato de impressão 3D.
 
 ![projeto-hunter](/assets/img/hunter/hunter.png)<br>
@@ -63,4 +54,34 @@ O resultado da montagem pode ser observado nas imagens seguintes. Contudo, algum
 ![montagem-3](/assets/img/hunter/montagem-mecânica-03.jpeg)<br>
 
 ![montagem-4](/assets/img/hunter/montagem-mecânica-04.jpg)
+
+<br>
+
+---------------------
+<br>
+
+<!-- autor -->
+<center><h3 class="post-title">Autor</h3><br/></center>
+<div class="row">
+  <div class="col-xl-auto offset-xl-0 col-lg-4 offset-lg-0 center">
+    <table class="table-borderless highlight">
+      <thead>
+        <tr>
+          <th><img src="{{ 'assets/img/people/marcoreis8b&w-1.png' | relative_url }}" width="100" alt="amarco" class="img-fluid rounded-circle" /></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="font-weight-bolder" style="text-align: center margin-top: 0">
+          <td>Marco Reis</td>
+        </tr>
+        <tr style="text-align: center" >
+          <td style="vertical-align: top"><small>Pesquisador Sênior do projeto<br>Mestre em Engenharia de Produção e Eng. Eletricista.</small></td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<br>
 
