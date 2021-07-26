@@ -143,9 +143,6 @@ O pacote de simulação do manipulador **JeRoTIMON** foi construído através do
 
 <br>
 
-## Referências
-1. 
-
 
 <br>
 <hr class="mark">
