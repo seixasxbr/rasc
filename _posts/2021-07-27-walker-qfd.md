@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Walker - Quality Function Deployment 
-subtitle: Ferramentas para deteterminar as qualidades do projeto by Brenda
+subtitle: Ferramentas para deteterminar as qualidades do projeto by Brenda Alencar
 cover-img: /assets/img/walker/carlos-arthur-m-r-dSINOJrEdfw-unsplash.jpg
 thumbnail-img: assets/img/walker/walker_funcionalidades.png
 share-img: /assets/img/rosa-logo-redondo.png
