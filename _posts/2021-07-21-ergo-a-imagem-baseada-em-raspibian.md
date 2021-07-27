@@ -5,6 +5,7 @@ subtitle: Testando a interface do Ergo by Breno Portela
 cover-img: /assets/img/ergo/ergo.jpeg
 thumbnail-img: /assets/img/ergo/ergo_real.jpg
 share-img: /assets/img/rosa-logo-redondo (180).png
+comments: true
 tags: [ergo]
 ---
 

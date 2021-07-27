@@ -5,6 +5,7 @@ subtitle: A importância das funcionalidades by Matheus França
 cover-img: assets/img/bbot/bbot_wide.png
 thumbnail-img: assets/img/bbot/bbot.png
 share-img: assets/img/rosa-logo-redondo.png
+comments: true
 tags: [bbot]
 ---
 # Anteriormente

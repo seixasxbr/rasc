@@ -5,6 +5,7 @@ subtitle: Um desafio de navegação by Juliana Santana
 cover-img: /assets/img/aperea/cover3.png
 thumbnail-img: /assets/img/aperea/robot_model.png
 share-img: /assets/img/rosa-logo-redondo.png
+comments: true
 tags: [aperea]
 ---
 ## Modelando o robô
