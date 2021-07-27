@@ -151,7 +151,7 @@ O sistema é alimentado por uma LiPO 3s e conta com uma placa para distribuir a 
 
 <br>
 
-## Referências
+##### Referências
 
 1. <a id="GURTNER">**Adam Kollarčík and Martin Gurtner**</a>; Modeling and Control of Two-Legged Wheeled Robot; Master’s thesis, CZECH TECHNICAL UNIVERSITY IN PRAGUE. 2021.
 1. <a id="SANTOS">**Santos, Gabriel da Silva; Cardoso, Etevaldo; Reis, Marco Antonio dos**</a>; "Localização de Robôs Móveis em Ambiente Internos usando Marcos Fiduciais", p. 226-233 . In: **Anais do V Simpósio Internacional de Inovação e Tecnologia**. São Paulo: Blucher, 2019.

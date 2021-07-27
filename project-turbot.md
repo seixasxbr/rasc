@@ -100,8 +100,8 @@ Além disso o **turBOT** está sendo concebido para que tenha uma eficiência en
 
 <br>
 
-## Referências
-1. 
+<!--##### Referências
+1. -->
 
 
 <br>
