@@ -87,6 +87,8 @@ Já o sistema, é alimentado por uma LiPO 3s (11.1v) e a OpenCR distribui a ener
 
 <br>
 
+<hr>
+
 <!-- Equipe -->
 <center><h3 class="post-title">Equipe de desenvolvimento</h3><br/></center>
 <div class="row">
@@ -148,7 +150,7 @@ Já o sistema, é alimentado por uma LiPO 3s (11.1v) e a OpenCR distribui a ener
 
 <br>
 
-## Referências
+##### Referências
 1. <a id="OP2" target="_blank" href="https://emanual.robotis.com/docs/en/platform/op2/getting_started">**ROBOTIS OP2**</a>; Acesso em: 15 de Julho de 2021.
 
 1. <a id="OP3" target="_blank" href="https://emanual.robotis.com/docs/en/platform/op3/getting_started">**ROBOTIS OP3**</a>; Acesso em: 15 de Julho de 2021.
@@ -175,4 +177,3 @@ Já o sistema, é alimentado por uma LiPO 3s (11.1v) e a OpenCR distribui a ener
       </div>
   {%- endfor -%}
 </div>
-<hr class="mark">
