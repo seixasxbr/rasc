@@ -58,7 +58,7 @@ Simulação do hunter baseado em modelo URDF (Unified robot description format) 
     <table class="table-borderless highlight">
       <thead>
         <tr>
-          <th><center><img href="https://www.linkedin.com/in/caio-maia-5b5a383b/" src="{{ 'assets/img/people/caiomaia-1.png' | relative_url }}" width="100" alt="caiomaia-foto" class="img-fluid rounded-circle" /></center></th>
+          <th><center><a href="https://www.linkedin.com/in/caio-maia-5b5a383b/"><img src="{{ 'assets/img/people/caiomaia-1.png' | relative_url }}" width="100" alt="caiomaia-foto" class="img-fluid rounded-circle" /></a></center></th>
           <th></th>
           <th><center><img src="{{ 'assets/img/people/andersonlima-1.png' | relative_url }}" width="100" alt="andersonlima-foto" class="img-fluid rounded-circle"/></center></th>
           <th></th>
