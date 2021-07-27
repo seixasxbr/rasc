@@ -5,6 +5,7 @@ subtitle: Um estudo sobre manipuladores by Marco Reis
 cover-img: /assets/img/aum/matt-hardy-6ArTTluciuA-unsplash.jpg
 thumbnail-img: /assets/img/aum/network(2).png
 share-img: /assets/img/rosa-logo-redondo.png
+comments: true
 tags: [aum]
 ---
 # A conversa começa na pesquisa
@@ -30,7 +31,7 @@ Nossa pesquisa foi realizada na base de artigos do <a href="https://www.elsevier
 Nesta revisão realizada, observa-se que a rede de colaboração tem uma sinergia entre alguns pesquisadores, e que os indexadores bibliográficos são considerados relevantes para a pesquisa.
 </p>
 
-![network-3](/assets/img/aum/network-3.png)
+![network-3](../assets/img/aum/network-3.png)
 
 <p style="text-align: justify;">
 Quando tomamos a rede de co-citação, percebe-se uma sinergia em volta de três autores:
@@ -46,7 +47,7 @@ Quando tomamos a rede de co-citação, percebe-se uma sinergia em volta de três
 Essa relevância é importante, para compreender o caminhar da pesquisa diante do assunto pesquisado.
 </p>
 
-![network-2](/assets/img/aum/network-2.png)
+![network-2](../assets/img/aum/network-2.png)
 
 ## So far
 <p style="text-align: justify;">
