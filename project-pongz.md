@@ -4,9 +4,8 @@ title: PongZ
 subtitle: Uma releitura do pong para os tempos atuais.
 #cover-img: https://i.imgur.com/9AJowrB.png[/img]
 ---
-<center><img src="{{ 'https://i.imgur.com/9AJowrB.png[/img]' | relative_url }}" alt="pongz" width="380"/></center>
 
-<br>
+<th><center><iframe src="https://giphy.com/embed/l8DL07tSFOLLd7LQL5" width="500" height="250" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p></p></center></th>
 
 # Um pouco de história
 <div style="text-align: justify"> 
