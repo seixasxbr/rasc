@@ -17,7 +17,7 @@ Isso é importante para entender o funcionamento do robô, o que ele é capaz de
 A imagem a seguir traz o **Diagrama de Funcionalidades** construído para o robô. Primeiramente, o robô possui o Subsistema de Energia, responsável pela alimentação de todo o sistema. O subsistema de Gestão de Dados está ali para administrar o recebimento e envio de informações entre todos os subsistemas/funcionalidades. E, claro, a Segurança é importante para garantir o seu bom funcionamento. 
 
 <center><img src="{{ 'assets/img/walker/walker_funcionalidades.png' | relative_url }}" alt="Walker_funcionalidades" width="800"/></center>
-<p/>
+
 
 As funcionalidades são as seguintes:
 

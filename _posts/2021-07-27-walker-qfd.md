@@ -15,7 +15,6 @@ O QFD propõe a criação de uma matriz comumente chamada de "Casa de Qualidade"
 <center><img src="{{ 'assets/img/walker/walker_qfd_ex.png' | relative_url }}" alt="Estrutura QFD" width="500"/>
 </center>
 <center>Figura 1: Estrutura de uma matriz QFD. Fonte: voitto</center>
-<p/>
 
 Para relacionar os requisitos do cliente com os técnicos existe a matriz de relacionamentos, na qual classifica as relações como fraco, médio ou forte. Estas relações devem ser pensadas pela equipe, de modo a avaliar quais as características que interferem ou não nas necessidades do cliente. Voltando ao exemplo anterior, observa-se que existe uma forte relação entre o suco ser integral e a quantidade de frutas e conservantes, mas há uma fraca relação com o preço do produto. Além disso, o QFD contém uma área destinada à análise da concorrência, na lateral direita, que busca qualificar o desempenho de produtos com funções similares de acordo com a opinião dos clientes sobre os requisitos apresentados. Por fim, é realizada pela equipe a avaliação técnica, a fim de determinar a importância técnica dos requisitos por meio de pesos, em porcentagem.
 
@@ -24,12 +23,11 @@ Após o entendimento da ferramenta, a equipe a aplicou durante a ideação do ro
 <center><img src="{{ 'assets/img/walker/walker_QFD.png' | relative_url }}" alt="Estrutura QFD" width="800"/>
 </center>
 <center>Figura 2: QFD do projeto Walker. Fonte própria. </center>
-<p/>
 
 <center><img src="{{ 'assets/img/walker/walker_QFD_legenda.png' | relative_url }}" alt="Estrutura QFD" width="500"/>
 </center>
 <center>Figura 3: Legenda para o QFD do projeto Walker. Fonte própria. </center>
-<p/>
+
 <!-- melhorar figura da legenda-->
 Com isso, foi observado que a qualidade mais importante ao nosso produto é a capacidade de detectar obstáculos, que está fortemente correlacionada com várias competências estipuladas e fortemente relacionada com o requisito mais importante para o cliente, ser capaz de desviar de obstáculos. Já sobre os requistos técnicos com menor peso, estão fracamente relacionados e com poucas correlações, mas ainda assim são relevantes ao produto. Conclui-se que a ferramenta QFD foi de enorme auxílio para ouvir de maneira eficiente as necessidades do nosso cliente e definir as qualidades necessárias ao produto, assim como os focos de desenvolvimento do nosso produto. 
 

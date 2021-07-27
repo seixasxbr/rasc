@@ -9,7 +9,6 @@ comments: true
 tags: [bbot]
 ---
 # Anteriormente
-
 É importante que você tenha visto o post anterior [Definição do modelo Bbot](https://mhar-vell.github.io/rasc/2021-07-21-bbot-definição-do-modelo-bbot/), para um completo entendimento do desenvolvimento do projeto.
 
 
