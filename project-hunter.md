@@ -46,23 +46,11 @@ sensores:
 ## Simulação
 ![componentes](/assets/img/hunter/hunter_gazebo.png)
 
-Simulação do hunter baseado em modelo URDF (Unified robot description format) no Gazebo
+Simulação do hunter baseado em modelo URDF (Unified robot description format) no Gazebo.
 
-### Resumo do Projeto
+<br>
 
-1. Categoria: Robótica móvel
-2. Prazo: 14 semanas
-3. Data de início: 17/05/2021
-4. Data de término: 21/08/2021
-5. Repositório URL: [Hunter](https://github.com/Brazilian-Institute-of-Robotics/bir_jetbot-3)
-6. Sponsor: [SENAI CIMATEC](http://www.senaicimatec.com.br/en/)
-7. Recursos materiais: US$
-8. Apresentação URL: [Hunter-docs](https://github.com/Brazilian-Institute-of-Robotics/bir_jetbot-3-docs)
-9. Report URL:[Hunter-docs](https://github.com/Brazilian-Institute-of-Robotics/bir_jetbot-3-docs)
-10. Artigos relacionados: -
-
-
-
+<hr>
 <!-- equipe -->
 <center><h3 class="post-title">Equipe de desenvolvimento</h3><br/></center>
 <div class="row">
@@ -70,7 +58,7 @@ Simulação do hunter baseado em modelo URDF (Unified robot description format) 
     <table class="table-borderless highlight">
       <thead>
         <tr>
-          <th><center><img src="{{ 'assets/img/people/caiomaia-1.png' | relative_url }}" width="100" alt="caiomaia-foto" class="img-fluid rounded-circle" /></center></th>
+          <th><center><img href="https://www.linkedin.com/in/caio-maia-5b5a383b/" src="{{ 'assets/img/people/caiomaia-1.png' | relative_url }}" width="100" alt="caiomaia-foto" class="img-fluid rounded-circle" /></center></th>
           <th></th>
           <th><center><img src="{{ 'assets/img/people/andersonlima-1.png' | relative_url }}" width="100" alt="andersonlima-foto" class="img-fluid rounded-circle"/></center></th>
           <th></th>
@@ -79,7 +67,7 @@ Simulação do hunter baseado em modelo URDF (Unified robot description format) 
       </thead>
       <tbody>
         <tr class="font-weight-bolder" style="text-align: center margin-top: 0">
-          <td width="33.33%" ><a href="https://www.linkedin.com/in/caio-maia-5b5a383b/">Caio Maia</a></td>
+          <td width="33.33%" ><a>Caio Maia</a></td>
           <td></td>
           <td width="33.33%">Anderson Lima</td>
           <td></td>
@@ -99,7 +87,21 @@ Simulação do hunter baseado em modelo URDF (Unified robot description format) 
 
 <br>
 
+### Resumo do Projeto
+1. Categoria: Robótica móvel
+2. Prazo: 14 semanas
+3. Data de início: 17/05/2021
+4. Data de término: 21/08/2021
+5. Repositório URL: [Hunter](https://github.com/Brazilian-Institute-of-Robotics/bir_jetbot-3)
+6. Sponsor: [SENAI CIMATEC](http://www.senaicimatec.com.br/en/)
+7. Recursos materiais: US$
+8. Apresentação URL: [Hunter-docs](https://github.com/Brazilian-Institute-of-Robotics/bir_jetbot-3-docs)
+9. Report URL:[Hunter-docs](https://github.com/Brazilian-Institute-of-Robotics/bir_jetbot-3-docs)
+10. Artigos relacionados: -
 
+<br>
+
+##### Referências
 
 <br>
 <hr class="mark">
@@ -122,4 +124,3 @@ Simulação do hunter baseado em modelo URDF (Unified robot description format) 
       </div>
   {%- endfor -%}
 </div>
-<hr class="mark">

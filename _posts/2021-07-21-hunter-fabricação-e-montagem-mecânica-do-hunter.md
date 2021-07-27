@@ -3,8 +3,9 @@ layout: post
 title: Fabricação e Montagem Mecânica do Hunter
 subtitle: Uma montagem nada familiar by Caio Maia 
 cover-img: /assets/img/hunter/lee-attwood-1eQBP3Iit48-unsplash.jpg 
-thumbnail-img: https://p1.pxfuel.com/preview/622/928/1003/wall-e-robot-toy-cute.jpg 
+thumbnail-img: /assets/img/hunter/hunter_gazebo.png
 share-img: /assets/img/bir-team.png
+comments: true
 tags: [hunter]
 ---
 
@@ -14,15 +15,14 @@ O Hunter é um caso de aperfeiçoamento de plataforma, que foi inspirado no Jetb
 
 O projeto do robô passou por três versões e foi desenvolvida no Onshape. As duas primeira versões foram baseadas no chassis do próprio Jetbot e última foi projetado um chassis novo.
 
-A versão 3 do hunter é apresentada na figura 1.
 
 ![projeto-hunter](/assets/img/hunter/post-montagem-mecanica/hunter.png)<br>
-Figura 1: Imagem do projeto em 3D do Hunter realizado no Onshape.i
+Imagem do projeto em 3D do Hunter realizado no Onshape, sendo a versão 3 do desenvolvimento.
 
 ### Chassis
-O processo escolhido para confecção do chassis do robô, impressão 3D, permitiu que este fosse personalizado para as demais peças, como: motores, shields, PCB's e sensores. A figura 2 mostra o chassis montado com apenas as peças que foram fabricas.
+O processo escolhido para confecção do chassis do robô, impressão 3D, permitiu que este fosse personalizado para as demais peças, como: motores, shields, PCB's e sensores. A figura abaixo mostra o chassis montado com apenas as peças que foram fabricas.
 ![montagem](/assets/img/hunter/post-montagem-mecanica/montagem.png)
-Figura 2: Montagem das peças impressas do Hunter.
+
 
 Devido a facilidade de impressão o material escolhido foi o PLA e as peças da figura 2 foram impressas em uma impressora Ultimaker 2. O video abaixo mostra o processo de impressão de uma das peças.
 
@@ -32,22 +32,23 @@ Devido a facilidade de impressão o material escolhido foi o PLA e as peças da 
 </center>
 
 ### Roda
-Com o intuito de melhorar o contado do robô com o solo foi fabricado um pneu de silicone agregado à roda de PLA. A figura 3 mostra o detalhe do projeto destas duas peças.
-
+Com o intuito de melhorar o contado do robô com o solo foi fabricado um pneu de silicone agregado à roda de PLA. 
 ![montagem](/assets/img/hunter/post-montagem-mecanica/roda.png)
-Figura 3: Detalhe da roda impressa em PLA e pneu de silicone.
+Detalhe da roda impressa em PLA e pneu de silicone.
 
 
 ## Resultado
 
-A montagem das peças fabricadas são apresentadas nas figuras 4 e 5.
+A montagem das peças fabricadas são apresentadas nas figuras abaixo.
 
 ![montagem-4](/assets/img/hunter/montagem-mecânica-04.jpg)<br>
-Figura 4: Montagem do chassis com rodas, motores e Mynt Eye.
+Nesta figura podemos observa a montagem do chassis com rodas, motores e Mynt Eye.
 
 
 ![montagem-3](/assets/img/hunter/montagem-mecânica-03.jpeg)<br>
-Figura 5: Instalação dos sensores no robô.
+Nesta imagem podemos observar as conexões dos sensores no robô.
+
+<br>
 
 ---------------------
 <br>
