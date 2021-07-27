@@ -5,6 +5,7 @@ subtitle: Um estudo sobre manipuladores by Marco Reis
 cover-img: /assets/img/aum/matt-hardy-6ArTTluciuA-unsplash.jpg
 thumbnail-img: /assets/img/aum/network(2).png
 share-img: /assets/img/rosa-logo-redondo.png
+comments: true
 tags: [aum]
 ---
 # A conversa começa na pesquisa
