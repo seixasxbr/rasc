@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Simulação do APEREA 
-subtitle: Um desafio de navegação by Juliana Santana
+title: SLAM na Simulação
+subtitle: Localizar é Preciso; mapear também é Preciso by Matheus Anselmo
 cover-img: /assets/img/aperea/post-week12-cover.png
 thumbnail-img: /assets/img/aperea/slam-thumbnail.png
 share-img: /assets/img/rosa-logo-redondo.png
@@ -10,20 +10,33 @@ tags: [aperea]
 ---
 
 ## Aplicando a técnica SLAM Gmapping
+<p style="text-align: justify;">
+O robô APEREA para cumprir o seu objetivo precisa possuir dados sobre sua posição e orientação no espaço, localização, e também deter informações sobre o ambiente, mapeamento, pois para a navegação autônoma é crucial que os robôs tenham dados sobre sua posição e orientação.
+</p>
 
-Introdução:
-Falar sobre o slam, gmapping e a interação com o sensor
 
-Desenvolvimento:
-Implementação e ajustes
+Para obter o mapeamento e a localização do ambiente de simulação de forma simultânea,  foi utilizado o método SLAM, Simultaneous Localization And Mapping,  com  o uso do algoritmo [GMAPPING](https://iopscience.iop.org/article/10.1088/1757-899X/705/1/012037/pdf)  que utiliza os raios emitidos por uma fonte e refletidos por objetos do ambiente para criar  o mapa baseado em grade. O emissor, e também receptor, de raios que foi utilizado no APEREA é um Lidar que fornece dados para a realização do mapeamento e da localização.
 
-Resultados:
-Vídeo
+
+<center>
+  <img src="{{ 'assets/img/aperea/post_2/slam_esquematico.png' | relative_url }}" width="600" text-align=center alt="urdf1" />
+</center>
+
+
+
+Para inserir o Lidar no modelo de simulação do APEREA foi adicionado um plugin do gazebo que permite a realização da funcionalidade deste elemento sensorial e [o pacote do ROS GMAPPING](http://wiki.ros.org/gmapping) para realizar o processamento de dados. Um ambiente no gazebo foi montado para realizar os testes e verificar o resultado do SLAM no robô. O APEREA foi teleoperado, por um joystick, para navegar pelo ambiente, coletar dados do ambiente para gerar o mapa e verificar se a odometria estava correta.
+
+
 
 
 <center>
   <img src="{{ 'assets/img/aperea/lidar-ray2.gif' | relative_url }}" width="600" height="400" text-align=center alt="urdf1" />
 </center>
+
+
+
+A implementação teve sucesso na geração do mapeamento e da localização simultânea. O [Frame](http://wiki.ros.org/geometry/CoordinateFrameConventions), referente ao mapa e a odometria (localização) foram correspondentes durante boa parte da simulação, o que indica que a localização e o mapeamento foram realizados de forma adequada.Nos próximos passos a localização no ambiente será usada para a realização de navegação autônoma.
+
 
 
 
