@@ -10,40 +10,34 @@ subtitle: Uma releitura do pong para os tempos atuais.
 # Um pouco de história
 <div style="text-align: justify"> 
 O Pong é considerado o primeiro jogo a se tornar lucrativo na história em formato de vídeo. Criado por  Nolan Bushnell e Ted Dabney, foi baseado no clássico jogo de tênis de dois jogadores, em que as hastes/barras simulam as raquetes que rebatem a bola com objetivo de ultrapassar as linhas laterais que os jogadores devem proteger, caso isso não aconteça um ponto será concedido a favor daquele que rebateu a bola. A versão clássica do PONG consiste em um console ligado a um monitor, sendo as hastes movidas por moedas.
-</div>
+</div><br>
 
 # O PongZ
 <div style="text-align: justify"> 
 Nesta versão que adotamos o nome de PongZ, sendo "Pong" o nome do jogo original e "Z" o termo que remete a geração de nascimento dos desenvolvedores. Neste projeto resolvemos remodelar o design, mas sem alterar a essência do jogo, trazendo uma clássica trilha sonora dos anos 70. Além disso, no lugar das moedas que moviam as hastes usamos potenciômetros, e um arduino que faz a interpretação desses dados e envia para o computador através da porta USB, contendo também informações dos push buttons que permitem o jogador controlar, pausar e reiniciar o jogo.
-</div>
+</div><br>
 
 ### O desafio
 <div style="text-align: justify"> 
 O PongZ é o resultado do que começou como um trabalho passado pelo professor Marco Reis na disciplina de Sistemas Embarcados no curso de Engenharia Elétrica do SENAI CIMATEC. A ideia era desenvolver um jogo inspirado no clássico Pong com o objetivo de que assim nós pudéssemos usar todos os conhecimentos aprendidos durante o semestre de uma única vez e num mesmo projeto. 
-</div><br/>
+</div><br>
 
 ### Um pouco sobre o desenvolvimento
 <div style="text-align: justify"> 
 Para construção da parte física do projeto, o hardware, nós dois botões: um para pausar e o outro para reiniciar a partida, dois potenciômetros, que funcionaram como os joysticks e um arduino. Para mostrar como esses componentes foram conectados ao arduino nós fizemos um esquema de ligação usando o Tinkercad. Veja ele na imagem abaixo.
 
-
-
-
-<br/><th><center><img src="{{ 'assets/img/pongz/pong_circuito.png' | relative_url }}" width="500" alt="Esquema de Ligacao" class="img" /></center></th>
-<br/>
+<br><th><center><img src="{{ 'assets/img/pongz/pong_circuito.png' | relative_url }}" width="500" alt="Esquema de Ligacao" class="img" /></center></th>
+<br>
 
 Já para a parte da programação, o software, nós programamos o arduino para verificar se algum botão havia sido apertado ou se algum potenciômetro tinha sido girado e então enviar essa informações para o computador. No computador, por sua vez, nós usamos um programado chamado Processing 3 para criar a interface gráfica do jogo.
 
 Quando conseguimos recriar as mecânicas básicas do jogo percebemos que poderíamos adicionar algumas novidades a ele para dar uma aparência única e mais moderna ao jogo, já que muitas características do Pong clássico como conhecemos foram desenvolvidas dessa forma por limitações da tecnologia da época. Assim, nós demos ao campo uma nova cor, tornamos as barras de rebatimento um pouco mais arredondas, adicionamos uma música de fundo e demos um efeito à bola para que ela começasse totalmente branca e fosse se tornando cada vez mais avermelhada a cada rebatida para mostrar ao jogadores que ela estava ficando cada vez mais rápida.
-</div>
+</div><br>
 
+<!-- TODO realizar o video com informações ao público -->
 
-
-<br>
-
-#//TODO realizar o video com informações ao público
 ## Live Game
-O vídeo abaixo tem como objetivo representar a versão final do jogo, demonstrando a jogabilidade e suas funções.
+O vídeo abaixo mostra versão final do jogo, tanto o que é mostrado na tela do computador, quanto o uso dos botões e do potenciômetro.
 
 <div class="embed-responsive embed-responsive-16by9">
 
@@ -61,19 +55,19 @@ O vídeo abaixo tem como objetivo representar a versão final do jogo, demonstra
       <thead>
         <tr>
           <th><a href="https://www.linkedin.com/in/alexandre-adonai-gama-da-silva-365a35211/"><center><img src="{{ 'assets/img/people/alexandreadonai-1.png' | relative_url}}" 
-          width="100" alt="Alexandre"
+          width="100" alt="alexandreadonai"
           class="img-fluid rounded-circle" /></center></a></th>
           <th></th>
           <th><a href="http://lattes.cnpq.br/3714599132684846"><center><img src="{{ 'assets/img/people/gabrielcalmon-1.png' | relative_url}}" 
-          width="100" alt="Alexandre"
+          width="100" alt="gabrielcalmon"
           class="img-fluid rounded-circle" /></center></a></th>
           <th></th>
           <th><a href="https://www.linkedin.com/in/jo%C3%A3o-v%C3%ADtor-s-mendes-aa2ab71b5/"><center><img src="{{ 'assets/img/people/vitormendes-1.png' | relative_url}}" 
-          width="100" alt="Alexandre"
+          width="100" alt="vitormendes"
           class="img-fluid rounded-circle" /></center></a></th>
           <th></th>
           <th><a href="https://www.mhar-vell.github.io/portifolio/"><center><img src="{{ 'assets/img/people/marcoreis8b&w-1.png' | relative_url}}" 
-          width="100" alt="Alexandre"
+          width="100" alt="marcoreis"
           class="img-fluid rounded-circle" /></center></a></th>
           <th></th>
         </tr>
