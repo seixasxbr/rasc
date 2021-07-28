@@ -9,12 +9,12 @@ subtitle: Uma releitura do pong para os tempos atuais.
 
 # Um pouco de história
 <div style="text-align: justify"> 
-O Pong é considerado o primeiro jogo da história em formato de vídeo a ser lucrativo. Criado por  Nolan Bushnell e Ted Dabney, o jogo se inspira no clássico jogo de tênis de dois jogadores em que as hastes/barras simulam as raquetes, e a bola da mesma forma que em uma partida de tênis, percorre a quadra até um dos jogadores não conseguir rebater. A versão clássica do PONG consiste em um console ligado a um monitor, sendo as hastes movidas por moedas.
+O Pong é considerado o primeiro jogo a se tornar lucrativo na história em formato de vídeo. Criado por  Nolan Bushnell e Ted Dabney, foi baseado no clássico jogo de tênis de dois jogadores, em que as hastes/barras simulam as raquetes que rebatem a bola com objetivo de ultrapassar as linhas laterais que os jogadores devem proteger, caso isso não aconteça um ponto será concedido a favor daquele que rebateu a bola. A versão clássica do PONG consiste em um console ligado a um monitor, sendo as hastes movidas por moedas.
 </div>
 
 # O PongZ
 <div style="text-align: justify"> 
-Nesta versão que adotamos o nome de PongZ, sendo "Pong" o nome do jogo original e "Z" o termo que remete o nascimento da geração dos desenvolvedores. Neste projeto resolvemos remodelar o design, mas sem alterar a essência do jogo, trazendo uma clássica trilha sonora dos anos 70. Além disso, no lugar das moedas que moviam as hastes temos potenciômetros, e um arduino que faz a interpretação desses dados e envia para o computador através da porta USB, contendo também informações dos botões push buttons que permitem o jogador controlar pausar e resetar o jogo.
+Nesta versão que adotamos o nome de PongZ, sendo "Pong" o nome do jogo original e "Z" o termo que remete a geração de nascimento dos desenvolvedores. Neste projeto resolvemos remodelar o design, mas sem alterar a essência do jogo, trazendo uma clássica trilha sonora dos anos 70. Além disso, no lugar das moedas que moviam as hastes usamos potenciômetros, e um arduino que faz a interpretação desses dados e envia para o computador através da porta USB, contendo também informações dos push buttons que permitem o jogador controlar, pausar e reiniciar o jogo.
 </div>
 
 ### O desafio
