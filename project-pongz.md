@@ -34,8 +34,6 @@ Já para a parte da programação, o software, nós programamos o arduino para v
 Quando conseguimos recriar as mecânicas básicas do jogo percebemos que poderíamos adicionar algumas novidades a ele para dar uma aparência única e mais moderna ao jogo, já que muitas características do Pong clássico como conhecemos foram desenvolvidas dessa forma por limitações da tecnologia da época. Assim, nós demos ao campo uma nova cor, tornamos as barras de rebatimento um pouco mais arredondas, adicionamos uma música de fundo e demos um efeito à bola para que ela começasse totalmente branca e fosse se tornando cada vez mais avermelhada a cada rebatida para mostrar ao jogadores que ela estava ficando cada vez mais rápida.
 </div><br>
 
-<!-- TODO realizar o video com informações ao público -->
-
 ## Live Game
 O vídeo abaixo mostra versão final do jogo, tanto o que é mostrado na tela do computador, quanto o uso dos botões e do potenciômetro.
 
