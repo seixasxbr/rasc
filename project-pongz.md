@@ -19,18 +19,25 @@ Nesta versão que adotamos o nome de PongZ, sendo "Pong" o nome do jogo original
 
 ### O desafio
 <div style="text-align: justify"> 
-O PongZ é um projeto criado dentro da disciplina de Sistemas Embarcados no curso de Engenharia Elétrica do SENAI CIMATEC ministrado pelo Prof. Marco Reis, com intuito de explorar as habilidades desenvolvidas durante a disciplina, como fazer a interação entre software e hardware através de comunicação serial e manipulação de dados capturados em um sistema embarcados.
-</div>
+O PongZ é o resultado do que começou como um trabalho passado pelo professor Marco Reis na disciplina de Sistemas Embarcados no curso de Engenharia Elétrica do SENAI CIMATEC. A ideia era desenvolver um jogo inspirado no clássico Pong com o objetivo de que assim nós pudéssemos usar todos os conhecimentos aprendidos durante o semestre de uma única vez e num mesmo projeto. 
+</div><br/>
 
 ### Um pouco sobre o desenvolvimento
 <div style="text-align: justify"> 
-O hardware do projeto conta com dois botões, dois potenciômetros e um arduino. Quanto ao software, o arduino foi programado para monitorar os sensores e enviar estes dados através da comunicação serial, enquanto um algoritmo em Processing 3 foi responsável pela interface do jogo.
+Para construção da parte física do projeto, o hardware, nós dois botões: um para pausar e o outro para reiniciar a partida, dois potenciômetros, que funcionaram como os joysticks e um arduino. Para mostrar como esses componentes foram conectados ao arduino nós fizemos um esquema de ligação usando o Tinkercad. Veja ele na imagem abaixo.
 
-Para uma melhor didática de como foram feitas as conexões dos potenciômetros e push buttons ao arduino, foi demonstrado no Tinkercad conforme a imagem abaixo. As ligações dos potenciômetros foram, respectivamente, o terminal 1 ligado ao GND, o terminal 2 aos pinos analógicos A0 e A2 e o terminal 3 ligado ao 5V. Já os push buttons, foram ligados, respectivamente, o terminal 1B aos pinos digitais 9 e 8 e o terminal 2B ao GND.
+
+
+
+<br/><th><center><img src="{{ 'assets/img/pongz/pong_circuito.png' | relative_url }}" width="500" alt="Esquema de Ligacao" class="img" /></center></th>
+<br/>
+
+Já para a parte da programação, o software, nós programamos o arduino para verificar se algum botão havia sido apertado ou se algum potenciômetro tinha sido girado e então enviar essa informações para o computador. No computador, por sua vez, nós usamos um programado chamado Processing 3 para criar a interface gráfica do jogo.
+
+Quando conseguimos recriar as mecânicas básicas do jogo percebemos que poderíamos adicionar algumas novidades a ele para dar uma aparência única e mais moderna ao jogo, já que muitas características do Pong clássico como conhecemos foram desenvolvidas dessa forma por limitações da tecnologia da época. Assim, nós demos ao campo uma nova cor, tornamos as barras de rebatimento um pouco mais arredondas, adicionamos uma música de fundo e demos um efeito à bola para que ela começasse totalmente branca e fosse se tornando cada vez mais avermelhada a cada rebatida para mostrar ao jogadores que ela estava ficando cada vez mais rápida.
 </div>
 
 
-<th><center><img src="{{ 'assets/img/pongz/pong_circuito.png' | relative_url }}" width="500" alt="Alexandre" class="img" /></center></th>
 
 <br>
 
