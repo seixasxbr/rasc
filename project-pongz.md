@@ -41,7 +41,7 @@ Quando conseguimos recriar as mecânicas básicas do jogo percebemos que poderí
 
 <br>
 
-#//TODO realizar o video com informações ao público
+
 ## Live Game
 O vídeo abaixo tem como objetivo representar a versão final do jogo, demonstrando a jogabilidade e suas funções.
 
