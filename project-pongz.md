@@ -42,6 +42,17 @@ O vídeo abaixo mostra versão final do jogo, tanto o que é mostrado na tela do
 <iframe width="415" height="315" src="https://www.youtube.com/embed/Yl8Gpslcpxw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 </div>
+<br>
+
+## O que foi possível aprender?
+<br>
+<div style="text-align: justify">
+Através do Arduino junto ao Processing, foi possível perceber um pouco de como funciona o desenvolvimento de um game.A equipe teve diversas dificuldades, mas nada que, por meio de pesquisas junto ao conhecimento aprendido em Sistemas Embarcados, não tornasse possível a conclusão do clássico jogo Pong.
+</div>
+<div style="text-align: justify">
+Assim, nesse desafio foi aplicado a utilização de sensores e atuadores, leitura de sinais analógicos e digitais, comunicação entre componentes, criação de representações do mundo físico no mundo digital e muitos outros assuntos.  Concluir o PongZ foi uma tremenda conquista, foi descoberto novas áreas da engenharia o que deixou a equipe inspirada a realizar conquistas ainda maiores.
+</div>
+
 
 <br/>
 <br/>
@@ -112,6 +123,6 @@ O vídeo abaixo mostra versão final do jogo, tanto o que é mostrado na tela do
 1. [TinkerCAD DashBoard](https://www.tinkercad.com/things/alnQmejrYC8-pong-av3/editel). Tinkercad Dashboard. Acesso em: 19 de Julho de 2021.
 2. [MasterWalker](https://blogmasterwalkershop.com.br/arduino/arduino-utilizando-o-potenciometro-linear). Como usar com Arduino-chave táctil/pushbutton. Acesso em: 19 de Julho de 2021.
 3. [MasterWalker](https://blogmasterwalkershop.com.br/arduino/arduino-utilizando-o-potenciometro-linear). Como usar com Arduino – potenciômetro linear 10k com eixo estriado. Acesso em: 19 de Julho de 2021.
-4. [Arduino](ttps://www.arduino.cc/reference/pt/). Documentação de Referência da Linguagem Arduino. Acesso em: 19 de Julho de 2021.
+4. [Arduino](https://www.arduino.cc/reference/pt/). Documentação de Referência da Linguagem Arduino. Acesso em: 19 de Julho de 2021.
 5. [Processing](https://processing.org/reference/). Reference: processing was designed to be aflexible software sketchbook. Acesso em: 19 de Julho de 2021.
 6. [Techtudo](https://www.techtudo.com.br/noticias/noticia/2016/03/conheca-pong-o-primeiro-videogame-lucrativo-da-historia.html). Conheça Pong, o primeiro videogame lucrativo da história. Acesso em: 19 de Julho de 2021.
