@@ -20,6 +20,12 @@ O processo é iniciado com a recepção dos dados brutos oriundos no mundo exter
 
 O conjunto de sensores é composto por um sensor ultrassônico, um LiDAR 2D, uma câmera estéreo e uma câmera de alta resolução. O sensor ultrassônico é responsável pela detecção de obstáculos na trajetória do robô,  baseada na distância calculada de objetos para o robô. A câmera estéreo, que é equipada com uma IMU, é responsável pela localização do Vertbot, baseada na odometria, realizada na funcionalidade de localização, e também pela detecção de obstáculos. Enquanto que as informações processadas pelo LiDAR são responsáveis pelo mapeamento. Por fim, a câmera de alta resolução é utilizada para realizar a detecção da esfera, sendo essa a missão do robô, e pela detecção de marcos fiduciais (TAG's).
 
+### Localização
+
+![Localization](../assets/img/vertbot/funcionalidades_vertbot_localização.png){: width="100%"}
+
+A localização é a funcionalidade responsável por monitorar e atualizar a posição e orientação do robô no espaço em que ele está inserido. A odometria é realizada através das informações fornecidas pela câmera estéreo, sendo essas informações armazenadas para gerar o tracking, que é o rastreio do robô através da movimentação dos motores. As informações do LiDAR e do mapa global geradas até o momento são comparadas, tendo suas informações fundidas com o o tracking, para confirmar a posição e orientação atual do robô.
+
 ---------------------
 <br>
 
