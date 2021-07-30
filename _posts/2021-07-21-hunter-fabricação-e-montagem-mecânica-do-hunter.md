@@ -32,7 +32,8 @@ Devido a facilidade de impressão o material escolhido foi o PLA e as peças da 
 </center>
 
 ### Roda
-Com o intuito de melhorar o contado do robô com o solo foi fabricado um pneu de silicone agregado à roda de PLA. 
+Com o intuito de melhorar o contado do robô com o solo foi fabricado um pneu de silicone agregado à roda de PLA.
+
 ![montagem](../assets/img/hunter/post-montagem-mecanica/roda.png)
 Detalhe da roda impressa em PLA e pneu de silicone.
 

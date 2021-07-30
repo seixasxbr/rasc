@@ -22,11 +22,13 @@ Após o entendimento da ferramenta, a equipe a aplicou durante a ideação do ro
 
 <center><img src="{{ 'assets/img/walker/walker_QFD.png' | relative_url }}" alt="Estrutura QFD" width="800"/>
 </center>
-<center> QFD do projeto Walker. Fonte própria. </center>
+<center> QFD do projeto Walker.</center>
+
+<br>
 
 <center><img src="{{ 'assets/img/walker/walker_QFD_legenda.png' | relative_url }}" alt="Estrutura QFD" width="500"/>
 </center>
-<center> Legenda para o QFD do projeto Walker. Fonte própria. </center>
+<center> Legenda para o QFD do projeto Walker.</center>
 
 
 Com isso, foi observado que a qualidade mais importante ao nosso produto é a capacidade de detectar obstáculos, que está fortemente correlacionada com várias competências estipuladas e fortemente relacionada com o requisito mais importante para o cliente, ser capaz de desviar de obstáculos. Já sobre os requistos técnicos com menor peso, estão fracamente relacionados e com poucas correlações, mas ainda assim são relevantes ao produto. Conclui-se que a ferramenta QFD foi de enorme auxílio para ouvir de maneira eficiente as necessidades do nosso cliente e definir as qualidades necessárias ao produto, assim como os focos de desenvolvimento do nosso produto. 
