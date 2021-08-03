@@ -9,10 +9,10 @@ comments: true
 tags: [bbot]
 ---
 # Anteriormente
-É importante que você tenha visto o post anterior [Definição do modelo Bbot](https://mhar-vell.github.io/rasc/2021-07-21-bbot-definição-do-modelo-bbot/), para um completo entendimento do desenvolvimento do projeto.
+É importante que você tenha visto o post anterior, [Definição do modelo Bbot](https://mhar-vell.github.io/rasc/2021-07-21-bbot-definição-do-modelo-bbot/), para um completo entendimento do desenvolvimento do projeto.
 
 
-Na <strong>etapa dois</strong> do processo de construção do <a href="https://mhar-vell.github.io/rasc/project-bbot/"><font color="#fbb117">Bbot</font></a>, e de qualquer outro projeto de robótica, é <strong>importante</strong> definir as <strong>funcionalidades</strong>. Antes de iniciarmos as próximas etapas, o desenho da arquitetura do robô (mão na massa!! 👷🔧), precisamos listar essas características e analisar como elas estão conectadas entre si, assim tendo um total controle do desenvolvimento do projeto. 
+Na <strong>etapa dois</strong> do processo de construção do <a href="https://mhar-vell.github.io/rasc/project-bbot/"><font color="#fbb117">Bbot</font></a>, e de qualquer outro projeto de robótica, é <strong>importante</strong> definir as <strong>funcionalidades</strong> do robô. Antes de iniciarmos as próximas etapas, o desenho da arquitetura do robô (mão na massa!! 👷🔧), precisamos listar essas características e analisar como elas estão conectadas entre si, tendo assim um total controle do desenvolvimento do projeto. 
 
 
 <hr>
@@ -28,7 +28,7 @@ No diagrama construído para o Bbot, podemos ver uma gama de funcionalidades. Pa
 
 ### Localização
 
-A localização engloba o constante monitoramento da posição e orientação do robô dentro do ambiente no qual está contido. A localização serve de base para outras funcionalidades que promovem autonomia ao robô. A localização depende dos dados de posicionamento e orientação, enviados pelos sensores presentes no sistema de percepção. A **_localização_** fornece aos sistemas de mapeamento e planejamento de trajetória uma mensagem contendo os dados de posição e orientação do robô.
+A **localização** é responsável por monitorar da posição e orientação do robô dentro do ambiente no qual está contido. Usando os dados de posicionamento e orientação, enviados pelos sensores presentes no sistema de percepção, esta funcionalidade fornece aos sistemas de mapeamento e planejamento de trajetória uma mensagem contendo os dados de posição e orientação do robô no ambiente. A funcionalidade **localização** serve de base para outras funcionalidades que promovem autonomia ao robô.
 
 <p align="center">
     <img id="myImg" src="{{ 'assets/img/bbot/df-localizacao.png' | relative_url }}" alt="Not found" width="750"/>
@@ -36,7 +36,7 @@ A localização engloba o constante monitoramento da posição e orientação do
 
 ### Navegação
 
-A navegação para o bbot, utiliza o **_planejamento local_** e **_global_** para transitar de forma segura no ambiente. O sistema de **_navegação_** possui como dependência a funcionalidade de **_planejamento de trajeto_**. Como saída da funcionalidade de navegação será enviado a execução da trajetória e na falha da navegação adequada, envia um comando de **_replanejamento de trajeto_**. 
+A navegação para o bbot utiliza o **_planejamento local_** e **_global_** para transitar de forma segura no ambiente. O sistema de **_navegação_** possui como dependência a funcionalidade de **_planejamento de trajeto_**. Como saída da funcionalidade de navegação, será enviado a execução da trajetória e, na falha de uma adequada navegação, envia um comando de **_replanejamento de trajeto_**. 
 
 <p align="center">
     <img id="myImg" src="{{ 'assets/img/bbot/df-navegacao.png' | relative_url }}" alt="Not found" width="750"/>
@@ -60,7 +60,7 @@ Utilizando as informações da **_localização_**, é possível criar um mapa d
 
 A funcionalidade de **_mapeamento_** depende dos dados de **_percepção_** (pontos 3d do sensor LiDAR) e **_localização_**.
 
-As saídas desta funcionalidade são o costmap global e local do **_planejamento de trajetória_**.
+Através dos mapa, é possível gerar um **_costmap global_** e um **_costmap local_**, que é utilizado pela funcionalidade de **_planejamento de trajetória_** para identificar a posições do mapa onde o robô não pode transitar e pela funcionalidade de **_navegação_** para planejar os controles de velocidade do robô de forma que ele não colida com os obstáculos.
 
 <p align="center">
     <img id="myImg" src="{{ 'assets/img/bbot/df-mapeamento.png' | relative_url }}" alt="Not found" width="750"/>
@@ -76,7 +76,7 @@ No **Bbot** essa funcionalidade é responsável pela detecção da TAG (importan
 
 ### Controle
 
-Define a estratégia adotada para que o robô consiga se equilibrar. No nosso caso foi escolhido o controlador PID. Depende da funcionalidade da **_percepção_** e tem como saída o próprio controle PID.
+Define a estratégia adotada para que o robô consiga se equilibrar. No nosso caso, foi escolhido o controlador PID. Depende da funcionalidade da **_percepção_** e tem como saída os comandos de velocidade do robô para que ele consiga de equilibrar.
 
 <p align="center">
     <img id="myImg" src="{{ 'assets/img/bbot/df-controle.png' | relative_url }}" alt="Not found" width="750"/>
@@ -84,7 +84,7 @@ Define a estratégia adotada para que o robô consiga se equilibrar. No nosso ca
 
 ### Comportamento
 
-O **_comportamento_** tem como função avaliar as situações do ambiente e do estado do robô. Tem como saída o bloco **_avaliador de situação_**.
+O **_comportamento_** tem como função avaliar as situações do ambiente e do estado do robô. Esta funcionalidade é genérica e pode ser descrita como um tomador de decisões que garantem o bom funcionamento do robô. No caso do Bbot, esta funcionaliade irá monitorar a carga atual da bateria e garantir que o robô interrompa sua missão e sinalize o usuário caso esta esteja abaixo de um dado valor. Esta funcionalidade, no entanto, pode ser incrementada futuramente para englobar outras decisões. 
 
 <p align="center">
     <img id="myImg" src="{{ 'assets/img/bbot/df-comportamento.png' | relative_url }}" alt="Not found" width="750"/>
@@ -100,7 +100,7 @@ O **_comportamento_** tem como função avaliar as situações do ambiente e do 
 
 ### Planejamento de trajetória
 
-Recebe dados do **_mapeamento_**, **_detecção_**, **_localização_** e **_navegação_** e seguindo uma trajetória definida na interface, faz um planejamento adequado para o robô. Tem como saída o path global e local para a funcionalidade de **_navegação_**.
+Recebe dados do **_mapeamento_**, **_detecção_**, **_localização_** e **_navegação_** e, seguindo uma trajetória definida na interface, faz um planejamento adequado para o robô. Tem como saída o path global e local para a funcionalidade de **_navegação_**.
 
 <p align="center">
     <img id="myImg" src="{{ 'assets/img/bbot/df-planejamento_de_trajetoria.png' | relative_url }}" alt="Not found" width="750"/>
@@ -108,7 +108,7 @@ Recebe dados do **_mapeamento_**, **_detecção_**, **_localização_** e **_nav
 
 ### Atuação
 
-Essa funcionalidade torna possível o controle dos atuadores das pernas e de locomoção. Tem como saída os comandos de movimento para cada junta.
+Essa funcionalidade torna possível o controle dos atuadores das pernas e de locomoção. Tem como entrada os comandos de velocidade dados pelo **_controle_** e como saída os comandos de movimento para cada junta do robô. Esta funcionalidade faz a comunicação direto com o _hardware_.
 
 <p align="center">
     <img id="myImg" src="{{ 'assets/img/bbot/df-atuacao.png' | relative_url }}" alt="Not found" width="750"/>
