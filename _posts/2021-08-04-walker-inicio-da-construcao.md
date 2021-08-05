@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Walker - Início da construção do robô
+title: Início da construção do robô
 subtitle: Testes da eletrônica e início da montagem by Felipe Mohr
 cover-img: /assets/img/walker/walker-montagem-parcial.jpeg
 thumbnail-img: assets/img/walker/walker-testes-eletronica.jpeg
