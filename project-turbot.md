@@ -6,7 +6,7 @@ subtitle: Mini Autonomous Underwater Vehicle
 {% assign date_format = site.date_format | default: "%B %-d, %Y" %}
 {%- capture site_tags -%}
     {%- for tag in site.tags -%}
-      {% if tag contains 'walker' %}
+      {% if tag contains 'turbot' %}
         {{- tag | first -}}{%- unless forloop.last -%},{%- endunless -%}
       {% endif %} 
     {%- endfor -%}
@@ -42,6 +42,10 @@ Além disso o **turBOT** está sendo concebido para que tenha uma eficiência en
 
 <br>
 
+### Simulação
+<center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/EwFzKhe1jWs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</center>
 
 <!-- ## Equipe -->
 
@@ -100,8 +104,8 @@ Além disso o **turBOT** está sendo concebido para que tenha uma eficiência en
 
 <br>
 
-## Referências
-1. 
+<!--##### Referências
+1. -->
 
 
 <br>

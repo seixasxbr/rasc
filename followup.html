@@ -3,8 +3,8 @@ layout: page
 title: Follow Up
 subtitle: Here you can find a little about our projects.
 cover-img: /assets/img/dylan-gillis-KdeqA3aTnBY-unsplash.jpg
-thumbnail-img: /assets/img/thumb.png
-share-img: /assets/img/path.jpg
+thumbnail-img: /assets/img/rosa-logo-redondo (32).png
+share-img: /assets/img/rosa-logo-redondo.jpg
 tags: [books, test]
 ---
 
@@ -74,7 +74,7 @@ tags: [books, test]
           <a id="support-promo-section" href="https://mhar-vell.github.io/portfolio/index.html" target="_blank">
             <strong>Se você chegou até aqui é porque está interessado em conhecer um pouco mais sobre nossos projetos. Abaixo você encontrará alguns links para os posts de cada projeto; caso você queira saber sobre o projeto: vá até o menu superior e faça sua escolha.</strong><br/>
           </a>
-          <a href="/aboutme">
+          <a>
             <center>
               <span class="btn btn-cta btn-lg">
                 <small>↭</small>
@@ -97,7 +97,8 @@ tags: [books, test]
   <center>
     <h3 class="post-title"><font color="#fbb117">Recent Posts</font></h3>
   </center>
-  {% for post in posts offset:1 limit:3 %}
+  {% for post in posts offset:0 limit:5 %}
+
   <article class="post-preview">
 
     {%- capture thumbnail -%}

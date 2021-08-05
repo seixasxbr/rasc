@@ -22,35 +22,35 @@ navbar-links:
   #   - Kamino: "project-1"
   #   - Manisub: "project-1"
 
-  in progressing:
-    - Warthog: ""
-    - Moco: ""
-    - Droilt: ""
+  in progress:
+    - Warthog: "project-warthog"
+  #  - Moco: ""
+  #  - Droilt: ""
     - AUM: "project-aum"
-    - Turbot: "project-turbot"
-    - Ergo: ""
-    - Hefesto: ""
-    - PongZ: "project-pongz"
-    - Jetbot 1: ""
-    - Jetbot 2: ""
-    - Jetbot 3: ""
+    - Ergo: "project-ergo"
+    - Hephaestus: "project-hephaestus"
+    - Vertbot: "project-vertbot"
+    - Aperea: "project-aperea"
+    - Hunter: "project-hunter"
     - Walker: "project-walker"
     - bbot: "project-bbot"
 
   accomplished:
-    - Elir: ""
-    - Learnbotics: ""
+  #  - Elir: ""
+  #  - Learnbotics: ""
     - Doogie: "project-doogie"
-    - Birhex: ""
-    - Open Manipulator: ""
-    - Dynamic End-Effector: ""
-    - Timon Manipulator: ""
-    - Raja Manipulator: ""
-    - Borg Arm: ""
-    - WBM Rtab-map: ""
-    - WBM Orb2slam: ""
-    - WBM EKFslam: ""
-    - r-hope: ""
+  #  - Birhex: ""
+  #  - Open Manipulator: ""
+  #  - Dynamic End-Effector: ""
+    - Timon Manipulator: "project-jerotimon"
+  #  - Raja Manipulator: ""
+  #  - Borg Arm: ""
+    - Turbot: "project-turbot"
+  #  - WBM Rtab-map: ""
+  #  - WBM Orb2slam: ""
+  #  - WBM EKFslam: ""
+  #  - r-hope: ""
+    - PongZ: "project-pongz"
   
   knowledge:
     - ssh: ""
@@ -188,7 +188,7 @@ footer-link-col: "#404040"
 # --- Comments --- #
 
 # To use Disqus comments, sign up to https://disqus.com and fill in your Disqus shortname (NOT the userid)
-#disqus: ""
+disqus: "https-mhar-vell-github-io-rasc"
 
 # To use Facebook Comments, create a Facebook app and fill in the Facebook App ID
 #fb_comment_id: ""
@@ -221,6 +221,7 @@ footer-link-col: "#404040"
 
 # Ruby Date Format to show dates of posts
 date_format: "%B %-d, %Y"
+future: false
 
 # Facebook App ID
 #fb_app_id: ""
