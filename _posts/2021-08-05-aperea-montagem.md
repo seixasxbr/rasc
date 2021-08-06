@@ -2,7 +2,7 @@
 layout: post
 title: Montagem do APEREA 
 subtitle: Uma construção de bases by Juliana Santana
-cover-img: /assets/img/aperea/cover-montagem7.png
+cover-img: /assets/img/aperea/covers-post3-2.png
 thumbnail-img: /assets/img/aperea/robot_model.png
 share-img: /assets/img/rosa-logo-redondo.png
 comments: true
@@ -12,7 +12,7 @@ tags: [aperea]
 
 O Aperea possui um conjunto de sensores que irão compor o seu sistema de percepção. Estes componentes possuem diferentes formas de conexão e tipos de cabos que serão conectados a Jetson Nano.
 
-Por conta desta característica, assim como considerando uma maior facilidade no acesso aos componentes, optou-se por construir a estrutura do robô dividida em três bases.
+Por conta desta característica, assim como considerando uma maior facilidade no acesso aos componentes, optou-se por construir a estrutura do robô dividida em três bases. Os desenhos destas peças foram feitas no Onshape, um software CAD, e as peças foram impressas em uma impressora 3D.
 
 A primeira base construída foi a base 3, está base é uma das mais simples, pois nesta estarão conectados apenas o lidar e a câmera V2.
 
