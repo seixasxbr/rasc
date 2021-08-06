@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: post-page
 title: Senha do Ubuntu
 subtitle: Recuperar senha de usuário no Linux by Marco Reis
 cover-img: /assets/img/wesley-pribadi-iS1NV9yN0Lg-unsplash.jpg
@@ -85,7 +85,9 @@ Testes preliminares também estão sendo realizados em laboratório, onde alguns
 
 <br>
 -->
+
 <hr>
+
 <!-- autor -->
 <center><h3 class="post-title">Autor</h3><br/></center>
 <div class="row">
@@ -110,6 +112,3 @@ Testes preliminares também estão sendo realizados em laboratório, onde alguns
 </div>
 
 <br>
-
-<hr>
-{% include comments.html %}
