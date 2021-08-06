@@ -2,7 +2,7 @@
 layout: post
 title: Montagem do APEREA 
 subtitle: Uma construção de bases by Juliana Santana
-cover-img: /assets/img/aperea/cover-montagem3.png
+cover-img: /assets/img/aperea/cover-montagem7.png
 thumbnail-img: /assets/img/aperea/robot_model.png
 share-img: /assets/img/rosa-logo-redondo.png
 comments: true
@@ -14,34 +14,34 @@ O Aperea possui um conjunto de sensores que irão compor o seu sistema de perc
 
 Por conta desta característica, assim como considerando uma maior facilidade no acesso aos componentes, optou-se por construir a estrutura do robô dividida em três bases.
 
-A primeira base construída foi a base 3, está base é uma das mais simples, pois nesta estarão conectados o lidar e a câmera V2.
+A primeira base construída foi a base 3, está base é uma das mais simples, pois nesta estarão conectados apenas o lidar e a câmera V2.
 
 <center>
-  <img src="{{ 'assets/img/aperea/robot_model.png' | relative_url }}" width="500" text-align=center alt="urdf1" />
+  <img src="{{ 'assets/img/aperea/base3-superior-frontal.png' | relative_url }}" width="700" text-align=center alt="urdf1" />
 </center>
 
-A conexão do lidar é feita utilizando uma interface LDS- USB. Esta interface irá passar por dentro da estrutura da base 3 através de uma abertura localizada no centro da base e ficará fixo na parte inferior desta base. Já o cabo flat, que faz a conexão da câmera V2 com a Jetson Nano, será posicionado por baixo da base 3.
+A conexão do lidar é feita utilizando uma interface LDS-USB. Esta interface irá passar por dentro da estrutura da base 3 através de uma abertura localizada no centro da base e ficará fixo na parte inferior desta base. Já o cabo flat, que faz a conexão da câmera V2 com a Jetson Nano, será posicionado por baixo da base 3.
 
 <center>
-  <img src="{{ 'assets/img/aperea/robot_model.png' | relative_url }}" width="500" text-align=center alt="urdf1" />
+  <img src="{{ 'assets/img/aperea/base3-inferior.jpg' | relative_url }}" width="300" text-align=center alt="urdf1" />
 </center>
 
-Na segunda base ficará a Jetson Nano, pois o seu posicionamento na base central facilita as conexões com os outros componentes. A câmera Mynt Eye também ficará nesta base, e o seu cabo será posicionado por baixo da base.
+Na segunda base ficará a Jetson Nano, pois o seu posicionamento na base central facilita as conexões com os outros componentes. A câmera Mynt Eye também ficará nesta base, e o seu cabo será posicionado por baixo da estrutura.
 
 <center>
-  <img src="{{ 'assets/img/aperea/robot_model.png' | relative_url }}" width="500" text-align=center alt="urdf1" />
+  <img src="{{ 'assets/img/aperea/base2-superior-inferior.png' | relative_url }}" width="700" text-align=center alt="urdf1" />
 </center>
 
-A última base construída foi a base 1 pois nesta ficarão posicionados os componentes que estavam em processo de compra, por conta disto, o seu design poderia sofrer modificações. Nesta base ficarão posicionados o sensor ultrassônico, os motores, o arduíno Nano, e os shields dos motores e das baterias.
+A última base construída foi a base 1 pois nesta ficarão posicionados os componentes que estavam em processo de compra e, por conta disto, o seu design poderia sofrer modificações. Nesta base ficarão posicionados o sensor ultrassônico, os motores, o arduíno Nano, e os shields dos motores e das baterias.
 
 <center>
-  <img src="{{ 'assets/img/aperea/robot_model.png' | relative_url }}" width="500" text-align=center alt="urdf1" />
+  <img src="{{ 'assets/img/aperea/base1-frontal.jpg' | relative_url }}" width="500" text-align=center alt="urdf1" />
 </center>
 
 Para reduzir os erros de posicionamento dos furos e facilitar a organização dos componentes optou-se por construir cases para estes componentes. Desta forma, os componentes são encaixados nos cases e fixados na base por meio de parafusos.
 
 <center>
-  <img src="{{ 'assets/img/aperea/robot_model.png' | relative_url }}" width="500" text-align=center alt="urdf1" />
+  <img src="{{ 'assets/img/aperea/base1-superior.jpg' | relative_url }}" width="500" text-align=center alt="urdf1" />
 </center>
 
 
