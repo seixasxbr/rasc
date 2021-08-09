@@ -3,7 +3,7 @@ layout: post-page
 title: Senha do Ubuntu
 subtitle: Recuperar senha de usuário no Linux by Marco Reis
 cover-img: /assets/img/wesley-pribadi-iS1NV9yN0Lg-unsplash.jpg
-thumbnail-img: assets/img/uubuntu_wallpapers_30_hln8q-1140x570.jpg
+thumbnail-img: /assets/img/uubuntu_wallpapers_30_hln8q-1140x570.jpg
 share-img: /assets/img/rosa-logo-redondo.png
 comments: true
 ---
