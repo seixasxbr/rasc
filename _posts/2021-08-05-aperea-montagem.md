@@ -10,7 +10,7 @@ tags: [aperea]
 ---
 ## Construindo o robô
 
-O Aperea possui um conjunto de sensores que irão compor o seu sistema de percepção. Estes componentes possuem diferentes formas de conexão e tipos de cabos que serão conectados a Jetson Nano.
+Vimos nos posts anteriores que o Aperea possui um conjunto de sensores que irão compor o seu sistema de percepção. Estes componentes possuem diferentes formas de conexão e tipos de cabos que serão conectados na Jetson Nano.
 
 Por conta desta característica, assim como considerando uma maior facilidade no acesso aos componentes, optou-se por construir a estrutura do robô dividida em três bases. Os desenhos destas peças foram feitas no Onshape, um software CAD, e as peças foram impressas em uma impressora 3D.
 
