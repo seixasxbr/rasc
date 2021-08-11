@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Desenho mecânico do Bbot
-subtitle: A criação do projeto mecânico do bbot by Matheus França
+title: Simulação do Bbot
+subtitle: Simulação do sistema de controle e teleoperação do Bbot
 cover-img: assets/img/bbot/bbot_wide.png
 thumbnail-img: assets/img/bbot/bbot.png
 share-img: assets/img/rosa-logo-redondo.png
@@ -25,7 +25,7 @@ Caso você não saiba, o _Robot Operating System_ (ROS) é um _framework_ de rob
 O **Bbot**, assim como vários outros robôs de alto-balanceamento, pode ser tratado como um pêndulo invertido. Diferente de um pêndulo convencional, esse sistema visa equilibrar a sua haste na posição vertical para cima, como mostrado na figura abaixo.
 
 <p align="center">
-    <img id="myImg" src="{{ 'assets/img/bbot/pend_inv.png' | relative_url }}" alt="Pêndulo invertido" width="750"/>
+    <img id="myImg" src="{{ 'assets/img/bbot/pend_inv.png' | relative_url }}" alt="Pêndulo invertido" width="150" height="250"/>
 </p>
 
 Ao deixá-lo oscilar livremente, o pêndulo irá cair até tocar o chão. Contudo, caso uma força seja exercida na base do robô, de forma a deslocá-lo para frente ou para trás, uma pseudo-força (que é a inércia) agirá sobre a haste no sentido contrário ao torque aplicado pelo seu próprio peso. Com a força adequada, podemos fazer o pêndulo voltar à posição vertical. Como esta posição é instável, a haste voltará a cair e, portando, outra força deve ser aplicada. 
@@ -33,7 +33,7 @@ Ao deixá-lo oscilar livremente, o pêndulo irá cair até tocar o chão. Contud
 Caso possamos monitorar a inclinação instantânea do pêndulo e, a partir dela, calcular e exercer a força adequada para que ele volte à posição vertical, conseguiremos mantê-lo em equilíbrio. A seguir está o diagrama de blocos do sistema. 
 
 <p align="center">
-    <img id="myImg" src="{{ 'assets/img/bbot/basic_block_diag.png' | relative_url }}" alt="Diagrama de blocos" width="750"/>
+    <img id="myImg" src="{{ 'assets/img/bbot/basic_block_diag.png' | relative_url }}" alt="Diagrama de blocos" width="420"/>
 </p>
 
 Este é um sistema realimentado, onde estaremos a todo tempo enviando a inclinação de equilíbrio do robô como entrada (~ 0°) e mandando para o controlador a diferença entre esta e a inclinação atual do robô. Este sinal, chamado de "erro", é a entrada do controlador, o qual este usará para calcular a força necessária para manter o **Bbot** em equilíbrio.
@@ -41,7 +41,7 @@ Este é um sistema realimentado, onde estaremos a todo tempo enviando a inclina�
 O controlador será do tipo PID (_**P**roportional-**I**ntegral-**D**erivative_). Este tipo de controlador é um dos mais utilizados em sistemas de controle. Ele pode ser descrito pela seguinte equação:
 
 <p align="center">
-    <img id="myImg" src="{{ 'assets/img/bbot/pid_eqt.png' | relative_url }}" alt="Equação do PID" width="750"/>
+    <img id="myImg" src="{{ 'assets/img/bbot/pid_eqt.png' | relative_url }}" alt="Equação do PID" width="340" height="70"/>
 </p>
 
 Como podemos ver, ele possui 3 parâmetros de configuração: **Kp**, **Ki** e **Kd**. Cada um desses influencia na velocidade de recuperação da posição de equilíbrio, no tempo necessário para que ele se estabilize nessa posição e no tipo de resposta transitória que o sistema terá para alcançar o equilíbrio. Caso você queira saber mais sobre o controlador PID, pode acessar este [link](https://en.wikipedia.org/wiki/PID_controller).
@@ -56,7 +56,7 @@ Como o **Bbot** possui pernas articuladas, também configuramos controladores de
 
 Até então, seria possível mover o robô, mas para que ele seja autônomo, são necessários alguns sensores para que este consiga sentir o ambiente ao seu redor, ter noção de sua posição e orientação no espaço, além de ver o que está a sua frente. Portando, também no URDF, configuramos os _plugins_ do Gazebo que simulam um sensor IMU (_Inertial Mesurement Unit_), para monitorar a inclinação do robô assim como sua velocidade e aceleração angular em 3 dimensões; um Lidar (_Light Detection and Ranging_), para identificar possíveis obstáculos e uma câmera, que nos permite usar a visão computacional para dar mais inteligência ao robô.
 
-Criamos, então três pacotes para guardar todas essas informações:
+Criamos, então, três pacotes para guardar todas essas informações:
 - **bbot_description**: contém o arquivo URDF e os arquivos de renderização do **Bbot**.
 - **bbot_gazebo:** contém a arquivo do mundo virtual e arquivos .launch para iniciar a simulação.
 - **bbot_control:** contém os arquivos de configuração dos controladores das juntas além do algoritmo de controle que mantêm o robô equilibrado.
@@ -122,7 +122,7 @@ Para as próximas etapas, serão apresentados a impressão e montagem do robô, 
     <table class="table-borderless highlight">
       <thead>
         <tr>
-            <th><center><a href="https://www.linkedin.com/in/matheus-fran%C3%A7a-b62044150/" target="_blank">
+            <th><center><a href="https://www.linkedin.com/in/lucas-lins-souza-51b1909a/" target="_blank">
                 <p align="center">
                     <img src="{{ 'assets/img/people/lucaslins-1.png' | relative_url }}" alt="Not found" width="100" class="img-fluid rounded-circle" />
                 </p>
