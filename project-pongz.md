@@ -71,7 +71,7 @@ Assim, nesse desafio foi aplicado a utilização de sensores e atuadores, leitur
           width="100" alt="gabrielcalmon"
           class="img-fluid rounded-circle" /></center></a></th>
           <th></th>
-          <th><a href="https://www.linkedin.com/in/jo%C3%A3o-v%C3%ADtor-s-mendes-aa2ab71b5/"><center><img src="{{ 'assets/img/people/vitormendes-1.png' | relative_url}}" 
+          <th><a href="https://www.linkedin.com/in/vitorsmends/"><center><img src="{{ 'assets/img/people/vitormendes-1.png' | relative_url}}" 
           width="100" alt="vitormendes"
           class="img-fluid rounded-circle" /></center></a></th>
           <th></th>
