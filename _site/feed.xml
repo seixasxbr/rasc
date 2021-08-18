@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    
+    <title>Robotics &amp; Autonomous Systems</title>
+    
+    
+    <description>This website is my precious</description>
+    
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
+    
+    
+      <item>
+        <title>CAD Hephaestus</title>
+        <description>
+          A construção do desenho mecânico do Hephaestus by Matheus França - 
+          ……
+
+
+
+
+Desenho mecânico
+
+……
+
+
+Pé
+
+……
+
+
+Tornozelo
+
+……
+
+
+Tíbia
+
+……
+
+
+Joelho
+
+……
+
+
+Coxa
+
+……
+
+
+Quadril
+
+……
+
+
+Tronco
+
+……
+
+
+Braço
+
+……
+
+
+Gripper
+
+……
+
+
+Cabeça
+
+……
+
+
+
+
+Autor
+
+
+  
+    
+      
+        
+            
+                
+                    
+                
+            
+        
+      
+      
+        
+          Matheus França
+        
+        
+          Estagiário no laboratório de Robótica e Sistemas Autônomos (RoSA), Senai Cimatec, graduando em Engenharia de Controle e Automação na Área 1.
+        
+      
+    
+  
+
+
+
+
+        </description>
+        <pubDate>Wed, 18 Aug 2021 00:00:00 -0300</pubDate>
+        <link>http://localhost:4000/2021-08-18-hephaestus-cad/</link>
+        <guid isPermaLink="true">http://localhost:4000/2021-08-18-hephaestus-cad/</guid>
+      </item>
+    
+      <item>
+        <title>Definição do modelo Hephaestus</title>
+        <description>
+          conceitos do robô by Matheus França - 
+          O protótipo do humanoide será utilizado como objeto de testes e assim promoverá os avanços nas mais diversas técnicas de robótica e inteligência artificial. A plataforma robótica será desenvolvida utilizando o ROS (Robot Operating System), que é uma coleção de frameworks de software para desenvolvimento de robôs, que fornece a...
+        </description>
+        <pubDate>Fri, 23 Jul 2021 00:00:00 -0300</pubDate>
+        <link>http://localhost:4000/2021-07-23-hephaestus-defini%C3%A7%C3%A3o-do-modelo/</link>
+        <guid isPermaLink="true">http://localhost:4000/2021-07-23-hephaestus-defini%C3%A7%C3%A3o-do-modelo/</guid>
+      </item>
+    
+      <item>
+        <title>Test markdown</title>
+        <description>
+          Each post also has a subtitle - 
+          This is a demo post to show you how to write blog posts with markdown. I strongly encourage you to take 5 minutes to learn how to write in markdown - it’ll teach you how to transform regular text into bold/italics/headings/tables/etc. Here is some bold text Here is a secondary...
+        </description>
+        <pubDate>Fri, 28 Feb 2020 00:00:00 -0300</pubDate>
+        <link>http://localhost:4000/2020-02-28-test-markdown/</link>
+        <guid isPermaLink="true">http://localhost:4000/2020-02-28-test-markdown/</guid>
+      </item>
+    
+      <item>
+        <title>Flake it till you make it</title>
+        <description>
+          Excerpt from Soulshaping by Jeff Brown - 
+          Under what circumstances should we step off a path? When is it essential that we finish what we start? If I bought a bag of peanuts and had an allergic reaction, no one would fault me if I threw it out. If I ended a relationship with a woman who...
+        </description>
+        <pubDate>Fri, 28 Feb 2020 00:00:00 -0300</pubDate>
+        <link>http://localhost:4000/2020-02-28-flake-it-till-you-make-it-copy/</link>
+        <guid isPermaLink="true">http://localhost:4000/2020-02-28-flake-it-till-you-make-it-copy/</guid>
+      </item>
+    
+      <item>
+        <title>Flake it till you make it</title>
+        <description>
+          Excerpt from Soulshaping by Jeff Brown - 
+          Under what circumstances should we step off a path? When is it essential that we finish what we start? If I bought a bag of peanuts and had an allergic reaction, no one would fault me if I threw it out. If I ended a relationship with a woman who...
+        </description>
+        <pubDate>Wed, 26 Feb 2020 00:00:00 -0300</pubDate>
+        <link>http://localhost:4000/2020-02-26-flake-it-till-you-make-it/</link>
+        <guid isPermaLink="true">http://localhost:4000/2020-02-26-flake-it-till-you-make-it/</guid>
+      </item>
+    
+  </channel>
+</rss>
