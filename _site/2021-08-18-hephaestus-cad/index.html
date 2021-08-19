@@ -425,64 +425,101 @@
       
 
       <article role="main" class="blog-post">
-        <p>……</p>
+        <p>Com o dimensionamento da estrutura e o motor escolhidos, foi iniciada a parte do desenho técnico do projeto. O desenho foi todo feito no software <em>Fusion 360</em> e exportado para o <em>Onshape</em>, o modelo serviu para a produção na impressora 3D, para os testes de liberdade de movimentação que o corpo teria e a simulação (Gazebo ROS), corrigindo eventuais erros. Depois do desenho ser feito ele é processado pelo programa da impressora 3D, que neste caso será utilizado o <em>Cura</em>, para gerar o código de máquina (código g) e assim fazer a peça propriamente dita.</p>
 
 <hr />
 
 <!-- ******************************************************************************** -->
-<h2 id="desenho-mecânico">Desenho mecânico</h2>
-
-<p>……</p>
-
-<!-- ******************************************************************************** -->
 <h3 id="pé">Pé</h3>
 
-<p>……</p>
+<p>O projeto foi iniciado pela simplificação dos dedos do pé pela sua complexidade, porém não comprometendo a marcha, assim sendo o pé vai ser uma placa sem eixos de movimentação para os dedos.</p>
+
+<p align="center">
+    <img id="myImg" src="/assets/img/hefesto/post-2/h-pe.png" alt="Not Found" width="400" />
+</p>
 
 <!-- ******************************************************************************** -->
 <h3 id="tornozelo">Tornozelo</h3>
 
-<p>……</p>
+<p>Para comportar os dois atuadores de movimentos do pé, de forma a maximizar os espaços, desenhamos um atuador na parte do tornozelo e o outro logo atrás. Podemos ver a disposição do tornozelo com o pé na figura seguinte.</p>
+
+<p align="center">
+    <img id="myImg" src="/assets/img/hefesto/post-2/h-tornozelo.png" alt="Not Found" width="400" />
+</p>
 
 <!-- ******************************************************************************** -->
 <h3 id="tíbia">Tíbia</h3>
 
-<p>……</p>
+<p>A tíbia irá comportar tanto o motor do movimento do pé quanto o do joelho. Isso fará com que ocorra a otimização do espaço no humanoide. Para enrijecer a estrutura, utilizamos blocos que conectam as duas placas externas.</p>
+
+<p align="center">
+    <img id="myImg" src="/assets/img/hefesto/post-2/h-tibia.png" alt="Not Found" width="400" />
+</p>
 
 <!-- ******************************************************************************** -->
 <h3 id="joelho">Joelho</h3>
 
-<p>……</p>
+<p>No joelho é necessário apenas um grau de liberdade, portanto o sistema foi mais simples do que no tornozelo. Como já citado, o motor é alojado na tíbia. Sua transmissão é feita diretamente no eixo do motor, o que mantém uma relação de 1:1 para não mudar o torque nem a velocidade do mesmo. Apesar de sua simplicidade, o joelho é uma articulação muito demandada pela estrutura do robô.</p>
 
 <!-- ******************************************************************************** -->
 <h3 id="coxa">Coxa</h3>
 
-<p>……</p>
+<p>A coxa utiliza o mesmo sistema do tornozelo, porém, essa junta contém um motor de alta demanda (torque maior, <em>Dynamixel MX-106</em>).</p>
+
+<p align="center">
+    <img id="myImg" src="/assets/img/hefesto/post-2/h-coxa.png" alt="Not Found" width="400" />
+</p>
 
 <!-- ******************************************************************************** -->
 <h3 id="quadril">Quadril</h3>
 
-<p>……</p>
+<p>O quadril necessita comportar dois graus de liberdade para a perna e uma bateria para o sistema de potência do robô.</p>
+
+<p align="center">
+    <img id="myImg" src="/assets/img/hefesto/post-2/h-pelvis.png" alt="Not Found" width="400" />
+</p>
 
 <!-- ******************************************************************************** -->
 <h3 id="tronco">Tronco</h3>
 
-<p>……</p>
+<p>O tronco vai ser um grande bloco (sem graus de liberdade) e vai comportar a eletrônica do projeto. Terá um Giroscópio, uma Raspberry Pi e uma OpenCR, além dos atuadores da parte da cabeça e dos braços.</p>
+
+<p align="center">
+    <img id="myImg" src="/assets/img/hefesto/post-2/h-base-fora.png" alt="Not Found" width="300" />
+    <img id="myImg" src="/assets/img/hefesto/post-2/h-base-dentro.png" alt="Not Found" width="300" />
+</p>
 
 <!-- ******************************************************************************** -->
 <h3 id="braço">Braço</h3>
 
-<p>……</p>
+<p>O braço vai conter 4 graus de liberdade. A mão (gripper), apesar de não ter dedos, vai ser fundamental para tarefas de manipulação de objetos.</p>
 
-<!-- ******************************************************************************** -->
-<h3 id="gripper">Gripper</h3>
-
-<p>……</p>
+<p align="center">
+    <img id="myImg" src="/assets/img/hefesto/post-2/h-arm.png" alt="Not Found" width="300" />
+    <img id="myImg" src="/assets/img/hefesto/post-2/h-gripper.png" alt="Not Found" width="300" />
+</p>
 
 <!-- ******************************************************************************** -->
 <h3 id="cabeça">Cabeça</h3>
 
-<p>……</p>
+<p>O pescoço contém 2 graus de liberdade e comporta o sensor de visão (mynt eye s1030), uma câmera estéreo.</p>
+
+<p align="center">
+    <img id="myImg" src="/assets/img/hefesto/post-2/h-cabeca.png" alt="Not Found" width="400" />
+</p>
+
+<h3 id="resultados">Resultados</h3>
+
+<p>Nesta etapa do projeto, apresentamos o detalhamento do desenho mecânico do robô.</p>
+
+<p align="center">
+    <img id="myImg" src="/assets/img/hefesto/hephaestus.png" alt="Not Found" width="400" />
+</p>
+
+<p>Para as próximas etapas, serão apresentados a impressão e montagem do robô, assim como sua simulação e controle.</p>
+
+<p><br /></p>
+<hr />
 
 <p><br /></p>
 
