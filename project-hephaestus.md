@@ -6,7 +6,7 @@ subtitle: Humanoid Robot
 {% assign date_format = site.date_format | default: "%B %-d, %Y" %}
 {%- capture site_tags -%}
     {%- for tag in site.tags -%}
-      {% if tag contains 'bbot' %}
+      {% if tag contains 'hephaestus' %}
         {{- tag | first -}}{%- unless forloop.last -%},{%- endunless -%}
       {% endif %} 
     {%- endfor -%}
