@@ -125,7 +125,7 @@ Para as próximas etapas, serão apresentados a impressão e montagem do robô, 
           <td width="33.33%">Matheus França</td>
         </tr>
         <tr style="text-align: center" >
-          <td style="vertical-align: top;text-align: justify;"><small>Estagiário no laboratório de Robótica e Sistemas Autônomos (RoSA), Senai Cimatec, graduando em Engenharia de Controle e Automação na Área 1.</small></td>
+          <td style="vertical-align: top;text-align: justify;"><small>Estagiário no laboratório de Robótica e Sistemas Autônomos (RoSA), Senai Cimatec, graduando em Engenharia de Controle e Automação.</small></td>
         </tr>
       </tbody>
     </table>
