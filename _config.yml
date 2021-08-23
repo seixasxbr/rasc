@@ -25,7 +25,7 @@ navbar-links:
   in progress:
     - Warthog: "project-warthog"
   #  - Moco: ""
-  #  - Droilt: ""
+    - DRoILT: "project-droilt"
     - AUM: "project-aum"
     - Ergo: "project-ergo"
     - Hephaestus: "project-hephaestus"
