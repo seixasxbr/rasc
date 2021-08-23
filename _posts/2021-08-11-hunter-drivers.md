@@ -57,7 +57,7 @@ Para testar o funcionamento do driver do motor junto ao sensor ultrassônico, fo
           <td>Mateus Seixas</td>
         </tr>
         <tr style="text-align: center" >
-          <td style="vertical-align: top"><small>Pesquisador Jr. do projeto <br>Engenheiro Eletricista - UFBA.</small></td>
+          <td style="vertical-align: top"><small>Pesquisador Jr. do projeto <br>Engenheiro Eletricista</small></td>
           <td></td>
         </tr>
       </tbody>
