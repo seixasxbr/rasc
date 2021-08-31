@@ -150,7 +150,7 @@ FlatFish has advanced sensors and features, listed below, that allows it to acco
 1. Category: <font color="#fbb117">Maritime Robotics</font>
 2. Duration: <font color="#fbb117">9 months </font>
 3. Start: <font color="#fbb117">19/11/2020</font>
-4. End: <font color="#fbb117">31/09/2021</font>
+4. End: <font color="#fbb117">30/09/2021</font>
 5. Repositories: 
 * [bir.flatfish_ros-buildconf](https://github.com/Brazilian-Institute-of-Robotics/bir.flatfish_ros-buildconf)
 * [bir.flatfish_ros-package_set](https://github.com/Brazilian-Institute-of-Robotics/bir.flatfish_ros-package_set)
