@@ -29,7 +29,7 @@ subtitle: FlatFish on ROS
 
 The FlatFish prototype was developed with the software layer based on the robotics framework ROCK (Robot Construction Kit), originally developed by the CIMATEC partner [DFKI](https://www.dfki.de/web/) during the first phases of the project. However, ROCK has a very restricted community of users among institutions that practice robotics, and even smaller are the teams of developers that keep the framework up to date. Thus, to guarantee the dynamic and consistent performance of the development of several researches with the prototype, it is necessary to update it to a more robust framework with broader support.
 
-<center><img src="{{ 'assets/img/flatfish_ros/ff.jpg' | relative_url }}" alt="flatfish" width="600"/></center>
+<center><img src="{{ 'assets/img/flatfish_ros/ff_under_water.jpg' | relative_url }}" alt="flatfish" width="600"/></center>
 
 This work aimed to update the robotics framework used in the FlatFish vehicle prototype, migrating the ROCK software components to the [ROS](https://www.ros.org/) framework (Robot Operating System). ROS is a flexible and comprehensive framework for writing robot software widely used in institutions that work with robotics development and innovation around the world. It has a large active community of users on forums. In addition, the release of new versions of ROS are scheduled and supported with well-known deadlines.
 
