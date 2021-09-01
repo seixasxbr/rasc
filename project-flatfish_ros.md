@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Flatfish
-subtitle: Flatfish on ROS
+title: FlatFish
+subtitle: FlatFish on ROS
 ---
 {% assign date_format = site.date_format | default: "%B %-d, %Y" %}
 {%- capture site_tags -%}
@@ -27,24 +27,24 @@ subtitle: Flatfish on ROS
 
 ### General Objective
 
-The FlatFish prototype was developed with the software layer based on the robotics framework ROCK (Robot Construction Kit), originaly developed by the CIMATEC partner during the first phases of the project. However, ROCK has a very restricted community of users among institutions that practice robotics, and even smaller is the teams of developers that keep the framework up to date. Thus, to guarantee the dynamic and consistent performance of the development of several researches with the prototype, it is necessary to update it to a more robust framework with broad support.
+The FlatFish prototype was developed with the software layer based on the robotics framework ROCK (Robot Construction Kit), originally developed by the CIMATEC partner [DFKI](https://www.dfki.de/web/) during the first phases of the project. However, ROCK has a very restricted community of users among institutions that practice robotics, and even smaller are the teams of developers that keep the framework up to date. Thus, to guarantee the dynamic and consistent performance of the development of several researches with the prototype, it is necessary to update it to a more robust framework with broader support.
 
 <center><img src="{{ 'assets/img/flatfish_ros/ff.jpg' | relative_url }}" alt="flatfish" width="600"/></center>
 
-This work aimed to update the robotics framework used in the FlatFish vehicle prototype, migrating the ROCK software components to the ROS framework (Robot Operating System). ROS is a flexible and comprehensive framework for writing robot software widely used in institutions that work with development and innovation in robotics in the world. It has a large active community of users on forums. In addition, the release of new versions of ROS are scheduled and supported with well-known deadlines.
+This work aimed to update the robotics framework used in the FlatFish vehicle prototype, migrating the ROCK software components to the [ROS](https://www.ros.org/) framework (Robot Operating System). ROS is a flexible and comprehensive framework for writing robot software widely used in institutions that work with robotics development and innovation around the world. It has a large active community of users on forums. In addition, the release of new versions of ROS are scheduled and supported with well-known deadlines.
 
 
 ### Specific Objectives
 
-1.  Develop FF Concept Map
-2.  Create FF package set (Autoproj)
-3.  Create FF ROS Simulation
-4.  Thrusters ROS package
-5.  Camera ROS package
-6.  Sonar ROS package
-7.  Laser ROS package
-8.  EFuse ROS package
-9.  SMB ROS package
+1. Develop FF Concept Map
+2. Create FF package set (Autoproj)
+3. Create FF ROS Simulation
+4. Thrusters ROS package
+5. Camera ROS package
+6. Sonar ROS package
+7. Laser ROS package
+8. EFuse ROS package
+9. SMB ROS package
 10. Basic navigation package
 11. Pipeline Following
 12. Bowtech ROS package
