@@ -8,7 +8,7 @@ subtitle: FlatFish on ROS
     {%- for tag in site.tags -%}
       {% if tag contains 'flatfish' %}
         {{- tag | first -}}{%- unless forloop.last -%},{%- endunless -%}
-      {% endif %} 
+      {% endif %}
     {%- endfor -%}
 {%- endcapture -%}
 {%- assign tags_list = site_tags | split:',' | sort -%}
@@ -21,7 +21,7 @@ subtitle: FlatFish on ROS
       <br>
       <a href="#{{- tag -}}" class="btn btn-primary tag-btn"><i class="fas fa-tag" aria-hidden="true"></i>&nbsp;{{- tag -}}-posts&nbsp;({{site.tags[tag].size}})</a>
     {%- endfor -%}
-  </center>    
+  </center>
   <!--hr class="mark"-->
 </div>
 
@@ -109,7 +109,7 @@ FlatFish has advanced sensors and features, listed below, that allows it to acco
         <tr style="text-align: center" >
           <td style="vertical-align: top"><small>Robotics Enthusiast. Master student in Mechatronics, Specialist in Robotics and Autonomous Systems, Engineer in Automation and Control.</small></td>
           <td></td>
-          <td style="vertical-align: top"><small>~</small></td>
+          <td style="vertical-align: top"><small>Doctor of electrical engineering, in information processing area.  Research interests: embedded systems, signal processing and system integration.</small></td>
           <td></td>
           <td style="vertical-align: top"><small>Senior Researcher - Master in Production Engineering and Electrical Engineer.</small></td>
         </tr>
@@ -151,7 +151,7 @@ FlatFish has advanced sensors and features, listed below, that allows it to acco
 2. Duration: <font color="#fbb117">9 months </font>
 3. Start: <font color="#fbb117">19/11/2020</font>
 4. End: <font color="#fbb117">30/09/2021</font>
-5. Repositories: 
+5. Repositories:
 * [bir.flatfish_ros-buildconf](https://github.com/Brazilian-Institute-of-Robotics/bir.flatfish_ros-buildconf)
 * [bir.flatfish_ros-package_set](https://github.com/Brazilian-Institute-of-Robotics/bir.flatfish_ros-package_set)
 * [flatfish_ros_lights_bowtech](https://github.com/Brazilian-Institute-of-Robotics/flatfish_ros_lights_bowtech)
@@ -172,7 +172,7 @@ FlatFish has advanced sensors and features, listed below, that allows it to acco
 2. Fossen, Thor I. Handbook of marine craft hydrodynamics and motion control. John Wiley & Sons, 2011.
 3.  Saback, Rafael, et al. "Fault-tolerant control allocation technique based on explicit optimization applied to an autonomous underwater vehicle." OCEANS 2016 MTS/IEEE Monterey. IEEE, 2016.
 4.  Albiez, Jan, et al. "Flatfish-a compact subsea-resident inspection auv." OCEANS 2015-MTS/IEEE Washington. IEEE, 2015.
-5.  Saback, Rafael, et al. "Fault-tolerant control allocation technique based on explicit optimization applied to an autonomous underwater vehicle." OCEANS 2016 MTS/IEEE Monterey. IEEE, 2016. 
+5.  Saback, Rafael, et al. "Fault-tolerant control allocation technique based on explicit optimization applied to an autonomous underwater vehicle." OCEANS 2016 MTS/IEEE Monterey. IEEE, 2016.
 
 
 <br>
