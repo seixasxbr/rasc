@@ -23,6 +23,149 @@
       </item>
     
       <item>
+        <title>Processo de montagem do Bbot</title>
+        <description>
+          Construindo o projeto bbot by Matheus França - 
+          Anteriormente É importante que você tenha visto o post anterior Simulação do Bbot, para um completo entendimento do desenvolvimento do projeto. Montagem Na etapa cinco do processo de construção do Bbot, podemos analisar o desenvolvimento de sua construção. Podemos ver o desenvolvimento e o processamento da impressora 3d no post...
+        </description>
+        <pubDate>Wed, 18 Aug 2021 00:00:00 -0300</pubDate>
+        <link>http://localhost:4000/2021-08-18-bbot-processo-de-montagem/</link>
+        <guid isPermaLink="true">http://localhost:4000/2021-08-18-bbot-processo-de-montagem/</guid>
+      </item>
+    
+      <item>
+        <title>Modelo e Simulação do robô Walker</title>
+        <description>
+          Construção do URDF e implementações by Felipe Mohr - 
+          Durante o desenvolvimento de um projeto de robótica, é muito comum que haja uma etapa de simulação, que geralmente ocorre em paralelo com o desenvolvimento do projeto. Isso economiza tempo e custos, possibilitando o desenvolvimento, aplicação e teste dos algoritmos do robô sem a necessidade de um protótipo físico. Para...
+        </description>
+        <pubDate>Thu, 12 Aug 2021 00:00:00 -0300</pubDate>
+        <link>http://localhost:4000/2021-08-12-simulacoes-walker/</link>
+        <guid isPermaLink="true">http://localhost:4000/2021-08-12-simulacoes-walker/</guid>
+      </item>
+    
+      <item>
+        <title>Desenvolvimentos dos Drivers</title>
+        <description>
+          Integração dos Drivers no Arduino by Mateus Seixas - 
+          Introdução Nessa etapa do desenvolvimento do projeto foram desenvolvidos os drivers dos componentes que serão conectados a unidade de processamento auxiliar do robô. Foi feita uma busca na internet dos drivers já existentes e feitas as devidas alterações para o correto funcionamento dos mesmos no projeto. Os pinos de comunicação...
+        </description>
+        <pubDate>Wed, 11 Aug 2021 00:00:00 -0300</pubDate>
+        <link>http://localhost:4000/2021-08-11-hunter-drivers/</link>
+        <guid isPermaLink="true">http://localhost:4000/2021-08-11-hunter-drivers/</guid>
+      </item>
+    
+      <item>
+        <title>Simulação do Bbot</title>
+        <description>
+          Simulação do sistema de controle e teleoperação do Bbot - 
+          Anteriormente É importante que você tenha visto o post anterior Desenho mecânico do Bbot, para um completo entendimento do desenvolvimento do projeto. Introdução Na etapa quatro do processo de construção do Bbot, podemos analisar o desenvolvimento de sua simulação feita no Gazebo, utilizando o ROS Noetic. Caso você não saiba,...
+        </description>
+        <pubDate>Wed, 11 Aug 2021 00:00:00 -0300</pubDate>
+        <link>http://localhost:4000/2021-08-11-bbot-simulacao/</link>
+        <guid isPermaLink="true">http://localhost:4000/2021-08-11-bbot-simulacao/</guid>
+      </item>
+    
+      <item>
+        <title>Senha do Ubuntu</title>
+        <description>
+          Recuperar senha de usuário no Linux by Marco Reis - 
+          Nesta época de valorização da privacidade, o uso de senhas é algo cada vez mais importante para a segurança de nossos dados computacionais. Quem já não se deparou com o esquecimento de alguma senha? Se isso aconteceu contigo, no uso de sua própria máquina impedindo o acesso a ela, este...
+        </description>
+        <pubDate>Thu, 05 Aug 2021 00:00:00 -0300</pubDate>
+        <link>http://localhost:4000/2021-08-05-senha-do-ubuntu/</link>
+        <guid isPermaLink="true">http://localhost:4000/2021-08-05-senha-do-ubuntu/</guid>
+      </item>
+    
+      <item>
+        <title>Montagem do APEREA</title>
+        <description>
+          Uma construção de bases by Juliana Santana - 
+          Construindo o robô Vimos nos posts anteriores que o Aperea possui um conjunto de sensores que irão compor o seu sistema de percepção. Estes componentes possuem diferentes formas de conexão e tipos de cabos que serão conectados na Jetson Nano. Por conta desta característica, assim como considerando uma maior facilidade no acesso aos componentes, optou-se...
+        </description>
+        <pubDate>Thu, 05 Aug 2021 00:00:00 -0300</pubDate>
+        <link>http://localhost:4000/2021-08-05-aperea-montagem/</link>
+        <guid isPermaLink="true">http://localhost:4000/2021-08-05-aperea-montagem/</guid>
+      </item>
+    
+      <item>
+        <title>Início da construção do robô</title>
+        <description>
+          Testes da eletrônica e início da montagem by Felipe Mohr - 
+          Durante a última semana, iniciamos os testes da Eletrônica e a montagem física do robô Walker. As peças já foram impressas em 3D, e a placa eletrônica projetada foi confeccionada. Eletrônica Os testes da Eletrônica iniciaram pelo teste de continuidade das trilhas da placa montada, para garantir que não houvesse...
+        </description>
+        <pubDate>Wed, 04 Aug 2021 00:00:00 -0300</pubDate>
+        <link>http://localhost:4000/2021-08-04-walker-inicio-da-construcao/</link>
+        <guid isPermaLink="true">http://localhost:4000/2021-08-04-walker-inicio-da-construcao/</guid>
+      </item>
+    
+      <item>
+        <title>Desenho mecânico do Bbot</title>
+        <description>
+          A criação do projeto mecânico do bbot by Matheus França - 
+          Anteriormente É importante que você tenha visto o post anterior Funcionalidades do Bbot, para um completo entendimento do desenvolvimento do projeto. Introdução Na etapa três do processo de construção do Bbot, podemos analisar o desenvolvimento do desenho mecânico e as ferramentas escolhidas. Desenho mecânico Com o estudo realizado nas etapas...
+        </description>
+        <pubDate>Wed, 04 Aug 2021 00:00:00 -0300</pubDate>
+        <link>http://localhost:4000/2021-08-04-bbot-desenho-mecanico/</link>
+        <guid isPermaLink="true">http://localhost:4000/2021-08-04-bbot-desenho-mecanico/</guid>
+      </item>
+    
+      <item>
+        <title>Simulação de caça</title>
+        <description>
+          Simulação do hunter by Anderson Lima - 
+          Modelagem de caça A simulação em robótica é importante para a criação de um modelo que procura se assemelhar a realidade, sendo possível a implementação de testes sem a necessidade do protótipo estar pronto fisicamente. O processo de modelagem do Hunter é feito em formato URDF (Universal Robotic Description Format)...
+        </description>
+        <pubDate>Thu, 29 Jul 2021 00:00:00 -0300</pubDate>
+        <link>http://localhost:4000/2021-07-29-hunter-simula%C3%A7%C3%A3o/</link>
+        <guid isPermaLink="true">http://localhost:4000/2021-07-29-hunter-simula%C3%A7%C3%A3o/</guid>
+      </item>
+    
+      <item>
+        <title>Funcionalidades do Bbot</title>
+        <description>
+          A importância das funcionalidades by Matheus França - 
+          Anteriormente É importante que você tenha visto o post anterior, Definição do modelo Bbot, para um completo entendimento do desenvolvimento do projeto. Na etapa dois do processo de construção do Bbot, e de qualquer outro projeto de robótica, é importante definir as funcionalidades do robô. Antes de iniciarmos as próximas...
+        </description>
+        <pubDate>Thu, 29 Jul 2021 00:00:00 -0300</pubDate>
+        <link>http://localhost:4000/2021-07-29-funcionalidades-do-bbot/</link>
+        <guid isPermaLink="true">http://localhost:4000/2021-07-29-funcionalidades-do-bbot/</guid>
+      </item>
+    
+      <item>
+        <title>SLAM na Simulação</title>
+        <description>
+          Localizar é Preciso; mapear também é Preciso by Matheus Anselmo - 
+          Aplicando a técnica SLAM Gmapping O robô APEREA para cumprir o seu objetivo precisa possuir dados sobre sua posição e orientação no espaço, localização, e também deter informações sobre o ambiente, mapeamento, pois para a navegação autônoma é crucial que os robôs tenham dados sobre sua posição e orientação. Para...
+        </description>
+        <pubDate>Wed, 28 Jul 2021 00:00:00 -0300</pubDate>
+        <link>http://localhost:4000/2021-07-28-aperea-slam/</link>
+        <guid isPermaLink="true">http://localhost:4000/2021-07-28-aperea-slam/</guid>
+      </item>
+    
+      <item>
+        <title>Walker - Quality Function Deployment</title>
+        <description>
+          Ferramentas para deteterminar as qualidades do projeto by Brenda Alencar - 
+          Durante a fase de ideação de um produto é necessário determinar as qualidades do projeto de acordo com as necessidades apresentadas pelo cliente, assim garante-se que o produto final possua as funcionalidades esperadas e opere corretamente. Neste contexto, é interessante utilizar ferramentas que facilitem a tradução da voz do cliente...
+        </description>
+        <pubDate>Tue, 27 Jul 2021 00:00:00 -0300</pubDate>
+        <link>http://localhost:4000/2021-07-27-walker-qfd/</link>
+        <guid isPermaLink="true">http://localhost:4000/2021-07-27-walker-qfd/</guid>
+      </item>
+    
+      <item>
+        <title>Montagem Elétrica do Hunter</title>
+        <description>
+          Uma montagem familiar by Caio Maia - 
+          Um robô pode ser pensado como uma interconexão entre vários subsistemas e a maioria destes utiliza fontes de energia elétrica para o seu funcionamento. Deste modo é importante que estas conexões sejam bem pensadas e executadas, sob o risco de mal funcionamento do robô em um momento crítico, como UAV...
+        </description>
+        <pubDate>Tue, 27 Jul 2021 00:00:00 -0300</pubDate>
+        <link>http://localhost:4000/2021-07-27-hunter-montagem-el%C3%A9trica/</link>
+        <guid isPermaLink="true">http://localhost:4000/2021-07-27-hunter-montagem-el%C3%A9trica/</guid>
+      </item>
+    
+      <item>
         <title>Definição do modelo Hephaestus</title>
         <description>
           conceitos do robô by Matheus França - 
@@ -34,36 +177,58 @@
       </item>
     
       <item>
-        <title>Test markdown</title>
+        <title>Fabricação e Montagem Mecânica do Hunter</title>
         <description>
-          Each post also has a subtitle - 
-          This is a demo post to show you how to write blog posts with markdown. I strongly encourage you to take 5 minutes to learn how to write in markdown - it’ll teach you how to transform regular text into bold/italics/headings/tables/etc. Here is some bold text Here is a secondary...
+          Uma montagem nada familiar by Caio Maia - 
+          Uma das partes no desenvolvimento de um robô é o projeto e montagem das suas partes mecânicas. Em algumas situações é possível a utilização de plataformas de robótica prontas, mas em outros casos, devido a restrições como custo de aquisição ou especificidade da tarefa, é necessário o desenvolvimento de uma...
         </description>
-        <pubDate>Fri, 28 Feb 2020 00:00:00 -0300</pubDate>
-        <link>http://localhost:4000/2020-02-28-test-markdown/</link>
-        <guid isPermaLink="true">http://localhost:4000/2020-02-28-test-markdown/</guid>
+        <pubDate>Wed, 21 Jul 2021 00:00:00 -0300</pubDate>
+        <link>http://localhost:4000/2021-07-21-hunter-fabrica%C3%A7%C3%A3o-e-montagem-mec%C3%A2nica-do-hunter/</link>
+        <guid isPermaLink="true">http://localhost:4000/2021-07-21-hunter-fabrica%C3%A7%C3%A3o-e-montagem-mec%C3%A2nica-do-hunter/</guid>
       </item>
     
       <item>
-        <title>Flake it till you make it</title>
+        <title>A imagem baseada em Raspibian</title>
         <description>
-          Excerpt from Soulshaping by Jeff Brown - 
-          Under what circumstances should we step off a path? When is it essential that we finish what we start? If I bought a bag of peanuts and had an allergic reaction, no one would fault me if I threw it out. If I ended a relationship with a woman who...
+          Testando a interface do Ergo by Breno Portela - 
+          Ergo OS image Diante de várias tentativas de simular a movimentação do Ergo, a equipe deu seguimento nas atividades para efetuar os testes no modelo real seguindo as instruções de instalação do software, que sugeria inserir uma imagem de sistema operacional disponibilizada no repositório do projeto. Os recursos deste sistema...
         </description>
-        <pubDate>Fri, 28 Feb 2020 00:00:00 -0300</pubDate>
-        <link>http://localhost:4000/2020-02-28-flake-it-till-you-make-it-copy/</link>
-        <guid isPermaLink="true">http://localhost:4000/2020-02-28-flake-it-till-you-make-it-copy/</guid>
+        <pubDate>Wed, 21 Jul 2021 00:00:00 -0300</pubDate>
+        <link>http://localhost:4000/2021-07-21-ergo-a-imagem-baseada-em-raspibian/</link>
+        <guid isPermaLink="true">http://localhost:4000/2021-07-21-ergo-a-imagem-baseada-em-raspibian/</guid>
       </item>
     
       <item>
-        <title>Flake it till you make it</title>
+        <title>Definição do modelo Bbot</title>
         <description>
-          Excerpt from Soulshaping by Jeff Brown - 
-          Under what circumstances should we step off a path? When is it essential that we finish what we start? If I bought a bag of peanuts and had an allergic reaction, no one would fault me if I threw it out. If I ended a relationship with a woman who...
+          Explicando um pouco sobre o robô by Matheus França - 
+          Motivados pelo desejo de contribuir para a inovação no campo dos robôs auto-balanceados e suas tecnologias, e com o avanço da investigação da robótica internacional, decidimos avançar com a criação de uma nova plataforma com características especiais face a soluções previamente definidas. Para iniciarmos a etapa 1 da construção do...
         </description>
-        <pubDate>Wed, 26 Feb 2020 00:00:00 -0300</pubDate>
-        <link>http://localhost:4000/2020-02-26-flake-it-till-you-make-it/</link>
-        <guid isPermaLink="true">http://localhost:4000/2020-02-26-flake-it-till-you-make-it/</guid>
+        <pubDate>Wed, 21 Jul 2021 00:00:00 -0300</pubDate>
+        <link>http://localhost:4000/2021-07-21-bbot-defini%C3%A7%C3%A3o-do-modelo-bbot/</link>
+        <guid isPermaLink="true">http://localhost:4000/2021-07-21-bbot-defini%C3%A7%C3%A3o-do-modelo-bbot/</guid>
+      </item>
+    
+      <item>
+        <title>Simulação do APEREA</title>
+        <description>
+          Um desafio de navegação by Juliana Santana - 
+          Modelando o robô Neste post, iremos abordar sobre o Unified Robot Description Format (URDF) ou descritivo do robô, o qual é um conjunto de arquivos em XML que descreve os elementos do robô. A descrição do modelo do Aperea é formada por um repositório com os arquivos meshes correspondentes as...
+        </description>
+        <pubDate>Wed, 21 Jul 2021 00:00:00 -0300</pubDate>
+        <link>http://localhost:4000/2021-07-21-aperea-simulacao/</link>
+        <guid isPermaLink="true">http://localhost:4000/2021-07-21-aperea-simulacao/</guid>
+      </item>
+    
+      <item>
+        <title>Primeiros passos</title>
+        <description>
+          Testes de sensores e iniciando o Gazebo by Breno Portela - 
+          Testando os sensores do Vertbot Nesta etapa de desenvolvimento foi feita a pesquisa dos pacotes e das bibliotecas necessárias para o funcionamento dos diversos sensores presentes no projeto, seguido do teste e integração dos sensores com o ROS operando na Jetson Nano. Nos testes feitos com os sensores de corrente...
+        </description>
+        <pubDate>Tue, 20 Jul 2021 00:00:00 -0300</pubDate>
+        <link>http://localhost:4000/2021-07-20-vertbot-primeiros-passos/</link>
+        <guid isPermaLink="true">http://localhost:4000/2021-07-20-vertbot-primeiros-passos/</guid>
       </item>
     
   </channel>
