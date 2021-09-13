@@ -24,6 +24,7 @@ navbar-links:
 
   in progress:
     - Warthog: "project-warthog"
+    - Flatfish: "project-flatfish_ros"
   #  - Moco: ""
   #  - Droilt: ""
     - AUM: "project-aum"
