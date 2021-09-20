@@ -4,7 +4,7 @@ title: Simulação do Bbot
 subtitle: Simulação do sistema de controle e teleoperação do Bbot
 cover-img: assets/img/bbot/bbot_wide.png
 thumbnail-img: assets/img/bbot/bbot.png
-share-img: assets/img/bbot/bbot.png
+share-img: /assets/img/bbot/bbot.png
 comments: true
 tags: [bbot]
 ---
