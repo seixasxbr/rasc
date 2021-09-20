@@ -26,7 +26,7 @@ navbar-links:
     - Warthog: "project-warthog"
     - Flatfish: "project-flatfish_ros"
   #  - Moco: ""
-  #  - Droilt: ""
+    - DRoILT: "project-droilt"
     - AUM: "project-aum"
     - Ergo: "project-ergo"
     - Hephaestus: "project-hephaestus"
