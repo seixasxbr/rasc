@@ -1,41 +1,43 @@
 ---
 layout: post-page
 title: Análise de sistemas e projetos de controladores em Python
-subtitle: Uso do pacote *control* para análise e projeto de controladores para o Bbot em Python
+subtitle: Uso do Python para análise de sistemas e projeto de controladores para o Bbot
 cover-img: /assets/img/wesley-pribadi-iS1NV9yN0Lg-unsplash.jpg
-thumbnail-img: /assets/img/ubuntu.png
+thumbnail-img: /assets/img/bbot_wide.png
 share-img: /assets/img/rosa-logo-redondo.png
 comments: true
 ---
 
 <!-- ## Introdução -->
 
-Quando imaginamos robôs interagindo com humanos ou realizando tarefas precisas antes feitas pro seres humanos, pensamos sempre na efetividade e precisão que eles conseguem atingir. Diferente de uma pessoa, um robô pode ser projetado para lidar com vários níveis de distúrbios externos para que estes não impactem no resultado final de sua missão. Para isso, a teoria de controle é fundamental, poi fornece várias ferramentas que nos permitem analisar os sistemas dos robôs e projetar controladores para que estes realizem as tarefas com bastante precisão e confiabilidade.
+Quando imaginamos robôs interagindo com as pessoas ou realizando tarefas antes feitas por seres humanos, pensamos sempre na efetividade e precisão que eles conseguem atingir. Diferente de uma pessoa, um robô pode ser projetado para lidar com vários níveis de distúrbios externos para que estes não impactem no resultado final de sua missão. Para isso, a teoria de controle é fundamental, poi fornece várias ferramentas que permitem os engenheiros analisar os sistemas dos robôs e projetar controladores para que estes realizem as tarefas com bastante precisão e confiabilidade.
 
-Hoje em dia, quando pensamos em analisar sistemas de controle, lembramos de softwares como MATLAB ou Octave, que possuem diversas ferramentas para análise de sistemas e projeto de controladores. Hoje em dia, contudo, existem bibliotecas em Python que nos fornecem algumas dessas ferramentas, e juntas com toda a diversa gama de aplicações implementadas para a linguagem, podem tornar a análise de sistemas extremamente rica e acessível, por ser Open Source.
+Hoje em dia, quando pensamos em analisar sistemas de controle, lembramos de softwares como MATLAB ou Octave, que possuem diversas ferramentas para análise de sistemas e projeto de controladores. Hoje em dia, contudo, existem bibliotecas em Python que nos fornecem algumas dessas ferramentas, e juntas com toda a diversa gama de outras aplicações implementadas para a linguagem, podem tornar a análise de sistemas extremamente rica e acessível, por ser Open Source.
 
 Neste artigo, iremos mostrar como utilizamos Python para analisar os sistemas de controle do Bbot (um robô *self-balancing*) e projetar um controlador LQR (Linear Quadratic Regulator) através do uso de alguns pacotes essenciais:
 1. [Control](https://python-control.readthedocs.io/en/0.9.0/intro.html)
 2. [Sympy](https://www.sympy.org/en/index.html)
 3. [Scipy](https://www.scipy.org/)
 
-Se você caiu aqui e não sabe o que é o Bbot, não se preocupe, abaixo haverá uma breev descrição dele, mas caso você queira sabe mais sobre o projeto pode acessar a [página oficial](https://mhar-vell.github.io/rasc/project-bbot/) e acompanhar todos os nossos posts sobre seu desenvolvimento.
+Se você caiu aqui e não sabe o que é o Bbot, não se preocupe, abaixo haverá uma breve descrição dele, mas caso você queira saber mais sobre o projeto pode acessar a [página oficial](https://mhar-vell.github.io/rasc/project-bbot/) e acompanhar todos os nossos *posts* sobre seu desenvolvimento.
 
-Uma dica, caso você queira acompanhar este artigo, é utilizar o [Jupyter notebook](https://jupyter.org/try), pois este facilita bastante ao mostrar automaticamente plots e as equações do sympy em Latex, que facilita muito o debug.
+Uma dica, caso você queira acompanhar este artigo, é utilizar o arquivo para o [Google Colab](https://colab.research.google.com/drive/1-8u3XmvPaioR4PO_iSakQHLodThWTyCR?usp=sharing) que fizemos, pois você poderá executar os trechos de código e visualizar os *plots* e as equações do `sympy` em Latex.
+
+<!-- IMAGEM  COLAB -->
 
 <br>
 
-<!-- detalhamento -->
-
 ## 1. Geração do medelo matemático
 
-O Bbot é um robô *self-balancing* que se equilibra em duas rodas e, assim, pode navegar por ambientes *indoor*. Seu princípio de funcionamento é extremamente semelhante ao do pêndulo invertido: ele precisa de um controlador que o mantenha sempre na vertical e que lhe permita de deslocar em duas dimensões espaço.
+O Bbot é um robô *self-balancing* que se equilibra em duas rodas e, assim, pode navegar por ambientes *indoor*. Seu princípio de funcionamento é extremamente semelhante ao do pêndulo invertido: ele precisa de um controlador que o mantenha sempre na vertical e que lhe permita se deslocar em duas dimensões no espaço.
 
-<!-- IMAGEM -->
+<p align="center">
+    <img src="{{ 'assets/img/bbot/bbot.png' | relative_url }}" alt="Bbot" width="750"/>
+</p>
 
-Como pode ser visto na imagem acima, o Bbot possui duas pernas que o possibilitam agachar e levantar, logo, este não é extremamente semelhante o pêndulo invertido. Porém, como estas articulação devem ficar estáticas na maior parte do tempo, assumimos similaridade suficiente, para que pudéssemos nos basear em modelos pré-prontos deste tipo de robô, ao invés de criar um modelo mais específico para o Bbot (cenas para os próximos capítulos, quem sabe...). Em nossa análise, nos baseamos no modelo utilizado por Kollarčík em [SK8], que foi gerado por Kim e Kwon em [Model]. O processo de análise mostrado também seguirá o projeto de controle mostrado em [SK8].
+Como pode ser visto na imagem acima, o Bbot possui duas pernas que o possibilitam agachar e levantar, logo, este não é extremamente semelhante o pêndulo invertido. Porém, como estas articulação devem ficar estáticas na maior parte do tempo, assumimos similaridade suficiente, para que pudéssemos nos basear em modelos pré-prontos deste tipo de robô, ao invés de criar um modelo mais específico para o Bbot (cenas para os próximos capítulos, quem sabe...). Em nossa análise, nos baseamos no modelo utilizado por Kollarčík em <a href="#Kollarcik">[1]</a>, que foi gerado por Kim e Kwon em <a href="#Kim">[2]</a>. O processo de análise mostrado também seguirá o projeto de controle mostrado em <a href="#Kollarcik">[1]</a>.
 
-Começamos a análise transcrevendo as matrizes do modelo mostradas em [Model] para o python. Como este modelo está em função de diversos parâmetros físicos do robô como massa, momentos de inércia, raio das rodas, etc., utilizamos o poder da matemática simbólica do Sympy para isso. O código ficou como o abaixo. 
+Começamos a análise transcrevendo as matrizes do modelo mostradas em <a href="#Kim">[2]</a> para o python. Como este modelo está em função de diversos parâmetros físicos do robô como massa, momentos de inércia, raio das rodas, etc., utilizamos a matemática simbólica do `sympy` para isso. O código ficou como o abaixo. 
 
 ```python
 import numpy as np
@@ -105,9 +107,9 @@ M_inv = M.inv()
 ```
 
 
-No trecho acima, nós definimos todos os símbolos que iremos utilizar, criamos as matrizes do sistema utilizando a classe `Matrix` do sympy e, devido a necessidade, computamos a matriz inversa de `M` chamando um dos métodos da classe. A vantagem de trabalhar com matemática simbólica é que todas as contas ficam em função de símbolos, portando não há erros de aproximação ou truncagem, como em operações em ponto flutuante.
+No trecho acima, nós definimos todos os símbolos que iremos utilizar, criamos as matrizes do sistema utilizando a classe `Matrix` do `sympy` e, devido a necessidade, computamos a matriz inversa de `M` chamando um dos métodos da classe. A vantagem de trabalhar com matemática simbólica é que todas as contas ficam em função de símbolos, portando não há erros de aproximação ou truncagem, como em operações em ponto flutuante.
 
-Seguindo os artigos, geramos um vetor com as três esquações diferencias e mostramos da tela o resultado.
+Seguindo os artigos, geramos um vetor do sistema com três equações diferencias e mostramos da tela o resultado.
 
 ```python
 expr_model = M_inv*((B*u-G)-(C+D)*q_diff)
@@ -115,7 +117,7 @@ eqts_model = Eq(q_2diff,expr_model)
 eqts_model # Chamar a variável sozinha no Jupyter a faz mostrá-la na tela.
 ```
 
-Como pode ser visto na saída, este modelo é um sistema de 3 equações diferenciais não-lineares modelando as velocidades linear, de yaw (ângulo em torno do eixo-z) e pitch (ângulo em torno do eixo-y). A partir destas equações, podemos gerar um modelo em epaço de estados do sistema com estas variáveis como estados. Porém, para este robô, podemos ampliar o modelo para controlar outras informações, como a posição linear, de pitch e de yaw. A posição de pitch é especialmente importante, pois não queremos apenas que o robô não caia (velocidade de pitch = 0), mas que mantenha a posição ereta (posição de pitch = 0). Logo, podemos adicionar estes 3 estados no modelo como mostrado no trecho abaixo. Para facilitar a análise posteriormente, trocamos os símbolos para `x1, x2, x3, ...` e mostramos na tela sua relação com os simbolos anteriores na última linha.
+Como pode ser visto na saída, este modelo é um sistema de 3 equações diferenciais não-lineares modelando as velocidades linear, de yaw (ângulo em torno do eixo-z) e pitch (ângulo em torno do eixo-y). A partir destas equações, podemos gerar um modelo em espaço de estados do sistema com estas variáveis como estados. Porém, para este robô, podemos ampliar o modelo para controlar outras informações, como a posição linear, de pitch e de yaw. A posição de pitch é especialmente importante, pois não queremos apenas que o robô não caia (velocidade de pitch = 0), mas que mantenha a posição ereta (posição de pitch = 0). Logo, podemos adicionar estes 3 estados no modelo como mostrado no trecho abaixo. Para facilitar a análise posteriormente, trocamos os símbolos dos estados para `x1, x2, x3, x4, x5, x6` e mostramos na tela sua relação com os símbolos anteriores na última linha.
 
 ```python
 #* Convert real variables into state-space variables
@@ -127,7 +129,7 @@ state_eq = Eq(state_vec,real_state_vec)
 state_eq
 ```
 
-Podemos agora incluir os novos estados no sistema anterior e substituir seus símbolos para `x1, x2, x3, ...`.
+Podemos agora incluir os novos estados no sistema anterior e substituir seus símbolos para `x1, x2, x3, x4, x5, x6`.
 
 ```python
 #* Build the vector of system equations
@@ -145,11 +147,13 @@ eq_sys = Eq(state_diff_vec,system_equations)
 eq_sys
 ```
 
+<br>
+
 ## 2. Linearização do sistema
 
-Até este ponto, temos um sistema de equações diferencias não-lineares com todas as informações que queremos para controlar o robô. Porém, como dito, este sistema é não-linear (devido a todos os senos e cossenos), e para projetar um controlador LQR, precisamos lenearizar este sistema. Se utilizarmos a aproximação de que senos e cossenos, para ângulos próximos de 0, são aproximadamente o próprio valor do ângulo e 1, respectivamente, podemos trabalhar com um sistema linear, caso o robô esteja próximo da posição vertical (ângulos de pitch pequenos). O que fazemos, portanto, é linearizar o sistema em torno de um posto fixo. Este ponto fixo, embora seja um ponto de equilíbrio do sistema, é instável, pois o mínimo desvio deste fará o robô cair. Logo nosso sistema é instável, por isso precisamos de um controlador para estabilizá-lo.
+Até este ponto, temos um sistema de equações diferencias não-lineares com todas as informações que queremos para controlar o robô. Porém, como dito, este sistema é não-linear (devido a todos os senos e cossenos), e para projetar um controlador LQR, precisamos linearizar este sistema. Se utilizarmos a aproximação de que senos e cossenos, para ângulos próximos de 0, são aproximadamente o próprio valor do ângulo e 1, respectivamente, podemos trabalhar com um sistema linear, caso o robô esteja próximo da posição vertical (ângulos de pitch pequenos). O que faremos, portanto, é linearizar o sistema em torno deste ponto de equilíbrio, chamado de ponto fixo. Este ponto fixo, embora seja um ponto de equilíbrio do sistema, é um ponto instável, pois o mínimo desvio deste fará o robô cair.
 
-Para linearizar o sistema, calcularemos a matriz Jacobiana do sistema em função dos estados e das entradas de controle. Os estados foram citado acima, mas nossa entradas de controle são os torques em cada uma das rodas. Ou seja, pretendemos controlar o sistema mandando valores de torque para os motores da rodas, de forma que a valor dos estados tendam a 0 (ou qualquer outro ponto fixo que você escolher, mas para este sistema, será 0) ao longo do tempo. Calculamos a matriz Jacobina utilizando o sympy como mostrado abaixo.
+Para linearizar o sistema, calcularemos a matriz Jacobiana do sistema em relação aos estados e às entradas de controle. Os estados foram citado acima, mas nossa entradas de controle são os torques em cada uma das rodas. Ou seja, pretendemos controlar o sistema mandando comandos de torque para os motores da rodas, de forma que a valor dos estados tendam a 0 (ou qualquer outro ponto fixo que você escolher, mas para este sistema será 0) ao longo do tempo. Calculamos a matriz Jacobina utilizando o `sympy` como mostrado abaixo.
 
 ```python
 
@@ -160,9 +164,9 @@ Bc = system_equations.jacobian(u)
 # Bc
 ```
 
-Na primeira linha, calculamos a matriz `Ac` (matriz A do modelo em espaço de estados a partir do modelo em tempo contínuo), que é a Jacobina do sistema, que são as derivadas parcias das equações do sistema em relação os estados. Já a matriz `Bc` é a Jacobina em relação as entradas de controle. Você pode descomentar as últimas linhas para que o notebook mostre as matrizes.
+Na primeira linha, calculamos a matriz `Ac` (matriz A do modelo em espaço de estados a partir do modelo em tempo contínuo), que é a Jacobina do sistema, que são as derivadas parciais das equações do sistema em relação aos estados. Já a matriz `Bc` é a Jacobina em relação às entradas de controle. Você pode descomentar as últimas linhas para que o notebook mostre as matrizes.
 
-Já temos as matrizes lenearizadas, porém ainda em símbolos, para os próximos passo, faremos a substituição destes para valores numéricos usando o método `subs` do sympy, como mostrado abaixo.
+Já temos as matrizes linearizadas, porém ainda em símbolos. Para os próximos passo, faremos a substituição destes para valores numéricos usando o método `subs` do `sympy`, como mostrado abaixo.
 
 ```python
 
@@ -229,13 +233,17 @@ Ac_np = np.array(Ac_lin) # Converts it into a numpy array
 Bc_np = np.array(Bc_lin) # Converts it into a numpy array
 ```
 
-Para substituir o valor de vários símbolos de uma vez só, devemos passar uma lista de tuples contendo a variácel do símbolo e o valor. Primeiro, substituimos os valores do ponto fixo, que é 0 para todas as variáveis. Depois, criamos tuples com cada símbolo referente a um parâmetro do modelo e o valor referente ao modelo 3D do Bbot. Estes valores foram calculados pelo [Oneshape](https://www.onshape.com/en/). Devido ao fato do Bbot possuir pernas que modificam alguns parâmetros do modelo, calculamos os valores para 3 poses diferentes, como pode ser visto nas imagens abaixo. Por último, geramos uma `numpy.array()` destas matrizes.
+Para substituir o valor de vários símbolos de uma vez só, devemos passar uma lista de tuples contendo a variável do símbolo e o valor. Primeiro, substituimos os valores do ponto fixo, que é 0 para todas as variáveis. Depois, criamos tuples com cada símbolo referente a um parâmetro do modelo e o valor referente ao modelo 3D do Bbot. Estes valores foram calculados pelo [Oneshape](https://www.onshape.com/en/). Devido ao fato do Bbot possuir pernas que modificam alguns parâmetros do modelo, calculamos os valores para 3 poses diferentes, como pode ser visto nas imagens abaixo. Por último, geramos uma `numpy.array()` destas matrizes.
 
-<!-- POSES BBOT -->
+<p align="center">
+    <img src="{{ 'assets/img/bbot/bbot_poses.png' | relative_url }}" alt="Bbot" width="750"/>
+</p>
+
+<br>
 
 ## 3. Discretização do sistema
 
-O modelo no qual nos baseamos considera um sistema em tempo contínuo, porém nós pretendemos gerar controladores possíveis de serem implementados num microcontrolador, que opera em tempo discreto. Portando, devemos discretizar o sistema. E aqui a biblioteca `control` começa a ajudar bastante. Podemos gerar um sistema em espaço de estados com as matrizes que calculamos e discretizar o sistema em apens duas linhas de código.
+O modelo no qual nos baseamos considera um sistema em tempo contínuo, porém nós pretendemos gerar controladores possíveis de serem implementados em um microcontrolador, que opera em tempo discreto. Portando, devemos discretizar o sistema. E aqui a biblioteca `control` começa a ajudar bastante. Podemos gerar um sistema em espaço de estados com as matrizes que calculamos e discretizar o sistema em apenas duas linhas.
 
 ```python
 import control
@@ -248,18 +256,20 @@ Ad = sysd.A
 Bd = sysd.B
 ```
 
-Ao final, armazemos as matrizes do sistema discretizado nas variáveis `Ad` e `Bd`. O método de discretização utilizado, foi *zero-order hold* e o período de amostragem foi 0.01 segundos, o equivalente a uma frequência de amostragem de 100 Hz. Este valor é completamente arbritrário e o utilizamos como ponto de partida para a simulação. Futuramente, considerando a dinâmica dos motores reais do robô (não abordado neste artigo), poderemos modificar esse período para se adequar melhor à dinâmica do sistema. O período de amostragem delimita a frequência do loop de controle que será implmentado no robô. Ou seja, neste caso, nosso controlador deveria enviar esforços de controle para o sistema numa frequência de 100 Hz.
+Ao final, armazenamos as matrizes do sistema discretizado nas variáveis `Ad` e `Bd`. O método de discretização utilizado foi *zero-order hold* e o período de amostragem foi 0.01 segundos, o equivalente a uma frequência de amostragem de 100 Hz. Este valor é completamente arbitrário e o utilizamos como ponto de partida para a simulação. Futuramente, considerando a dinâmica dos motores reais do robô (não abordado neste artigo), poderemos modificar esse período para se adequar melhor à dinâmica do sistema. O período de amostragem delimita a frequência do loop de controle que será implementado no robô. Ou seja, neste caso, nosso controlador deverá enviar esforços de controle para o sistema numa frequência de 100 Hz.
 
-Como mostrado nos artigos, este robô não necessita controlar a posição linear e de yaw para se equilibrar. Portanto podemos reduzir o sistema para 4 estados, sendo eles: velocidade linear, velocidade de pitch, velocidade de yaw e ângulo de pitch. Fazer isso é bastante simples, basta remover as linhas das matrizes `Ad` e `Bd` correspontes a estes dois estados. Ao final, ficamos com a matriz `Ar` 4x4 e a matriz `Br` 4x2.
+Como mostrado nos artigos, este robô não necessita controlar a posição linear e de yaw para se equilibrar. Portanto podemos reduzir o sistema para 4 estados, sendo eles: velocidade linear, velocidade de pitch, velocidade de yaw e ângulo de pitch. Fazer isso é bastante simples, basta remover as linhas das matrizes `Ad` e `Bd` correspondentes a estes dois estados. Ao final, ficamos com a matriz `Ar` 4x4 e a matriz `Br` 4x2.
 
 ```python
 Ar = np.vstack(( np.hstack((Ad[0:3,0:3], Ad[0:3,4].reshape(3,1))) , np.hstack((Ad[4,0:3], Ad[4,4])) ))
 Br = np.vstack(( Bd[0:3,:], Bd[4,:] ))
 ```
 
+<br>
+
 ## 4. Adição de ação integral no sistema
 
-Com as matrizes `Ar` e `Br`, podemos projetar um controlar, implementá-lo em um microcontrolador e o robô será capaz de se equilibrar. Mas o Bbot é um robô móvel, e deve ser capaz de receber entradas de velocidade linear e de yaw e seguir essa referência. Dessa forma, será possível teleoperá-lo ou até implementar algoritmos de navegação autônoma. Para isso, precisamos garantir que o controlador consiga receber uma valor de referência controlar o sistema seguindo essa referência. Se falarmos "ande para frente a 0.3 m/s" ou "gire para a esquerda a 0.15 rad/s", este controlador deverá ser capaz de equilibrar o sistema equando este se move nesta velocidade. Para isso, devemos computar o erro entre a velocidade atual do robô e a referência e mandar para o controlador a integral deste erro. A integral irá garantir que este erro tenda a 0, ou seja, a velocidade atual seja igual à referência. 
+Com as matrizes `Ar` e `Br`, podemos projetar um controlar, implementá-lo em um microcontrolador e o robô será capaz de se equilibrar. Mas o Bbot é um robô móvel, e deve ser capaz de receber entradas de velocidade linear e de yaw e seguir essa referência. Dessa forma, será possível teleoperá-lo ou até implementar algoritmos de navegação autônoma. Para isso, precisamos garantir que o controlador consiga receber uma valor de referência e controlar o sistema seguindo essa referência. Se falarmos: "ande para frente a 0.3 m/s" ou "gire para a esquerda a 0.15 rad/s", este controlador deverá ser capaz de equilibrar o sistema enquanto este se move nesta velocidade. Para isso, devemos computar o erro (a diferença) entre a velocidade atual do robô e a referência e mandar para o controlador a integral deste erro. A integral irá garantir que este erro tenda a 0, ou seja, a velocidade atual seja igual à referência. 
 
 Para isso, criamos um modelo aumentado do sistema, incluindo a integral do erro de velocidade linear e de yaw como estados. Modificamos as matrizes do sistema como mostrado abaixo.
 
@@ -275,9 +285,11 @@ B_aug = np.vstack((Br,np.zeros((2,2))))
 # Matrix(B_aug)
 ```
 
+<br>
+
 ## 4. Sistema de controle
 
-Em posse das matrizes A e B para o sistema aumentado, presseguiremos com análise do sistema e o projeto do controlador. O primeiro passo que faremos é checar se este sistema é controlável, ou seja, checar se apenas com o torque das rodas como entradas de controle é possível levar os estados do sistema para o ponto fixo ao redor do qual nos o linearizamos. Também testaremos se o sistema é observável. Sistemas de controle podem possuir dezenas de estados, porém nem todos são capazes de serem medidos com sensores. Portanto, indicando apenas os estados que podemos medir (estes são as saídas do nosso sistema) podemos testar se os sistema ainda é observável. Caso seja, é possível projetar um estimador (um filtro de Kalman) que com apenas os dados dos estados medidos, é possível prever o valor dos outros estados e mandar estes dados para o controlador. No caso do Bbot, nos temos encoders nas rodas, do qual podemos calcular a velocidade lienar do robô sabendo o raio das rodas e um IMU, que nos fornece a posição, aceleração e velocidade angular do robô nos 3 eixos espaciais. Portando sabemos que podemos medir todos os estados, mas fizemos o teste apenas para completude da análise.
+Em posse das matrizes A e B para o sistema aumentado, prosseguiremos com a análise do sistema e o projeto do controlador. O primeiro passo é checar se este sistema é controlável, ou seja, checar se apenas com o torque das rodas como entradas de controle é possível levar os estados do sistema para o ponto fixo ao redor do qual nos o linearizamos. Também testaremos se o sistema é observável. Sistemas de controle podem possuir dezenas de estados, porém nem todos são capazes de serem medidos com sensores. Portanto, indicando apenas os estados que podemos medir (estes são as saídas do nosso sistema) podemos testar se os sistema ainda é observável. Caso seja, é possível projetar um estimador (um filtro de Kalman) que com apenas os dados dos estados medidos, é possível prever o valor dos outros estados e mandar estes dados para o controlador. No caso do Bbot, nos temos encoders nas rodas, do qual podemos calcular a velocidade linear do robô sabendo o raio das rodas e um IMU, que nos fornece a posição, aceleração e velocidade angular do robô nos 3 eixos espaciais. Portando sabemos que podemos medir todos os estados, mas fizemos o teste apenas para completude da análise.
 
 No trecho de código abaixo, usamos as funções `control.ctrb` e `control.obsv`, que nos retornam as matrizes de controlabilidade e observabilidade do sistema. Caso o rank dessas matrizes seja igual ao número de estados do sistema, o sistema é controlável e observável.
 
@@ -304,9 +316,9 @@ sys_aug = control.ss(A_aug, B_aug, C_ss_aug, D_ss_aug)
 abs(sys_aug.pole())
 ```
 
-Como nosso sistema é discreto, analisamos a estabilidade seguindo a teoria de transformada Z. Analisando os polos do sistema, podemos ver que há polos cujo módulo é meior ou igual a 1.0, logo ele é instável.
+Como nosso sistema é discreto, analisamos a estabilidade seguindo a teoria de transformada Z. Analisando os polos do sistema, podemos ver que há polos cujo módulo é maior ou igual a 1.0, logo ele é instável.
 
-Executando o código, vemos que o rank de ambas as matrizes é de fato 6, logo podemos gerar um controlador LQR para o sistema e, como temos todas as medidas, não precisamos projetar o estimador. Para projetar o controlador, precisamos das matrizes de custo `Q` e `R`. Essas matrizes contém valores de custo definidos pelo projetista, indicando suas prioridades de performance do sistema em relação a cada estado (matriz `Q`) e o custo da energia possível de ser demandado dos motores (matriz `R`). A biblioteca `control` possui uma função `control.lqr()` que, dadas as matrizes do sistema e matrizes `Q` e `R`, é retornada a matriz de ganho `K` do controlador. A função também retorna a resolução da equação de Ricatti (necessário no cálculo de `K`) e os polos do sistema controlado. Contudo essa função é destinada a sistemas de tempo contínuo. Até a data de publicação deste artigo não há a função para tempo discreto na biblioteca, porém um usuário fez a função e deixou o código disponível em uma [issue](https://github.com/python-control/python-control/issues/359#issuecomment-759423706) no repositório do python-control. O uso da função segue a mesma lógica. Abaixo está a função e o trecho de código conde calulamos a matriz `K` e os polos do sistema controlado, e vemos que todos estes têm módulo < 1.0.
+Executando o código, vemos que o rank de ambas as matrizes é de fato 6, logo podemos gerar um controlador LQR para o sistema e, como temos todas as medidas, não precisamos projetar o estimador. Para projetar o controlador, precisamos das matrizes de custo `Q` e `R`. Essas matrizes contém valores de custo definidos pelo projetista, indicando suas prioridades de performance do sistema em relação a cada estado (matriz `Q`) e o custo da energia possível de ser demandado dos motores (matriz `R`). A biblioteca `control` possui uma função `control.lqr()` que, dadas as matrizes do sistema e as matrizes `Q` e `R`, é retornada a matriz de ganho `K` do controlador. A função também retorna a resolução da equação de Ricatti (necessária no cálculo de `K`) e os polos do sistema controlado. Contudo, essa função é destinada a sistemas de tempo contínuo. Até a data de publicação deste artigo não há a função para tempo discreto na biblioteca, porém um usuário fez a função e deixou o código disponível em uma [issue](https://github.com/python-control/python-control/issues/359#issuecomment-759423706) no repositório do [python-control](https://github.com/python-control/python-control). O uso da função segue a mesma lógica. Abaixo está a função e o trecho de código onde calculamos a matriz `K` e os polos do sistema controlado, e vemos que todos estes têm módulo menor que 1.0.
 
 ```python
 def dlqr_calculate(G, H, Q, R, returnPE=False):
@@ -352,11 +364,14 @@ K_dlqr_aug, S_dlqr_aug, E_dlqr_aug = dlqr_calculate(A_aug,B_aug,Q_lqr_aug,R_lqr_
 # Matrix(K_dlqr_aug)
 # Matrix(abs(E_dlqr_aug).reshape(1,6)) # If all are below 1, the system is stable
 ```
+
+<br>
+
 ## 5. Simulação do sistema
 
-Já temos as equações diferencias do nosso sistema e o controlador. Agora, devemos simular nosso sistema não-linear e checar se com este controlador é possível estabilizá-lo. Para simular o sistema, utilizaremos um solucionador de equações diferencias, o qual o pacote `scipy` fornece para a gente. Utilizaremos o vetor de equações diferencias do nosso sistema que criamos no início (apenas com os 4 estados que escolhemos) para criar uma função que, dados os valores atuais dos estados, é calculada as derivadas definidas no lado esquerdo da equação. O `scipy` utilizará isto para solucionar o sistema. 
+Já temos as equações diferencias do nosso sistema e o controlador. Agora, devemos simular nosso sistema não-linear e checar se com este controlador é possível estabilizá-lo. Para simular o sistema, utilizaremos um solucionador de equações diferencias, o qual o pacote `scipy` fornece para a gente. Utilizaremos o vetor de equações diferencias do nosso sistema que criamos no início (apenas com os 4 estados que escolhemos) para criar uma função que, dados os valores atuais dos estados, são calculada as derivadas definidas no lado esquerdo da equação. O `scipy` utilizará isto para solucionar o sistema. 
 
-Abaixo criamos um outro vetor com os valores dos parâmetros do robô já substituidos. Definimos as condições iniciais de cada estado,entradas, tempo inicial e referências de velocidade linear e de yaw. Usando a função `sympy.lambdify` podemos transformar uma expressão simbólica do `sympy` em uma função `lambda` do python, cujos parâmetros serão o tempo, o vetor dos estados e o vetor de entradas. Descomentado a última linha, podemos avaliar o sistema para os valores inicias definidos.
+Abaixo criamos um outro vetor com os valores dos parâmetros do robô já substituidos. Definimos as condições iniciais de cada estado, entradas, tempo inicial e referências de velocidade linear e de yaw. Usando a função `sympy.lambdify` podemos transformar uma expressão simbólica do `sympy` em uma função `lambda` do python, cujos parâmetros serão o tempo, o vetor dos estados e o vetor de entradas. Descomentando a última linha, podemos avaliar o sistema para os valores inicias definidos.
 
 ```python
 #* Apply model parameters to the system equations
@@ -377,7 +392,7 @@ func = lambdify([t, reduced_state_vec, u],sys2sim,'numpy')
 # func(0,state_initial_conditions, initial_inputs) # Test the lambda function
 ```
 
-Utilizando a classe `integrate.ode` do `scipy`, simulamos o sistema até 10 segundos e com passo de 0.01 segundos. Incluimos também ruído branco e um pulso de torque nas rodas de 6 a 6.3 segundos com valor de 0.3 Nm. Ao longo da simulação, vamos armazenando os valores dos estados, das entradas e do tempo em uma `numpy.array` para podermos plotar os resultados futuramente. Ao final da simulação, calculamos a integral da curva de velocidade linear para plotar a posição do robô ao longo do tempo.
+Utilizando a classe `integrate.ode` do `scipy`, simulamos o sistema até 10 segundos e com passo de 0.01 segundos. Incluimos também ruído branco e um pulso de torque nas rodas de 6 a 6.3 segundos com valor de 0.3 Nm. Ao longo da simulação, vamos armazenando os valores dos estados, das entradas e do tempo em uma `numpy.array` para podermos *plotar* os resultados futuramente. Ao final da simulação, calculamos a integral da curva de velocidade linear para plotar a posição do robô ao longo do tempo.
 
 ```python
 from scipy import integrate
@@ -486,13 +501,9 @@ plt.ylabel("m")
 plt.grid()
 ```
 
-Exemplos de gifs gerados:
+Pelos gráficos, podemos analisar a performance do sistema ao longo de todo o tempo. Com os dados de torque e velocidade linear, por exemplo, podemos avaliar se estes estão dentro do *range* de trabalho dos atuadores do robô. Caso não estejam, podemos alterar os custos das matrizes do controlador ou simular distúrbios menores e ver os limites de funcionamento do robô.
 
-<!-- IMAGENS -->
-
-Pelos gráficos, podemos analisar a performance do sistema ao longo de todo o tempo. Com os dados de torque e velocidade linear, por exemplo, podemos avaliar se estes estão dentro do range de trabalho dos atuadores do robô. Caso não estejam, podemos alterar os custos das matrizes do controlador ou simular distúrbios menores e ver os limites de funcionamento do robô.
-
-Por fim, para ter uma análise mais visual do sistema, criamos uma animação usando também a biblioteca `matplotlib`.
+Por fim, para ter uma análise mais visual da simulação, criamos uma animação usando também a biblioteca `matplotlib`.
 
 ```python
 #Generates an animation using Matplotlib
@@ -568,10 +579,20 @@ anim.save("Gifs/disturbance3.gif", fps=36) #Generates a .gif for the animation
 
 Exemplos de gifs gerados:
 
+<p align="center">
+    <img src="{{ 'assets/img/bbot/model_sim.gif' | relative_url }}" alt="Bbot" width="750"/>
+</p>
+
+<br>
 
 ## 6. Conclusão
 
-Estes foram os passos que seguimos para simular matematicamente o Bbot. Utilizamos várias ferramentas do python para isso, há muito mais. Caso queiram saber mais sobre os pacotes, basta acessar a documentação online no link deixado no início. E caso queiram saber mais sobre o projeto do Bbot, acesso nossa [página oficial](https://mhar-vell.github.io/rasc/project-bbot/). Obrigado!
+Estes foram os passos que seguimos para simular matematicamente o Bbot. Utilizamos várias ferramentas do python para isso, porém há muito mais. Caso queiram saber mais sobre os pacotes, basta acessar a documentação online no link deixado no início. E caso queiram saber mais sobre o projeto do Bbot, pode acessar nossa [página oficial](https://mhar-vell.github.io/rasc/project-bbot/).
+
+## Referências
+
+1. <a id="Kollarcik">**Adam Kollarčík**</a>; Modeling and Control of Two-Legged Wheeled Robot; Master’s thesis, CZECH TECHNICAL UNIVERSITY IN PRAGUE. 2021.
+2. <a id="Kim">**Kim, Sangtae; Kwon, Sang Joo**</a>; "Dynamic modeling of a two-wheeled inverted pendulum balancing mobile robot", p. 926-933 . In: **International Journal of Control, Automation and Systems**. 2015.
 
 <br>
 
