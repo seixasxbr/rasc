@@ -6,6 +6,7 @@ cover-img: /assets/img/bbot/bbot_wide.png
 thumbnail-img: /assets/img/bbot_wide.png
 share-img: /assets/img/rosa-logo-redondo.png
 comments: true
+css: [/assets/css/tango.css]
 ---
 
 <!-- ## Introdução -->
@@ -601,7 +602,7 @@ Estes foram os passos que seguimos para simular matematicamente o Bbot. Utilizam
 <center><h3 class="post-title">Autor</h3><br/></center>
 <div class="row">
   <div class="col-xl-8 offset-xl-0 col-lg-4 offset-lg-0 center">
-    <table class="table-borderless highlight">
+    <table class="table-borderless highlight" style="background: #00000000">
       <thead>
         <tr>
           <th><img src="{{ 'assets/img/people/lucaslins-1.png' | relative_url }}" width="100" alt="amarco" class="img-fluid rounded-circle" /></th>
