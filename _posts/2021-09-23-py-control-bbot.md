@@ -2,7 +2,7 @@
 layout: post-page
 title: Análise de sistemas e projetos de controladores em Python
 subtitle: Uso do Python para análise de sistemas e projeto de controladores para o Bbot
-cover-img: /assets/img/bbot/bbot_wide.png
+cover-img: /assets/img/bbot/bbot_cover.png
 thumbnail-img: /assets/img/bbot_wide.png
 share-img: /assets/img/rosa-logo-redondo.png
 comments: true
@@ -23,8 +23,6 @@ Neste artigo, iremos mostrar como utilizamos Python para analisar os sistemas de
 Se você caiu aqui e não sabe o que é o Bbot, não se preocupe, abaixo haverá uma breve descrição dele, mas caso você queira saber mais sobre o projeto pode acessar a [página oficial](https://mhar-vell.github.io/rasc/project-bbot/) e acompanhar todos os nossos *posts* sobre seu desenvolvimento.
 
 Uma dica, caso você queira acompanhar este artigo, é utilizar o arquivo para o [Google Colab](https://colab.research.google.com/drive/1-8u3XmvPaioR4PO_iSakQHLodThWTyCR?usp=sharing) que fizemos, pois você poderá executar os trechos de código e visualizar os *plots* e as equações do `sympy` em Latex.
-
-<!-- IMAGEM  COLAB -->
 
 <br>
 
