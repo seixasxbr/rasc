@@ -26,7 +26,7 @@ Uma dica, caso você queira acompanhar este artigo, é utilizar o arquivo para o
 
 <br>
 
-## 1. Geração do medelo matemático
+## 1. Geração do modelo matemático
 
 O Bbot é um robô *self-balancing* que se equilibra em duas rodas e, assim, pode navegar por ambientes *indoor*. Seu princípio de funcionamento é extremamente semelhante ao do pêndulo invertido: ele precisa de um controlador que o mantenha sempre na vertical e que lhe permita se deslocar em duas dimensões no espaço.
 
@@ -134,7 +134,7 @@ Podemos agora incluir os novos estados no sistema anterior e substituir seus sí
 
 system_equations = expr_model.row_insert(4,q_diff)
 
-#* Substitute the real variables with the state-stape model variables: x1:x6
+#* Substitute the real variables with the state-state model variables: x1:x6
 
 for i in range(6):
   system_equations = system_equations.subs(real_state_vec[i],state_vec[i])
@@ -155,7 +155,7 @@ Para linearizar o sistema, calcularemos a matriz Jacobiana do sistema em relaç�
 
 ```python
 
-#* Calcualte the jacobian for the A and B matrix of the continuos time system
+#* Calculate the jacobian for the A and B matrix of the continuos time system
 Ac = system_equations.jacobian(state_vec)
 Bc = system_equations.jacobian(u)
 # Ac
@@ -292,16 +292,16 @@ Em posse das matrizes A e B para o sistema aumentado, prosseguiremos com a anál
 No trecho de código abaixo, usamos as funções `control.ctrb` e `control.obsv`, que nos retornam as matrizes de controlabilidade e observabilidade do sistema. Caso o rank dessas matrizes seja igual ao número de estados do sistema, o sistema é controlável e observável.
 
 ```python
-#* Controlability and Observability for the augmented model
+#* Controllability and Observability for the augmented model
 
 C_ss_aug = np.diag([1,1,1,1,1,1])
 D_ss_aug = np.zeros((6,2))
 
 ctrb_m = control.ctrb(A_aug,B_aug)
-rank_ctrb = np.linalg.matrix_rank(ctrb_m) # If result is 6, the system is controlable
+rank_ctrb = np.linalg.matrix_rank(ctrb_m) # If result is 6, the system is controllable
 
 obs_m = control.obsv(A_aug,C_ss_aug)
-rank_obs = np.linalg.matrix_rank(obs_m) # If result is 6, the system is controlable
+rank_obs = np.linalg.matrix_rank(obs_m) # If result is 6, the system is controllable
 
 print(rank_ctrb)    # 6 means Controllable
 print(rank_obs)     # 6 means Observable
@@ -316,7 +316,7 @@ abs(sys_aug.pole())
 
 Como nosso sistema é discreto, analisamos a estabilidade seguindo a teoria de transformada Z. Analisando os polos do sistema, podemos ver que há polos cujo módulo é maior ou igual a 1.0, logo ele é instável.
 
-Executando o código, vemos que o rank de ambas as matrizes é de fato 6, logo podemos gerar um controlador LQR para o sistema e, como temos todas as medidas, não precisamos projetar o estimador. Para projetar o controlador, precisamos das matrizes de custo `Q` e `R`. Essas matrizes contém valores de custo definidos pelo projetista, indicando suas prioridades de performance do sistema em relação a cada estado (matriz `Q`) e o custo da energia possível de ser demandado dos motores (matriz `R`). A biblioteca `control` possui uma função `control.lqr()` que, dadas as matrizes do sistema e as matrizes `Q` e `R`, é retornada a matriz de ganho `K` do controlador. A função também retorna a resolução da equação de Ricatti (necessária no cálculo de `K`) e os polos do sistema controlado. Contudo, essa função é destinada a sistemas de tempo contínuo. Até a data de publicação deste artigo não há a função para tempo discreto na biblioteca, porém um usuário fez a função e deixou o código disponível em uma [issue](https://github.com/python-control/python-control/issues/359#issuecomment-759423706) no repositório do [python-control](https://github.com/python-control/python-control). O uso da função segue a mesma lógica. Abaixo está a função e o trecho de código onde calculamos a matriz `K` e os polos do sistema controlado, e vemos que todos estes têm módulo menor que 1.0.
+Executando o código, vemos que o rank de ambas as matrizes é de fato 6, logo podemos gerar um controlador LQR para o sistema e, como temos todas as medidas, não precisamos projetar o estimador. Para projetar o controlador, precisamos das matrizes de custo `Q` e `R`. Essas matrizes contém valores de custo definidos pelo projetista, indicando suas prioridades de performance do sistema em relação a cada estado (matriz `Q`) e o custo da energia possível de ser demandado dos motores (matriz `R`). A biblioteca `control` possui uma função `control.lqr()` que, dadas as matrizes do sistema e as matrizes `Q` e `R`, é retornada a matriz de ganho `K` do controlador. A função também retorna a resolução da equação de Riccati (necessária no cálculo de `K`) e os polos do sistema controlado. Contudo, essa função é destinada a sistemas de tempo contínuo. Até a data de publicação deste artigo não há a função para tempo discreto na biblioteca, porém um usuário fez a função e deixou o código disponível em uma [issue](https://github.com/python-control/python-control/issues/359#issuecomment-759423706) no repositório do [python-control](https://github.com/python-control/python-control). O uso da função segue a mesma lógica. Abaixo está a função e o trecho de código onde calculamos a matriz `K` e os polos do sistema controlado, e vemos que todos estes têm módulo menor que 1.0.
 
 ```python
 def dlqr_calculate(G, H, Q, R, returnPE=False):
@@ -396,7 +396,7 @@ Utilizando a classe `integrate.ode` do `scipy`, simulamos o sistema até 10 segu
 from scipy import integrate
 
 simulator = integrate.ode(func)                                     # Ode class object used for simulation
-simulator.set_initial_value(state_initial_conditions, t0)           # Set initial consitions of the system
+simulator.set_initial_value(state_initial_conditions, t0)           # Set initial conditions of the system
 simulator.set_integrator('vode')
 simulator.set_f_params(initial_inputs)                              # Set the initial inputs (wheel torques) values in the system
 # simulator.set_jac_params(initial_inputs)                            # Set the initial inputs (wheel torques) values in the jacobian
@@ -484,7 +484,7 @@ plt.grid()
 
 fig5 = plt.figure()
 plt.plot(time_history,input_history[0,:], label='Left Torque')
-plt.plot(time_history,input_history[1,:], label='Rigth Torque')
+plt.plot(time_history,input_history[1,:], label='Right Torque')
 plt.title("Wheel Torques")
 plt.legend()
 plt.xlabel("time (s)")
