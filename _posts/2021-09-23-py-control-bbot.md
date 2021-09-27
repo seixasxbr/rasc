@@ -2,7 +2,7 @@
 layout: post-page
 title: Análise de sistemas e projetos de controladores em Python
 subtitle: Uso do Python para análise de sistemas e projeto de controladores para o Bbot
-cover-img: /assets/img/wesley-pribadi-iS1NV9yN0Lg-unsplash.jpg
+cover-img: /assets/img/bbot/bbot_wide.png
 thumbnail-img: /assets/img/bbot_wide.png
 share-img: /assets/img/rosa-logo-redondo.png
 comments: true
@@ -32,7 +32,7 @@ Uma dica, caso você queira acompanhar este artigo, é utilizar o arquivo para o
 O Bbot é um robô *self-balancing* que se equilibra em duas rodas e, assim, pode navegar por ambientes *indoor*. Seu princípio de funcionamento é extremamente semelhante ao do pêndulo invertido: ele precisa de um controlador que o mantenha sempre na vertical e que lhe permita se deslocar em duas dimensões no espaço.
 
 <p align="center">
-    <img src="{{ 'assets/img/bbot/bbot.png' | relative_url }}" alt="Bbot" width="750"/>
+    <img src="{{ 'assets/img/bbot/bbot.png' | relative_url }}" alt="Bbot" width="200"/>
 </p>
 
 Como pode ser visto na imagem acima, o Bbot possui duas pernas que o possibilitam agachar e levantar, logo, este não é extremamente semelhante o pêndulo invertido. Porém, como estas articulação devem ficar estáticas na maior parte do tempo, assumimos similaridade suficiente, para que pudéssemos nos basear em modelos pré-prontos deste tipo de robô, ao invés de criar um modelo mais específico para o Bbot (cenas para os próximos capítulos, quem sabe...). Em nossa análise, nos baseamos no modelo utilizado por Kollarčík em <a href="#Kollarcik">[1]</a>, que foi gerado por Kim e Kwon em <a href="#Kim">[2]</a>. O processo de análise mostrado também seguirá o projeto de controle mostrado em <a href="#Kollarcik">[1]</a>.
@@ -105,7 +105,6 @@ u = Matrix([[Tl],[Tr]])
 
 M_inv = M.inv()
 ```
-
 
 No trecho acima, nós definimos todos os símbolos que iremos utilizar, criamos as matrizes do sistema utilizando a classe `Matrix` do `sympy` e, devido a necessidade, computamos a matriz inversa de `M` chamando um dos métodos da classe. A vantagem de trabalhar com matemática simbólica é que todas as contas ficam em função de símbolos, portando não há erros de aproximação ou truncagem, como em operações em ponto flutuante.
 
@@ -610,7 +609,7 @@ Estes foram os passos que seguimos para simular matematicamente o Bbot. Utilizam
       </thead>
       <tbody>
         <tr class="font-weight-bolder" style="text-align: center margin-top: 0">
-          <td>Marco Reis</td>
+          <td>Lucas Lins</td>
         </tr>
         <tr style="text-align: center" >
           <td style="vertical-align: top; text-align: justify"><small>Estagiário no laboratório de Robótica e Sistemas Autônomos (RoSA), SENAI CIMATEC, graduando em Engenharia Elétrica.</small></td>
