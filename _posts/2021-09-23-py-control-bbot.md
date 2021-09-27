@@ -575,7 +575,7 @@ Para vizualisar, salvamos a animação em um arquivo `.gif`.
 anim.save("Gifs/disturbance3.gif", fps=36) #Generates a .gif for the animation
 ```
 
-Exemplos de gifs gerados:
+Exemplo de gif gerados:
 
 <p align="center">
     <img src="{{ 'assets/img/bbot/model_sim.gif' | relative_url }}" alt="Bbot" width="750"/>
