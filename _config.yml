@@ -43,7 +43,7 @@ navbar-links:
   #  - Birhex: ""
   #  - Open Manipulator: ""
   #  - Dynamic End-Effector: ""
-    - Timon Manipulator: "project-jerotimon"
+    - Jerotimon: "project-jerotimon"
   #  - Raja Manipulator: ""
   #  - Borg Arm: ""
     - Turbot: "project-turbot"
