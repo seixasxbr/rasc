@@ -21,9 +21,9 @@ A estrutura física de humanóides é complexa, pois por possuírem braços e pe
 
 Para realizar o movimento das juntas, os robôs são equipados com atuadores, os mais comuns são servomotores e motores *brushless*, ambos DC, mas há exceções como o Atlas, do GIF acima, que é equipado com motores hidraulicos junto a servo válvulas.
 
-Para realizar movimentos elaborados ou andar por terrenos irregulares, é necessário que ele possua um controle robusto. Este processo envolve o planejamento dos passos, para definir a posição e direção dos pés, a geração da trajetória do movimento, definindo as posições de todas as juntas das pernas durante os movimentos, e um controle de estabilidade, para evitar que o robô caia. Para tanto, surgiram diversas abordagens para modelar e estabilizar esses robôs, como os modelos de pêndulo invertido e pêndulo linear invertido. Neste contexto, ainda são envolvidos conceitos de Centro de massa (COM), ponto de momento zero (ZMP) para estabilização do robô e filtros para corrigir erros do processo, como o de Kalman.
+Com o avançar das pesquisas, robôs de alta perfomance apresentam movimentos elaborados ou andar por terrenos irregulares, para isso é necessário que possuam um controle robusto. Este processo envolve o planejamento dos passos, a geração da trajetória do movimento e um controle de estabilidade, para evitar que o robô caia. Para tanto, surgiram diversas abordagens para modelar e estabilizar esses robôs, como os modelos de pêndulo invertido e pêndulo linear invertido. Neste contexto, ainda são envolvidos conceitos de Centro de massa (COM), ponto de momento zero (ZMP) para estabilização do robô e filtros para corrigir erros do processo, como o de Kalman.
 
-Abaixo será apresentado uma tabela para fins comparativos entre os modelos de robôs antropomórficos disponíveis no mercado, que apresentam alto desempenho.
+Abaixo será apresentado uma tabela para fins comparativos entre os modelos de robôs antropomórficos disponíveis no mercado, abordando características físicas e de desempenho.
 
 
 tabela comparativa robos bipedes
