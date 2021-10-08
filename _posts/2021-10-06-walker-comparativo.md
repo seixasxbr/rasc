@@ -2,8 +2,8 @@
 layout: post
 title: Robôs antropomórficos - Introdução ao estudo do estado da arte
 subtitle:  Principais características e comparativo entre modelos by Brenda Alencar
-thumbnail-img: assets/img/walker/walker_kinematics_thumb.png
-cover-img: assets/img/walker/walker_kinematics_cover.jpg
+thumbnail-img: assets/img/walker/naos.jpg
+cover-img: assets/img/walker/humanoides.jpg
 share-img: /assets/img/rosa-logo-redondo.png
 tags: [walker]
 ---
@@ -92,3 +92,30 @@ Abaixo será apresentado uma tabela para fins comparativos entre os modelos de r
 </tbody>
 </table>
 
+<br>
+
+---------------------
+<br>
+
+<!-- autor -->
+<center><h3 class="post-title">Autora</h3><br/></center>
+<div class="row">
+  <div class="col-xl-auto offset-xl-0 col-lg-4 offset-lg-0 center">
+    <table class="table-borderless highlight">
+      <thead>
+        <tr>
+          <th><img src="{{ 'assets/img/people/brendaalencar-1.png' | relative_url }}" width="100" alt="felipemohr" class="img-fluid rounded-circle" /></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="font-weight-bolder" style="text-align: center margin-top: 0">
+          <td>Brenda Alencar</td>
+        </tr>
+        <tr style="text-align: center" >
+          <td style="vertical-align: top"><small>Estagiária no CC RoSA, graduanda em Eng. Elétrica. Participou de projetos de Robótica Subaquática e Manipuladores Subaquáticos</small></td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
