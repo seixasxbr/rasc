@@ -2,8 +2,8 @@
 layout: post-page
 title: Arquiteturas de gerenciamento para robôs autônomos
 subtitle: Comparação entre FSM, HSFM e Behavior Trees
-cover-img: /assets/img/bbot/bbot_cover.png
-thumbnail-img: /assets/img/bbot_wide.png
+cover-img: /assets/img/page-gerenciadores/ai.jpg
+thumbnail-img: /assets/img/page-gerenciadores/ai.jpg
 share-img: /assets/img/rosa-logo-redondo.png
 comments: true
 css: [/assets/css/tango.css]
@@ -13,7 +13,7 @@ css: [/assets/css/tango.css]
 
 Na robótica, um desafio muito importante é conseguir alternar diferentes tarefas realizadas por um agente autônomo, uma vez que criar e manter um sistema complexo pode apresentar diversas complicações. Daí vem a necessidade dos robôs autônomos serem reativos e modulares. 
 
-**Reativos**, pois precisam de forma rápida e eficiente a mudanças no ambiente nos quais estão inseridos, e **modulares**, para que seus componentes ou funcionalidades sejam descritos em blocos de funções ou comportamentos, e que estes possam ser desenvolvidos, testados e reutilizados de forma independente. 
+**Reativos**, pois precisam reagir de forma rápida e eficiente a mudanças no ambiente nos quais estão inseridos; **modulares**, para que seus componentes ou funcionalidades sejam descritos em blocos de funções ou comportamentos, e que estes possam ser desenvolvidos, testados e reutilizados de forma independente. 
 
 Neste artigo, iremos apresentar algumas formas de produzir uma arquitetura de gerenciamento para um robô autônomo, utilizando HFSM (Máquinas de Estados Hierárquicos Finitos, do inglês *Hierarchical Finite State Machine*) e *Behavior Trees*. Também será utilizada como base a FSM (Máquinas de Estados Finitos, do inglês *Finite State Machine*), para efeito comparativo e para ressaltar os prós e contras do uso de cada uma.
 
@@ -28,7 +28,7 @@ Neste caso, é necessário pensar no *tradeoff* entre reatividade do sistema e m
 
 
 <p align="center">
-    <img src="{{ 'assets/img/page-gerenciadores/fsm.png' | relative_url }}" alt="FSM" width="600"/>
+    <img src="{{ 'assets/img/page-gerenciadores/fsm.png' | relative_url }}" alt="FSM" width="1000"/>
 </p>
 
 Um exemplo da aplicação de uma FSM na robótica é mostrada na imagem acima, retratando uma tarefa de *pick & place* com um objeto. Onde os **estados** estão representados por retângulos, e o retângulo em negrito é o estado inicial, **transições** são as setas e os **eventos** são os nomes situados acima de cada transição.
@@ -62,10 +62,8 @@ As vantagens da utilização de HFSMs são listadas a seguir:
 
 Apesar de se comportar de forma mais modular que as FSMs, as HFSMs herdam a maioria das desvantagens:
 
-* Capacidade de manutenção: adicionar ou remover estados ainda e difícil;
+* Capacidade de manutenção: adicionar ou remover estados ainda é difícil;
 * Hierarquia criada manualmente: embora os HFSMs tenham sido concebidos como uma versão hierárquica dos FSMs, a hierarquia deve ser definida pelo usuário e modificá-la pode ser uma tarefa desafiadora.
-
-Todo sistema representado por uma *Behavior Tree* teoricamente pode ser representado por uma HFSM, pois HFSM é a arquitetura de controle mais semelhante à *Behavior Tree* em termos de propósito e utilização.
 
 ## 3. Behavior Trees
 
@@ -78,12 +76,12 @@ As *Behavior Trees* são formuladas como grafos direcionados com uma estrutura d
 A *Behavior Tree* inicia sua execução a partir do nó raiz, que gera sinais que permitem
 a execução de um nó com uma determinada frequência, conhecidos como **ticks**, que são
 enviados para seus filhos. Um nó é executado se e somente se receber ticks. O nó filho
-retorna imediatamente Running para o pai, se sua execução está em andamento, Success
-se atingiu seu objetivo, ou Fail se falhou.
+retorna imediatamente **Running** para o pai, se sua execução está em andamento, **Success**
+se atingiu seu objetivo, ou **Fail** se falhou.
 
 Cada nó na Behavior Tree pertence a um dos seis tipos de nós mostrados na tabela abaixo.
-Para nós não-folha, eles podem ser qualquer um dos quatro tipos, Seletor, Sequência,
-Decorador ou Paralelo. Os nós folha vêm na forma de ação ou condição.
+Para nós não-folha, eles podem ser qualquer um dos quatro tipos, **Seletor**, **Sequência**,
+**Decorador** ou **Paralelo**. Os nós folha vêm na forma de ação ou condição.
 
 <!-- __________________________________________tabela__________________________________________ -->
 
@@ -97,16 +95,56 @@ Decorador ou Paralelo. Os nós folha vêm na forma de ação ou condição.
 | Condition 	| Se verdadeiro 	| Se falso 	| Nunca 	|
 <!-- __________________________________________tabela__________________________________________ -->
 
+A *Behavior Tree* utilizada como exemplo é mostrada na figura abaixo, e é responsável por fazer um robô procurar uma bola, se aproximar, pegar a bola, se aproximar de uma caixa e colocar a bola na caixa.
 
+<p align="center">
+    <img src="{{ 'assets/img/page-gerenciadores/BT_structure.png' | relative_url }}" alt="FSM" width="800"/>
+</p>
+
+Quando a *Behavior Tree* é executada, os *ticks* percorrem a *Behavior Tree* atingindo o nó condição `Achou a bola`. Como o robô não sabe a posição da bola,  o nó condição  retorna *Failure* e os ticks alcançam a ação `Achar bola`, que retorna *Running*. Ao executar esta ação, o robô vê a bola com a câmera. Agora o robô sabe a posição da bola. Então, o nó de condição `Achou a bola` agora retorna *Success*, não percorrendo mais o nó de ação `Achar bola` e interrompendo-a.
+
+Os *ticks* continuam explorando a árvore, e ao atingir o nó de condição `Perto da bola`, este  retorna *Failure* (pois a bola está longe). Logo em seguida, alcança o nó de ação `Aproximar-se da bola`, que retorna *Running*. Então, o robô alcança a bola, pega-a e vai em direção à caixa.
+
+Se alguém tirar a bola da mão do robô e jogar no chão (em um local visível), o nó de condição `Achou a bola` retorna *Success* enquanto o nó de condição `Perto da bola` retorna *Failure*. Nesta situação, o *tick* não passa para `Aproximar-se da caixa` (que sofre *preemption*) e, em vez disso, passa para `Aproximar-se da bola`.
+
+Conforme anteriormente já citado, as *Behavior Trees* possuem algumas vantagens. Podendo ser listadas:
+
+
+* Modularidade: são modulares, uma vez que cada subárvore de uma *Behavior Tree* pode ser vista como um módulo;
+
+* Organização hierárquica: contém vários níveis de tomada de decisão, logo pode ser considerada hierárquica;
+
+* Código reutilizável: permitem o reutilização de código, uma vez que, dada a implementação adequada, qualquer subárvore pode ser reutilizada em vários locais de uma *Behavior Tree*; 
+
+* Reatividade: são reativas, uma vez que a geração contínua de *ticks* e sua passagem na árvore
+resultam em uma execução de loop fechado. As ações são executadas e abortadas de acordo com a travessia dos *ticks*, que dependem dos status de retorno dos nós folha. Assim, os BTs são altamente responsivos às mudanças no ambiente;
+
+* Legível por humanos: são legíveis por humanos devido à sua estrutura em árvore e modularidade;
+
+* Expressividade: uma arquitetura de gertenciamento deve ser suficientemente expressiva para codificar uma grande variedade de comportamentos;
+
+* Adequado para análise: aplicações de robôs essenciais para a segurança muitas vezes requerem uma análise de propriedades qualitativas e quantitativas do sistema e *Behavior Trees* possuem estas ferramentas;
+
+* Adequado para síntese automática: são adequadas para síntese automática em termos de planejamento e aprendizado.
+
+As desvantagens da utilização de *Behavior Trees* são listadas a seguir:
+
+* Complexidade de implementação: Para garantir a funcionalidade total, a geração e travessia do *tick* deve ser executada em paralelo com a execução da ação;
+
+* Custo computacional: precisa verificar várias condições para implementar a execução da tarefa de loop fechado, e a depender da aplicação pode ter um custo alto; 
+
+* Ferramentas de desenvolvimento: embora existam softwares para desenvolvimento, ainda é muito aquém da quantidade e maturidade dos softwares disponível para, por exemplo, FSMs.
 
 ## Conclusão
 
-Estes foram os passos que seguimos para simular matematicamente o Bbot. Utilizamos várias ferramentas do python para isso, porém há muito mais. Caso queiram saber mais sobre os pacotes, basta acessar a documentação online no link deixado no início. E caso queiram saber mais sobre o projeto do Bbot, pode acessar nossa [página oficial](https://mhar-vell.github.io/rasc/project-bbot/).
+Todo sistema representado por uma *Behavior Tree* teoricamente pode ser representado por uma HFSM, pois HFSM é a arquitetura de controle mais semelhante à *Behavior Tree* em termos de propósito e utilização. Em aplicações onde o robô opera em um ambiente muito estruturado, previsível no espaço e no tempo, as *Behavior Trees* não tem nenhuma vantagem sobre outras arquiteturas mais simples.
+
+Mas em arquiteturas mais complexas, a modularidade e a reatividade das *Behavior Trees* se destacam, juntamente com a facilidade de visualização dos sistemas,  o que torna uma ferramenta poderosíssima na construção de arquiteturas de gerenciamento de robôs autônomos.
+
 
 ## Referências
 
-1. <a id="Kollarcik">**Adam Kollarčík**</a>; Modeling and Control of Two-Legged Wheeled Robot; Master’s thesis, CZECH TECHNICAL UNIVERSITY IN PRAGUE. 2021.
-2. <a id="Kim">**Kim, Sangtae; Kwon, Sang Joo**</a>; "Dynamic modeling of a two-wheeled inverted pendulum balancing mobile robot", p. 926-933 . In: **International Journal of Control, Automation and Systems**. 2015.
+1. <a id="COLLEDANCHISE">**COLLEDANCHISE, Michele; ÖGREN, Petter**</a>. Behavior trees in robotics and AI: An introduction. CRC Press, 2018.
 
 <br>
 
