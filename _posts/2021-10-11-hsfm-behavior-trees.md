@@ -155,7 +155,7 @@ A *Behavior Tree* utilizada como exemplo é mostrada na figura abaixo, e é resp
     <img src="{{ 'assets/img/page-gerenciadores/BT_structure.png' | relative_url }}" alt="FSM" width="800"/>
 </p>
 
-Quando a *Behavior Tree* é executada, os *ticks* percorrem a *Behavior Tree* atingindo o nó condição `Achou a bola`. Como o robô não sabe a posição da bola,  o nó condição  retorna *Failure* e os ticks alcançam a ação `Achar bola`, que retorna *Running*. Ao executar esta ação, o robô vê a bola com a câmera. Agora o robô sabe a posição da bola. Então, o nó de condição `Achou a bola` agora retorna *Success*, não percorrendo mais o nó de ação `Achar bola` e interrompendo-a.
+Quando a *Behavior Tree* é executada, os *ticks* percorrem a *Behavior Tree* atingindo o nó condição `Achou a bola`. Como o robô não sabe a posição da bola, o nó condição retorna *Failure* e os ticks alcançam a ação `Achar bola`, que retorna *Running*. Ao executar esta ação, o robô vê a bola com a câmera. Agora o robô sabe a posição da bola. Então, o nó de condição `Achou a bola` agora retorna *Success*, não percorrendo mais o nó de ação `Achar bola` e interrompendo-a.
 
 Os *ticks* continuam explorando a árvore, e ao atingir o nó de condição `Perto da bola`, este  retorna *Failure* (pois a bola está longe). Logo em seguida, alcança o nó de ação `Aproximar-se da bola`, que retorna *Running*. Então, o robô alcança a bola, pega-a e vai em direção à caixa.
 
