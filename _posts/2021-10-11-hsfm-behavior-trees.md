@@ -85,15 +85,69 @@ Para nós não-folha, eles podem ser qualquer um dos quatro tipos, **Seletor**, 
 
 <!-- __________________________________________tabela__________________________________________ -->
 
-| **Tipo** 	| **Success** 	| **Fail** 	| **Running** 	|
-|---	|---	|---	|---	|
-| Selector 	| Se um nó filho  <br>  retorna sucesso 	| Se todos os nós  <br>  filhos falham 	| Se um nó filho  <br>  está rodando 	|
-| Sequence 	| Se todos os nós filhos  <br>  retornam sucesso 	| Se um nó  <br>  filho falha 	| Se um nó filho  <br>  está rodando 	|
-| Decorator 	| Varia 	| Varia 	| Varia 	|
-| Parallel 	| Se N nós filhos  <br>  retornam sucesso 	| Se M-N nós  <br>  filhos falham 	| Se todos os nós filhos  <br>  estão rodando 	|
-| Action 	| Após concluído 	| Quando é  <br>  impossível  <br>  completar 	| No decorrer da <br>  conclusão 	|
-| Condition 	| Se verdadeiro 	| Se falso 	| Nunca 	|
+
+
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-3je9{background-color:#464646;border-color:#ffffff;color:#FFF;text-align:center;vertical-align:middle}
+.tg .tg-7ogr{background-color:#464646;border-color:#ffffff;color:#ffffff;text-align:center;vertical-align:top}
+.tg .tg-dbpp{background-color:#464646;border-color:#ffffff;color:#ffffff;text-align:left;vertical-align:top}
+</style>
+
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-7ogr"><span style="font-weight:bold">Tipo</span><br></th>
+    <th class="tg-7ogr"><span style="font-weight:bold">Success</span></th>
+    <th class="tg-7ogr"><span style="font-weight:bold">Fail</span></th>
+    <th class="tg-7ogr"><span style="font-weight:bold">Running</span></th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-3je9">Selector</td>
+    <td class="tg-3je9">Se um nó filho retorna sucesso</td>
+    <td class="tg-3je9">Se todos os nós filhos falham</td>
+    <td class="tg-3je9">Se um nó filho está rodando</td>
+  </tr>
+  <tr>
+    <td class="tg-3je9">Sequence</td>
+    <td class="tg-3je9">Se todos os nós filhos retornam sucesso</td>
+    <td class="tg-3je9">Se um nó filho falha</td>
+    <td class="tg-3je9">Se um nó filho está rodando</td>
+  </tr>
+  <tr>
+    <td class="tg-3je9">Decorator</td>
+    <td class="tg-3je9">Varia</td>
+    <td class="tg-3je9">Varia</td>
+    <td class="tg-3je9">Varia</td>
+  </tr>
+  <tr>
+    <td class="tg-3je9">Parallel</td>
+    <td class="tg-3je9">Se N nós filhos retornam sucesso</td>
+    <td class="tg-3je9">Se M-N nós filhos falham</td>
+    <td class="tg-3je9">Se todos os nós filhos estão rodando</td>
+  </tr> 
+  <tr>
+    <td class="tg-3je9">Action</td>
+    <td class="tg-3je9">Após concluído</td>
+    <td class="tg-3je9">Quando é impossível completar</td>
+    <td class="tg-3je9">No decorrer da conclusão</td>
+  </tr> 
+  <tr>
+    <td class="tg-3je9">Condition</td>
+    <td class="tg-3je9">Se verdadeiro</td>
+    <td class="tg-3je9">Se falso</td>
+    <td class="tg-3je9">Nunca</td>
+  </tr> 
+</tbody>
+</table>
 <!-- __________________________________________tabela__________________________________________ -->
+
 
 A *Behavior Tree* utilizada como exemplo é mostrada na figura abaixo, e é responsável por fazer um robô procurar uma bola, se aproximar, pegar a bola, se aproximar de uma caixa e colocar a bola na caixa.
 
