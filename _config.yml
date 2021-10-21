@@ -35,6 +35,7 @@ navbar-links:
     - Hunter: "project-hunter"
     - Walker: "project-walker"
     - bbot: "project-bbot"
+    - moco: "project-moco"
 
   accomplished:
   #  - Elir: ""
