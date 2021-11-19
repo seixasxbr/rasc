@@ -1,7 +1,7 @@
 ---
 layout: post-page
 title: Análise de sistemas e projetos de controladores em Python
-subtitle: Uso do Python para análise de sistemas e projeto de controladores para o Bbot
+subtitle: Uso do Python para análise de sistemas e projeto de controladores para o Bbot by Lucas Lins
 cover-img: /assets/img/bbot/bbot_cover.png
 thumbnail-img: /assets/img/bbot_wide.png
 share-img: /assets/img/rosa-logo-redondo.png
@@ -231,7 +231,7 @@ Ac_np = np.array(Ac_lin) # Converts it into a numpy array
 Bc_np = np.array(Bc_lin) # Converts it into a numpy array
 ```
 
-Para substituir o valor de vários símbolos de uma vez só, devemos passar uma lista de tuples contendo a variável do símbolo e o valor. Primeiro, substituimos os valores do ponto fixo, que é 0 para todas as variáveis. Depois, criamos tuples com cada símbolo referente a um parâmetro do modelo e o valor referente ao modelo 3D do Bbot. Estes valores foram calculados pelo [Oneshape](https://www.onshape.com/en/). Devido ao fato do Bbot possuir pernas que modificam alguns parâmetros do modelo, calculamos os valores para 3 poses diferentes, como pode ser visto nas imagens abaixo. Por último, geramos uma `numpy.array()` destas matrizes.
+Para substituir o valor de vários símbolos de uma vez só, devemos passar uma lista de tuples contendo a variável do símbolo e o valor. Primeiro, substituimos os valores do ponto fixo, que é 0 para todas as variáveis. Depois, criamos tuples com cada símbolo referente a um parâmetro do modelo e o valor referente ao modelo 3D do Bbot. Estes valores foram calculados pelo [Oneshape](https://www.onshape.com/en/). Devido ao fato do Bbot possuir pernas que modificam alguns parâmetros do modelo, calculamos os valores para 3 poses diferentes, como pode ser visto nas imagens abaixo (A, B e C, da esquerda para a direita). Por último, geramos uma `numpy.array()` destas matrizes.
 
 <p align="center">
     <img src="{{ 'assets/img/bbot/bbot_poses.png' | relative_url }}" alt="Bbot" width="750"/>
@@ -585,7 +585,17 @@ Exemplo de gif gerado:
 
 ## 6. Conclusão
 
-Estes foram os passos que seguimos para simular matematicamente o Bbot. Utilizamos várias ferramentas do python para isso, porém há muito mais. Caso queiram saber mais sobre os pacotes, basta acessar a documentação online no link deixado no início. E caso queiram saber mais sobre o projeto do Bbot, pode acessar nossa [página oficial](https://mhar-vell.github.io/rasc/project-bbot/).
+Como pode ser visto no *gif* acima (e espero que você também tenha acompanhado nosso desenvolvimento pelo arquivo do [Google Colab](https://colab.research.google.com/drive/1-8u3XmvPaioR4PO_iSakQHLodThWTyCR?usp=sharing)), conseguimos utilizar um modelo matemático de um robô *Self-Balancing* para projetar um controlador LQR que permita o robô se equilibrar e, além disso, seguir comandos de velocidade linear e angular (Yaw) a partir de uma referência fornecida por nós. Esta é a base sobre a qual podemos extender as funcionalidades do Bbot, acrescentando controle nas juntas das pernas para deixá-lo robusto a certos obstáculos no ambiente ou implementando algoritmos de navegação autônoma, por exemplo. 
+
+Contudo, antes de fazer qualquer coisa, o Bbot precisa se equilibrar, e utilizar um controlador LQR apresenta uma grande confiabilidade para tal, por ser bastante robusto a certas imperfeições no modelo e permitir um grande *range* de trabalho. Isso pode ser visto ao alterar os parâmetros das matrizes `Q` e `R` e observar a mudança de performance do sistema. Ao fazer isso, (e recomendo a você, fazer esse teste) percebe-se que é possível equilibrar o sistema de diversas formas, priorizando mais a estabilidade de certos estados, ou permitindo que mais ou menos torque seja demandado das rodas, para se adequar a um atuador específico. Aumentar o custo do estado **erro de velocidade Linear** (aumentando o valor correspondente a esse estado na matriz `Q`), por exemplo, fará com que o robô alcance a referência mais rapidamente, ao mesmo tempo que requer motores com resposta mais rápida. Contudo, talvez o sistema não possua motores tão rápidos ou possua motores com baixo torque, então pode-se priorizar uma **velocidade linear** baixa e menos torque nos motores (aumentando o valor correspondente a essa entrada na matriz `R`), ao custo de uma sistema com resposta mais lenta aos comandos e menor capacidade de lidar com distúrbios externos, porém ainda capaz de se equilibrar. Isso depende do sistema real a ser fabricado e é ótimo que seja assim, pois mostra que é possível utilizar a mesma modelagem e o mesmo controlador para diversas aplicações.
+
+Outro foco deste post foi a utilização exclusiva da linguagem Python. Como foi visto, usamos várias ferramentas implementadas para ela, porém há muito mais, mostrando que Python já é uma ótima ferramenta Open Source para analisar e modelar sistemas de controle. Caso queiram saber mais sobre os pacotes que utilizamos, basta acessar a documentação online nos links abaixo. 
+
+1. [Control](https://python-control.readthedocs.io/en/0.9.0/intro.html)
+2. [Sympy](https://www.sympy.org/en/index.html)
+3. [Scipy](https://www.scipy.org/)
+
+E caso você queira saber mais sobre o projeto do Bbot, pode acessar nossa [página oficial](https://mhar-vell.github.io/rasc/project-bbot/).
 
 ## Referências
 
