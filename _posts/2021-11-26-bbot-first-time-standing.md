@@ -2,7 +2,7 @@
 layout: post
 title: Controlador LQR em robô real
 subtitle: Implementação do LQR em robô real via ROS e testes de sustentação  
-cover-img: assets/img/bbot/bbot_wide.png
+cover-img: assets/img/bbot/equilibrium.jpeg
 thumbnail-img: assets/img/bbot/bbot.png
 share-img: assets/img/rosa-logo-redondo.png
 comments: true
@@ -49,9 +49,9 @@ A primeira modificação que é possível notar é a frequência do loop de cont
 
 Todos os nossos atuadores são motores Dynamixel, portanto a  `hardware_interface` utiliza a biblioteca DynamixelSDK para realizar a comunicação com os motores. O canal de comunicação escolhido foi um U2D2, dispositivo da ROBOTIS que permite comunicação serial via porta USB. Esta foi a maneira mais simples que tivemos para usar os Dynamixels, porém ela se mostrou bastante lenta para a nossa aplicação, sendo um dos grandes limitadores da frequência de controle. Para atingir os 80 Hz, tivemos de isolar os motores das pernas. No início do programa, a  `hardware_interface` envia a angulação das juntas das pernas mas não realiza mais a leitura delas. Logo, o controle das pernas (ainda a ser implementado) se daria em outra malha de controle. Mantendo a comunicação de leitura e escrita apenas dos dois motores das rodas, foi possível chegar até 100 Hz. O motivo de baixarmos para 80 Hz, além de manter uma margem para atrasos na comunicação, será descrito mais adiante.
 
-Para que o controle tenha uma boa performance, é necessária uma maneira de controlar os motores que seja estável, de rápida reação e o linear possível. Para isso, utilizamos o modo PWM dos Dynamixels.
+Para que o controle tenha uma boa performance, é necessária uma maneira de controlar os motores que seja estável, de rápida reação e o mais linear possível. Para isso, utilizamos o modo PWM dos Dynamixels.
 
-O algoritmo de controle que mostramos no último post inclui apenas um controlador LQR, que envia o comandos de torque direto para as rodas do robô. Isso foi suficiente para termos um ótimo resultado na simulação, mas na prática, é necessário encontrar uma relação entre o sinal de PWM do motor e o torque que ele exerce. Para isso, optamos por gerar um modelo matemático linear dos motores. Este modelo seria a relação dinâmica entre a entrada (sinal de PWM) e a saída (torque) e que pode ser representada por uma função de transferência. Para gerar esse modelo, criamos uma bancada de testes que nos permite medir o torque gerado pelo motor após enviar um sinal de PWM a ele. Abaixo está uma foto da bancada. Nós temos um post exclusivo sobre ela que recomendamos fortemente checar [neste link](https://mhar-vell.github.io/rasc/2021-11-26-bbot-strength-test-bench/).
+O algoritmo de controle que mostramos no último post inclui apenas um controlador LQR, que envia o comandos de torque direto para as rodas do robô. Isso foi suficiente para termos um ótimo resultado na simulação, mas na prática, é necessário encontrar uma relação entre o sinal de PWM do motor e o torque que ele exerce. Para isso, optamos por gerar um modelo matemático linear dos motores. Este modelo seria a relação dinâmica entre a entrada (sinal de PWM) e a saída (torque) e que pode ser representada por uma função de transferência. Para gerar esse modelo, criamos uma bancada de testes que nos permite medir o torque gerado pelo motor após enviar um sinal de PWM a ele através de uma célula de carga. Abaixo está uma foto da bancada. Nós temos um post exclusivo sobre ela que recomendamos fortemente checar [neste link](https://mhar-vell.github.io/rasc/2021-11-26-bbot-strength-test-bench/).
 
 <p align="center">
     <img id="myImg" src="{{ 'assets/img/bbot/Bancada_de_Teste.png' | relative_url }}" alt="Final Schematic" width="800"/>
@@ -61,9 +61,9 @@ Após coletar os dados, utilizamos uma biblioteca de identificação de sistemas
 
 $$\frac{0.00002648}{z-0.8444}$$
 
-Com o modelo do motor em mãos, incluimos este no modelo matemático do robô e projetamos outro controlador LQR. Agora, a entrada do sistema não é mais o torque das rodas e sim o sinal de PWM que enviamos para o motor. Esta etapa foi crucial, pois além de termos a relação direta entre o sinal de PWM e o torque (sempre com algumas incertezas, porém se o modelo for bom o suficiente, estes podem ser compensados ajustando o controlador), podemos projetar um LQR que considera toda a dinâmica real do motor. Nossa bancada de testes utiliza como sensor uma célula de carga de 20 kg, que faz a interface com uma Raspberry via uma placa amplificadora Hx711. Esta placa opera a, no máximo, 80Hz, que foi a frequência que utilizamos para coletar os dados e gerar o modelo do motor. Como o período de amostragem do modelo do motor e do modelo do robô tinham de ser iguais, reduzimos o loop de controle de 100 para 80 Hz.
+Com o modelo do motor em mãos, o incluimos no modelo matemático do robô e projetamos outro controlador LQR. Agora, a entrada do sistema não é mais o torque das rodas e sim o sinal de PWM que enviamos para o motor. Esta etapa foi crucial, pois além de termos a relação direta entre o sinal de PWM e o torque (sempre com algumas incertezas, porém se o modelo for bom o suficiente, estes podem ser compensados ajustando o controlador), podemos projetar um LQR que considera toda a dinâmica real do motor. Nossa bancada de testes utiliza como sensor uma célula de carga de 20 kg, que faz a interface com uma Raspberry via uma placa amplificadora Hx711. Esta placa opera a, no máximo, 80Hz, que foi a frequência que utilizamos para coletar os dados e gerar o modelo do motor. Como o período de amostragem do modelo do motor e do modelo do robô tinham de ser iguais, reduzimos o loop de controle de 100 para 80 Hz.
 
-Após a inclusão da dinâmica do motor no modelo do robô, mais um ajuste foi necessário. Para utilizar o LQR, é necessário ter o valor atual de todos os estados do modelo. Contudo, não é possível medir diretamente o torque na roda do robô enquanto ele opera. Portanto, tivemos de implementar um filtro de Kalman para estimar o valor destes novos estados (no nosso caso foram 2, pois incluimos a dinâmica de dois modelos de 1ª Ordem, cada um contendo 1 estado) com base na leitura dos outros (velocidade linear, velocidade angular em pitch, velocidade angular em yaw e ângulo em pitch). 
+Após a inclusão da dinâmica do motor no modelo do robô, mais um ajuste foi necessário. Para utilizar o LQR, é necessário ter o valor atual de todos os estados do modelo. Contudo, não é possível medir diretamente o torque na roda do robô enquanto ele opera. Portanto, implementamos um filtro de Kalman para estimar o valor destes novos estados (no nosso caso foram 2, pois incluimos a dinâmica de dois modelos de 1ª Ordem, cada um contendo 1 estado) com base na leitura dos outros (velocidade linear, velocidade angular em pitch, velocidade angular em yaw e ângulo em pitch). 
 
 <!-- Os gráficos de algumas simulações com este modelo final pode ser visto abaixo. Como é possível notar, o valor estimado pelo filtro de Kalman está muito próximo do valor real do modelo não-linear  -->
 
@@ -72,8 +72,8 @@ Após a inclusão da dinâmica do motor no modelo do robô, mais um ajuste foi n
 Após realizar todas as correções descritas acima, conseguimos fazer o robô se equilibrar. Ele consegue se manter estável por vários minutos e ainda se recuperar após pequenas perturbações externas. A seguir você pode checar alguns vídeos dos testes.
 
 <center>
-<iframe width="360" height="315" src="https://www.youtube.com/embed/ycF7wwak_io" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<iframe width="360" height="315" src="https://www.youtube.com/embed/yk-3Swis2Z4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="360" height="315" src="https://www.youtube.com/embed/ZBc304Rp0nM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="360" height="315" src="https://www.youtube.com/embed/p4HWfqaTFYM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </center>
 
 ## Perspectivas Futuras
@@ -84,12 +84,12 @@ Fazer o robô se equilibrar mostra um sucesso do nosso sistema de controle e da 
    
 2. **Utilizar motores mais rápidos nas rodas**. Dynamixels são excelentes atuadores, são precisos e possuem muito torque, mas são muito lentos. O modelo que utilizamos foi o XM430-W210, que chega a no máximo 90 rpm. De acordo com nossas simulações e o tamanho do raio da roda do Bbot, seriam necessários pelo menos 300 rpm para ter uma velocidade de reação rápida o suficiente mais deixar o robô bem estável. Além disso, acelerar a comunicação é fundamental. Para enviar um sinal de PWM para o Dynamixel, é necessário fazer uma comunicação serial via protocolo RS-485. Seria mais rápido enviar um sinal PWM direto ao motor. 
 
-3. **Implementar o LQR em um microcontrolador**, a fim de deixá-lo o mais rápido e preciso possível. A RaspberryPi foi suficiente para suportar com uma boa precisão um loop de controle a 80Hz. Porém, um microcontrolador é mais adequado a essa tarefa, pois podemo alcançar frequências muito maiores, aumentando a precisão do modelo discretizado, o que melhora a performance.
+3. **Implementar o LQR em um microcontrolador**, a fim de deixá-lo o mais rápido e preciso possível. A RaspberryPi foi suficiente para suportar com uma boa precisão um loop de controle a 80Hz. Porém, um microcontrolador é mais adequado a essa tarefa, pois podemos alcançar frequências muito maiores, aumentando a precisão do modelo discretizado, o que melhora a performance.
 
 
 Estes foram alguns detalhes da nossa implementação. Tivemos bons resultados, porém sabemos que há muitos pontos de melhoria no projeto. O Bbot é um projeto em andamento e voltaremos a postar quando houver novas atualizações.
 
-Case você queira conhecer mais sobre o Bbot, não deixe de checar nossa [página inicial](https://mhar-vell.github.io/rasc/project-bbot/)!.
+Case você queira conhecer mais sobre o Bbot, não deixe de checar nossa [página inicial](https://mhar-vell.github.io/rasc/project-bbot/)!
 
 ----------------
 
