@@ -1,12 +1,12 @@
 ---
 layout: post-page
 title: Arquiteturas de gerenciamento para robôs autônomos
-subtitle: Comparação entre FSM, HSFM e Behavior Trees
+subtitle: Comparação entre FSM, HSFM e Behavior Trees by Israel Motta
 cover-img: /assets/img/page-gerenciadores/ai.jpg
 thumbnail-img: /assets/img/page-gerenciadores/ai.jpg
 share-img: /assets/img/rosa-logo-redondo.png
 comments: true
-css: [/assets/css/tango.css]
+tags: [warthog]
 ---
 
 <!-- ## Introdução -->
@@ -18,7 +18,7 @@ Na robótica, um desafio muito importante é conseguir alternar diferentes taref
 Neste artigo, iremos apresentar algumas formas de produzir uma arquitetura de gerenciamento para um robô autônomo, utilizando HFSM (Máquinas de Estados Hierárquicos Finitos, do inglês *Hierarchical Finite State Machine*) e *Behavior Trees*. Também será utilizada como base a FSM (Máquinas de Estados Finitos, do inglês *Finite State Machine*), para efeito comparativo e para ressaltar os prós e contras do uso de cada uma.
 
 
-## 1. Máquinas de Estados Finitos (FSM)
+## Máquinas de Estados Finitos (FSM)
 
 Uma FSM é um modelo matemático básico de computação, comumente utilizado em programas de computador. A FSM é composta por **estados**, **transições** e **eventos**, e pode ser definida como uma máquina abstrata que só pode estar presente em um dos vários estados predefinidos por vez, entre os quais as transições são executadas para mudar o estado atual. 
 
@@ -45,7 +45,7 @@ As desvantagens das FSMs são listadas a seguir:
 * Escalabilidade: FSMs com muitos estados e muitas transições entre eles são difíceis de modificar;
 * Reutilização: As transições entre estados podem depender de variáveis internas, tornando impraticável a reutilização de um estado em outros projetos.
 
-## 2. Máquina de Estados Finitos Hierárquica (HFSM)
+## Máquina de Estados Finitos Hierárquica (HFSM)
 
 As HFSMs foram desenvolvidas para lidar com algumas deficiências presentes nas FSMs, tentando lidar com a duplicação de transições necessárias em FSMs complexas, bem como adicionar uma estrutura para facilitar a compreensão de sistemas complexos. A grande mudança das HFSMs para as HFSMs é a capacidade de conter **subestados** e **superestados**. Um estado pode conter um ou mais subestados, sendo chamado de **superestado**, onde todos os seus subestados compartilham implicitamente o mesmo superestado.
 
@@ -65,7 +65,7 @@ Apesar de se comportar de forma mais modular que as FSMs, as HFSMs herdam a maio
 * Capacidade de manutenção: adicionar ou remover estados ainda é difícil;
 * Hierarquia criada manualmente: embora os HFSMs tenham sido concebidos como uma versão hierárquica dos FSMs, a hierarquia deve ser definida pelo usuário e modificá-la pode ser uma tarefa desafiadora.
 
-## 3. Behavior Trees
+## Behavior Trees
 
 As *Behavior Trees* são formuladas como grafos direcionados com uma estrutura de árvore. A sua estrutura é mostrada na figura abaixo. O nó superior, denotado como o nó **raiz**, tem um ou mais nós filhos, que por sua vez também podem ter filhos. Os nós que têm filhos são chamados de nós de **controle de fluxo**. Um nó filho sem filhos próprios é denominado **folha** ou **nó de execução**, e o nó raiz é o único sem pai.
 
