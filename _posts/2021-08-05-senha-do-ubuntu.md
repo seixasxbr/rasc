@@ -16,6 +16,7 @@ Se isso aconteceu contigo, no uso de sua própria máquina impedindo o acesso a 
 
 Sendo esta sua situação, onde você não lembra mais a senha de acesso ao Ubuntu, abaixo segue uma lista tutorial para que a senha seja recuperada e você possa voltar a ter acesso a sua máquina.
 
+
 <br>
 
 <!-- detalhamento -->
