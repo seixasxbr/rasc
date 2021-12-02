@@ -1,0 +1,16 @@
+{%- if site.utterances -%}
+<div class="utternaces-comments">
+  <div class="comments">
+    <div id="utterances_thread"></div>
+    <script type="text/javascript"
+		async
+  		src="https://utteranc.es/client.js"
+  		repo="mhar-vell.github.io/rasc"
+  		issue-term="title"
+  		theme="github-light"
+  		crossorigin="anonymous"
+	>var disqus_shortname = '{{ site.utterrances }}';</script>
+    <!-- <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript> -->
+  </div>
+</div>
+{%- endif -%}
