@@ -21,6 +21,7 @@ GEM
     eventmachine (1.2.7)
     ffi (1.15.3)
     forwardable-extended (2.6.0)
+    gemoji (3.0.1)
     http_parser.rb (0.6.0)
     i18n (0.9.5)
       concurrent-ruby (~> 1.0)
@@ -42,6 +43,11 @@ GEM
       sass (~> 3.4)
     jekyll-sitemap (1.4.0)
       jekyll (>= 3.7, < 5.0)
+    jekyll-spaceship (0.10.2)
+      gemoji (~> 3.0)
+      jekyll (>= 3.6, < 5.0)
+      nokogiri (~> 1.6)
+      rainbow (~> 3.0)
     jekyll-watch (2.2.1)
       listen (~> 3.0)
     kramdown (2.3.1)
@@ -53,9 +59,13 @@ GEM
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
     mercenary (0.3.6)
+    nokogiri (1.12.5-x86_64-linux)
+      racc (~> 1.4)
     pathutil (0.16.2)
       forwardable-extended (~> 2.6)
     public_suffix (4.0.6)
+    racc (1.4.16)
+    rainbow (3.0.0)
     rake (12.3.3)
     rb-fsevent (0.11.0)
     rb-inotify (0.10.1)
@@ -76,6 +86,7 @@ PLATFORMS
 DEPENDENCIES
   beautiful-jekyll-theme!
   bundler (>= 1.16)
+  jekyll-spaceship (~> 0.10.2)
   rake (~> 12.0)
 
 BUNDLED WITH
