@@ -193,7 +193,7 @@ footer-link-col: "#404040"
 # --- Comments --- #
 
 # To use Disqus comments, sign up to https://disqus.com and fill in your Disqus shortname (NOT the userid)
-disqus: "https-mhar-vell-github-io-rasc"
+# disqus: "https-mhar-vell-github-io-rasc"
 
 # To use Facebook Comments, create a Facebook app and fill in the Facebook App ID
 #fb_comment_id: ""
@@ -203,10 +203,10 @@ disqus: "https-mhar-vell-github-io-rasc"
 # (3) Install the Utterances app in your repository https://github.com/apps/utterances
 # See more details about the parameters below at https://utteranc.es/
 #utterances:
-#  repository: # GitHub username/repository eg. "daattali/beautiful-jekyll"
-#  issue-term: title   # Mapping between blog posts and GitHub issues
-#  theme: github-light # Utterances theme
-#  label: blog-comments # Label that will be assigned to GitHub Issues created by Utterances
+ repository: mhar-vell/rasc # GitHub username/repository eg. "daattali/beautiful-jekyll"
+ issue-term: title   # Mapping between blog posts and GitHub issues
+ theme: github-light # Utterances theme
+ label: blog-comments # Label that will be assigned to GitHub Issues created by Utterances
 
 # To use Staticman comments, uncomment the following section. You may leave the reCaptcha
 # section commented if you aren't using reCaptcha for spam protection. 
