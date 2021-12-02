@@ -113,6 +113,8 @@ Após a implementação e estudo para validação do modelo com a simulação, f
 
 Os testes apresentados mostram que o robô conseguese se estabilizar e aguenta pequenas perturbações.
 
+O projeto continua em andamento e vamos seguir para a **Fase II**. Iremos fazer algumas melhorias que observamos ao decorrer desta primeira etapa de projeto (Você pode ver algumas melhorias listadas neste [LINK](https://mhar-vell.github.io/rasc/2021-11-26-bbot-first-time-standing/)). Continue atento para mais novidades!! <img src="{{ 'assets/img/bbot/bbot.png' | relative_url }}" alt="Bbot" width="17"/><img src="{{ 'assets/img/bbot/bbot.png' | relative_url }}" alt="Bbot" width="17"/>
+
 <br>
 
 <hr>
