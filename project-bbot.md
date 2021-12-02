@@ -38,7 +38,7 @@ subtitle: Balancing Robot
 ### DESIGN E CARACTERÍSTICAS
 
 <p>
-<strong>Bbot</strong> conta com um <i>design</i> adequado ao seu modo de atuação. Sua baixa estatura, aproximadamente 36 cm, permite uma fácil manipulação e operação em ambientes <i>indoor</i>. Sua forte estrutura, com peças para amortecer impacto, o protegem de eventuais quedas. Além disso, boa parte da sua massa foi alocada na parte superior, o que é uma grande vantagem para robôs auto-balanceados, pois a elevação do ponto de gravidade auxilia no equilíbrio.
+O <strong>Bbot</strong> conta com um <i>design</i> adequado ao seu modo de atuação. Sua baixa estatura, aproximadamente 36 cm, permite uma fácil manipulação e operação em ambientes <i>indoor</i>. Sua forte estrutura, com peças para amortecer impacto, o protegem de eventuais quedas. Além disso, boa parte da sua massa foi alocada na parte superior, o que é uma grande vantagem para robôs auto-balanceados, pois a elevação do ponto de gravidade auxilia no equilíbrio.
 </p>{: style="text-align: justify;"}
 
 Outra grande vantagem do **Bbot** são suas pernas articuladas com 2 graus de liberdade.
@@ -82,6 +82,36 @@ O sistema é alimentado por uma LiPO 3s e conta com uma placa para distribuir a 
 <p align="center">
     <img src="{{ 'assets/img/bbot/sensores_pot.png' | relative_url }}" alt="Not found" width="750"/>
 </p>
+
+<br>
+
+### IMPLEMENTAÇÃO DO ROBÔ SIMULADO
+
+Com a utilização do _Gazebo - ROS_ como ferramenta de simulação do ambiente e do robô, nós conseguimos chegar na estabilidade e teleoperação do **Bbot**. Para isso, utilizamos o controlador LQR.
+
+<center>
+<iframe width="360" height="315" src="https://www.youtube.com/embed/ycF7wwak_io" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="360" height="315" src="https://www.youtube.com/embed/yk-3Swis2Z4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</center>
+
+Não menos importante, conseguimos tornar o robô autônomo, com a utilização de algoritmos para navegação e localização. 
+
+<p align="center">
+    <img src="{{ 'assets/img/bbot/navigation.gif' | relative_url }}" alt="Not found" width="750"/>
+</p>
+
+<br>
+
+### IMPLEMENTAÇÃO DO ROBÔ REAL
+
+Após a implementação e estudo para validação do modelo com a simulação, fizemos a implementação do robô real!!
+
+<center>
+<iframe width="360" height="315" src="https://www.youtube.com/embed/p4HWfqaTFYM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="360" height="315" src="https://www.youtube.com/embed/ZBc304Rp0nM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</center>
+
+Os testes apresentados mostram que o robô conseguese se estabilizar e aguenta pequenas perturbações.
 
 <br>
 
@@ -139,10 +169,11 @@ O sistema é alimentado por uma LiPO 3s e conta com uma placa para distribuir a 
 
 ### Resumo do Projeto
 1. Categoria: <font color="#fbb117">Robótica Móvel</font>
-2. Prazo: <font color="#fbb117">2 meses e 18 dias</font>
+2. Prazo: <font color="#fbb117">7 meses</font>
 3. Data de início: <font color="#fbb117">11/maio/2021</font>
-4. Data de término: <font color="#fbb117">29/julho/2021</font>
-5. Repositório URL: <a href="https://github.com/Brazilian-Institute-of-Robotics/bir_bbot"><font>Bbot</font></a>
+4. Data de término: <font color="#fbb117">11/dezembro/2021</font>
+5. Repositório robô real: <a href="https://github.com/Brazilian-Institute-of-Robotics/bir_bbot"><font>Bir_Bbot</font></a>
+5. Repositório robô simulado: <a href="https://github.com/Brazilian-Institute-of-Robotics/bir_bbot-simulation"><font>Bir_Bbot-simulation</font></a>
 6. Sponsor: <a href="http://www.senaicimatec.com.br/en/"><font color="#fbb117">Senai CIMATEC</font></a>
 7. Recursos materiais: <font color="#fbb117">$USD 3162,64</font>
 8. Apresentação URL: <a href="https://github.com/Brazilian-Institute-of-Robotics/bir_bbot-docs"><font>Bbot-docs</font></a>
