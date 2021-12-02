@@ -1095,3 +1095,15 @@ pre {
     display: inline-block;
   }
 }
+img[alt=drawing200] { width: 200px; }
+img[alt=drawing400] { width: 400px; }
+img[alt=drawing600] { width: 600px; }
+img[alt=drawing800] { width: 800px; }
+img[alt=drawing1000] { width: 1000px; }
+img[src*='#center'] { 
+    display: block;
+    margin: auto;
+}
+.center {
+  text-align: center;
+}
