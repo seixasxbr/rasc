@@ -5,6 +5,7 @@ subtitle: Uma abordagem robusta e flexível by Caio Maia
 cover-img: assets/img/2021-11-15-brooks-article/mobile_robot.jpg
 thumbnail-img: assets/img/2021-11-15-brooks-article/Herbert.jpg 
 share-img: /assets/img/rosa-logo-redondo.png
+tags: [rasc]
 comments: true
 ---
 <!-- ## Introdução -->

@@ -56,8 +56,8 @@ navbar-links:
   
   skilled knowledge:
     - senha do ubuntu: "2021-08-05-senha-do-ubuntu"
-    - controle com python: "2021-09-23-py-control-bbot"
-    - arquiteturas de gerenciamento: "2021-10-11-hsfm-behavior-trees"
+    - pycontrol: "2021-09-23-py-control-bbot"
+    - behavior trees: "2021-10-11-hsfm-behavior-trees"
 
     
   About Us: "aboutus"
