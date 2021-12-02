@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Controlador LQR em robô real
-subtitle: Implementação do LQR em robô real via ROS e testes de sustentação  
+subtitle: Implementação do LQR em robô real via ROS e testes de sustentação by Lucas Souza 
 cover-img: assets/img/bbot/equilibrium.jpeg
 thumbnail-img: assets/img/bbot/bbot.png
 share-img: assets/img/rosa-logo-redondo.png
