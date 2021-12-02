@@ -44,8 +44,7 @@ A identificação do sistema está dividida em alguns passos que abordamos em se
 Com a bancada de testes montada, enviamos um sinal do tipo degrau para o atuador. O mesmo, com o HUB acoplado, faz um esforço na célula de carga. O programa então salva um arquivo (dataset) com o sinal de entrada, de saída e o tempo percorrido a cada sinal do teste. 
 
 <p align="center">
-    <img id="myImg" src="{{ 'assets/img/bbot/output_curr.png' | relative_url }}" alt="entrada" width="350"/>
-    <img id="myImg" src="{{ 'assets/img/bbot/output_torque.png' | relative_url }}" alt="saida" width="350"/>
+    <img id="myImg" src="{{ 'assets/img/bbot/coleta-dados.png' | relative_url }}" alt="entrada" width="800"/>
 </p>
 
 ### Processamento e refinamento dos dados
