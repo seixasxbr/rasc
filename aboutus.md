@@ -17,6 +17,11 @@ Trazendo sua experiência ou aprimorando seus conceitos nos projetos desenvolvid
 
 ![BIR-team-bolsistas-e-estagiarios-2019](/assets/img/BIR-team-bolsistas-e-estagiarios-2019.png)
 
+Alguns ainda continuam vindo, e se aprimorando cada vez mais.
+Novos desbravadores surgem e renovam a energia. Depositando ainda mais o comprometimento no desenvolvimento de novas habilidades e novas competências.
+
+![RASC-team-bolsistas-e-estagiarios-2021](/assets/img/rasc-2021-2.png)
+
 <center>
 longe vá, termor servil
 </center>
