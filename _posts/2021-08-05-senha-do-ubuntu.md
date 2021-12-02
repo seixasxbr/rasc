@@ -25,7 +25,7 @@ Inicie a sua máquina e pressione o botão **ESC** até que a tela do GRUB apare
 
 Algo similar a isto...
 
-![](../assets/img/page-senha/GRUB-1.png)
+[![](../assets/img/page-senha/GRUB-1.png)](../assets/img/page-senha/GRUB-1.png)
 
 Clique em *Advanced options for Ubuntu*, logo depois você deverá escolher o modo *Recovery Mode* do Ubuntu.
 

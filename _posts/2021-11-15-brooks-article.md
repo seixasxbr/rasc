@@ -12,7 +12,7 @@ comments: true
 
 Uma das áreas mais promissora atualmente é a robótica. Parte disto decorre da expectativa de ganho de produtividade para quando robôs forem intensamente integrados às cadeias produtivas. Outra parte decorre dos avanços recentes em tecnologias que amparam o desenvolvimento da área. Embora avanços sejam comunicados por meio de artigos científicos recentes, existem ideias que são menos recentes mas que representaram um grande passo na construção de novos caminhos tecnológico. Ums destes passo é o artigo do **A Robust Layered Control System for a Mobile Robot** [[1]](https://ieeexplore.ieee.org/document/1087032) do Rodney A.Brooks. Onde este apresenta uma nova forma de enxergar a estrutura de controle de um robô móvel inteligente. Este artigo em particular possui mais de 4000 citações indexadas na Scopus e influenciou a forma com que os robôs móveis são pensados quanto a sua estrutura de controle e decisão. Além de pesquisador influente, Brooks é empreendedor e fundou a [iRobots](https://www.irobot.com/) e [Rethink Robotics](https://www.rethinkrobotics.com/).
 
-![](../assets/img/2021-11-15-brooks-article/brooks.jpg)
+[![](../assets/img/2021-11-15-brooks-article/brooks.jpg)](../assets/img/2021-11-15-brooks-article/brooks.jpg)
 
 A principal ideia presente no artigo é a de que as tarefas com que o robô deve lidar devem ser estratificadas em camadas, de modo que, as camadas inferiores sejam incumbidas de tarefas mais elementares, enquanto o acréscimo de camadas ampliará as capacidades ao robô. Esta estrutura, também conhecida como *Subsumption Architecture*, apresenta as vantagens de aumentar a robustez, flexibilidade.
 
