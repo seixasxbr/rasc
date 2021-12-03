@@ -12,6 +12,8 @@ Hoje continuamos a acreditar que tudo é possível se o comprometimento e a paix
 ⏰ in progressing
 🏆 done
 ❌ eliminated
+👎
+
 
 ![bir-team](/assets/img/bir-team.png)
 
