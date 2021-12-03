@@ -266,7 +266,7 @@ img {
 
 @media (min-width: 1200px) {
   .navbar-custom .nav-item.dropdown .dropdown-menu {
-    text-align: center;
+    text-align: left;
   }
 
   .navbar-custom .nav-item.dropdown .dropdown-menu .dropdown-item {
@@ -1104,4 +1104,8 @@ img[alt=drawing1000] { width: 1000px; }
 
 .center {
   text-align: center;
+}
+
+.right {
+  text-align: left;
 }
