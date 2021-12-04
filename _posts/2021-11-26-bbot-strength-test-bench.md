@@ -4,7 +4,7 @@ title: Modelagem caixa preta para identificação de sistemas
 subtitle: Criação de bancada de testes para identificação do sistema de atuadores do Bbot by Matheus França
 cover-img: assets/img/bbot/sistemas_wide.png
 thumbnail-img: assets/img/bbot/iden.png
-share-img: assets/img/bbot/bancada-explode.png
+share-img: assets/img/rosa-logo-redondo.png
 comments: true
 tags: [bbot]
 ---
