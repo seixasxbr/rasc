@@ -8,12 +8,12 @@ Oficialmente o grupo iniciou suas atividades no ano de 2013, especificamente no 
 
 Hoje continuamos a acreditar que tudo é possível se o comprometimento e a paixão nos conduzir.
 
-💤 someday
+<!-- 💤 someday
 ⏰ in progressing
 🏆 done
 ❌ eliminated
 👎
-
+$ \int\_a^b $  -->
 
 ![bir-team](/assets/img/bir-team.png)
 
