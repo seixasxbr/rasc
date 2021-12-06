@@ -9,4 +9,5 @@ group :jekyll_plugins do
     # gem 'jekyll-plantuml', '~> 1.3', '>= 1.3.4'
     gem 'jekyll-spaceship', '~> 0.10.2'
     gem 'jekyll-scholar'
+    gem 'bibtex-ruby', '>= 5.1.0'
 end
