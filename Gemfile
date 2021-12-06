@@ -8,6 +8,6 @@ group :jekyll_plugins do
 #   gem "jekyll-pdf-embed"
     # gem 'jekyll-plantuml', '~> 1.3', '>= 1.3.4'
     gem 'jekyll-spaceship', '~> 0.10.2'
-    gem 'jekyll-scholar'
+    gem 'jekyll-scholar', '~> 7.0'
     gem "bibtex-ruby", ">= 5.1.0"
 end
