@@ -54,7 +54,7 @@ A última etapa do projeto foi a demonstração do robô APEREA realizando a mis
 
 
 <br>
-<iframe src = "https://drive.google.com/file/d/1sJbdCBRDE-u0sCOWbjafkJ90CVuxu7Z5/view?usp=sharing" width='740' height='430' allowfullscreen mozallowfullscreen webkitallowfullscreen></iframe>
+<iframe src ="https://drive.google.com/file/d/1sJbdCBRDE-u0sCOWbjafkJ90CVuxu7Z5/preview" width='740' height='430' allowfullscreen mozallowfullscreen webkitallowfullscreen></iframe>
 
 
 
