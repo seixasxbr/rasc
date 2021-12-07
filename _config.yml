@@ -272,7 +272,6 @@ plugins:
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-spaceship
-  - jekyll-scholar
  # - jekyll-pdf-embed
 
 # Where things are
@@ -340,27 +339,3 @@ jekyll-spaceship:
 # Beautiful Jekyll / Dean Attali
 # 2fc73a3a967e97599c9763d05e564189
 
-scholar:
-  style: apa
-  locale: en
-
-  sort_by: none
-  order: ascending
-
-  group_by: none
-  group_order: ascending
-
-  source: ./_bibliography
-  bibliography: references.bib
-  bibliography_template: ""
-
-  replace_strings: true
-  join_strings:    true
-
-  use_raw_bibtex_entry: false
-
-  details_dir:    bibliography
-  details_layout: bibtex.html
-  details_link:   Details
-
-  query: "@*"
