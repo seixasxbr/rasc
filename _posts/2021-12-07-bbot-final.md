@@ -17,9 +17,8 @@ Fizemos então um **filtro média móvel** para tentar atenuar o sinal de contro
 
 Por fim, conseguimos parametrizar o controlador de forma ideal e **o robô consegue se equilibrar** sem trepidações e está muito mais estável!! 
 
-<center>
-<iframe width="720" height="415" src="https://www.youtube.com/embed/p4HWfqaTFYM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</center>
+{:.center}
+<iframe width="720" height="315" src="https://www.youtube.com/embed/L74pwDNFQ-Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 A **fase 1** do Bbot chega a sua conclusão, mas a **fase 2** está prestes a começar e com muitos novos desafios e melhorias!! 
 
