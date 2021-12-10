@@ -9,7 +9,7 @@ comments: true
 tags: [bbot]
 ---
 
-Como última etapa de desenvolvimento do [projeto Bbot](https://mhar-vell.github.io/rasc/project-bbot/), decidimos realizar mais alguns ajustes no controlador para que o robô conseguisse desenvolver uma estabilidade mais suave. 
+MComo última etapa de desenvolvimento do [projeto Bbot](https://mhar-vell.github.io/rasc/project-bbot/), decidimos realizar mais alguns ajustes no controlador para que o robô conseguisse desenvolver uma estabilidade mais suave. 
 
 Durante alguns testes, para implementar a função de teleoperação do robô, percebemos que a leitura de velocidade linear estava errada. Os valores eram muito mais elevados do que o robô poderia alcançar. O erro era na conversão entre o dado do encoder dos Dynamixels para rad/s. Ao corrigir esse erro, o comportamento do controlador mudou bastante, fazendo necessária novamente a sintonização do controlador. Observamos também que a mudança deste parâmetro causou muita trepidação no robô, muito mais do que ele estava.
 
