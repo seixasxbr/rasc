@@ -21,7 +21,8 @@ navbar-links:
   #   - Geonosis: "project-1"
   #   - Kamino: "project-1"
   #   - Manisub: "project-1"
-
+  our activities: 
+  
   projects in house:
     - ⏰ Warthog: "project-warthog"
     - ⏰ Flatfish@ROS: "project-flatfish_ros"
