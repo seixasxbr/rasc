@@ -97,3 +97,34 @@ A leitura do artigo permite concluir que os métodos que utilizam câmera stereo
 e na construção do mapa do sistema robótico em questão, além disso, é possível ter informações gerais a respeito
 de alguns métodos que podem ser explorados em diversas situações reais contribuindo para o desenvolvimento
 de projetos futuros.
+
+<br>
+
+<!-- **************************************** Autor **************************************** -->
+<center><h3 class="post-title">Autor</h3><br/></center>
+
+<div class="row">
+  <div class=" col-xl-auto offset-xl-0 col-lg-4 offset-lg-0">
+    <table class="table-borderless highlight">
+      <thead>
+        <tr>
+            <th><center><a href="https://www.linkedin.com/in/anderson-lima-45278b1bb/" target="_blank">
+                <p align="center">
+                    <img src="{{ 'assets/img/people/andersonlima-1.png' | relative_url }}" alt="Not found" width="100" class="img-fluid rounded-circle" />
+                </p>
+            </a></center></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="font-weight-bolder" style="text-align: center; margin-top: 0">
+          <td width="33.33%">Anderson Lima</td>
+        </tr>
+        <tr style="text-align: center" >
+          <td style="vertical-align: top;text-align: justify;"><small>Pesquisador Júnior no laboratório de Robótica e Sistemas Autônomos (RoSA), Senai Cimatec, graduado em Engenharia Civil.</small></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<br>
