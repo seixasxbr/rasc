@@ -38,7 +38,6 @@ A **fase 1** do Bbot chega a sua conclusão, mas a **fase 2** está prestes a co
 
 Da equipe de desenvolvimento ([Matheus França](linkedin.com/in/matheus-frança-b62044150) e [Lucas Souza](https://www.linkedin.com/in/lucas-lins-souza-51b1909a/)), um agradecimento especial para nosso orientador [Marco Reis](https://www.linkedin.com/in/marco-reis-061618/) e ao apoio de grande importância dos nossos colegas [Diogo Martins](https://www.linkedin.com/in/diogo-alexandre-martins-02b528163/), [Mateus Seixas](linkedin.com/in/mateus-seixas-59296a190), [Caio Maia](https://www.linkedin.com/in/caiomaia3/) e Luiz Ledezma.
 
-
 <!-- {:.center}
 ![drawing600](../assets/img/bbot/level.png) -->
 

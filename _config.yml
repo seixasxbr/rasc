@@ -21,7 +21,8 @@ navbar-links:
   #   - Geonosis: "project-1"
   #   - Kamino: "project-1"
   #   - Manisub: "project-1"
-
+  our activities: 
+  
   projects in house:
     - ⏰ Warthog: "project-warthog"
     - ⏰ Flatfish@ROS: "project-flatfish_ros"
@@ -29,28 +30,31 @@ navbar-links:
     - ⏰ Walker: "project-walker"
     - ⏰ bbot: "project-bbot"
     - ⏰ moco: "project-moco"
-    - 💤 DRoILT: "project-droilt"
-    - 💤 Ergo: "project-ergo"
-    - 💤 Hephaestus: "project-hephaestus"
-    - 💤 Turbot: "project-turbot"
-    - 🏆 Aperea: "project-aperea"
-    - 🏆 Hunter: "project-hunter"
+    - stand-by: 
+      - 💤 DRoILT: "project-droilt"
+      - 💤 Ergo: "project-ergo"
+      - 💤 Hephaestus: "project-hephaestus"
+      - 💤 Turbot: "project-turbot"
+    - acomplished: 
+      - 🏆 Aperea: "project-aperea"
+      - 🏆 Hunter: "project-hunter"
     # - krk-Ha: "project-krk-ha"
     #  - Elir: ""
     #  - Learnbotics: ""
-    - 🏆 Doogie: "project-doogie"
+      - 🏆 Doogie: "project-doogie"
     #  - Birhex: ""
     #  - Open Manipulator: ""
     #  - Dynamic End-Effector: ""
-    - 🏆 Jerotimon: "project-jerotimon"
+      - 🏆 Jerotimon: "project-jerotimon"
     #  - Raja Manipulator: ""
     #  - Borg Arm: ""
     #  - WBM Rtab-map: ""
     #  - WBM Orb2slam: ""
     #  - WBM EKFslam: ""
     #  - r-hope: ""
-    - 🏆 PongZ: "project-pongz"
-    - ❌ Vertbot: "project-vertbot"
+      - 🏆 PongZ: "project-pongz"
+    - stopped:
+      - ❌ Vertbot: "project-vertbot"
 
   skilled knowledge:
     - senha do ubuntu: "2021-08-05-senha-do-ubuntu"
