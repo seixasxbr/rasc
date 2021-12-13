@@ -17,7 +17,7 @@ parte de um projeto de robô móvel de propósito geral chamado _Shakey_ (1972),
 resultados mais notáveis do Shakey foi a utilização desse algoritmo de busca.
 
 {:.center}
-[![drawing200](../assets/img/2021-12-10-turtlebot3-astar-navigation/shakey.png)](../assets/img/2021-12-12-astar-navigation/shakey.png)
+[![drawing200](../assets/img/2021-12-10-turtlebot3-astar-navigation/shakey.png)](../assets/img/2021-12-10-turtlebot3-astar-navigation/shakey.png)
 
 
 <center>
@@ -39,7 +39,7 @@ ponto inicial e expandindo esses caminhos um ponto de cada vez até que seu crit
 de busca seja satisfeito.
 
 {:.center}
-[![drawing400](../assets/img/2021-12-10-turtlebot3-astar-navigation/a-star.gif)](../assets/img/2021-12-12-astar-navigation/a-star.gif)
+[![drawing400](../assets/img/2021-12-10-turtlebot3-astar-navigation/a-star.gif)](../assets/img/2021-12-10-turtlebot3-astar-navigation/a-star.gif)
 
 ### TurtleBot 3
 
@@ -47,16 +47,16 @@ Para realizar a navegação com _A*_ foi utilizado o modelo _Burger_ do _Turtleb
 e baseado em ROS para uso em educação, pesquisa, hobby e prototipagem de produto.
 
 {:.center}
-[![drawing200](../assets/img/2021-12-10-turtlebot3-astar-navigation/burger.png)](../assets/img/2021-12-12-astar-navigation/burger.png)
+[![drawing200](../assets/img/2021-12-10-turtlebot3-astar-navigation/burger.png)](../assets/img/2021-12-10-turtlebot3-astar-navigation/burger.png)
 
-<center>
+{:.center}
 TurtleBot3 Burger
-</center>
+
 
 Algumas conceitos foram importantes para o desenvolvimento da navegação, a utilização de algumas funcionalidades e pacotes específicos do
 _ROS (Robot Operating System)_ foram utilizados, a seguir esse conceitos serão detalhados.
 
----
+* * * 
 
 ### Move base
 
@@ -68,7 +68,7 @@ global *GlobalPlanner* que irá utilizar o algoritmo _A*_, a seguir um esquema q
 a estrutura do move base no ambiente ROS:
 
 {:.center}
-[![drawing450](../assets/img/2021-12-10-turtlebot3-astar-navigation/ttb-movebase.png)](../assets/img/2021-12-12-astar-navigation/ttb-movebase.png)
+[![drawing450](../assets/img/2021-12-10-turtlebot3-astar-navigation/ttb-movebase-2.png)](../assets/img/2021-12-10-turtlebot3-astar-navigation/ttb-movebase-2.png)
 
 #### Utilizando o Move base com o A*
 
@@ -77,7 +77,7 @@ de rota utilizando o _A*_! A região colorida representa o potencial desenvolvid
 a linha verde representa a rota considerada ideal para alcançar o objetivo selecionado.
 
 {:.center}
-[![drawing400](../assets/img/2021-12-10-turtlebot3-astar-navigation/ttb-mvsastar.png)](../assets/img/2021-12-12-astar-navigation/ttb-mvsastar.png)
+[![drawing400](../assets/img/2021-12-10-turtlebot3-astar-navigation/ttb-mvsastar.png)](../assets/img/2021-12-10-turtlebot3-astar-navigation/ttb-mvsastar.png)
 
 ### AMCL
 
@@ -88,7 +88,7 @@ que usa um filtro de partículas para rastrear a pose de um robô em
 relação a um mapa conhecido, a seguir um exemplo:
 
 {:.center}
-[![drawing400](../assets/img/2021-12-10-turtlebot3-astar-navigation/ttb-amcl.png)](../assets/img/2021-12-12-astar-navigation/ttb-amcl.png)
+[![drawing400](../assets/img/2021-12-10-turtlebot3-astar-navigation/ttb-amcl.png)](../assets/img/2021-12-10-turtlebot3-astar-navigation/ttb-amcl.png)
 
 #### Utilizando o Move base com o AMCL e o A*
 
@@ -96,7 +96,7 @@ O Amcl consegue criar uma navegação mais precisa, já que a utilização de um
 previamente criado acrescenta mais precisão na navegação.
 
 {:.center}
-[![drawing400](../assets/img/2021-12-10-turtlebot3-astar-navigation/ttb-mvbamcl.png)](../assets/img/2021-12-12-astar-navigation/ttb-mvbamcl.png)
+[![drawing400](../assets/img/2021-12-10-turtlebot3-astar-navigation/ttb-mvbamcl.png)](../assets/img/2021-12-10-turtlebot3-astar-navigation/ttb-mvbamcl.png)
 
 ### Conclusão
 
