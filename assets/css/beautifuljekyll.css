@@ -1106,6 +1106,10 @@ img[alt=drawing1000] { width: 1000px; }
   text-align: center;
 }
 
+.bordered {
+  border: 3px;
+}
+
 .right {
   text-align: left;
 }
