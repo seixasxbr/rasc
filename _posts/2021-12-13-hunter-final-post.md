@@ -73,7 +73,7 @@ A execução da missão em ambiente de simulação foi bem sucedida, incluindo a
 Como trabalhos futuros, pode-se melhorar a funcionalidade de navegação, tentando executar o pacote move_base ou o move_base_flex e também fazer a utilização das baterias para o robô poder navegar sem a utilização de cabos.
 
 <br>
-<iframe src ="https://drive.google.com/file/d/1IZrzUzsEgc3As8DnfaqLBk0DsqSWtWIY/view" width='740' height='430' allowfullscreen mozallowfullscreen webkitallowfullscreen></iframe>
+<iframe src ="https://drive.google.com/file/d/1lsui6OT8HB1tbBrajTYrLRbfQX_0f2AB/preview" width='740' height='430' allowfullscreen mozallowfullscreen webkitallowfullscreen></iframe>
 <br>
 
 ---------------------
