@@ -48,9 +48,12 @@ A funcionalidade de navegação, responsável pelo deslocamento do robô de um p
 
 A atuação do robô é responsável pelo acionamento dos motores. Foi desenvolvido um driver para os motores em C++, considerando a saturação dos atuadores, já que eles operam na faixa de 3 a 5 Volts. A ponte H é alimentada pelas baterias e seu controle é feito através de modulação em largura de pulso, PWM.
 
-<center>
+{:.center}
+[![drawing500](../assets/img/hunter/post-final/func-diagram.png)](../assets/img/hunter/post-final/func-diagram.png) 
+
+<!-- <center>
   <img src="{{ 'assets/img/hunter/post-final/func-diagram.png' | relative_url }}" text-align=center alt="img2" />
-</center>
+</center> -->
 
 ## Resultados
 
@@ -58,9 +61,12 @@ A concepção da plataforma hunter foi executada com sucesso, ocorrendo a integr
 
 O desafio foi primeiramente solucionado em ambiente de simulação, sendo escolhido a plataforma Gazebo. 
 
-<center>
+{:.center}
+[![drawing500](../assets/img/hunter/post-final/lalal_simulacao.png)](../assets/img/hunter/post-final/lalal_simulacao.png) 
+
+<!-- <center>
   <img src="{{ 'assets/img/hunter/post-final/lalal_simulacao.png' | relative_url }}" text-align=center alt="img2" />
-</center>
+</center> -->
 
 A execução da missão em ambiente simulacional foi bem sucedida, incluindo a navegação com a utilização do move_base, que não foi implementado com sucesso na parte prática. As funcionalidades abordadas foram implementadas e integradas com sucesso, entretanto a funcionalidade de desvio de obstáculos não foi implementada na prática, ficando a navegação com essa deficiência.
 
