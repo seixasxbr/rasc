@@ -1107,17 +1107,21 @@ img[src~="thumbnail"] {
    height:100px;
 }
 img[src~="bordered"] {
-   border: 1px solid black;
+   border: 3px solid black;
 }
 
 .center {
   text-align: center;
 }
 
-.bordered {
-  border: 3px;
-}
-
 .right {
   text-align: left;
+}
+
+.img-border { 
+  /* width: 80%;  */
+  border: 5px solid black; 
+  /* border-image: linear-gradient(to bottom, red, black); 
+  border-image-slice: 1; 
+  padding: 15px; */
 }
