@@ -30,7 +30,6 @@ navbar-links:
     - ⏰ Walker: "project-walker"
     - ⏰ bbot: "project-bbot"
     - ⏰ moco: "project-moco"
-    - ⏰ docker: "project-docker"
     - stand-by: 
       - 💤 DRoILT: "project-droilt"
       - 💤 Ergo: "project-ergo"
