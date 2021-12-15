@@ -9,7 +9,7 @@ comments: true
 tags: [rasc]
 css: [/assets/css/tango.css]
 ---
-## O que é CUDA? Porque utilizar?
+## O que é CUDA? Porque Utilizar?
 
 CUDA, acrônimo de Compute Unified Device Architecture, é um modelo de programação em paralelo que permite o uso das GPUs (Graphics Processing Unit) para processamento de dados em programas. As GPUs são dispositivos que possuem enorme poder de processamento para dados em paralelo, como processamento de imagens e matrizes, e sua capacidade de processamento tem aumentado muito superiormente a capacidade de processamento das CPUs nos últimos anos, como mostrado na figura a seguir. Com o uso dessa ferramenta, muitos problemas complexos podem ser resolvidos com um menor tempo de execução. 
 
