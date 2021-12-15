@@ -42,11 +42,11 @@ Docker é uma plataforma *open source* para desenvolver, compartilhar e rodar ap
   </thead>
 </table>
 
-Contêineres são criados utilizando uma **imagem docker**, que consiste em um arquivo de leitura com as intruções para configurar o ambiente. Estas imagens são armazenas no *Docker Hub*, um repositório de imagens docker, no qual você pode encontrar imagens padrões, como diferentes versões do ubuntu, armazenar as suas próprias, enviar novas versões e compartilhá-las com o mundo. Geralmente imagens são criadas baseando-se em outras imagens, adicionando modificações conforme a necessidade, mas também possível criá-las do zero, escrevendo um *Dockerfile*.
+Contêineres são criados utilizando uma **imagem docker**, que consiste em um arquivo de leitura com as intruções para configurar o ambiente. Estas imagens são armazenas no *Docker Hub*, um repositório de imagens docker, no qual você pode encontrar imagens padrões, como diferentes versões do ubuntu, armazenar as suas próprias, enviar novas versões e compartilhá-las com o mundo. Geralmente imagens são criadas baseando-se em outras imagens, adicionando modificações conforme a necessidade, mas também é possível criá-las do zero, escrevendo um *Dockerfile*.
 
-## Porquê usar Docker?
+## Por que usar Docker?
 
-Tratando de desenvolvimento, é muito comum que você se depare com problemas de incompatibilidade de sistemas. Este problema pode ser resolvido ao rodar um contêiner com a imagem do sistema desejado, por exemplo é possível rodar um contêiner com o ubuntu 18.04 em uma máquina com o ubuntu 20.04 instalado e vice-versa. Além disso, em um trabalho em equipe pode ser necessário que se tenha o mesmo ambiente (com as mesmas dependências) em diferentes máquinas, o que também pode ser facilitado utilizando contêineres, ao compartilhar uma mesma imagem entre o grupo.
+Tratando de desenvolvimento, é muito comum que você se depare com problemas de incompatibilidade de sistemas. Este problema pode ser resolvido ao rodar um contêiner com a imagem do sistema desejado, por exemplo, é possível rodar um contêiner com o ubuntu 18.04 em uma máquina com o ubuntu 20.04 instalado e vice-versa. Além disso, em um trabalho em equipe pode ser necessário que se tenha o mesmo ambiente (com as mesmas dependências) em diferentes máquinas, o que também pode ser facilitado utilizando contêineres, ao compartilhar uma mesma imagem entre o grupo.
 
 Se você se interessou por essa ferramenta, veja o próximo post com as intruções de como rodar um *container*!
 <br>
