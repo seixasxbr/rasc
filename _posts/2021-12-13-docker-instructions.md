@@ -7,7 +7,7 @@ thumbnail-img: assets/img/docker/homepage-docker-logo.png
 share-img: /assets/img/rosa-logo-redondo.png
 tags: [docker]
 ---
-Neste post serão apresentados os primeiros passos para utilizar contêineres. Aqui iremos utilizar o [*Docker Engine*](https://docs.docker.com/engine/) que será o gerenciador dos contêineres e imagens, usando o CLI (Comand Line Interface) *docker*.
+Neste post serão apresentados os primeiros passos para utilizar contêineres. Iremos utilizar o [*Docker Engine*](https://docs.docker.com/engine/) que será o gerenciador dos contêineres e imagens, usando o CLI (Comand Line Interface) *docker*.
 
 ## Instalação
 
@@ -39,25 +39,30 @@ $ sudo apt-get install docker-ce docker-ce-cli containerd.io
 Após a instalação verifique se está tudo ok com um *Hello-world*. Se for a primeira vez rodando este comando perceba que na sua máquina ainda não existe a imagem chamada "hello-world", então será instalada e em seguida a saída será **"Hello from Docker!"**. Caso ocorra algum problema, reveja os passos acima ou confira o [Docker Docs](https://docs.docker.com/engine/install/ubuntu/)
 
 ```yaml
-$  sudo docker run hello-world
+$   docker run hello-world
 ```
 
+Recomendamos que você crie uma conta no [**Docker Hub**](https://hub.docker.com/), um repositório público de imagens para contêineres. Em seguida faça  o login no teminal da seguinte forma:
+
+```yaml
+$   docker login -u [USERNAME] ---password-stdin [PASSWORD]
+```
 ## Comandos básicos
 
-Contêineres são criados a partir de uma imagem, como explicamos anteriormente, para isso é necessário fazer o download da imagem. De forma direta, a imagem é adiquirida pelo comando **pull**, seguido do nome da imagem. Essas imagens ficarão armazenas em sua máquina e você pode checá-las rodando o comando **image list**, a saída será o nome do repositório, TAG (que pode ser assimilado como a versão do repositório), o ID, quando ele foi criado e o tamanho da imagem.
+Contêineres são criados a partir de uma imagem, como explicamos anteriormente, para isso é necessário fazer o download da imagem. De forma direta, a imagem é adiquirida pelo comando **pull**, seguido do nome da imagem. Essas imagens ficarão armazenas em sua máquina e você pode checá-las rodando o comando **image list**, a saída será o nome do repositório, a TAG (que pode ser assimilado como a versão do repositório), o ID, quando ele foi criado e o tamanho da imagem.
 
 ```yaml
 $  docker pull ubuntu:xenial
 $  docker image list
 ```
-Em seguida utilizando o comando **run**, criamos e inicializamos o contêiner. Para mantê-lo ativo passamos o argumento **-i**, juntamente com o **-t** para ligar um terminal a ele. Como sufixo deve ser colocado o comando específico que deseja, como por exemplo **bash**. Dessa forma, temos um terminal em que pode ser feito alterações no contêiner, instalar pacotes etc. Os contêineres que foram criados podem ser listados utilizando o comando **ps**, junto as informações de quando foi criado, o *status*, o comando utilizado e os IDs.
+Em seguida, utilizando o comando **run**, criamos e inicializamos o contêiner. Para mantê-lo ativo passamos o argumento **-i**, juntamente com o **-t** para ligar um terminal a ele. Como sufixo deve ser colocado o comando específico que deseja, como por exemplo **bash**. Dessa forma, temos um terminal em que pode ser feito alterações no contêiner, instalar pacotes etc. Os contêineres que foram criados podem ser listados utilizando o comando **ps**, junto às informações de quando foi criado, o *status*, o comando utilizado e os IDs.
 
 ```yaml
 $  docker run -ti ubuntu:xenial bash
 $  docker ps
 ```
 
-Perceba que se não dermos um nome a ele, irá aparecer um nome aleatório. Para definir um nome deve ser utilizando a opção **--name**  seguida do nome do contêiner. Aqui você pode visualizar que cada vez que for executado o comando **run** um novo contêiner será criado com a imagem especificada.
+Perceba que se não dermos um nome a ele, irá aparecer um nome aleatório. Para definir um nome deve ser utilizando a opção **--name**  seguida do nome do contêiner. Aqui você pode visualizar que cada vez que for executado o comando **run** um novo contêiner será criado com base na imagem especificada.
 
 ```yaml
 $  docker run --name [NAME] -ti ubuntu:xenial bash
@@ -79,19 +84,21 @@ $  docker rm [NAME]
 $  docker rmi [IMAGE NAME]
 ```
 
-Cuidado ao utilizar tais comandos! Contêineres uma vez deletados não podem ser recuperados. Caso deseje salvá-los, crie uma nova imagem, realizando um **commit**, assim a nova imagem irá herdar as características da imagem que foi criado + as modificações feitas. Uma boa prática é *subir* para  suas imagens um **push** para o seu repositório no **Docker Hub**, similar ao que é feito com o *GitHub*.
+Cuidado ao utilizar tais comandos! Contêineres uma vez deletados não podem ser recuperados. Caso deseje salvá-los, crie uma nova imagem, realizando um **commit**, assim a nova imagem irá herdar as características da imagem que foi criado + as modificações feitas. Uma boa prática é *subir*  suas imagens um **push** para o seu repositório no **Docker Hub**, similar ao que é feito com o *GitHub*.
 
 ```yaml
 $  docker container commit [CONTAINER-NAME] [REPOSITORY-NAME]
 $  docker push [REPOSITORY-NAME]
 ```
 
-Quando desejamos reutilizar um dado contêiner, devemos realizar um *start* e executar os comandos utilizando o **exec**. Com este comando podemos reeiniciar o terminal da seguinte maneira
+Quando desejamos reutilizar um dado contêiner, devemos realizar um *start* e executar os comandos utilizando o **exec**. Com este comando podemos reeiniciar o terminal da seguinte maneira.
 
 ```yaml
 $  docker start [NAME]  
 $  docker exec -ti [NAME] bash
 ```
+
+Estes foram os comandos básiscos para você começar a usar e compartilhar contêineres. Ficou com alguma dúvida? Entre em contato com a gente pelos comentários! :)
 
 <br>
 <br>
