@@ -5,7 +5,7 @@ subtitle: Uma comparação entre métodos de SLAM by Anderson Lima
 cover-img: assets/img/2021-12-03-slam-comparison/slam.png 
 thumbnail-img: /assets/img/2021-11-19-cmu-rover/cover3.jpg
 share-img: /assets/img/rosa-logo-redondo.png
-tags: [rasc]
+tags: [blog]
 comments: true
 ---
 

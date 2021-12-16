@@ -1,18 +1,23 @@
 ---
 layout: page
-title: Follow Up
-subtitle: Aqui você encontra um pouco sobre os nossos projetos.
+title: blog
+subtitle: where freedom flows
+cover-img: /assets/img/blog/chuttersnap-9AqIdzEc9pY-unsplash.jpg
+thumbnail-img: /assets/img/rosa-logo-redondo (32).png
+share-img: /assets/img/rosa-logo-redondo.jpg
+tags: [books, test]
 ---
-{% assign date_format = site.date_format | default: "%B %-d, %Y" %}
 
+{% assign date_format = site.date_format | default: "%B %-d, %Y" %}
 {%- capture site_tags -%}
     {%- for tag in site.tags -%}
-        {{- tag | first -}}{%- unless forloop.last -%},{%- endunless -%}
+          {{- tag | first -}}{%- unless forloop.last -%},{%- endunless -%}
     {%- endfor -%}
 {%- endcapture -%}
 {%- assign tags_list = site_tags | split:',' | sort -%}
 
 {% if page.cover-img or page.title %}
+
 {% if page.cover-img %}
   <!--div id="header-big-imgs" data-num-img={% if page.cover-img.first %}{{ page.cover-img.size }}{% else %}1{% endif %}
     {% for bigimg in page.cover-img %}
@@ -59,36 +64,38 @@ subtitle: Aqui você encontra um pouco sobre os nossos projetos.
 {% endif %}
 
 <div class=" container-md " role="main">
-  <img src="/assets/img/dylan-gillis-KdeqA3aTnBY-unsplash.jpg" align="center" width="1200"/>
   <div class="row">
     <div class=" col-xl-auto offset-xl-0 col-lg-10 offset-lg-1 ">
         <div class="before-content">
-          <center>
+          <!-- <center>
             <h2 class="post-title">Acompanhamento dos Projetos</h2><br/>
-          </center>
+          </center> -->
           
           <a id="support-promo-section" href="https://mhar-vell.github.io/portfolio/index.html" target="_blank">
-            <strong>Se você chegou até aqui é porque está interessado em conhecer um pouco mais sobre nossos projetos. Abaixo você tem um link para os posts de cada projeto.</strong><br/>
+            <strong>a little of what we think, some group ideas and some individual ideas
+              We are all born with some behavioral skills that are unique, and as time goes on we develop others that are just as important. But have you ever stopped to wonder if you are an analytical thinking person?
+              the blog's proposal is to manage a seed of analytical thoughts with the posts published here</strong><br/>
           </a>
-          <a href="aboutme">
+          <a>
             <center>
               <span class="btn btn-cta btn-lg">
-                <small>↭ mhar-vɘll</small>
+                <small>↭</small>
               </span>
             </center>
           </a>
         </div>
-        <center>
         {%- for tag in tags_list -%}
+        {% if tag == "blog" %}
+        <center>
         <a href="#{{- tag -}}" class="btn btn-primary tag-btn"><i class="fas fa-tag" aria-hidden="true"></i>&nbsp;{{- tag -}}&nbsp;({{site.tags[tag].size}})</a>
-        {%- endfor -%}
         </center>
+        {% endif %}
+        {%- endfor -%}
     </div>
   </div>
-  <hr class="mark">
+  <hr>
 </div>
 
-{{ content }}
 
 {% assign posts = paginator.posts | default: site.posts %}
 
@@ -96,8 +103,8 @@ subtitle: Aqui você encontra um pouco sobre os nossos projetos.
   <center>
     <h3 class="post-title"><font color="#fbb117">Recent Posts</font></h3>
   </center>
-  {% for post in posts offset:1 limit:4 %}
-
+  {% for post in posts offset:0 limit:15 %}
+  {% if post.tags contains "blog" %}
   <article class="post-preview">
 
     {%- capture thumbnail -%}
@@ -176,7 +183,7 @@ subtitle: Aqui você encontra um pouco sobre os nossos projetos.
     {% endif %}
 
    </article>
-   
+  {% endif %}
   {% endfor %}
 </div>
 
@@ -198,6 +205,7 @@ subtitle: Aqui você encontra um pouco sobre os nossos projetos.
 <hr class="mark">
 <div id="full-tags-list">
   {%- for tag in tags_list -%}
+  {% if tag == "blog" or tag == "book" %}
       <h2 id="{{- tag -}}" class="linked-section">
           <i class="fas fa-tag" aria-hidden="true"></i>
           &nbsp;{{- tag -}}&nbsp;({{site.tags[tag].size}})
@@ -212,5 +220,6 @@ subtitle: Aqui você encontra um pouco sobre os nossos projetos.
               </div>
           {%- endfor -%}
       </div>
+  {% endif %}
   {%- endfor -%}
 </div>

@@ -5,7 +5,7 @@ subtitle: Utilizando o algoritmo de busca A* no TurtleBot3 by Anderson Lima
 cover-img: assets/img/2021-12-10-turtlebot3-astar-navigation/star.jpg
 thumbnail-img: /assets/img/2021-11-19-cmu-rover/cover3.jpg
 share-img: /assets/img/rosa-logo-redondo.png
-tags: [rasc]
+tags: [blog]
 comments: true
 ---
 

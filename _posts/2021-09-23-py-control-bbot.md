@@ -6,6 +6,7 @@ cover-img: /assets/img/bbot/bbot_cover.png
 thumbnail-img: /assets/img/bbot_wide.png
 share-img: /assets/img/rosa-logo-redondo.png
 comments: true
+tag: 
 css: [/assets/css/tango.css]
 ---
 

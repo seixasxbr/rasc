@@ -5,8 +5,8 @@ subtitle: Comparação entre FSM, HSFM e Behavior Trees by Israel Motta
 cover-img: /assets/img/page-gerenciadores/ai.jpg
 thumbnail-img: /assets/img/page-gerenciadores/ai.jpg
 share-img: /assets/img/rosa-logo-redondo.png
+tag: 
 comments: true
-tags: [warthog]
 ---
 
 <!-- ## Introdução -->
