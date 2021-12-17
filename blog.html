@@ -108,11 +108,11 @@ tags: [books, test]
   </h3>
 </center>
 
-<!-- <div class="container-xl">
-  <div class="row "> -->
+<div class="container-xl">
+  <div class="row ">
 
 
-{% for post in posts offset:0 limit:15 %}
+{% for post in posts offset:0 limit:9 %}
 {% if post.tags contains "blog" %}
 
 <!-- <div class="col-xl-4 offset-xl-2 col-lg-4 offset-lg-1"> -->
@@ -147,7 +147,7 @@ tags: [books, test]
     {% endif %}
 
     <a href="{{ post.url | absolute_url }}">
-      <h6 class="post-title">{{ post.title }}</h6>
+      <h6 class="post-grid">{{ post.title }}</h6>
 
       {% if post.subtitle %}
       <h6 class="post-subtitle">
@@ -205,8 +205,8 @@ tags: [books, test]
 {% endfor %}
 
 
-<!-- </div>
-</div> -->
+</div>
+</div>
 
 {% if paginator.total_pages > 1 %}
 <ul class="pagination main-pager">
