@@ -10,16 +10,16 @@ tags: [books, test]
 
 {% assign date_format = site.date_format | default: "%B %-d, %Y" %}
 {%- capture site_tags -%}
-    {%- for tag in site.tags -%}
-          {{- tag | first -}}{%- unless forloop.last -%},{%- endunless -%}
-    {%- endfor -%}
+{%- for tag in site.tags -%}
+{{- tag | first -}}{%- unless forloop.last -%},{%- endunless -%}
+{%- endfor -%}
 {%- endcapture -%}
 {%- assign tags_list = site_tags | split:',' | sort -%}
 
 {% if page.cover-img or page.title %}
 
 {% if page.cover-img %}
-  <!--div id="header-big-imgs" data-num-img={% if page.cover-img.first %}{{ page.cover-img.size }}{% else %}1{% endif %}
+<!--div id="header-big-imgs" data-num-img={% if page.cover-img.first %}{{ page.cover-img.size }}{% else %}1{% endif %}
     {% for bigimg in page.cover-img %}
     {% assign imgnum = forloop.index %}
     {% for imginfo in bigimg %}
@@ -66,32 +66,34 @@ tags: [books, test]
 <div class=" container-md " role="main">
   <div class="row">
     <div class=" col-xl-auto offset-xl-0 col-lg-10 offset-lg-1 ">
-        <div class="before-content">
-          <!-- <center>
+      <div class="before-content">
+        <!-- <center>
             <h2 class="post-title">Acompanhamento dos Projetos</h2><br/>
           </center> -->
-          
-          <a>
-            <strong>a little of what we think, some group ideas and some individual ideas</strong>
 
-              <p>We are all born with some behavioral skills that are unique, and as time goes on we develop others that are just as important. But have you ever stopped to wonder if you are an analytical thinking person?<br>
-              The blog's proposal is to manage a seed of analytical thoughts with the posts published here</p><br/>
-          </a>
-          <a id="support-promo-section" href="https://mhar-vell.github.io/portfolio/index.html" target="_blank">
-            <center>
-              <span class="btn btn-cta btn-lg">
-                <small>↭</small>
-              </span>
-            </center>
-          </a>
-        </div>
-        {%- for tag in tags_list -%}
-        {% if tag == "blog" %}
-        <center>
-        <a href="#{{- tag -}}" class="btn btn-primary tag-btn"><i class="fas fa-tag" aria-hidden="true"></i>&nbsp;{{- tag -}}&nbsp;({{site.tags[tag].size}})</a>
-        </center>
-        {% endif %}
-        {%- endfor -%}
+        <a>
+          <strong>a little of what we think, some group ideas and some individual ideas</strong>
+
+          <p>We are all born with some behavioral skills that are unique, and as time goes on we develop others that are
+            just as important. But have you ever stopped to wonder if you are an analytical thinking person?<br>
+            The blog's proposal is to manage a seed of analytical thoughts with the posts published here</p><br />
+        </a>
+        <a id="support-promo-section" href="https://mhar-vell.github.io/portfolio/index.html" target="_blank">
+          <center>
+            <span class="btn btn-cta btn-lg">
+              <small>↭</small>
+            </span>
+          </center>
+        </a>
+      </div>
+      {%- for tag in tags_list -%}
+      {% if tag == "blog" %}
+      <center>
+        <a href="#{{- tag -}}" class="btn btn-primary tag-btn"><i class="fas fa-tag" aria-hidden="true"></i>&nbsp;{{-
+          tag -}}&nbsp;({{site.tags[tag].size}})</a>
+      </center>
+      {% endif %}
+      {%- endfor -%}
     </div>
   </div>
   <hr>
@@ -102,24 +104,27 @@ tags: [books, test]
 
 <div class="posts-list">
   <center>
-    <h3 class="post-title"><font color="#fbb117">Recent Posts</font></h3>
+    <h3 class="post-title">
+      <font color="#fbb117">Recent Posts</font>
+    </h3>
   </center>
   {% for post in posts offset:0 limit:15 %}
   {% if post.tags contains "blog" %}
   <article class="post-preview">
 
     {%- capture thumbnail -%}
-      {% if post.thumbnail-img %}
-        {{ post.thumbnail-img }}
-      {% elsif post.cover-img %}
-        {% if post.cover-img.first %}
-          {{ post.cover-img[0].first.first }}
-        {% else %}
-          {{ post.cover-img }}
-        {% endif %}
-      {% else %}
-      {% endif %}
+    {% if post.thumbnail-img %}
+    {{ post.thumbnail-img }}
+    {% elsif post.cover-img %}
+    {% if post.cover-img.first %}
+    {{ post.cover-img[0].first.first }}
+    {% else %}
+    {{ post.cover-img }}
+    {% endif %}
+    {% else %}
+    {% endif %}
     {% endcapture %}
+
     {% assign thumbnail=thumbnail | strip %}
 
     {% if site.feed_show_excerpt == false %}
@@ -136,9 +141,9 @@ tags: [books, test]
       <h4 class="post-title">{{ post.title }}</h4>
 
       {% if post.subtitle %}
-        <h5 class="post-subtitle">
+      <h5 class="post-subtitle">
         {{ post.subtitle }}
-        </h5>
+      </h5>
       {% endif %}
     </a>
 
@@ -169,7 +174,7 @@ tags: [books, test]
       {{ post.excerpt | strip_html | xml_escape | truncatewords: excerpt_length }}
       {% assign excerpt_word_count = post.excerpt | number_of_words %}
       {% if post.content != post.excerpt or excerpt_word_count > excerpt_length %}
-        <a href="{{ post.url | absolute_url }}" class="post-read-more">[Read&nbsp;More]</a>
+      <a href="{{ post.url | absolute_url }}" class="post-read-more">[Read&nbsp;More]</a>
       {% endif %}
     </div>
     {% endunless %}
@@ -183,7 +188,7 @@ tags: [books, test]
     </div>
     {% endif %}
 
-   </article>
+  </article>
   {% endif %}
   {% endfor %}
 </div>
@@ -207,20 +212,20 @@ tags: [books, test]
 <div id="full-tags-list">
   {%- for tag in tags_list -%}
   {% if tag == "blog" or tag == "book" %}
-      <h2 id="{{- tag -}}" class="linked-section">
-          <i class="fas fa-tag" aria-hidden="true"></i>
-          &nbsp;{{- tag -}}&nbsp;({{site.tags[tag].size}})
-      </h2>
-      <div class="post-list">
-          {%- for post in site.tags[tag] -%}
-              <div class="tag-entry">
-                  <a href="{{ post.url | relative_url }}">{{- post.title -}}</a>
-                  <div class="entry-date">
-                      <time datetime="{{- post.date | date_to_xmlschema -}}">{{- post.date | date: date_format -}}</time>
-                  </div>
-              </div>
-          {%- endfor -%}
+  <h2 id="{{- tag -}}" class="linked-section">
+    <i class="fas fa-tag" aria-hidden="true"></i>
+    &nbsp;{{- tag -}}&nbsp;({{site.tags[tag].size}})
+  </h2>
+  <div class="post-list">
+    {%- for post in site.tags[tag] -%}
+    <div class="tag-entry">
+      <a href="{{ post.url | relative_url }}">{{- post.title -}}</a>
+      <div class="entry-date">
+        <time datetime="{{- post.date | date_to_xmlschema -}}">{{- post.date | date: date_format -}}</time>
       </div>
+    </div>
+    {%- endfor -%}
+  </div>
   {% endif %}
   {%- endfor -%}
 </div>
