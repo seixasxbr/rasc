@@ -1,10 +1,11 @@
 ---
 layout: post
 title: Conclusão do Projeto
-subtitle: Ponto final e/ou reticências? by Matheus Anselmo
+subtitle: Ponto final e/ou reticências?
 cover-img: /assets/img/aperea/post_5/cover1.jpg
 thumbnail-img: /assets/img/aperea/slam-thumbnail.png
 share-img: /assets/img/rosa-logo-redondo.png
+author: Matheus Anselmo
 comments: true
 tags: [aperea]
 ---

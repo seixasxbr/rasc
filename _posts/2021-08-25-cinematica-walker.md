@@ -5,6 +5,7 @@ subtitle: Como o robô poderá dar os passos? by Felipe Mohr
 thumbnail-img: assets/img/walker/walker_kinematics_thumb.png
 cover-img: assets/img/walker/walker_kinematics_cover.jpg
 share-img: /assets/img/rosa-logo-redondo.png
+comments: true
 tags: [walker]
 ---
 

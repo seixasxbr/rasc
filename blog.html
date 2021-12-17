@@ -150,9 +150,8 @@ tags: [books, test]
       <h6 class="post-grid">{{ post.title }}</h6>
 
       {% if post.subtitle %}
-      <h6 class="post-subtitle">
-        {{ post.subtitle }}
-      </h6>
+      <h6 class="post-subtitle">{{ post.subtitle }}</h6>
+      <h6 class="post-subtitle">by {{ post.author }}</h6>
       {% endif %}
     </a>
 
