@@ -5,8 +5,11 @@ subtitle: Primeiros passos com Docker by Brenda Alencar
 cover-img: /assets/img/page-docker/container1.jpg
 thumbnail-img: assets/img/page-docker/homepage-docker-logo.png
 share-img: /assets/img/rosa-logo-redondo.png
+comments: true
+tags: [docker, rasc]
 css: [/assets/css/tango.css]
 ---
+
 Neste post serão apresentados os primeiros passos para utilizar contêineres. Iremos utilizar o [*Docker Engine*](https://docs.docker.com/engine/) que será o gerenciador dos contêineres e imagens, usando o CLI (Comand Line Interface) *docker*.
 
 ## Instalação
@@ -98,7 +101,10 @@ $  docker start [NAME]
 $  docker exec -ti [NAME] bash
 ```
 
-Estes foram os comandos básiscos para você começar a usar e compartilhar contêineres. Ficou com alguma dúvida? Entre em contato com a gente pelos comentários! :)
+
+----------------------------------------------------------------
+Estes foram os comandos básicos para você começar a usar e compartilhar contêineres. Se você pretende utilizar ROS acompanhe nossas [dicas](https://mhar-vell.github.io/rasc/2021-12-13-docker-ROS/).Ficou com alguma dúvida? Entre em contato com a gente pelos comentários! :)
+
 
 <br>
 <br>
@@ -124,28 +130,4 @@ Estes foram os comandos básiscos para você começar a usar e compartilhar cont
   </div>
 </div>
 
-
-
-
-<br>
-<hr class="mark">
-<div id="full-tags-list">
-<h3 class="post-title"><font color="#fbb117">Posts</font></h3>
-  {%- for tag in tags_list -%}
-      <h4 id="{{- tag -}}" class="linked-section">
-          <i class="fas fa-tag" aria-hidden="true"></i>
-          &nbsp;{{- tag -}}&nbsp;({{site.tags[tag].size}})
-      </h4>
-      <div class="post-list">
-          {%- for post in site.tags[tag] -%}
-              <div class="tag-entry">
-                  <a href="{{ post.url | relative_url }}">{{- post.title -}}</a>
-                  <div class="entry-date">
-                      <time datetime="{{- post.date | date_to_xmlschema -}}">{{- post.date | date: date_format -}}</time>
-                  </div>
-              </div>
-          {%- endfor -%}
-      </div>
-  {%- endfor -%}
-</div>
 

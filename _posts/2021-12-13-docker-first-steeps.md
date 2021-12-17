@@ -2,16 +2,12 @@
 layout: post-page
 title: Docker
 subtitle: Ferramenta para criar e compartilhar containers
+cover-img: /assets/img/page-docker/container2.jpg
+thumbnail-img: assets/img/page-docker/homepage-docker-logo.png
+share-img: /assets/img/rosa-logo-redondo.png
+comments: true
+tags: [docker, rasc]
 ---
-{% assign date_format = site.date_format | default: "%B %-d, %Y" %}
-{%- capture site_tags -%}
-    {%- for tag in site.tags -%}
-      {% if tag contains 'docker' %}
-        {{- tag | first -}}{%- unless forloop.last -%},{%- endunless -%}
-      {% endif %} 
-    {%- endfor -%}
-{%- endcapture -%}
-{%- assign tags_list = site_tags | split:',' | sort -%}
 
 <center><img src="{{ 'assets/img/page-docker/homepage-docker-logo.png' | relative_url }}" alt="Docker logo" width="380"/></center>
 
@@ -48,16 +44,23 @@ Contêineres são criados utilizando uma **imagem docker**, que consiste em um a
 
 Tratando de desenvolvimento, é muito comum que você se depare com problemas de incompatibilidade de sistemas. Este problema pode ser resolvido ao rodar um contêiner com a imagem do sistema desejado, por exemplo, é possível rodar um contêiner com o ubuntu 18.04 em uma máquina com o ubuntu 20.04 instalado e vice-versa. Além disso, em um trabalho em equipe pode ser necessário que se tenha o mesmo ambiente (com as mesmas dependências) em diferentes máquinas, o que também pode ser facilitado utilizando contêineres, ao compartilhar uma mesma imagem entre o grupo.
 
-Se você se interessou por essa ferramenta, veja o próximo post com as intruções de como rodar um *container*!
-<br>
 
+----------------------------------------------------------------
+Se você se interessou por essa ferramenta, acompanhe as nossas instruções de como rodar um *container* e outras dicas de como utilizar o **ROS** nesta ferramenta!
+
+- [Como usar um container?](https://mhar-vell.github.io/rasc/2021-12-13-docker-instructions/)
+- [ROS + Docker](https://mhar-vell.github.io/rasc/2021-12-13-docker-ROS/)
+
+
+
+<br>
 <hr>
 
 <!--equipe-->
 <center><h3 class="post-title">Autora</h3><br/></center>
 <div class="row">
   <div class=" col-xl-auto offset-xl-0 col-lg-4 offset-lg-0">
-    <table class="table-borderless highlight">
+    <table class="table-borderless highlight" style="background: #00000000">
       <thead>
         <tr>
           <th><center><img src="{{ 'assets/img/people/brendaalencar-1.png' | relative_url }}" width="100" alt="brenda" class="img-fluid rounded-circle" /></center></th>
@@ -74,29 +77,3 @@ Se você se interessou por essa ferramenta, veja o próximo post com as intruç�
     </table>
   </div>
 </div>
-
-
-
-
-<br>
-<hr class="mark">
-<div id="full-tags-list">
-<h3 class="post-title"><font color="#fbb117">Posts</font></h3>
-  {%- for tag in tags_list -%}
-      <h4 id="{{- tag -}}" class="linked-section">
-          <i class="fas fa-tag" aria-hidden="true"></i>
-          &nbsp;{{- tag -}}&nbsp;({{site.tags[tag].size}})
-      </h4>
-      <div class="post-list">
-          {%- for post in site.tags[tag] -%}
-              <div class="tag-entry">
-                  <a href="{{ post.url | relative_url }}">{{- post.title -}}</a>
-                  <div class="entry-date">
-                      <time datetime="{{- post.date | date_to_xmlschema -}}">{{- post.date | date: date_format -}}</time>
-                  </div>
-              </div>
-          {%- endfor -%}
-      </div>
-  {%- endfor -%}
-</div>
-
