@@ -1,12 +1,13 @@
 ---
 layout: post-page
 title: Análise de sistemas e projetos de controladores em Python
-subtitle: Uso do Python para análise de sistemas e projeto de controladores para o Bbot by Lucas Lins
+subtitle: Uso do Python para análise de sistemas e projeto de controladores para o Bbot
 cover-img: /assets/img/bbot/bbot_cover.png
 thumbnail-img: /assets/img/bbot_wide.png
 share-img: /assets/img/rosa-logo-redondo.png
+author: Lucas Lins
 comments: true
-tag: 
+tags: 
 css: [/assets/css/tango.css]
 ---
 

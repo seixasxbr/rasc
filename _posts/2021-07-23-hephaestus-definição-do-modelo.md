@@ -1,10 +1,12 @@
 ---
 layout: post
 title: Definição do modelo Hephaestus 
-subtitle: conceitos do robô by Matheus França
+subtitle: conceitos do robô
 cover-img: assets/img/hefesto/hephaestus_wide.png
 thumbnail-img: assets/img/hefesto/hephaestus.png
 share-img: assets/img/rosa-logo-redondo (180).png
+author: Matheus França
+comments: true
 tags: [hephaestus]
 ---
 

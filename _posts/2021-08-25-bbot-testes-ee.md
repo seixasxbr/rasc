@@ -1,10 +1,11 @@
 ---
 layout: post
 title: Testes da eletrônica
-subtitle: Validando os componentes do Bbot by Matheus França
+subtitle: Validando os componentes do Bbot
 cover-img: assets/img/bbot/bbot_wide.png
 thumbnail-img: assets/img/bbot/bbot.png
 share-img: assets/img/rosa-logo-redondo.png
+author: Matheus França
 comments: true
 tags: [bbot]
 ---

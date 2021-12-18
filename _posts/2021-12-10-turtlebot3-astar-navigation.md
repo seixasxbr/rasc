@@ -6,8 +6,8 @@ cover-img: assets/img/2021-12-10-turtlebot3-astar-navigation/star.jpg
 thumbnail-img: /assets/img/2021-12-10-turtlebot3-astar-navigation/a-star.gif
 share-img: /assets/img/rosa-logo-redondo.png
 author: Anderson Lima
-tags: [blog]
 comments: true
+tags: [blog]
 ---
 
 Um algoritmo de busca nada mais é do que um algoritmo que recebe um problema de busca

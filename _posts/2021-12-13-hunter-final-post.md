@@ -6,8 +6,8 @@ cover-img: assets/img/hunter/post-final/montagem-mec_D0_93nica-02.jpeg.jpg
 thumbnail-img: assets/img/hunter/post-final/montagem-mec_D0_93nica-02.jpeg.jpg
 share-img: /assets/img/rosa-logo-redondo.png
 author: Mateus Seixas
-tags: [hunter]
 comments: true
+tags: [hunter]
 ---
 
 ## Introdução

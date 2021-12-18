@@ -1,10 +1,12 @@
 ---
 layout: post
 title: Simulação de caça
-subtitle: Simulação do hunter by Anderson Lima
+subtitle: Simulação do hunter
 cover-img: /assets/img/hunter/post-simulacao/hunter-simulação.png
 thumbnail-img: https://p1.pxfuel.com/preview/622/928/1003/wall-e-robot-toy-cute.jpg 
 share-img: /assets/img/bir-team.png
+author: Anderson Lima
+comments: true
 tags: [hunter]
 ---
 

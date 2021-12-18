@@ -1,10 +1,11 @@
 ---
 layout: post
 title: Desenho mecânico do Bbot
-subtitle: A criação do projeto mecânico do bbot by Matheus França
+subtitle: A criação do projeto mecânico do bbot
 cover-img: assets/img/bbot/bbot_wide.png
 thumbnail-img: assets/img/bbot/bbot.png
 share-img: assets/img/rosa-logo-redondo.png
+author: Matheus França
 comments: true
 tags: [bbot]
 ---
