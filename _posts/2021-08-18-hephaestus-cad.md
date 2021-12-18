@@ -1,7 +1,7 @@
 ---
 layout: post
 title: CAD Hephaestus 
-subtitle: A construção do desenho mecânico do Hephaestus by Matheus França
+subtitle: A construção do desenho mecânico do Hephaestus
 cover-img: assets/img/hefesto/hephaestus_wide.png
 thumbnail-img: assets/img/hefesto/hephaestus.png
 share-img: assets/img/rosa-logo-redondo (180).png
