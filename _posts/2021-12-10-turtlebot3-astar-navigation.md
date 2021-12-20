@@ -1,12 +1,13 @@
 ---
 layout: post-page
 title: Navegação estelar
-subtitle: Utilizando o algoritmo de busca A* no TurtleBot3 by Anderson Lima
+subtitle: Utilizando o algoritmo de busca A* no TurtleBot3
 cover-img: assets/img/2021-12-10-turtlebot3-astar-navigation/star.jpg
-thumbnail-img: /assets/img/2021-11-19-cmu-rover/cover3.jpg
+thumbnail-img: /assets/img/2021-12-10-turtlebot3-astar-navigation/a-star.gif
 share-img: /assets/img/rosa-logo-redondo.png
-tags: [rasc]
+author: Anderson Lima
 comments: true
+tags: [blog]
 ---
 
 Um algoritmo de busca nada mais é do que um algoritmo que recebe um problema de busca

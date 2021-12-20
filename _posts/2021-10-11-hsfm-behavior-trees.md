@@ -1,12 +1,13 @@
 ---
 layout: post-page
 title: Arquiteturas de gerenciamento para robôs autônomos
-subtitle: Comparação entre FSM, HSFM e Behavior Trees by Israel Motta
+subtitle: Comparação entre FSM, HSFM e Behavior Trees
 cover-img: /assets/img/page-gerenciadores/ai.jpg
 thumbnail-img: /assets/img/page-gerenciadores/ai.jpg
 share-img: /assets/img/rosa-logo-redondo.png
+author: Israel Motta
 comments: true
-tags: [warthog]
+tags:
 ---
 
 <!-- ## Introdução -->

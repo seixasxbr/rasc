@@ -6,15 +6,15 @@ subtitle: Aqui você encontra um pouco sobre os nossos projetos.
 {% assign date_format = site.date_format | default: "%B %-d, %Y" %}
 
 {%- capture site_tags -%}
-    {%- for tag in site.tags -%}
-        {{- tag | first -}}{%- unless forloop.last -%},{%- endunless -%}
-    {%- endfor -%}
+{%- for tag in site.tags -%}
+{{- tag | first -}}{%- unless forloop.last -%},{%- endunless -%}
+{%- endfor -%}
 {%- endcapture -%}
 {%- assign tags_list = site_tags | split:',' | sort -%}
 
 {% if page.cover-img or page.title %}
 {% if page.cover-img %}
-  <!--div id="header-big-imgs" data-num-img={% if page.cover-img.first %}{{ page.cover-img.size }}{% else %}1{% endif %}
+<!--div id="header-big-imgs" data-num-img={% if page.cover-img.first %}{{ page.cover-img.size }}{% else %}1{% endif %}
     {% for bigimg in page.cover-img %}
     {% assign imgnum = forloop.index %}
     {% for imginfo in bigimg %}
@@ -59,28 +59,34 @@ subtitle: Aqui você encontra um pouco sobre os nossos projetos.
 {% endif %}
 
 <div class=" container-md " role="main">
-  <img src="/assets/img/dylan-gillis-KdeqA3aTnBY-unsplash.jpg" align="center" width="1200"/>
+  <img src="/assets/img/dylan-gillis-KdeqA3aTnBY-unsplash.jpg" align="center" width="1200" />
   <div class="row">
     <div class=" col-xl-auto offset-xl-0 col-lg-10 offset-lg-1 ">
-        <div class="before-content">
+      <div class="before-content">
+        <center>
+          <h2 class="post-title">Acompanhamento dos Projetos</h2><br />
+        </center>
+
+        <a id="support-promo-section" href="https://mhar-vell.github.io/portfolio/index.html" target="_blank">
+          <strong>Se você chegou até aqui é porque está interessado em conhecer um pouco mais sobre nossos projetos.
+            Abaixo você tem um link para os posts de cada projeto.</strong><br />
+        </a>
+        <a href="aboutme">
           <center>
-            <h2 class="post-title">Acompanhamento dos Projetos</h2><br/>
+            <span class="btn btn-cta btn-lg">
+              <small>↭ mhar-vɘll</small>
+            </span>
           </center>
-          
-          <a id="support-promo-section" href="https://mhar-vell.github.io/portfolio/index.html" target="_blank">
-            <strong>Se você chegou até aqui é porque está interessado em conhecer um pouco mais sobre nossos projetos. Abaixo você tem um link para os posts de cada projeto.</strong><br/>
-          </a>
-          <a href="aboutme">
-            <center>
-              <span class="btn btn-cta btn-lg">
-                <small>↭ mhar-vɘll</small>
-              </span>
-            </center>
-          </a>
-        </div>
+        </a>
+      </div>
+      <center>
         {%- for tag in tags_list -%}
-        <a href="#{{- tag -}}" class="btn btn-primary tag-btn"><i class="fas fa-tag" aria-hidden="true"></i>&nbsp;{{- tag -}}&nbsp;({{site.tags[tag].size}})</a>
+        {% if tag == "bbot" %}
+        <a href="#{{- tag -}}" class="btn btn-primary tag-btn"><i class="fas fa-tag" aria-hidden="true"></i>&nbsp;{{-
+          tag -}}&nbsp;({{site.tags[tag].size}})</a>
+        {% endif %}
         {%- endfor -%}
+      </center>
     </div>
   </div>
   <hr class="mark">
@@ -92,22 +98,25 @@ subtitle: Aqui você encontra um pouco sobre os nossos projetos.
 
 <div class="posts-list">
   <center>
-    <h3 class="post-title"><font color="#fbb117">Recent Posts</font></h3>
+    <h3 class="post-title">
+      <font color="#fbb117">Recent Posts</font>
+    </h3>
   </center>
   {% for post in posts offset:1 limit:4 %}
+  {% if post.tags contains "bbot" %}
   <article class="post-preview">
 
     {%- capture thumbnail -%}
-      {% if post.thumbnail-img %}
-        {{ post.thumbnail-img }}
-      {% elsif post.cover-img %}
-        {% if post.cover-img.first %}
-          {{ post.cover-img[0].first.first }}
-        {% else %}
-          {{ post.cover-img }}
-        {% endif %}
-      {% else %}
-      {% endif %}
+    {% if post.thumbnail-img %}
+    {{ post.thumbnail-img }}
+    {% elsif post.cover-img %}
+    {% if post.cover-img.first %}
+    {{ post.cover-img[0].first.first }}
+    {% else %}
+    {{ post.cover-img }}
+    {% endif %}
+    {% else %}
+    {% endif %}
     {% endcapture %}
     {% assign thumbnail=thumbnail | strip %}
 
@@ -125,9 +134,9 @@ subtitle: Aqui você encontra um pouco sobre os nossos projetos.
       <h4 class="post-title">{{ post.title }}</h4>
 
       {% if post.subtitle %}
-        <h5 class="post-subtitle">
+      <h5 class="post-subtitle">
         {{ post.subtitle }}
-        </h5>
+      </h5>
       {% endif %}
     </a>
 
@@ -158,7 +167,7 @@ subtitle: Aqui você encontra um pouco sobre os nossos projetos.
       {{ post.excerpt | strip_html | xml_escape | truncatewords: excerpt_length }}
       {% assign excerpt_word_count = post.excerpt | number_of_words %}
       {% if post.content != post.excerpt or excerpt_word_count > excerpt_length %}
-        <a href="{{ post.url | absolute_url }}" class="post-read-more">[Read&nbsp;More]</a>
+      <a href="{{ post.url | absolute_url }}" class="post-read-more">[Read&nbsp;More]</a>
       {% endif %}
     </div>
     {% endunless %}
@@ -172,7 +181,8 @@ subtitle: Aqui você encontra um pouco sobre os nossos projetos.
     </div>
     {% endif %}
 
-   </article>
+  </article>
+  {% endif %}
   {% endfor %}
 </div>
 
@@ -194,19 +204,21 @@ subtitle: Aqui você encontra um pouco sobre os nossos projetos.
 <hr class="mark">
 <div id="full-tags-list">
   {%- for tag in tags_list -%}
-      <h2 id="{{- tag -}}" class="linked-section">
-          <i class="fas fa-tag" aria-hidden="true"></i>
-          &nbsp;{{- tag -}}&nbsp;({{site.tags[tag].size}})
-      </h2>
-      <div class="post-list">
-          {%- for post in site.tags[tag] -%}
-              <div class="tag-entry">
-                  <a href="{{ post.url | relative_url }}">{{- post.title -}}</a>
-                  <div class="entry-date">
-                      <time datetime="{{- post.date | date_to_xmlschema -}}">{{- post.date | date: date_format -}}</time>
-                  </div>
-              </div>
-          {%- endfor -%}
+  {% if tag != "blog" %}
+  <h2 id="{{- tag -}}" class="linked-section">
+    <i class="fas fa-tag" aria-hidden="true"></i>
+    &nbsp;{{- tag -}}&nbsp;({{site.tags[tag].size}})
+  </h2>
+  <div class="post-list">
+    {%- for post in site.tags[tag] -%}
+    <div class="tag-entry">
+      <a href="{{ post.url | relative_url }}">{{- post.title -}}</a>
+      <div class="entry-date">
+        <time datetime="{{- post.date | date_to_xmlschema -}}">{{- post.date | date: date_format -}}</time>
       </div>
+    </div>
+    {%- endfor -%}
+  </div>
+  {% endif %}
   {%- endfor -%}
 </div>

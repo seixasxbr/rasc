@@ -1,10 +1,11 @@
 ---
 layout: post
 title: Desenvolvimentos dos Drivers
-subtitle: Integração dos Drivers no Arduino by Mateus Seixas
+subtitle: Integração dos Drivers no Arduino
 cover-img: assets/img/hunter/post-drivers/progra.jpg
 thumbnail-img: https://p1.pxfuel.com/preview/622/928/1003/wall-e-robot-toy-cute.jpg 
 share-img: /assets/img/rosa-logo-redondo.png
+author: Mateus Seixas
 comments: true
 tags: [hunter]
 ---

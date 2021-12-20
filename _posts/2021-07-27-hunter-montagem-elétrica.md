@@ -1,10 +1,11 @@
 ---
 layout: post
 title: Montagem Elétrica do Hunter
-subtitle: Uma montagem familiar by Caio Maia 
+subtitle: Uma montagem familiar
 cover-img: assets/img/hunter/post-montagem-eletrica/robin-glauser-zP7X_B86xOg-unsplash.jpg
 thumbnail-img: /assets/img/hunter/hunter_gazebo.png
 share-img: /assets/img/bir-team.png
+author: Caio Maia
 comments: true
 tags: [hunter]
 ---

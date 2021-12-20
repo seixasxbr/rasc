@@ -1,10 +1,12 @@
 ---
 layout: post
 title: Início da construção do robô
-subtitle: Testes da eletrônica e início da montagem by Felipe Mohr
+subtitle: Testes da eletrônica e início da montagem
 cover-img: /assets/img/walker/walker-montagem-parcial.jpeg
 thumbnail-img: assets/img/walker/walker-testes-eletronica.jpeg
 share-img: /assets/img/rosa-logo-redondo.png
+author: Felipe Mohr
+comments: true
 tags: [walker]
 ---
 

@@ -1,10 +1,11 @@
 ---
 layout: post
 title: Identificação da Esfera Colorida
-subtitle: Identificando uma Esfera Colorida com visão computacional by Matheus Anselmo
+subtitle: Identificando uma Esfera Colorida com visão computacional
 cover-img: /assets/img/aperea/post_4/aperea_and_ball.jpg
 thumbnail-img: /assets/img/aperea/slam-thumbnail.png
 share-img: /assets/img/rosa-logo-redondo.png
+author: Matheus Anselmo
 comments: true
 tags: [aperea]
 ---

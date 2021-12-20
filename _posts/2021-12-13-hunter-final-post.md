@@ -1,10 +1,11 @@
 ---
 layout: post
 title: Conclusão do Projeto
-subtitle: Resultados Finais by Mateus Seixas
+subtitle: Resultados Finais
 cover-img: assets/img/hunter/post-final/montagem-mec_D0_93nica-02.jpeg.jpg
 thumbnail-img: assets/img/hunter/post-final/montagem-mec_D0_93nica-02.jpeg.jpg
 share-img: /assets/img/rosa-logo-redondo.png
+author: Mateus Seixas
 comments: true
 tags: [hunter]
 ---

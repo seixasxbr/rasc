@@ -5,6 +5,7 @@ subtitle: Implementação e testes do controlador PID no protótipo do Bbot
 cover-img: assets/img/bbot/bbot_wide.png
 thumbnail-img: assets/img/bbot/bbot.png
 share-img: assets/img/rosa-logo-redondo.png
+author: Lucas Lins
 comments: true
 tags: [bbot]
 ---
