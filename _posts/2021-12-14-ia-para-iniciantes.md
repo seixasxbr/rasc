@@ -100,7 +100,7 @@ vida do ser humano e sua relação com o planeta. Os avanços
 da Inteligência Computacional são cada vez mais
 impactantes, juntamente a outras áreas da Inteligência 
 Artificial. A construção do conhecimento nessa área é fundamental
-para o avanço tecnológico.
+para o avanço tecnológicoA.
 
 
 ##### Referências
