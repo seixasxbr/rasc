@@ -2,8 +2,8 @@
 layout: post
 title: CUDA
 subtitle: Programação Paralela by Mateus Seixas
-cover-img: #assets/img/2021-12-15-kinematics-article/aplica2.jpg
-thumbnail-img: #assets/img/2021-12-15-kinematics-article/scara.png
+cover-img: assets/img/2021-12-15-cuda-mini-curso/1_mRozpIgERQCQKmqLfEoE1A.jpeg
+thumbnail-img: assets/img/2021-12-15-cuda-mini-curso/2017-04-12-nvidia-gpu.jpeg
 share-img: /assets/img/rosa-logo-redondo.png
 comments: true
 tags: [rasc]
@@ -152,7 +152,7 @@ Foi desenvolvida uma atividade para colocar em prática os aprendizados adquirid
       </thead>
       <tbody>
         <tr class="font-weight-bolder" style="text-align: center margin-top: 0">
-          <td>Lucas Lins</td>
+          <td>Mateus Seixas</td>
         </tr>
         <tr style="text-align: center" >
           <td style="vertical-align: top; text-align: justify"><small>Pesquisador Jr. no laboratório de Robótica e Sistemas Autônomos, SENAI CIMATEC, Engenheiro Eletricista</small></td>
