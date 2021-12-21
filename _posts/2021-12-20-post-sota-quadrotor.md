@@ -7,7 +7,7 @@ thumbnail-img: assets/img/quadrotor/dronecrop2.jpeg
 share-img: /assets/img/rosa-logo-redondo.png
 author: Mateus Seixas
 comments: true
-tags: [hunter] #AJUSTAR
+tags: [rasc] #AJUSTAR
 ---
 
 ## Quadrotores
