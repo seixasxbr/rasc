@@ -247,3 +247,5 @@ Orientações para PR de posts
 3. justificativa, porque publicar o post
 4. conclusão
 ----->`
+
+O título do post e o nome do arquivo em md devem ser os mesmo, os pelos menos ter as palavras iniciais iguais, como um short-name.

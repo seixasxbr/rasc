@@ -126,7 +126,7 @@ O primeiro comando compila o programa em CUDA. Os programas em CUDA terminam em 
 
 ## Hands-on
 
-Foi desenvolvida uma atividade para colocar em prática os aprendizados adquiridos nessa seção. A plataforma que estão as atividades é o Google Colab, no [link](https://colab.research.google.com/drive/1TwbGMFXA6L-UThDeQEWhyKwo_M_jX_xD?usp=sharing). A atividade pode ser desenvolvida na própria plataforma, sendo necessário habilitar a utilização da GPU na aba Edit > Notebook Settings, escolhendo GPU na opção "Hardware accelerator", como mostrado nas figuras. E após habilitar a GPU, executar todos os comandos lá presentes em sequência.
+Foi desenvolvida uma atividade para colocar em prática os aprendizados adquiridos nessa seção. A plataforma que estão as atividades é o Google Colab, no [link](https://colab.research.google.com/drive/1TwbGMFXA6L-UThDeQEWhyKwo_M_jX_xD?usp=sharing). A atividade pode ser desenvolvida na própria plataforma, sendo necessário habilitar a utilização da GPU na aba ***`Edit` ⮕ `Notebook Settings`***, escolhendo GPU na opção "Hardware accelerator", como mostrado nas figuras. E após habilitar a GPU, executar todos os comandos lá presentes em sequência.
 
 <center>
   <img src="{{ 'assets/img/2021-12-15-cuda-mini-curso/Screenshot from 2021-12-15 19-59-55.png' | relative_url }}" width="400" text-align=center alt="img1" />
@@ -135,7 +135,10 @@ Foi desenvolvida uma atividade para colocar em prática os aprendizados adquirid
   <img src="{{ 'assets/img/2021-12-15-cuda-mini-curso/gpuenable.png' | relative_url }}" width="400" text-align=center alt="img1" />
 </center>
 <br>
+
 ## Apresentação de Slides
+Esta apresentação faz parte de um curso introdutório sobre **CUDA**, a intenção é deixar disponível para aqueles que vão se aventurar por este caminho e que possa despertar interesse. No final da apresentação há informações sobre o autor, o qual está disponivel para suprimir dúvidas.
+
 <br>
 <iframe src ="https://drive.google.com/file/d/1frjP0Ii0Pn2LD8gK0hKrGB0vo79kKWPe/preview" width='740' height='430' allowfullscreen mozallowfullscreen webkitallowfullscreen></iframe>
 <br>
