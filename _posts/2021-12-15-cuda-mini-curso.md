@@ -1,12 +1,13 @@
 ---
 layout: post
 title: CUDA
-subtitle: Programação Paralela by Mateus Seixas
+subtitle: Programação Paralela
 cover-img: assets/img/2021-12-15-cuda-mini-curso/1_mRozpIgERQCQKmqLfEoE1A.jpeg
 thumbnail-img: assets/img/2021-12-15-cuda-mini-curso/2017-04-12-nvidia-gpu.jpeg
 share-img: /assets/img/rosa-logo-redondo.png
 comments: true
-tags: [rasc]
+author: Matheus Seixas
+tags: [blog]
 css: [/assets/css/tango.css]
 ---
 ## O que é CUDA? Porque Utilizar?
@@ -65,7 +66,8 @@ A keyword __global__ indica que a função será executada no Device. O compilad
 
 `cudaFree()` → Desaloca memória no Device
 <br><br>
-## cudaMalloc() e cudaFree()
+
+### cudaMalloc() e cudaFree()
 
 ```cpp
 cudaMalloc(LOCATION, SIZE);
@@ -78,7 +80,8 @@ O primeiro argumento do cudaMalloc é localização da memória no device que se
 cudaFree(d_a);
 ```
 <br>
-## cudaMemcpy()
+
+### cudaMemcpy()
 
 ```cpp
 cudaMemcpy(dst,src,size,direction);
@@ -121,7 +124,7 @@ $ ./hello
 
 O primeiro comando compila o programa em CUDA. Os programas em CUDA terminam em .cu. O segundo comando executa o comando.
 
-## Atividade Hands-on
+## Hands-on
 
 Foi desenvolvida uma atividade para colocar em prática os aprendizados adquiridos nessa seção. A plataforma que estão as atividades é o Google Colab, no [link](https://colab.research.google.com/drive/1TwbGMFXA6L-UThDeQEWhyKwo_M_jX_xD?usp=sharing). A atividade pode ser desenvolvida na própria plataforma, sendo necessário habilitar a utilização da GPU na aba Edit > Notebook Settings, escolhendo GPU na opção "Hardware accelerator", como mostrado nas figuras. E após habilitar a GPU, executar todos os comandos lá presentes em sequência.
 

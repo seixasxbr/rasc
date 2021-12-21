@@ -599,7 +599,7 @@ Outro foco deste post foi a utilização exclusiva da linguagem Python. Como foi
 
 E caso você queira saber mais sobre o projeto do Bbot, pode acessar nossa [página oficial](https://mhar-vell.github.io/rasc/project-bbot/).
 
-## Referências
+### Referências
 
 1. <a id="Kollarcik">**Adam Kollarčík**</a>; Modeling and Control of Two-Legged Wheeled Robot; Master’s thesis, CZECH TECHNICAL UNIVERSITY IN PRAGUE. 2021.
 2. <a id="Kim">**Kim, Sangtae; Kwon, Sang Joo**</a>; "Dynamic modeling of a two-wheeled inverted pendulum balancing mobile robot", p. 926-933 . In: **International Journal of Control, Automation and Systems**. 2015.

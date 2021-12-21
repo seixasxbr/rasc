@@ -1,10 +1,12 @@
 ---
 layout: post-page
 title: IA para iniciantes
-subtitle: Aplicação básica da inteligência computacional by Anderson Lima
-cover-img: /assets/img/ia/robot.jpg
-thumbnail-img: /assets/img/ubuntu.png
+subtitle: Aplicação básica da inteligência computacional
+cover-img: /assets/img/2021-12-14-ia-para-iniciantes/robot.jpg
+thumbnail-img: /assets/img/2021-12-14-ia-para-iniciantes/declare_AI.jpg
 share-img: /assets/img/rosa-logo-redondo.png
+author: Anderson Lima
+tags: [blog]
 comments: true
 ---
 A **inteligência artificial** refere-se a inteligência humana aplicada
@@ -18,7 +20,7 @@ tão fascinante:
 
 
 {:.center bordered}
-[![drawing400](../assets/img/ia/choices.jpg)](../assets/img/img/ia/choices.jpg)
+[![drawing400](../assets/img/2021-12-14-ia-para-iniciantes/choices.jpg)](../assets/img/img/2021-12-14-ia-para-iniciantes/choices.jpg)
 
 {:.center}
 "Escolher entre"
@@ -35,7 +37,7 @@ A escolha mais adequada é feita pelo agente, agir é o centro do conceito _inte
 ### Agente Inteligente
 
 {:.center}
-[![drawing400](../assets/img/ia/cute-agent.jpg)](../assets/img/ia/cute-agent.jpg)
+[![drawing400](../assets/img/2021-12-14-ia-para-iniciantes/cute-agent.jpg)](../assets/img/2021-12-14-ia-para-iniciantes/cute-agent.jpg)
 
 Um agente é tudo que pode ser considerado capaz de perceber o ambiente ao seu redor. A percepção é feita por meio de _sensores_ e a _interação_ com o ambiente é feita por meio dos _atuadores_.
 
@@ -55,7 +57,7 @@ Os dois conceitos básicos do agente:
 - **Função do agente** : A função do agente especifica a ação executada pelo agente em resposta a qualquer sequência de percepções. É uma descrição matemática abstrata.
 
 {:.center}
-[![drawing400](../assets/img/ia/agentes-reativo.png)](../assets/img/ia/agentes-reativo.png)
+[![drawing400](../assets/img/2021-12-14-ia-para-iniciantes/agentes-reativo.png)](../assets/img/2021-12-14-ia-para-iniciantes/agentes-reativo.png)
 
 {:.center}
 Função do agente
@@ -63,7 +65,7 @@ Função do agente
 - **Programa do agente** : O programa do agente é uma implementação concreta executada em um sistema físico.
 
 {:.center}
-[![drawing400](../assets/img/ia/funcagente.png)](../assets/img/ia/funcagente.png)
+[![drawing400](../assets/img/2021-12-14-ia-para-iniciantes/funcagente.png)](../assets/img/2021-12-14-ia-para-iniciantes/funcagente.png)
 
 {:.center}
 Programa do agente
@@ -75,13 +77,13 @@ Para ficar mais clara a implementação do agente inteligente, é possível cita
 O _agente inteligente_ aspirador de pó precisa executar a sua missão de aspirar um determinado _ambiente_. É possível criar inúmeras variações para esta situação. Por se tratar de um mundo simplificado, serão definidos dois quadrados A e B que representarão apenas dois ambientes. A função do aspirador é perceber em qual ambiente se encontra e se existir sujeira no quadrado, aspirar. Ele pode optar por mover-se para a esquerda, para direita, aspirar a sujeira ou não fazer nada.
 
 {:.center}
-[![drawing400](../assets/img/ia/aspirador.jpg)](../assets/img/ia/aspirador.jpg)
+[![drawing400](../assets/img/2021-12-14-ia-para-iniciantes/aspirador.jpg)](../assets/img/2021-12-14-ia-para-iniciantes/aspirador.jpg)
 
 Existem 8 estados possíveis para esse problema:
 
 
 {:.center}
-[![drawing500](../assets/img/ia/estados-aspirador.jpg)](../assets/img/ia/estados-aspirador.jpg)
+[![drawing500](../assets/img/2021-12-14-ia-para-iniciantes/estados-aspirador.jpg)](../assets/img/2021-12-14-ia-para-iniciantes/estados-aspirador.jpg)
 
 O posicionamento do aspirador em um dos 8 estados resulta em uma solução específica, de forma
 resumida, o aspirador **percebe** o **ambiente** através dos **sensores** e aspira o ambiente
@@ -89,7 +91,7 @@ através dos **atuadores**. A sequir é possível ver um exemplo do _estado 1_ e
 ambientes estão sujos e o aspirador se encontra no primeiro ambiente:
 
 {:.center}
-[![drawing500](../assets/img/ia/resolvendoproblema.gif)](../assets/img/ia/resolvendoproblema.gif)
+[![drawing500](../assets/img/2021-12-14-ia-para-iniciantes/resolvendoproblema.gif)](../assets/img/2021-12-14-ia-para-iniciantes/resolvendoproblema.gif)
 
 ***
 
@@ -103,33 +105,35 @@ Artificial. A construção do conhecimento nessa área é fundamental
 para o avanço tecnológicoA.
 
 
-##### Referências
+### Referências
 
 
 NORVIG, Peter; RUSSELL, Stuart. Inteligência artificial. Editora Campus, v. 20, 2004.
 
+<br>
+
+<hr>
+
+<!-- autor -->
+<center><h3 class="post-title">Autor</h3><br/></center>
 <div class="row">
-  <div class=" col-xl-auto offset-xl-0 col-lg-4 offset-lg-0">
+  <div class="col-xl-auto offset-xl-0 col-lg-4 offset-lg-0 center">
     <table class="table-borderless highlight">
       <thead>
         <tr>
-            <th><center><a href="https://www.linkedin.com/in/anderson-lima-45278b1bb/" target="_blank">
-                <p align="center">
-                    <img src="{{ 'assets/img/people/andersonlima-1.png' | relative_url }}" alt="Not found" width="100" class="img-fluid rounded-circle" />
-                </p>
-            </a></center></th>
+          <th><a href="https://www.linkedin.com/in/anderson-lima-45278b1bb/" target="_blank"><img src="{{ 'assets/img/people/andersonlima-1.png' | relative_url }}" width="100" alt="amarco" class="img-fluid rounded-circle" /></a></th>
         </tr>
       </thead>
       <tbody>
-        <tr class="font-weight-bolder" style="text-align: center; margin-top: 0">
-          <td width="33.33%">Anderson Lima</td>
+        <tr class="font-weight-bolder" style="text-align: center margin-top: 0">
+          <td>Anderson Lima</td>
         </tr>
         <tr style="text-align: center" >
-          <td style="vertical-align: top;text-align: justify;"><small>Pesquisador Júnior no laboratório de Robótica e Sistemas Autônomos (RoSA), Senai Cimatec, graduado em Engenharia Civil.</small></td>
+          <td style="color: #808080; vertical-align: top; text-align: justify"><small>Pesquisador em Robótica no Centro de Competências em Robótica e Sistemas Autônomos do Senai Cimatec. Anderson é formado em engenharia civil. Exerce atualmente a função de pai 24 horas.</small></td>
+          <td></td>
         </tr>
       </tbody>
     </table>
   </div>
 </div>
-
 <br>
