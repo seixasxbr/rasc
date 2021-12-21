@@ -1,10 +1,11 @@
 ---
 layout: post
 title: SLAM na Simulação
-subtitle: Localizar é Preciso; mapear também é Preciso by Matheus Anselmo
+subtitle: Localizar é Preciso; mapear também é Preciso
 cover-img: /assets/img/aperea/post-week12-cover.png
 thumbnail-img: /assets/img/aperea/slam-thumbnail.png
 share-img: /assets/img/rosa-logo-redondo.png
+author: Matheus Anselmo
 comments: true
 tags: [aperea]
 ---

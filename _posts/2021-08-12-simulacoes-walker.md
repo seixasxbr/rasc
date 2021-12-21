@@ -1,10 +1,12 @@
 ---
 layout: post
 title: Modelo e Simulação do robô Walker
-subtitle: Construção do URDF e implementações by Felipe Mohr
+subtitle: Construção do URDF e implementações
 thumbnail-img: assets/img/walker/walker_urdf_thumb.png
 cover-img: assets/img/walker/walker_footstep_cover.png
 share-img: /assets/img/rosa-logo-redondo.png
+author: Felipe Mohr
+comments: true
 tags: [walker]
 ---
 

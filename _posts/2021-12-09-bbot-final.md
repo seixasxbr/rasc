@@ -1,10 +1,11 @@
 ---
 layout: post
 title: Conclusão do projeto Bbot
-subtitle: Um pequeno passo para o homem, mas um grande salto para a humanidade by Matheus França
+subtitle: Um pequeno passo para o homem, mas um grande salto para a humanidade
 cover-img: assets/img/bbot/retro.jpg
 thumbnail-img: assets/img/bbot/you_win.jpg
 share-img: assets/img/bbot/bancada-explode.png
+author: Matheus França
 comments: true
 tags: [bbot]
 ---

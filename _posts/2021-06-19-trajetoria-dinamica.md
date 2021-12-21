@@ -1,10 +1,11 @@
 ---
 layout: post
 title: Trajetória dinâmica
-subtitle: Um estudo sobre manipuladores by Marco Reis
+subtitle: Um estudo sobre manipuladores
 cover-img: /assets/img/aum/matt-hardy-6ArTTluciuA-unsplash.jpg
 thumbnail-img: /assets/img/aum/network(2).png
 share-img: /assets/img/rosa-logo-redondo.png
+author: Marco Reis
 comments: true
 tags: [aum]
 ---

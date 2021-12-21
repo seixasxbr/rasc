@@ -1,10 +1,12 @@
 ---
 layout: post
 title: Planejamento de trajetória 
-subtitle:  Modelagem com Pêndulo invertido by Brenda Alencar
+subtitle:  Modelagem com Pêndulo invertido
 thumbnail-img: assets/img/walker/naos.jpg
 cover-img: assets/img/walker/Phases-of-biped-locomotion.png
 share-img: /assets/img/rosa-logo-redondo.png
+author: Brenda Alencar
+comments: true
 tags: [walker]
 ---
 

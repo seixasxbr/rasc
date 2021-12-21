@@ -1,10 +1,11 @@
 ---
 layout: post
 title: A imagem baseada em Raspibian
-subtitle: Testando a interface do Ergo by Breno Portela
+subtitle: Testando a interface do Ergo
 cover-img: /assets/img/ergo/ergo.jpeg
 thumbnail-img: /assets/img/ergo/ergo_real.jpg
 share-img: /assets/img/rosa-logo-redondo (180).png
+author: Breno Portela
 comments: true
 tags: [ergo]
 ---

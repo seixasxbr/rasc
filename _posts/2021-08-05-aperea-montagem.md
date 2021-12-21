@@ -1,10 +1,11 @@
 ---
 layout: post
 title: Montagem do APEREA 
-subtitle: Uma construção de bases by Juliana Santana
+subtitle: Uma construção de bases
 cover-img: /assets/img/aperea/cover_post3.png
 thumbnail-img: /assets/img/aperea/aperea-completo-rmv.png
 share-img: /assets/img/rosa-logo-redondo.png
+author: Juliana Santana
 comments: true
 tags: [aperea]
 ---

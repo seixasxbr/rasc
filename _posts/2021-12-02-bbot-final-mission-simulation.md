@@ -1,10 +1,11 @@
 ---
 layout: post
 title: Simulação da missão final do Bbot
-subtitle: Simulação da navegação autônoma e detecção de marco fiducial com o Bbot by Lucas Souza 
+subtitle: Simulação da navegação autônoma e detecção de marco fiducial com o Bbot
 cover-img: assets/img/bbot/lidar_env.jpeg
 thumbnail-img: assets/img/bbot/bbot.png
 share-img: assets/img/rosa-logo-redondo.png
+author: Lucas Souza
 comments: true
 tags: [bbot]
 ---

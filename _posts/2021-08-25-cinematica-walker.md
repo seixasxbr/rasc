@@ -1,10 +1,12 @@
 ---
 layout: post
 title: Cinemática do Walker
-subtitle: Como o robô poderá dar os passos? by Felipe Mohr
+subtitle: Como o robô poderá dar os passos?
 thumbnail-img: assets/img/walker/walker_kinematics_thumb.png
 cover-img: assets/img/walker/walker_kinematics_cover.jpg
 share-img: /assets/img/rosa-logo-redondo.png
+author: Felipe Mohr
+comments: true
 tags: [walker]
 ---
 

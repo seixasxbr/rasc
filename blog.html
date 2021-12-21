@@ -1,8 +1,8 @@
 ---
-layout: page
-title: Follow Up
-subtitle: Here you can find a little about our projects.
-cover-img: /assets/img/dylan-gillis-KdeqA3aTnBY-unsplash.jpg
+layout: page2
+title: blog
+subtitle: where freedom flows
+cover-img: /assets/img/blog/chuttersnap-9AqIdzEc9pY-unsplash.jpg
 thumbnail-img: /assets/img/rosa-logo-redondo (32).png
 share-img: /assets/img/rosa-logo-redondo.jpg
 tags: [books, test]
@@ -67,16 +67,18 @@ tags: [books, test]
   <div class="row">
     <div class=" col-xl-auto offset-xl-0 col-lg-10 offset-lg-1 ">
       <div class="before-content">
-        <center>
-          <h2 class="post-title">Acompanhamento dos Projetos</h2><br />
-        </center>
+        <!-- <center>
+            <h2 class="post-title">Acompanhamento dos Projetos</h2><br/>
+          </center> -->
 
-        <a id="support-promo-section" href="https://mhar-vell.github.io/portfolio/index.html" target="_blank">
-          <strong>Se você chegou até aqui é porque está interessado em conhecer um pouco mais sobre nossos projetos.
-            Abaixo você encontrará alguns links para os posts de cada projeto; caso você queira saber sobre o projeto:
-            vá até o menu superior e faça sua escolha.</strong><br />
-        </a>
         <a>
+          <strong>a little of what we think, some group ideas and some individual ideas</strong>
+
+          <p>We are all born with some behavioral skills that are unique, and as time goes on we develop others that are
+            just as important. But have you ever stopped to wonder if you are an analytical thinking person?<br>
+            The blog's proposal is to manage a seed of analytical thoughts with the posts published here</p><br />
+        </a>
+        <a id="support-promo-section" href="https://mhar-vell.github.io/portfolio/index.html" target="_blank">
           <center>
             <span class="btn btn-cta btn-lg">
               <small>↭</small>
@@ -85,27 +87,37 @@ tags: [books, test]
         </a>
       </div>
       {%- for tag in tags_list -%}
-      {% if tag != "blog" %}
-      <a href="#{{- tag -}}" class="btn btn-primary tag-btn"><i class="fas fa-tag" aria-hidden="true"></i>&nbsp;{{-
-        tag -}}&nbsp;({{site.tags[tag].size}})</a>
+      {% if tag == "blog" %}
+      <center>
+        <a href="#{{- tag -}}" class="btn btn-primary tag-btn"><i class="fas fa-tag" aria-hidden="true"></i>&nbsp;{{-
+          tag -}}&nbsp;({{site.tags[tag].size}})</a>
+      </center>
       {% endif %}
       {%- endfor -%}
     </div>
   </div>
-  <hr class="mark">
+  <hr>
 </div>
 
 
 {% assign posts = paginator.posts | default: site.posts %}
 
-<div class="posts-list">
-  <center>
-    <h3 class="post-title">
-      <font color="#fbb117">Recent Posts</font>
-    </h3>
-  </center>
-  {% for post in posts offset:0 limit:5 %}
-  {% unless post.tags contains "blog" %}
+<center>
+  <h3 class="post-title">
+    <font color="#fbb117">Recent Posts</font>
+  </h3>
+</center>
+
+<div class="container-xl">
+  <div class="row ">
+
+
+{% for post in posts offset:0 limit:9 %}
+{% if post.tags contains "blog" %}
+
+<!-- <div class="col-xl-4 offset-xl-2 col-lg-4 offset-lg-1"> -->
+
+<div class="col-lg-4">
   <article class="post-preview">
 
     {%- capture thumbnail -%}
@@ -120,25 +132,30 @@ tags: [books, test]
     {% else %}
     {% endif %}
     {% endcapture %}
+
+
     {% assign thumbnail=thumbnail | strip %}
 
     {% if site.feed_show_excerpt == false %}
     {% if thumbnail != "" %}
-    <div class="post-image post-image-normal">
+    <div class="post-image2 post-image-normal">
+      
       <a href="{{ post.url | absolute_url }}" aria-label="Thumbnail">
-        <img src="{{ thumbnail | absolute_url }}" alt="Post thumbnail">
+        <center>
+          <img align="middle" src="{{ thumbnail | absolute_url }}" alt="Post thumbnail">
+        </center>
       </a>
+      
     </div>
     {% endif %}
     {% endif %}
 
     <a href="{{ post.url | absolute_url }}">
-      <h4 class="post-title">{{ post.title }}</h4>
+      <h6 class="post-grid">{{ post.title }}</h6>
 
       {% if post.subtitle %}
-      <h5 class="post-subtitle">
-        {{ post.subtitle }}
-      </h5>
+      <h6 class="post-subtitle">{{ post.subtitle }}</h6>
+      <h6 style="color: #ffff80" class="post-subtitle">by {{ post.author }}</h6>
       {% endif %}
     </a>
 
@@ -155,7 +172,7 @@ tags: [books, test]
     </div>
     {% endif %}
 
-    {% unless site.feed_show_excerpt == false %}
+    <!-- {% unless site.feed_show_excerpt == false %}
     {% if thumbnail != "" %}
     <div class="post-image post-image-short">
       <a href="{{ post.url | absolute_url }}" aria-label="Thumbnail">
@@ -172,7 +189,7 @@ tags: [books, test]
       <a href="{{ post.url | absolute_url }}" class="post-read-more">[Read&nbsp;More]</a>
       {% endif %}
     </div>
-    {% endunless %}
+    {% endunless %} -->
 
     {% if site.feed_show_tags != false and post.tags.size > 0 %}
     <div class="blog-tags">
@@ -184,8 +201,14 @@ tags: [books, test]
     {% endif %}
 
   </article>
-  {% endunless %}
-  {% endfor %}
+
+</div>
+{% endif %}
+
+{% endfor %}
+
+
+</div>
 </div>
 
 {% if paginator.total_pages > 1 %}
@@ -203,10 +226,10 @@ tags: [books, test]
 </ul>
 {% endif %}
 
-<hr class="mark">
+<hr>
 <div id="full-tags-list">
   {%- for tag in tags_list -%}
-  {% if tag != "blog" %}
+  {% if tag == "blog" or tag == "book" %}
   <h2 id="{{- tag -}}" class="linked-section">
     <i class="fas fa-tag" aria-hidden="true"></i>
     &nbsp;{{- tag -}}&nbsp;({{site.tags[tag].size}})
@@ -214,7 +237,7 @@ tags: [books, test]
   <div class="post-list">
     {%- for post in site.tags[tag] -%}
     <div class="tag-entry">
-      <a href="{{ post.url | relative_url }}">{{- post.title -}}</a>
+      <a href="{{ post.url | relative_url }}">{{- post.title }} by {{ post.author -}}</a>
       <div class="entry-date">
         <time datetime="{{- post.date | date_to_xmlschema -}}">{{- post.date | date: date_format -}}</time>
       </div>
