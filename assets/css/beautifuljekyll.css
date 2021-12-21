@@ -499,6 +499,12 @@ footer .footer-custom-content {
   height: 12rem;
   width: 12rem;
 }
+.post-preview .post-image2 {
+  float: center;
+  margin-left: 0.625rem;
+  height: 12rem;
+  width: 12rem;
+}
 .post-preview .post-image {
   filter: grayscale(40%);
 }
