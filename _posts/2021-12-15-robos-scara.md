@@ -22,7 +22,7 @@ Com o modelo do robô SCARA obtido, é então feita a comparação da simulaçã
 
 ## Notação de Denavit-Hartenberg
 
-A notação de Denavit-Hartenberg é um método para descrever cada junta de um robô manipulador com apenas 4 parâmetros com objetivo de obter a cinemática direta e a cinemática inversa desse sistema. A cinemática direta permite calcular a pose (posição e orientação) do end effector do manipulador a partir dos ângulos e deslocamentos da junta. Já a cinemática inversa se propõe a calcular os ângulos e deslocamentos das juntas necessários para que o end effector do manipulador esteja em uma determinada pose. Geralmente a cinemática direta tem apenas uma solução, enquanto a cinemática inversa pode encontrar algumas soluções para o mesmo problema.
+A notação de Denavit-Hartenberg é um método para descrever cada junta de um robô manipulador com apenas 4 parâmetros com objetivo de obter a cinemática direta e a cinemática inversa desse sistema. A cinemática direta permite calcular a pose (posição e orientação) do end effector do manipulador a partir dos ângulos e deslocamentos das juntas. Já a cinemática inversa se propõe a calcular os ângulos e deslocamentos das juntas necessários para que o end effector do manipulador esteja em uma determinada pose. Geralmente a cinemática direta tem apenas uma solução, enquanto a cinemática inversa pode encontrar algumas soluções para o mesmo problema.
 <br>
 Nos métodos convencionais de modelagem de um robô manipulador são necessários 6 parâmetros para descrever cada junta, os 3 deslocamentos lineares e os 3 deslocamentos angulares, entretanto, como o método de Denavit-Hartenberg leva em consideração algumas restrições, é possível definir uma junta em quarto parâmetros: ângulo de rotação ($\theta$), deslocamento da junta (d), comprimento do ele (a) e ângulo de torção ($\alpha$). 
 
@@ -31,8 +31,7 @@ Nos métodos convencionais de modelagem de um robô manipulador são necessário
 
 ## Resultados e Conclusão da Pesquisa
 
-Na pesquisa foi desenvolvido o modelo completo de um robô do tipo SCARA através da notação de Denavit-Hartenberg, que é uma forma simples de obter a modelagem de um robô desse tipo. Foram obtidas as equações de cinemática direta e cinemática inversa. As simulações feitas nos dois ambientes, o SD Software e o Simulink do Matlab, validaram a modelagem realizada no artigo, como mostrado nas imagens que seguem, para um experimento que a entrada do ângulo de rotação da primeira junta variava de 0.232 a 2.4695 rad e o da segunda junta de 1.3521 a 2.0944 rad. Foram feitos mais dois experimentos, que também obtiveram resultados iguais para a simulação em ambas ferramentas.
-
+Na pesquisa foi desenvolvido o modelo completo de um robô do tipo SCARA através da notação de Denavit-Hartenberg, que é uma forma simples de obter a modelagem de um robô desse tipo. Foram obtidas as equações de cinemática direta e cinemática inversa. As simulações feitas nos dois ambientes, o SD Software e o Simulink do Matlab, validaram a modelagem realizada no artigo, como mostrado nas imagens que seguem, sendo a primeira imagem o resultado do Matlab e a segunda, o resultado do SD Software, para um experimento que o ângulo de rotação da primeira junta variava de 0.232 a 2.4695 rad e o da segunda junta de 1.3521 a 2.0944 rad. Foram feitos mais dois experimentos, que também obtiveram resultados iguais para a simulação em ambas ferramentas.
 
 <center>
   <img src="{{ 'assets/img/2021-12-15-kinematics-article/m_3.png' | relative_url }}" width="500" text-align=center alt="img1" />
