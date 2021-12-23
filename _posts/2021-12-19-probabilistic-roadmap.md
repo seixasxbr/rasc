@@ -78,7 +78,7 @@ O estudo realizado trouxe maior entendimento sobre as funcionalidades de planeja
           <td>Mateus Seixas</td>
         </tr>
         <tr style="text-align: center" >
-          <td style="vertical-align: top"><small>Pesquisador Jr. do projeto <br>Engenheiro Eletricista</small></td>
+          <td style="vertical-align: top"><small>Pesquisador no laboratório de Robótica e Sistemas Autônomos (RoSA), Senai Cimatec, mestrando em Engenharia Elétrica e amante da natureza.</small></td>
           <td></td>
         </tr>
       </tbody>
