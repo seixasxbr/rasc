@@ -155,7 +155,7 @@ Foi desenvolvida uma atividade para colocar em prática os aprendizados adquirid
           <td>Mateus Seixas</td>
         </tr>
         <tr style="text-align: center" >
-          <td style="vertical-align: top; text-align: justify"><small>Pesquisador no laboratório de Robótica e Sistemas Autônomos (RoSA), Senai Cimatec, mestrando em Engenharia Elétrica e amante da natuzera.</small></td>
+          <td style="vertical-align: top; text-align: justify"><small>Pesquisador no laboratório de Robótica e Sistemas Autônomos (RoSA), Senai Cimatec, mestrando em Engenharia Elétrica e amante da natureza.</small></td>
           <td></td>
         </tr>
       </tbody>
