@@ -36,12 +36,12 @@ A programação em CUDA é chamada de programação heterogênea, pois é dividi
 
 ## Modelo de Memória
 
-A memória de uma GPU é composta por memória global, memória local por Thread, memória compartilhada. O Device (CPU) se comunica com o Host (GPU) através da memória global por um barramento PCI-Express. Threads em um mesmo Block podem se comunicar umas com as outras através da memória compartilhada. Elas podem trocar informações e se sincronizar, ou seja, podem trabalhar cooperativamente. Cada CUDA Core tem uma memória local exclusiva e um conjunto de registradores necessários para fazer a execução da Thread. Existe também uma memória constante, que é uma memória apenas de leitura, que podem ser declarados parâmetros fixos que podem ser utilizados em um programa com muita frequência, como o número pi, por exemplo.
+A memória de uma GPU é composta por memória global, memória local por Thread, memória compartilhada. O Device (CPU) se comunica com o Host (GPU) através da memória global por um barramento PCI-Express. Threads em um mesmo Block podem se comunicar umas com as outras através da memória compartilhada. Elas podem trocar informações e se sincronizar, ou seja, podem trabalhar cooperativamente. Cada CUDA Core tem uma memória local exclusiva e um conjunto de registradores necessários para fazer a execução da Thread. Existe também uma memória constante, que é uma memória apenas de leitura, que podem ser declarados parâmetros fixos que podem ser utilizados em um programa com muita frequência, como o número $\pi$, por exemplo.
 
 <!-- {:.center}
 [![drawing500](../assets/img/2021-12-15-cuda-mini-curso/MEMORYY.png)](../assets/img/2021-12-15-cuda-mini-curso/MEMORYY.png) -->
 <center>
-  <img src="{{ 'assets/img/2021-12-15-cuda-mini-curso/MEMORYY.png' | relative_url }}" width="600" text-align=center alt="img1" />
+  <img src="{{ 'assets/img/2021-12-15-cuda-mini-curso/memoryb.png' | relative_url }}" width="650" text-align=center alt="img1" />
 </center>
 
 ## Comando Básicos
@@ -133,7 +133,7 @@ Foi desenvolvida uma atividade para colocar em prática os aprendizados adquirid
 </center>
 <br>
 ## Apresentação de Slides
-<br>
+<!-- <br> -->
 <iframe src ="https://drive.google.com/file/d/1frjP0Ii0Pn2LD8gK0hKrGB0vo79kKWPe/preview" width='740' height='430' allowfullscreen mozallowfullscreen webkitallowfullscreen></iframe>
 <br>
 
@@ -155,7 +155,7 @@ Foi desenvolvida uma atividade para colocar em prática os aprendizados adquirid
           <td>Mateus Seixas</td>
         </tr>
         <tr style="text-align: center" >
-          <td style="vertical-align: top; text-align: justify"><small>Pesquisador Jr. no laboratório de Robótica e Sistemas Autônomos, SENAI CIMATEC, Engenheiro Eletricista</small></td>
+          <td style="vertical-align: top; text-align: justify"><small>Pesquisador no laboratório de Robótica e Sistemas Autônomos (RoSA), Senai Cimatec, mestrando em Engenharia Elétrica e amante da natuzera.</small></td>
           <td></td>
         </tr>
       </tbody>
