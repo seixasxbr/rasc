@@ -4,7 +4,7 @@ title: IA para iniciantes
 subtitle: Aplicação básica da inteligência computacional
 cover-img: /assets/img/2021-12-14-ia-para-iniciantes/robot.jpg
 thumbnail-img: /assets/img/2021-12-14-ia-para-iniciantes/declare_AI.jpg
-share-img: /assets/img/rosa-logo-redondo.png
+share-img: /assets/img/2021-12-14-ia-para-iniciantes/declare_AI.jpg
 author: Anderson Lima
 tags: [blog]
 comments: true
