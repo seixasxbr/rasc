@@ -12,11 +12,32 @@ tags: [blog]
 
 <!-- ## Introdução -->
 
-Nesta época de valorização da privacidade, o uso de senhas é algo cada vez mais importante para a segurança de nossos dados computacionais. Quem já não se deparou com o esquecimento de alguma senha? 
+Um tempo livre sempre é esperado, somos imbuídos em esperar pelo final de semana intensamente.
+Esperamos em preenchê-lo com afazeres que criamos em nossos deleites substanciais e superficiais.
+A efemeridade fala mais alto, e o passageiro é algo momentâneo. E o aproveitar se torna primordial para uma vida existencialista do agora.
 
-Se isso aconteceu contigo, no uso de sua própria máquina impedindo o acesso a ela, este é um assunto para você.
+Nos últimos 5 dias a gripe me levou a permanecer enfraquecido em cima de uma cama, entre uma febre e outra fui levado a refletir sobre como eu estava preenchendo meus dias de tempo livre. 
+Encontrei inquietações que me fizeram a pensar sobre este tempo, que estava fluindo entre os meus dedos sem ao menor erigir uma torre de observação sobre o meu futuro.
 
-Sendo esta sua situação, onde você não lembra mais a senha de acesso ao Ubuntu, abaixo segue uma lista tutorial para que a senha seja recuperada e você possa voltar a ter acesso a sua máquina.
+Somos insignificantes diante do universo, mas bucólicos para nossa família. Importantes para os que ficam aqui na Terra.
+O enredo da vida nos levará, ao final do primeiro ato, a um encontro com Tânato. 
+
+Mas ainda não é o fim.
+
+A transcendência da alma é eterna, e anseia pela busca espiritual do **Caminho**. 
+
+Neste ano, nosso grupo ousou saltar no vazio, em buscar reflexão mais humanizadas. Passamos por discussões e leituras (A Sociedade da Transparência, Identidade e O Jeito Harvard de Ser Feliz) que mexeram com nossos ideais, nossas bases dicotômicas, nossas visões de mundo. Eu espero que o ano de 2022 seja de mais preces abnegadas de prazer, pois a sociedade esta inundada na efemeridade do ter, e somos agentes da mudança.
+
+Mudança de um mundo melhor. Este é o meu desejo. Que isso torne-se um feitiço, que entre em seu corpo e transforme de dentro para fora. Perceba que somos as palavras que os outros plantaram em nós. E isso é bem parecido com a fala do grande poeta português Fernando Pessoa: *Sou o intervalo entre o meu desejo e aquilo que os desejos dos outros fizeram de mim.*
+
+Somos resultado de um enorme feitiço.
+
+E se você me acompanhou até aqui, eu espero que o seu tempo seja ainda mais reflexivo sobre a mudança. A mudança da sociedade. A mudança da família. A minha e a tua mudança, comecemos nós pois muitos já alcançaram o *Nirvana*.
+
+Pensando sobre tudo isso, acabei encontrando um video curto de 15 minutos, que coincidentemente (Jung diria que é sincronicidade) trazia aspectos sobre o que eu estava pensando. Veja e reflita.
+
+Um feliz 2022 de muita prece...
+
 
 
 <br>
