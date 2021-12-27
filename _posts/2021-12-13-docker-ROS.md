@@ -6,7 +6,7 @@ cover-img: /assets/img/page-docker/container2.jpg
 thumbnail-img: assets/img/page-docker/homepage-docker-logo.png
 share-img: /assets/img/rosa-logo-redondo.png
 comments: true
-tags: [docker, rasc]
+tags: [blog]
 css: [/assets/css/tango.css]
 ---
 

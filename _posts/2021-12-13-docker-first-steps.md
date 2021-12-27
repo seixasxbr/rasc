@@ -6,7 +6,7 @@ cover-img: /assets/img/page-docker/container2.jpg
 thumbnail-img: assets/img/page-docker/homepage-docker-logo.png
 share-img: /assets/img/rosa-logo-redondo.png
 comments: true
-tags: [docker, rasc]
+tags: [blog]
 ---
 
 <center><img src="{{ 'assets/img/page-docker/homepage-docker-logo.png' | relative_url }}" alt="Docker logo" width="380"/></center>
