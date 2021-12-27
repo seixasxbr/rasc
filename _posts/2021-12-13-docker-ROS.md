@@ -1,10 +1,11 @@
 ---
 layout: post-page
 title: Docker + ROS
-subtitle: Dicas para rodar um container ROS + GUI's by Brenda Alencar
+subtitle: Dicas para rodar um container ROS + GUI's
 cover-img: /assets/img/page-docker/container2.jpg
 thumbnail-img: assets/img/page-docker/homepage-docker-logo.png
 share-img: /assets/img/rosa-logo-redondo.png
+author: Brenda Alencar
 comments: true
 tags: [blog]
 css: [/assets/css/tango.css]

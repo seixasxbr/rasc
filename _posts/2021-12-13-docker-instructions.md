@@ -1,10 +1,11 @@
 ---
 layout: post-page
 title: Como usar um container?
-subtitle: Primeiros passos com Docker by Brenda Alencar
+subtitle: Primeiros passos com Docker
 cover-img: /assets/img/page-docker/container1.jpg
 thumbnail-img: assets/img/page-docker/homepage-docker-logo.png
 share-img: /assets/img/rosa-logo-redondo.png
+author: Brenda Alencar
 comments: true
 tags: [blog]
 css: [/assets/css/tango.css]

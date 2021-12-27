@@ -5,6 +5,7 @@ subtitle: Ferramenta para criar e compartilhar containers
 cover-img: /assets/img/page-docker/container2.jpg
 thumbnail-img: assets/img/page-docker/homepage-docker-logo.png
 share-img: /assets/img/rosa-logo-redondo.png
+author: Brenda Alencar
 comments: true
 tags: [blog]
 ---
