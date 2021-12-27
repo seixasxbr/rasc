@@ -1,11 +1,13 @@
 ---
 layout: post-page
 title: Senha do Ubuntu
-subtitle: Recuperar senha de usuário no Linux by Marco Reis
+subtitle: Recuperar senha de usuário no Linux
 cover-img: /assets/img/wesley-pribadi-iS1NV9yN0Lg-unsplash.jpg
 thumbnail-img: /assets/img/ubuntu.png
 share-img: /assets/img/rosa-logo-redondo.png
+author: Marco Reis
 comments: true
+tags: [blog]
 ---
 
 <!-- ## Introdução -->
@@ -92,7 +94,7 @@ Testes preliminares também estão sendo realizados em laboratório, onde alguns
 <!-- autor -->
 <center><h3 class="post-title">Autor</h3><br/></center>
 <div class="row">
-  <div class="col-xl-8 offset-xl-0 col-lg-4 offset-lg-0 center">
+  <div class="col-xl-auto offset-xl-0 col-lg-4 offset-lg-0 center">
     <table class="table-borderless highlight">
       <thead>
         <tr>
@@ -104,12 +106,11 @@ Testes preliminares também estão sendo realizados em laboratório, onde alguns
           <td>Marco Reis</td>
         </tr>
         <tr style="text-align: center" >
-          <td style="vertical-align: top; text-align: justify"><small>Pesquisador Sênior no Centro de Competêhncias em Robótica e Sistemas Autônomos do Senai Cimatec. Apaixonado por robótica e um idealista puro, vive motivando aqueles que caminham em direção ao sucesso. Atualmente segue o interesse do seu coração realizando pesquisa na área de robótica, coordena projetos no Senai Cimatec e lidera o grupo do Centro de Competências em Robótica e Sistemas Autônomos. Marco é formado em engenharia elétrica pela UFPR e mestrado em engenharia de produção pela UFSC. Aguarda anciosamente o novo SuperMetroid e Winds of Winter.</small></td>
+          <td style="color: #808080; vertical-align: top; text-align: justify"><small>Pesquisador em Robótica no Centro de Competências em Robótica e Sistemas Autônomos do Senai Cimatec. Apaixonado por robótica e um idealista puro, vive motivando aqueles que caminham em direção ao sucesso. Atualmente segue o interesse do seu coração realizando pesquisa na área de robótica, coordenando projetos acadêmicos e escrevendo ficção. Marco é formado em engenharia elétrica pela UFPR e mestrado em engenharia de produção pela UFSC. E aguarda anciosamente o Winds of Winter.</small></td>
           <td></td>
         </tr>
       </tbody>
     </table>
   </div>
 </div>
-
 <br>

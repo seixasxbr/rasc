@@ -1,12 +1,13 @@
 ---
 layout: post-page
 title: Navegação estelar
-subtitle: Utilizando o algoritmo de busca A* no TurtleBot3 by Anderson Lima
+subtitle: Utilizando o algoritmo de busca A* no TurtleBot3
 cover-img: assets/img/2021-12-10-turtlebot3-astar-navigation/star.jpg
-thumbnail-img: /assets/img/2021-11-19-cmu-rover/cover3.jpg
+thumbnail-img: /assets/img/2021-12-10-turtlebot3-astar-navigation/a-star.gif
 share-img: /assets/img/rosa-logo-redondo.png
-tags: [rasc]
+author: Anderson Lima
 comments: true
+tags: [blog]
 ---
 
 Um algoritmo de busca nada mais é do que um algoritmo que recebe um problema de busca
@@ -104,31 +105,30 @@ A implementação do algoritmo de busca _A*_ aplicado a navegação do turtlebot
 permitiu aprofundar o conhecimento sobre conceitos como algoritmos de busca, 
 ROS (Robot Operating System) e navegação em robótica.
 
-<!-- **************************************** Autor **************************************** -->
-<center><h3 class="post-title">Autor</h3><br/></center>
+<br>
 
+<hr>
+
+<!-- autor -->
+<center><h3 class="post-title">Autor</h3><br/></center>
 <div class="row">
-  <div class=" col-xl-auto offset-xl-0 col-lg-4 offset-lg-0">
+  <div class="col-xl-auto offset-xl-0 col-lg-4 offset-lg-0 center">
     <table class="table-borderless highlight">
       <thead>
         <tr>
-            <th><center><a href="https://www.linkedin.com/in/anderson-lima-45278b1bb/" target="_blank">
-                <p align="center">
-                    <img src="{{ 'assets/img/people/andersonlima-1.png' | relative_url }}" alt="Not found" width="100" class="img-fluid rounded-circle" />
-                </p>
-            </a></center></th>
+          <th><a href="https://www.linkedin.com/in/anderson-lima-45278b1bb/" target="_blank"><img src="{{ 'assets/img/people/andersonlima-1.png' | relative_url }}" width="100" alt="amarco" class="img-fluid rounded-circle" /></a></th>
         </tr>
       </thead>
       <tbody>
-        <tr class="font-weight-bolder" style="text-align: center; margin-top: 0">
-          <td width="33.33%">Anderson Lima</td>
+        <tr class="font-weight-bolder" style="text-align: center margin-top: 0">
+          <td>Anderson Lima</td>
         </tr>
         <tr style="text-align: center" >
-          <td style="vertical-align: top;text-align: justify;"><small>Pesquisador Júnior no laboratório de Robótica e Sistemas Autônomos (RoSA), Senai Cimatec, graduado em Engenharia Civil.</small></td>
+          <td style="color: #808080; vertical-align: top; text-align: justify"><small>Pesquisador em Robótica no Centro de Competências em Robótica e Sistemas Autônomos do Senai Cimatec. Anderson é formado em engenharia civil. Exerce atualmente a função de pai 24 horas.</small></td>
+          <td></td>
         </tr>
       </tbody>
     </table>
   </div>
 </div>
-
 <br>

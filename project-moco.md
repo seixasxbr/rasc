@@ -108,7 +108,7 @@ Simulação do projeto no *Gazebo*.
 
 <br> -->
 
-<!-- ##### Referências
+<!-- ### Referências
 1. PÜTZ, S.; SIMÓN, J. S.; HERTZBERG, J. Move base flex a highly flexible navigation
 framework for mobile robots. In: IEEE. 2018 IEEE/RSJ International Conference on
 Intelligent Robots and Systems (IROS). [S.l.], 2018. p. 3416–3421.

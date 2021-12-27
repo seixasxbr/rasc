@@ -1,10 +1,11 @@
 ---
 layout: post
 title: Processo de montagem do Bbot
-subtitle: Construindo o projeto bbot by Matheus França
+subtitle: Construindo o projeto bbot
 cover-img: assets/img/bbot/bbot_wide.png
 thumbnail-img: assets/img/bbot/bbot.png
 share-img: assets/img/rosa-logo-redondo.png
+author: Matheus França
 comments: true
 tags: [bbot]
 ---

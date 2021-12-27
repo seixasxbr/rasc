@@ -1,10 +1,11 @@
 ---
 layout: post
 title: Modelo matemático do Bbot
-subtitle: Uma abordagem em controle by Matheus França
+subtitle: Uma abordagem em controle
 cover-img: assets/img/bbot/bbot_wide.png
 thumbnail-img: assets/img/bbot/bbot.png
 share-img: assets/img/rosa-logo-redondo.png
+author: Matheus França
 comments: true
 tags: [bbot]
 ---

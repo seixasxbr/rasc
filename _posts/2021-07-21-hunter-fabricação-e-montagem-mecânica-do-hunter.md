@@ -1,10 +1,11 @@
 ---
 layout: post
 title: Fabricação e Montagem Mecânica do Hunter
-subtitle: Uma montagem nada familiar by Caio Maia 
+subtitle: Uma montagem nada familiar
 cover-img: /assets/img/hunter/lee-attwood-1eQBP3Iit48-unsplash.jpg 
 thumbnail-img: /assets/img/hunter/hunter_gazebo.png
 share-img: /assets/img/bir-team.png
+author: Caio Maia
 comments: true
 tags: [hunter]
 ---

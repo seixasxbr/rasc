@@ -1,10 +1,12 @@
 ---
 layout: post
 title: Robôs antropomórficos - Introdução ao estudo do estado da arte
-subtitle:  Principais características e comparativo entre modelos by Brenda Alencar
+subtitle:  Principais características e comparativo entre modelos
 thumbnail-img: assets/img/walker/naos.jpg
 cover-img: assets/img/walker/humanoides.jpg
 share-img: /assets/img/rosa-logo-redondo.png
+author: Brenda Alencar
+comments: true
 tags: [walker]
 ---
 

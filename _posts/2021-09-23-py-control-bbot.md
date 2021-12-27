@@ -1,11 +1,13 @@
 ---
 layout: post-page
 title: Análise de sistemas e projetos de controladores em Python
-subtitle: Uso do Python para análise de sistemas e projeto de controladores para o Bbot by Lucas Lins
+subtitle: Uso do Python para análise de sistemas e projeto de controladores para o Bbot
 cover-img: /assets/img/bbot/bbot_cover.png
 thumbnail-img: /assets/img/bbot_wide.png
 share-img: /assets/img/rosa-logo-redondo.png
+author: Lucas Lins
 comments: true
+tags: 
 css: [/assets/css/tango.css]
 ---
 
@@ -597,7 +599,7 @@ Outro foco deste post foi a utilização exclusiva da linguagem Python. Como foi
 
 E caso você queira saber mais sobre o projeto do Bbot, pode acessar nossa [página oficial](https://mhar-vell.github.io/rasc/project-bbot/).
 
-## Referências
+### Referências
 
 1. <a id="Kollarcik">**Adam Kollarčík**</a>; Modeling and Control of Two-Legged Wheeled Robot; Master’s thesis, CZECH TECHNICAL UNIVERSITY IN PRAGUE. 2021.
 2. <a id="Kim">**Kim, Sangtae; Kwon, Sang Joo**</a>; "Dynamic modeling of a two-wheeled inverted pendulum balancing mobile robot", p. 926-933 . In: **International Journal of Control, Automation and Systems**. 2015.

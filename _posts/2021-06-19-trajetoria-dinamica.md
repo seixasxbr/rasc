@@ -1,10 +1,11 @@
 ---
 layout: post
 title: Trajetória dinâmica
-subtitle: Um estudo sobre manipuladores by Marco Reis
+subtitle: Um estudo sobre manipuladores
 cover-img: /assets/img/aum/matt-hardy-6ArTTluciuA-unsplash.jpg
 thumbnail-img: /assets/img/aum/network(2).png
 share-img: /assets/img/rosa-logo-redondo.png
+author: Marco Reis
 comments: true
 tags: [aum]
 ---
@@ -56,7 +57,7 @@ Toda pesquisa precisa de uma direção inicial. Esta pequena introdução está 
 
 <br>
 
-##### Referências
+### Referências
 1. <a id="WEI">**Wei, Kun, and Bingyin Ren.**</a> "A method on dynamic path planning for robotic manipulator autonomous obstacle avoidance based on an improved RRT algorithm." Sensors 18.2 (2018): 571.  
 2. <a id="VANNOY">**Vannoy, John, and Jing Xiao.**</a> "Real-time adaptive motion planning (RAMP) of mobile manipulators in dynamic environments with unforeseen changes." IEEE Transactions on Robotics 24.5 (2008): 1199-1212. 
 

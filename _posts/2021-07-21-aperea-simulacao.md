@@ -1,10 +1,11 @@
 ---
 layout: post
 title: Simulação do APEREA 
-subtitle: Um desafio de navegação by Juliana Santana
+subtitle: Um desafio de navegação
 cover-img: /assets/img/aperea/cover3.png
 thumbnail-img: /assets/img/aperea/robot_model.png
 share-img: /assets/img/rosa-logo-redondo.png
+author: Juliana Santana
 comments: true
 tags: [aperea]
 ---

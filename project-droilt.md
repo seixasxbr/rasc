@@ -132,7 +132,7 @@ Já na parte de atuação, temos dois tipos, os __dynamixels MX106__ e __dynamyx
 
 <br>
 
-##### Referências
+### Referências
 
 1. <a id="SPONG">**Spong, Mark W and Hutchinson, Seth and Vidyasagar, Mathukumalli and others**</a>; Robot modeling and control; wiley New York, v3, 2006.
 1. <a id="PIMENTA">**Pimenta, Karla Boaventura and others**</a>; "Controle de juntas roboticas usando controlador preditivo generalizado adaptativo direto", 2003.

@@ -1,12 +1,13 @@
 ---
 layout: post-page
 title: Arquiteturas de gerenciamento para robôs autônomos
-subtitle: Comparação entre FSM, HSFM e Behavior Trees by Israel Motta
+subtitle: Comparação entre FSM, HSFM e Behavior Trees
 cover-img: /assets/img/page-gerenciadores/ai.jpg
 thumbnail-img: /assets/img/page-gerenciadores/ai.jpg
 share-img: /assets/img/rosa-logo-redondo.png
+author: Israel Motta
 comments: true
-tags: [warthog]
+tags:
 ---
 
 <!-- ## Introdução -->
@@ -196,7 +197,7 @@ Todo sistema representado por uma *Behavior Tree* teoricamente pode ser represen
 Mas em arquiteturas mais complexas, a modularidade e a reatividade das *Behavior Trees* se destacam, juntamente com a facilidade de visualização dos sistemas,  o que torna uma ferramenta poderosíssima na construção de arquiteturas de gerenciamento de robôs autônomos.
 
 
-## Referências
+### Referências
 
 1. <a id="COLLEDANCHISE">**COLLEDANCHISE, Michele; ÖGREN, Petter**</a>. Behavior trees in robotics and AI: An introduction. CRC Press, 2018.
 

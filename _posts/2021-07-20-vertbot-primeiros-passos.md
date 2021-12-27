@@ -1,10 +1,12 @@
 ---
 layout: post
 title: Primeiros passos
-subtitle: Testes de sensores e iniciando o Gazebo by Breno Portela
+subtitle: Testes de sensores e iniciando o Gazebo
 cover-img: /assets/img/vertbot/jukan-tateisi-bJhT_8nbUA0-unsplash.jpg
 thumbnail-img: /assets/img/vertbot/vertbot_model.png
 share-img: /assets/img/rosa-logo-redondo.png
+author: Breno Portela
+comments: true
 tags: [vertbot]
 ---
 
