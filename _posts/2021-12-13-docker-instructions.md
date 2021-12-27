@@ -107,27 +107,31 @@ Estes foram os comandos básicos para você começar a usar e compartilhar cont�
 
 
 <br>
-<br>
-<!--equipe-->
+
+<hr>
+
+<!-- autor -->
 <center><h3 class="post-title">Autora</h3><br/></center>
 <div class="row">
-  <div class=" col-xl-auto offset-xl-0 col-lg-4 offset-lg-0">
-    <table class="table-borderless highlight">
+  <div class="col-xl-auto offset-xl-0 col-lg-4 offset-lg-0 center">
+    <table class="table-borderless highlight" style="background: #00000000">
       <thead>
         <tr>
-          <th><center><img src="{{ 'assets/img/people/brendaalencar-1.png' | relative_url }}" width="100" alt="brenda" class="img-fluid rounded-circle" /></center></th>
+          <th><img src="{{ 'assets/img/people/brendaalencar-1.png' | relative_url }}" width="100" alt="brenda" class="img-fluid rounded-circle" /></th>
         </tr>
       </thead>
       <tbody>
         <tr class="font-weight-bolder" style="text-align: center margin-top: 0">
-          <td width="33.33%"><center>Brenda Alencar</center></td>
+          <td>Brenda Alencar</td>
         </tr>
-        <tr style="text-align:center" >
-          <td width="33.33%" style="vertical-align: top"><small>Estagiária no CC RoSA, graduanda em Eng. Elétrica. Participou de projetos de Robótica Subaquática e Manipuladores Subaquáticos</small></td>
+        <tr style="text-align: center" >
+          <td style="color: #808080; vertical-align: top; text-align: justify"><small>Estagiária no CC-RoSA, graduanda em Eng. Elétrica. Participou de projetos de Robótica Subaquática e Manipuladores Subaquáticos.</small></td>
+          <td></td>
         </tr>
       </tbody>
     </table>
   </div>
 </div>
+<br>
 
 
