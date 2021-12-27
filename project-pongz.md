@@ -119,7 +119,7 @@ Assim, nesse desafio foi aplicado a utilização de sensores e atuadores, leitur
 
 <br>
 
-##### Referências
+### Referências
 1. [TinkerCAD DashBoard](https://www.tinkercad.com/things/alnQmejrYC8-pong-av3/editel). Tinkercad Dashboard. Acesso em: 19 de Julho de 2021.
 2. [MasterWalker](https://blogmasterwalkershop.com.br/arduino/arduino-utilizando-o-potenciometro-linear). Como usar com Arduino-chave táctil/pushbutton. Acesso em: 19 de Julho de 2021.
 3. [MasterWalker](https://blogmasterwalkershop.com.br/arduino/arduino-utilizando-o-potenciometro-linear). Como usar com Arduino – potenciômetro linear 10k com eixo estriado. Acesso em: 19 de Julho de 2021.

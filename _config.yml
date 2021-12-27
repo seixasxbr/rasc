@@ -58,6 +58,8 @@ navbar-links:
   things and much more:
     - pycontrol: "2021-09-23-py-control-bbot"
     - behavior trees: "2021-10-11-hsfm-behavior-trees"
+    - docker: "2021-12-13-docker-first-steps"
+    - ia para iniciantes: "2021-12-14-ia-para-iniciantes"
 
   blog: "blog"
   
