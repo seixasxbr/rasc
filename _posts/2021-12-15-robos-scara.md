@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: post-page
 title: Robôs SCARA
 subtitle: Estudo de Artigo
 cover-img: assets/img/2021-12-15-kinematics-article/cover.jpg
@@ -7,7 +7,7 @@ thumbnail-img: assets/img/2021-12-15-kinematics-article/scara.png
 share-img: /assets/img/rosa-logo-redondo.png
 author: Mateus Seixas
 comments: true
-tags: [rasc]
+tags: [blog]
 ---
 ## Artigo Estudado
 
